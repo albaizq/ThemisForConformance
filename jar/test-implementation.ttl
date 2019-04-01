@@ -1,0 +1,333 @@
+@prefix : <http://www.semanticweb.org/untitled-ontology-53#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/untitled-ontology-53#> .
+
+<http://www.semanticweb.org/untitled-ontology-53#> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://w3id.org/def/vtc#hasAssertion
+
+<http://w3id.org/def/vtc#hasAssertion> rdf:type owl:ObjectProperty .
+
+
+
+###  http://w3id.org/def/vtc#hasAssertionResult
+
+<http://w3id.org/def/vtc#hasAssertionResult> rdf:type owl:ObjectProperty .
+
+
+
+###  http://w3id.org/def/vtc#hasPreparation
+
+<http://w3id.org/def/vtc#hasPreparation> rdf:type owl:ObjectProperty .
+
+
+
+###  http://w3id.org/def/vtc#relatedToDesign
+
+<http://w3id.org/def/vtc#relatedToDesign> rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/terms/description
+
+<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://w3id.org/def/vtc#precondition
+
+<http://w3id.org/def/vtc#precondition> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://w3id.org/def/vtc#testAxioms
+
+<http://w3id.org/def/vtc#testAxioms> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://w3id.org/def/vtc#TestAssertion
+
+<http://w3id.org/def/vtc#TestAssertion> rdf:type owl:Class .
+
+
+
+###  http://w3id.org/def/vtc#TestCaseImplementation
+
+<http://w3id.org/def/vtc#TestCaseImplementation> rdf:type owl:Class .
+
+
+
+###  http://w3id.org/def/vtc#TestPreparation
+
+<http://w3id.org/def/vtc#TestPreparation> rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://w3id.org/def/vtc#Consistent
+
+<http://w3id.org/def/vtc#Consistent> rdf:type owl:NamedIndividual .
+
+
+
+###  http://w3id.org/def/vtc#Unsatisfiable
+
+<http://w3id.org/def/vtc#Unsatisfiable> rdf:type owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#
+
+<http://www.semanticweb.org/untitled-ontology-53#> rdf:type owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#assertion1
+
+:assertion1 rdf:type <http://w3id.org/def/vtc#TestAssertion> ,
+                     owl:NamedIndividual ;
+            
+            <http://purl.org/dc/terms/description> ""^^xsd:string ;
+            
+            <http://w3id.org/def/vtc#testAxioms> """
+                       	<Device1>    rdfs:subClassOf <Device> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <hasFunction> ;
+                                                                       owl:maxQualifiedCardinality \"0\"^^xsd:nonNegativeInteger ;
+                                                                       owl:onClass <Function>
+                                                                     ] .
+                                                                     <hasFunction> a owl:ObjectProperty.
+"""^^xsd:string ,
+                                                 """
+                      <EnergyMeter1>      rdfs:subClassOf [
+                                           owl:intersectionOf ( <NoEnergyMeter> 
+                                                                <Device>
+                                                               );
+                                           rdf:type owl:Class     ] ."""^^xsd:string ,
+                                                 """
+                      <TemperatureSensor1>      rdfs:subClassOf [
+                                           owl:intersectionOf ( <NoTemperatureSensor> 
+                                                                <Device>
+                                                               );
+                                           rdf:type owl:Class     ] ."""^^xsd:string ,
+                                                 """
+                      <WashingMachine1>      rdfs:subClassOf [
+                                           owl:intersectionOf ( <NoWashingMachine> 
+                                                                <Device>
+                                                               );
+                                           rdf:type owl:Class     ] ."""^^xsd:string ;
+            
+            <http://w3id.org/def/vtc#hasAssertionResult> <http://w3id.org/def/vtc#Consistent> ,
+                                                         <http://w3id.org/def/vtc#Unsatisfiable> .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#assertion2
+
+:assertion2 rdf:type <http://w3id.org/def/vtc#TestAssertion> ,
+                     owl:NamedIndividual ;
+            
+            <http://purl.org/dc/terms/description> ""^^xsd:string ;
+            
+            <http://w3id.org/def/vtc#testAxioms> """
+                       	<Device1> rdfs:subClassOf <Device> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <hasFunction> ;
+                                                                       owl:minQualifiedCardinality \"2\"^^xsd:nonNegativeInteger ;
+                                                                       owl:onClass <Function>
+                                                                     ] .
+                                                                     <hasFunction> a owl:ObjectProperty.
+"""^^xsd:string ,
+                                                 """
+                      <EnergyMeter1>      rdfs:subClassOf [
+                                           owl:intersectionOf ( <EnergyMeter> 
+                                                                <NoDevice>
+                                                               );
+                                           rdf:type owl:Class    ] ."""^^xsd:string ,
+                                                 """
+                      <TemperatureSensor1>      rdfs:subClassOf [
+                                           owl:intersectionOf ( <TemperatureSensor> 
+                                                                <NoDevice>
+                                                               );
+                                           rdf:type owl:Class    ] ."""^^xsd:string ,
+                                                 """
+                      <WashingMachine1>      rdfs:subClassOf [
+                                           owl:intersectionOf ( <WashingMachine> 
+                                                                <NoDevice>
+                                                               );
+                                           rdf:type owl:Class    ] ."""^^xsd:string ;
+            
+            <http://w3id.org/def/vtc#hasAssertionResult> <http://w3id.org/def/vtc#Consistent> ,
+                                                         <http://w3id.org/def/vtc#Unsatisfiable> .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#assertion3
+
+:assertion3 rdf:type <http://w3id.org/def/vtc#TestAssertion> ,
+                     owl:NamedIndividual ;
+            
+            <http://purl.org/dc/terms/description> ""^^xsd:string ;
+            
+            <http://w3id.org/def/vtc#testAxioms> """
+                       	<Device1> rdfs:subClassOf <Device> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <hasFunction> ;
+                                                                       owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ;
+                                                                       owl:onClass <Function>
+                                                                     ] .
+                                                                     <hasFunction> a owl:ObjectProperty.
+"""^^xsd:string ,
+                                                 """
+                      <EnergyMeter1>      rdfs:subClassOf [
+                                           owl:intersectionOf ( <EnergyMeter> 
+                                                                <Device>
+                                                               );
+                                           rdf:type owl:Class    ] ."""^^xsd:string ,
+                                                 """
+                      <TemperatureSensor1>      rdfs:subClassOf [
+                                           owl:intersectionOf ( <TemperatureSensor> 
+                                                                <Device>
+                                                               );
+                                           rdf:type owl:Class    ] ."""^^xsd:string ,
+                                                 """
+                      <WashingMachine1>      rdfs:subClassOf [
+                                           owl:intersectionOf ( <WashingMachine> 
+                                                                <Device>
+                                                               );
+                                           rdf:type owl:Class    ] ."""^^xsd:string ;
+            
+            <http://w3id.org/def/vtc#hasAssertionResult> <http://w3id.org/def/vtc#Consistent> .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#preparation1
+
+:preparation1 rdf:type <http://w3id.org/def/vtc#TestPreparation> ,
+                       owl:NamedIndividual ;
+              
+              <http://purl.org/dc/terms/description> ""^^xsd:string ;
+              
+              <http://w3id.org/def/vtc#testAxioms> """
+                       	<Device> rdf:type owl:Class.
+                        	<Device1> rdfs:subClassOf <Device>.
+ """^^xsd:string ,
+                                                   """
+                       <NoDevice> rdf:type owl:Class .
+                       <NoDevice> owl:complementOf <Device>.
+                       <NoEnergyMeter> rdf:type owl:Class .
+                       <NoEnergyMeter> owl:complementOf <EnergyMeter> .
+                       """^^xsd:string ,
+                                                   """
+                       <NoDevice> rdf:type owl:Class .
+                       <NoDevice> owl:complementOf <Device>.
+                       <NoTemperatureSensor> rdf:type owl:Class .
+                       <NoTemperatureSensor> owl:complementOf <TemperatureSensor> .
+                       """^^xsd:string ,
+                                                   """
+                       <NoDevice> rdf:type owl:Class .
+                       <NoDevice> owl:complementOf <Device>.
+                       <NoWashingMachine> rdf:type owl:Class .
+                       <NoWashingMachine> owl:complementOf <WashingMachine> .
+                       """^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#testImplementation2
+
+:testImplementation2 rdf:type <http://w3id.org/def/vtc#TestCaseImplementation> ,
+                              owl:NamedIndividual ;
+                     
+                     <http://w3id.org/def/vtc#precondition> "Class(<Device>)"^^xsd:string ,
+                                                            "Class(<Function>)"^^xsd:string ,
+                                                            "Class(<TemperatureSensor>)"^^xsd:string ,
+                                                            "Property(<hasFunction>)"^^xsd:string ;
+                     
+                     <http://w3id.org/def/vtc#relatedToDesign> <http://www.semanticweb.org/untitled-ontology-53#> ;
+                     
+                     <http://w3id.org/def/vtc#hasAssertion> :assertion1 ,
+                                                            :assertion2 ,
+                                                            :assertion3 ;
+                     
+                     <http://w3id.org/def/vtc#hasPreparation> :preparation1 .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#testImplementation3
+
+:testImplementation3 rdf:type <http://w3id.org/def/vtc#TestCaseImplementation> ,
+                              owl:NamedIndividual ;
+                     
+                     <http://w3id.org/def/vtc#precondition> "Class(<Device>)"^^xsd:string ,
+                                                            "Class(<EnergyMeter>)"^^xsd:string ;
+                     
+                     <http://w3id.org/def/vtc#relatedToDesign> <http://www.semanticweb.org/untitled-ontology-53#> ;
+                     
+                     <http://w3id.org/def/vtc#hasAssertion> :assertion1 ,
+                                                            :assertion2 ,
+                                                            :assertion3 ;
+                     
+                     <http://w3id.org/def/vtc#hasPreparation> :preparation1 .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#testImplementation4
+
+:testImplementation4 rdf:type <http://w3id.org/def/vtc#TestCaseImplementation> ,
+                              owl:NamedIndividual ;
+                     
+                     <http://w3id.org/def/vtc#precondition> "Class(<Device>)"^^xsd:string ,
+                                                            "Class(<WashingMachine>)"^^xsd:string ;
+                     
+                     <http://w3id.org/def/vtc#relatedToDesign> <http://www.semanticweb.org/untitled-ontology-53#> ;
+                     
+                     <http://w3id.org/def/vtc#hasAssertion> :assertion1 ,
+                                                            :assertion2 ,
+                                                            :assertion3 ;
+                     
+                     <http://w3id.org/def/vtc#hasPreparation> :preparation1 .
+
+
+
+
+###  Generated by the OWL API (version 3.5.3-SNAPSHOT) http://owlapi.sourceforge.net
+

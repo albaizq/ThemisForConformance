@@ -1,0 +1,12 @@
+main.class
+reports\TextConstants.class
+utils\Utils.class
+testingsteps\Execution.class
+utils\Ontology.class
+utils\ProcessCSV.class
+reports\Report.class
+tests\TestCaseImplementation.class
+testingsteps\Implementation.class
+testingsteps\Mapping.class
+tests\TestCaseResult.class
+tests\TestCaseDesign.class

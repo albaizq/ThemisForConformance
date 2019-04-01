@@ -1,0 +1,201 @@
+Provenance;Terms involved;Requirement type;Results;Requirement description
+;[];relation-existential;undefined;A virtual entity interacts through an endpoint
+;[];relation-existential;undefined;A service can use data stores
+;[];relation-existential;undefined;A service can interact with other services
+;[];relation-existential;undefined;A service interacts with zero or more IoT devices
+;[];relation-existential;undefined;A service interacts with zero or more IoT gateways
+;[];relation-existential;undefined;A service interacts with other entities via one or more networks
+;[];relation-existential;undefined;IoT device exposes one or more endpoints
+;[];relation-existential;undefined;IoT device interacts with one or more networks 
+;[];relation-existential;undefined;IoT gateways use data stores
+;[];relation-existential;undefined;IoT gateways connect IoT devices
+;[];relation-existential;undefined;IoT gateways expose endpoints
+;[];relation-existential;undefined;IoT gateways interact through networks
+;[];subclass;undefined;An IoT gateway is a digital entity 
+;[];cardinality;undefined;A service exposes one or more endpoints by which it can be invoked
+;[];relation-existential;undefined;A network connects endpoints
+;[];cardinality;undefined;An entity can have more than one identifier
+;[];relation-existential;undefined;An entity  has an identifier
+;[];relation-existential;undefined;Data Stores hold data relating to IoT systems 
+;[];relation-existential;undefined;IoT devices are connected with an IoT gateway 
+;[];relation-existential;undefined;IoT devices interact through a network
+;[];subclass;undefined;The IoT-User can be human (human user) or non-human (digital user)
+;[];subclass;undefined;Actuators and sensors are kinds of IoT device
+;[];relation-existential;undefined;A virtual entity represents a physical entity
+;[];relation-existential;undefined;A physical entity may have one or more  attached tag
+;[];relation-existential;undefined;A physical entity is controlled by an actuator
+;[];relation-existential;undefined;A physical entity is controlled by an actuator
+;[];subclass;undefined;An Entity can be physical or virtual
+;[];relation-existential;undefined;An applications can interact with other services via the network
+;[];subclass;undefined;An application is a specialized form of service
+;[];relation-existential;undefined;A human user interacts using applications
+;[];relation-existential;undefined;Sensors can monitor the tag attached to a physical entity rather than the physical entity itself
+;[];subclass;undefined;An application typically uses Services
+;[];relation-existential;undefined;Human users uses applications
+;[];relation-existential;undefined;"Data associated with services; devices and gateways can be held in data stores"
+;[];subclass;undefined;Everything in an IoT system is a kind of entity
+;[];relation-existential;undefined;Digital user consumes services
+;[];relation-universal;passed;Platform has a deployment
+;[];relation-universal;absent;A platform is deployed by some system
+;[];relation-universal;passed;What is a system?
+;[];relation-universal;passed;Deployment is associated to a property
+;[];relation-existential;undefined;What is a property?
+;[];definition;passed;What is a sensor?
+;[];relation-universal;passed;What is an actuator?
+;[];relation-universal;passed;What is a procedure?
+;[];relation-universal;passed;What is a deployment?
+;[];relation-universal;passed;What is a system?
+;[];relation-universal;passed;What is feature of interest?
+;[];relation-universal;passed;A system implements a procedure
+;[];relation-universal;undefined;A system can have subsystems
+;[];relation-universal;undefined;A property is a property of a feature of interest
+;[];definition;passed;A procedure has an input
+;[];relation-universal;passed;A producedure has an output
+;[];definition;passed;What is a stimulus?
+;[];relation-universal;passed;What is a sensor?
+;[];relation-universal;passed;Sensor detects an stimulus
+;[];relation-universal;passed;What is a stimulus?
+;[];relation-universal;passed;An observation is originated by a stimulus
+;[];relation-universal;undefined;What is a property?
+;[];subclass;undefined;An operation is the -machine interpretable- exposure of a -human understandable- command to a network
+;[];relation-existential;undefined;An operation is the means of a service to communicate in a procedure-type manner over the network (i.e. transmit data to/from other devices)
+;[];relation-existential;undefined;"A measuring functionality represents a functionality that has no impacts on the real world; but only gathers data"
+;[];subclass;undefined;"A controlling functionality represents a functionality that has impacts on the real world; but does not gather data"
+;[];relation-existential;undefined;A functionality has commands that allow human users to influence/observe such functionality
+;[];subclass;undefined;A functionality represents the functionality necessary to accomplish the task for which a device is designed
+;[];relation-existential;undefined;A service has an output data point
+;[];relation-existential;undefined;A service has an input data point
+;[];type;undefined;A service has an operation
+;[];relation-existential;undefined;A service can be composed of independent (sub-)services
+;[];subclass;undefined;A variable has a URI of a resource through which the instantiation of the value of the variable can be manipulated
+;[];cardinality;undefined;A variable has a CRUD method through which the instantiation of the variable value can be manipulated
+;[];subclass;undefined;A variable may have a value (useful for values that are relatively static)
+;[];subclass;undefined;A variable can be structured using other variables
+;[];definition;undefined;A variable describes a real-world aspect
+;[];cardinality;undefined;A device performs one or more functionalities in order to accomplish a particular task
+;[];definition;undefined;A device may be a physical or non-physical entity
+;[];relation-universal;undefined;A device is a thing that is able to interact electronically with its environment via a network
+;[];relation-universal;undefined;"Metadata contain data (like units; precision-ranges) about a variable or about an aspect"
+;[];cardinality;undefined;An aspect can have metadata
+;[];cardinality;undefined;An aspect could be a (physical or non-physical) entity or it could be a quality
+;[];type;undefined;A thing can have relations to other things
+;[];cardinality;undefined;A thing may have properties
+;[];definition;undefined;A thing is an entity that can be identified in the oneM2M System.
+;[];type;undefined;An area network follows a profile
+;[];relation-existential;undefined;An area network follows a communication protocol
+;[];subclass;undefined;An area network follows an standard that defines its physical properties
+;[];subclass;undefined;An area network is a network that provides data transport services between an interworked device and the oneM2M System
+;[];subclass;undefined;An interworked device is part of an area network
+;[];subclass;undefined;An interworked device is a device that does not support oneM2M interfaces and can only be accessed from the oneM2M System by communicating with a proxied (virtual) device that has been created by an interworking proxy entity
+;[];relation-universal;undefined;A device can be composed of several (sub-)devices
+;[];cardinality;undefined;A device has one or more services that expose in the network its functionalities
+;[];relation-existential;undefined;An operation output describes an output of an operation and also describes the output of a command
+;[];subclass;undefined;An operation input describes an input of an operation and also describes the input of a command
+;[];relation-universal;undefined;A service can expose one or more functionalities
+;[];relation-universal;undefined;"A simple type variable is a variable that only consists of variables of simple XML types like xsd:integer; string; etc.; potentially including restrictions"
+;[];subclass;undefined;An input data point is a variable of a service that is accessed by a RESTful device in its environment and that the device reads out autonomously (e.g. at periodic times)
+;[];relation-existential;undefined;"A simple type variable is a variable that only consists of variables of simple XML types like xsd:integer; string; etc.; potentially including restrictions"
+;[];relation-universal;undefined;A simple type variable contains the name of the attribute of the resource that is referenced with the target URI and that stores the value of the simple type variables
+;[];definition;undefined;A simple type variable has exactly one datatype
+;[];cardinality;undefined;A simple type variable has a data restriction
+;[];relation-existential;undefined;A command has as output one or more operation outputs
+;[];relation-existential;undefined;A command has as input one or more operation inputs
+;[];relation-existential;undefined;A command represents an action that can be performed to support a functionality
+;[];subclass;undefined;An operation has a target URI
+;[];relation-existential;undefined;An operation has a method
+;[];relation-existential;undefined;An operation may produce data into operation outputs (transient entities that are deleted when the operation finishes)
+;[];subclass;undefined;An operation may produce output data into output data points (persistent entities)
+;[];relation-existential;undefined;An operation may receive data from operation inputs (transient entities that are deleted when the operation finishes)
+;[];relation-existential;undefined;An operation may receive input data from input data points (persistent entities)
+;[];relation-existential;undefined;An output data point is a variable of a service that is set by a RESTful device in its environment and that the device updates autonomously (e.g. at periodic times))
+;[];relation-existential;undefined;"A variable describes an entity that stores some data (e.g. integers; text; etc.; or structured data) that can change over time"
+;[];relation-existential;undefined;A service is an electronic representation of a functionality in a network
+;[];subclass;undefined;A variable can have metadata
+;[];relation-existential;undefined;The profile production and consumption can be calculated over a time span  
+;[];cardinality;undefined;Multiple devices can offer the same service
+;[];relation-existential;undefined;The power is characterized by a certain value that is measured in a certain unit of measure
+;[];subclass;undefined;A washing machine is a device that has category Appliance  and Load
+;[];relation-existential;undefined;A temperature senso performs the sensing function and is used for the purpose of sensing temperature
+;[];relation-existential;undefined;A temperature sensor consists of a sensor
+;[];subclass;undefined;A temperature sensor is a device that has category sensor
+;[];relation-existential;undefined;A sensor performs a sensing function
+;[];subclass;undefined;A device may consists of other devices
+;[];relation-existential;undefined;A device may consists of other devices
+;[];relation-existential;undefined;"A device can be used for  the purpose of controlling a building object; such as a door or a window"
+;[];type;undefined;"Examples of properties are temperature; energy or smoke"
+;[];relation-existential;undefined;A device can be used for notifying  a property
+;[];subclass;undefined;"The commands can be: on; off; open; toggle; close; startm pause; step up; step down; set level; get and notify"
+;[];cardinality;undefined;A function shall have at least one command associated to it
+;[];subclass;undefined;A function can belong to a function category
+;[];subclass;undefined;"An actuating function can be specialized into on/off; open/close; start/stop or level control functions"
+;[];cardinality;undefined;A service shall specify the device that is offering the service
+;[];relation-existential;undefined;A device can be characterized by a profile. 
+;[];relation-existential;undefined;"The price is also characterized by a value using currency; which is a type of unit of measure"
+;[];;passed;The profile allows to describe the energy or power production and consumption of a certain device.  
+;[];cardinality;undefined;"A service is offered by at least one device that wants (a certain set of) its function(s) to be discoverable; registerable and remotely controllable by other devices in the network"
+;[];definition;undefined;A function represents the functionality necessary to accomplish the task for which a device is designed
+;[];relation-existential;undefined;The profile production and consumption can be associated to some costs 
+;[];relation-universal;undefined;A device can optionally  have a description
+;[];cardinality;undefined;A device shall have a model property
+;[];cardinality;undefined;A device shall have a model property
+;[];type;undefined;"Examples of devices are a light switch; a temperature sensor; an energy meter; a washing machine"
+;[];cardinality;undefined;A device performs one or more functions
+;[];definition;undefined;What is a device?
+;[];type;undefined;Water or gas are examples of commodities
+;[];relation-existential;undefined;A device can be used for  the purpose of offering a commodity
+;[];subclass;undefined;The devices can belong to several categories
+;[];subclass;undefined;"The EnergyRelated category can be specialized into: Load; Generator and Storage"
+;[];subclass;undefined;"The FunctionRelated category can be specialized into: Actuator; Applicance; HVAC; Lighting; Meter; MicroRenewable; Multimedia; Network; Sensor"
+;[];subclass;undefined;"The devices can be classified into categories: FunctionRelated; EneryRelated and BuildingRelated"
+;[];subclass;undefined;An energy meter is a device that has category Meter
+;[];relation-existential;undefined;A meter performs a metering function
+;[];subclass;undefined;A meter is a functionRelated device 
+;[];relation-existential;undefined;A dimmer lamp performs an actuating level control 
+;[];relation-existential;undefined;A dimmer lamp performs an actuating level control 
+;[];subclass;undefined;A dimmer lamp is a device that has category Lighting and Actuator
+;[];relation-existential;undefined;The time can be specified in terms of instants or intervals
+;[];relation-universal;undefined;A device can be used for measuring a property
+;[];relation-universal;undefined;A device can be found in a correponding state
+;[];relation-existential;undefined;An energy meter is a device that consists of a meter
+;[];relation-existential;undefined;A command can act upon a state  to represent that the consequence of a command can be a change of state of the device
+;[];relation-universal;undefined;A device offers a service
+;[];definition;undefined;"A service is a representation of a function to a network that makes this function discoverable; registerable and remotely controllable by other devices in the network"
+;[];cardinality;undefined;A service shall represent at least one function
+;[];relation-existential;undefined;A door switch is used for the purpose of controlling doors
+;[];relation-existential;undefined;A door switch  performs the open/close function
+;[];relation-existential;undefined;A door switch is a device that consists of a switch
+;[];subclass;undefined; A switch is a device that has category Actuator
+;[];relation-existential;undefined;A smoke sensor  is used for the purpose of sensing smoke
+;[];relation-existential;undefined;A smoke sensor performs a sensing and event function
+;[];relation-existential;undefined;A smoke sensor is a device that consists of a sensor
+;[];subclass;undefined;A smoke sensor is a device that has category Sensor
+;[];relation-existential;undefined;A washing machine performs an actuating start/pause function
+;[];relation-existential;undefined;A washing machine accomplishes the task of washing 
+;[];relation-existential;undefined;A device can be characterized by a profile. 
+;[];relation-existential;undefined;An energy meter is a device that has category Meter
+;[];relation-existential;undefined;A device can be used for  the purpose of sensing
+;[];subclass;undefined;"Examples of functions are the  the actuating; sensing; metering or event functions"
+;[];relation-existential;undefined;The power is characterized by a certain value that is measured in a certain unit of measure
+;[];relation-universal;passed;A sensor is hosted by a plarform
+;[];relation-universal;passed;A sensor observes properties
+;[];relation-universal;absent;A sensor mades an observation
+;[];relation-universal;passed;An observation uses a procedure
+;[];relation-universal;passed;An observation has a feature of interest
+;[];relation-universal;passed;An actuation has a result
+;[];relation-existential;undefined;An actuation has a simple result
+;[];definition;passed;What is a sampler?
+;[];relation-universal;passed;A sampler is hosted by a platform
+;[];relation-universal;passed;A sampling is made by a sampler
+;[];relation-universal;passed;Observation observesa a property
+;[];relation-universal;passed;A sampling has a feature of interest
+;[];relation-universal;passed;
+;[];relation-universal;undefined;
+;[];relation-universal;undefined;Observation hasSimpleResult
+;[];relation-universal;undefined;Observation has a phenomenon time
+;[];definition;passed;What is a sensor?
+;[];relation-universal;passed;An observation has a result
+;[];definition;passed;
+;[];relation-universal;passed;An actuator is hosted by a platform
+;[];relation-universal;passed;An actuation acts on a actuable property
+;[];relation-universal;passed;An actuation uses a procedure
+;[];relation-universal;passed;An actuation acts on a feature of interest

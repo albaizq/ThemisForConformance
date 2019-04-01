@@ -1,0 +1,30 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix vtc: <http://w3id.org/def/vtc#> .
+@prefix  :     <> .
+
+
+
+:TestsuiteSAREF rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
+            dc:references <https://w3id.org/saref#>.
+
+:Test-case1 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref1>;
+	dc:description "What is a device?";
+	vtc:desiredBehaviour "Device type Class".
+
+:Test-case2 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref2>;
+	dc:description "A device performs one or more functions";
+	vtc:desiredBehaviour "Device subClassOf hasFunction min 1 Function".
+
+:Test-case3 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref3>;
+	dc:description "Examples of devices are a light switch, a temperature sensor, an energy meter, a washing machine";
+	vtc:desiredBehaviour "TemperatureSensor subClassOf Device";
+	vtc:desiredBehaviour "EnergyMeter subClassOf Device";
+	vtc:desiredBehaviour "WashingMachine subClassOf Device".

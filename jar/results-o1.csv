@@ -1,0 +1,7 @@
+Terms involved;Ontology;Result
+[];http://www.w3.org/ns/ssn;passed
+["Property"];http://www.w3.org/ns/ssn;passed
+'["TemperatureSensor","Device","EnergyMeter","Device","WashingMachine","Device"]';http://www.w3.org/ns/ssn;undefined
+'["Device","hasFunction","Function"]';http://www.w3.org/ns/ssn;undefined
+["Device"];http://www.w3.org/ns/ssn;undefined
+[];http://www.w3.org/ns/ssn;passed

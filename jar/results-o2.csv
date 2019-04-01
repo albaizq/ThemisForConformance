@@ -1,0 +1,7 @@
+Terms involved;Ontology;Result
+[];https://w3id.org/saref;passed
+["Property"];https://w3id.org/saref;passed
+'["TemperatureSensor","Device","EnergyMeter","Device","WashingMachine","Device"]';https://w3id.org/saref;passed
+'["Device","hasFunction","Function"]';https://w3id.org/saref;passed
+["Device"];https://w3id.org/saref;passed
+[];https://w3id.org/saref;passed
