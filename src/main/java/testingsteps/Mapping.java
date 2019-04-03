@@ -13,7 +13,7 @@ public class Mapping {
     public  static ArrayList<String> processTestExpressionToExtractTerms(String purpose){
         ArrayList<String> terms = new ArrayList();
         String purposecloned= purpose.toLowerCase();
-        if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+)(some|only) \\(([^\\s]+) or ([^\\s]+)\\)")){
+        if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) only  ([^\\s]+) or ([^\\s]+)")){
             Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+)(some|only) \\(([^\\s]+) or ([^\\s]+)\\)",Pattern.CASE_INSENSITIVE);
             Matcher m = p.matcher(purpose);
             m.find();
@@ -37,8 +37,8 @@ public class Mapping {
             terms.add(term2);
             terms.add(term3);
             terms.add(term4);
-        }else if(purposecloned.matches("[^\\s]+ subclassof [^\\s]+ value [^\\s]+")){
-            Pattern p = Pattern.compile("[^\\s]+ subclassof [^\\s]+ value [^\\s]+",Pattern.CASE_INSENSITIVE);
+        }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) value ([^\\s]+)")){
+            Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+) value ([^\\s]+)",Pattern.CASE_INSENSITIVE);
             Matcher m = p.matcher(purpose);
             m.find();
             String term1 = m.group(1).toString().replaceAll(" ","");

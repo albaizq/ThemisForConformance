@@ -8,6 +8,9 @@ import org.semanticweb.owlapi.io.OWLOntologyDocumentSource;
 import org.semanticweb.owlapi.io.OWLParserException;
 import org.semanticweb.owlapi.io.StringDocumentSource;
 import org.semanticweb.owlapi.model.*;
+import testingsteps.Implementation;
+import testingsteps.Mapping;
+import tests.TestCaseDesign;
 import tests.TestCaseResult;
 import uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser;
 
@@ -46,7 +49,6 @@ public class Utils {
         }
         return  terms;
     }
-
 
     public static  Set convertStringToAxioms(String axioms) {
 
@@ -106,80 +108,6 @@ public class Utils {
 
     }
 
-    public static  String  getMatchingStrings(List list, String regex, String uri) {
-        String match = "";
-        try {
-            Pattern p = Pattern.compile(regex);
-            for (int i = 0; i < list.size(); i++) {
-                if (p.matcher(list.get(i).toString()).matches()) {
-                    match = list.get(i).toString();
-                    if(match.contains(uri))
-                        return match;
-                }
-            }
-        }catch (Exception e){
-            System.out.println("error while matching string " +regex );
-            return "";
-        }
-        return match;
-    }
-
-    public static void  storeTestResults(ArrayList<TestCaseResult> testsuite) throws OWLOntologyCreationException, OWLOntologyStorageException {
-
-        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-        String base = "http://www.semanticweb.org/untitled-ontology-53-results#";
-        String verif = "http://w3id.org/def/vtc#";
-        OWLOntology ont = manager.createOntology(IRI.create(base));
-        OWLDataFactory dataFactory = manager.getOWLDataFactory();
-
-        OWLClass verifTestResultClass = dataFactory.getOWLClass(IRI.create(verif + "tests.TestCaseResult"));
-        OWLClass verifExecutionClass = dataFactory.getOWLClass(IRI.create(verif + "testingsteps.Execution"));
-        int num = 0;
-        for(TestCaseResult tc: testsuite){
-            num++;
-            /*Add test result individual*/
-            OWLIndividual subject = dataFactory.getOWLNamedIndividual(IRI.create(base + "testResult"+num));
-            OWLClassAssertionAxiom classAssertion = dataFactory.getOWLClassAssertionAxiom(verifTestResultClass, subject);
-            manager.addAxiom(ont, classAssertion);
-            /*Add test result*/
-            OWLIndividual assresult = null;
-            if(tc.getTestResult().equals("passed"))
-                assresult = dataFactory.getOWLNamedIndividual(IRI.create(verif + "Passed"));
-            else if (tc.getTestResult().equals("undefined"))
-                assresult = dataFactory.getOWLNamedIndividual(IRI.create(verif + "Undefined"));
-            else
-                assresult = dataFactory.getOWLNamedIndividual(IRI.create(verif + "NotPassed"));
-
-            OWLObjectProperty testResult = dataFactory.getOWLObjectProperty(IRI.create(verif + "hasTestResult"));
-            OWLAxiom testResultAssertion = dataFactory.getOWLObjectPropertyAssertionAxiom(testResult, subject, assresult);
-            manager.addAxiom(ont, testResultAssertion);
-
-            /*Add execution individidual*/
-            OWLIndividual execution1= dataFactory.getOWLNamedIndividual(IRI.create(base + "execution"+num));
-            OWLClassAssertionAxiom classAssertion2 = dataFactory.getOWLClassAssertionAxiom(verifExecutionClass, execution1);
-            manager.addAxiom(ont, classAssertion2);
-            /*Add executed on*/
-            OWLDataProperty executedOnProp = dataFactory.getOWLDataProperty(IRI.create(verif+"executedOn"));
-            OWLAxiom exectedOnAssertion = dataFactory.getOWLDataPropertyAssertionAxiom(executedOnProp, execution1, tc.getOntologyURI().toString());
-            manager.addAxiom(ont, exectedOnAssertion);
-            /*Add related test implem*/
-            OWLObjectProperty relatedToProp = dataFactory.getOWLObjectProperty(IRI.create(verif+"isRelatedToImplementation"));
-            OWLIndividual relatedImpl = dataFactory.getOWLNamedIndividual(tc.getRelatedTestImpl());
-            OWLAxiom relatedToAssertion = dataFactory.getOWLObjectPropertyAssertionAxiom(relatedToProp, execution1, relatedImpl);
-            manager.addAxiom(ont, relatedToAssertion);
-
-            /*Add to the test result*/
-            OWLObjectProperty testExecution = dataFactory.getOWLObjectProperty(IRI.create(verif + "hasExecution"));
-            OWLAxiom testExecutionAssertion = dataFactory.getOWLObjectPropertyAssertionAxiom(testExecution, subject, execution1);
-            manager.addAxiom(ont, testExecutionAssertion);
-        }
-
-        File file = new File("test-result.ttl");
-        TurtleOntologyFormat turtleFormat = new TurtleOntologyFormat();
-        //turtleFormat.copyPrefixesFrom(pm);
-        turtleFormat.setDefaultPrefix(base );
-        manager.saveOntology(ont, turtleFormat, IRI.create(file));
-    }
 
     public static void unZipIt(String resourceName, String outputFolder) {
 
@@ -217,45 +145,72 @@ public class Utils {
             System.err.println("Error while extracting the resources: " + ex.getMessage());
         }
     }
+    public static JSONArray createGot(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology) throws Exception {
 
-    public static String mapImplementationTerms(String query, HashMap<String, IRI> allvalues, Ontology ontology){
-
-        Pattern p = Pattern.compile("\\<(.*?)\\>");
-        Matcher m = p.matcher(query);
-        String querym = query;
-        String uri=ontology.getOntology().getOntologyID().getOntologyIRI().toString();
-        if(!ontology.getOntology().getOntologyID().getOntologyIRI().toString().endsWith("#") && !ontology.getOntology().getOntologyID().getOntologyIRI().toString().endsWith("||/"))
-            uri= uri+"#";
-        while (m.find()) {
-            try {
-                int flag = 0;
-                for (Map.Entry<String, IRI> entry : allvalues.entrySet()) {
-                    if(entry.getKey().equals(m.group().replace("<","").replace(">",""))) {
-                        querym = querym.replace("<" + entry.getKey() + ">", "<" + entry.getValue() + ">");
-                        flag++;
-                    }
-
-                }
-                if(flag==0){
-
-                    querym = querym.replace(m.group(), "<" + uri.toString() +m.group().replace("<","").replace(">","")+ ">");
-                }
-                Matcher m2 = p.matcher(query);
-                while (m2.find()) {
-                    if(!m.group().contains("http")) { // tiene alguna uri
-                        querym = querym.replace( m.group() , "<" +  uri +m.group().replace("<","").replace(">","")+ ">" );
-
-                    }
-                }
-            } catch (Exception e) {
-                System.out.println("Error while parsing " + e.getMessage());
-                e.printStackTrace();
+        //Create GoT
+        System.out.println("create got...");
+        ArrayList<String> terms = new ArrayList<>();
+        for (TestCaseDesign test : testsuiteDesign) {
+            for (String purpose : test.getPurpose()) {
+                terms.addAll(Mapping.processTestExpressionToExtractTerms(purpose));
             }
         }
-        //System.out.println("final query "+querym);
-        return querym;
+        JSONArray got = new JSONArray();
+        int i = 1;
 
+        ArrayList<String> entities = new ArrayList();
+        Iterator it = ontology.getOntology().getSignature(true).iterator();
+        while (it.hasNext()) {
+            OWLEntity entity = (OWLEntity) it.next();
+            JSONObject ontologyobjterm = new JSONObject();
+            if (entity.getIRI().getFragment() != null) {
+                if (!entities.contains(entity.getIRI().getFragment().toString())) {
+                    entities.add(entity.getIRI().getFragment().toString());
+                    ontologyobjterm.put("Term", entity.getIRI().getFragment());
+                    ontologyobjterm.put("Value", entity.getIRI().toString()); //get the value with higher smilarity
+                    ontologyobjterm.put("Ontology", ontology.getProv());
+                    got.put(ontologyobjterm);
+                } else {
+                    entities.add(entity.getIRI().getFragment().toString());
+                    String[] uri = entity.getIRI().getNamespace().toString().split("/");
+                    ontologyobjterm.put("Term", uri[uri.length - 1] + entity.getIRI().getFragment().toString());
+                    ontologyobjterm.put("Value", entity.getIRI().toString()); //get the value with higher smilarity
+                    ontologyobjterm.put("Ontology", ontology.getProv());
+                    got.put(ontologyobjterm);
+                }
+            }
+        }
+        return got;
+    }
 
+    public static ArrayList<Ontology> loadOntologies(String file) throws Exception {
+
+        //Process CVS, list of ontologies and  tests
+        System.out.println("process csv...");
+        HashMap<String, String> ontoAndTest = ProcessCSV.processCSVVocabs(file);
+
+        ArrayList<Ontology> ontologies = new ArrayList<>();
+        for (Map.Entry<String, String> entry : ontoAndTest.entrySet()) {
+            //Load ontologies
+            Ontology ontology = new Ontology();
+            if(entry.getKey().length()!=0) {
+                ontology.load_ontologyURL(entry.getKey());
+                ontologies.add(ontology);
+            }
+        }
+        return  ontologies;
+    }
+
+    public static ArrayList<TestCaseDesign> loadTests(String file) throws Exception {
+
+        HashMap<String, String> ontoAndTest = ProcessCSV.processCSVVocabs(file);
+        ArrayList<TestCaseDesign> testsuiteDesign = new ArrayList<>();
+        for (Map.Entry<String, String> entry : ontoAndTest.entrySet()) {
+            // Load tests
+            System.out.println("loading tests...");
+            testsuiteDesign.addAll(Implementation.processTestCaseDesign(entry.getValue()));
+        }
+        return testsuiteDesign;
     }
 
 

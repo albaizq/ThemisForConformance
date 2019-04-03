@@ -1,7 +1,84 @@
-Terms involved;Ontology;Result
-[];http://www.w3.org/ns/ssn;passed
-["Property"];http://www.w3.org/ns/ssn;passed
-'["TemperatureSensor","Device","EnergyMeter","Device","WashingMachine","Device"]';http://www.w3.org/ns/ssn;undefined
-'["Device","hasFunction","Function"]';http://www.w3.org/ns/ssn;undefined
-["Device"];http://www.w3.org/ns/ssn;undefined
-[];http://www.w3.org/ns/ssn;passed
+Provenance;Terms involved;Ontology;Requirement description;Result
+http://www.w3.org/ns/ssn;'["Procedure","hasOutput","Output"]';http://www.w3.org/ns/ssn;A procedure has an output;passed
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Result"]';http://www.w3.org/ns/ssn;A sampling has a result;passed
+http://www.w3.org/ns/ssn;'["Actuation","hasResult","Result"]';http://www.w3.org/ns/ssn;An actuation has a result;passed
+http://www.w3.org/ns/ssn;'["Sample","FeatureOfInterest","Result"]';http://www.w3.org/ns/ssn;A sample is a type of feature of interest and result;passed
+http://www.w3.org/ns/ssn;'["Deployment","forProperty","Property"]';http://www.w3.org/ns/ssn;Deployment is associated to a property;passed
+http://www.w3.org/ns/ssn;["Sensor"];http://www.w3.org/ns/ssn;What is a sensor?;passed
+http://www.w3.org/ns/ssn;["Actuator"];http://www.w3.org/ns/ssn;What is an actuator?;passed
+http://www.w3.org/ns/ssn;["Procedure"];http://www.w3.org/ns/ssn;What is a procedure?;passed
+http://www.w3.org/ns/ssn;["Deployment"];http://www.w3.org/ns/ssn;What is a deployment?;passed
+http://www.w3.org/ns/ssn;'["Platform","inDeployment","Deployment"]';http://www.w3.org/ns/ssn;Platform has a deployment;passed
+http://www.w3.org/ns/ssn;'["Platform","deployedSystem","System"]';http://www.w3.org/ns/ssn;A platform is deployed by some system;absent
+http://www.w3.org/ns/ssn;["System"];http://www.w3.org/ns/ssn;What is a system?;passed
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Sample"]';http://www.w3.org/ns/ssn;A sampling is linked to at least one sample;passed
+http://www.w3.org/ns/ssn;'["Sensor","observes","ObservableProperty"]';http://www.w3.org/ns/ssn;A sensor observes only observable properties;passed
+http://www.w3.org/ns/ssn;'["ObservableProperty","Property"]';http://www.w3.org/ns/ssn;An observable property is a type of property;passed
+http://www.w3.org/ns/ssn;'["ObservableProperty","isObservedBy","Sensor"]';http://www.w3.org/ns/ssn;An observable property is observed by only sensors;passed
+http://www.w3.org/ns/ssn;'["Observation","hasFeatureOfInterest","FeatureOfInterest"]';http://www.w3.org/ns/ssn;An observation is related only to one feature of interest;passed
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';http://www.w3.org/ns/ssn;The observation is originated by  exactly one stimulus;passed
+http://www.w3.org/ns/ssn;'["Observation","hasResult","Result"]';http://www.w3.org/ns/ssn;An observation has only  results;passed
+http://www.w3.org/ns/ssn;'["Sensor","System"]';http://www.w3.org/ns/ssn;A sensor is a type of system;passed
+http://www.w3.org/ns/ssn;["FeatureOfInterest"];http://www.w3.org/ns/ssn;What is feature of interest?;passed
+http://www.w3.org/ns/ssn;'["System","implements","Procedure"]';http://www.w3.org/ns/ssn;A system implements a procedure;passed
+http://www.w3.org/ns/ssn;'["System","hasSubSystem"]';http://www.w3.org/ns/ssn;A system can have subsystems;passed
+http://www.w3.org/ns/ssn;'["Procedure","hasInput","Input"]';http://www.w3.org/ns/ssn;A procedure has an input;passed
+http://www.w3.org/ns/ssn;["Sensor"];http://www.w3.org/ns/ssn;What is a sensor?;passed
+http://www.w3.org/ns/ssn;'["Sensor","detects","Stimulus"]';http://www.w3.org/ns/ssn;Sensor detects an stimulus;passed
+http://www.w3.org/ns/ssn;["Stimulus"];http://www.w3.org/ns/ssn;What is a stimulus?;passed
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';http://www.w3.org/ns/ssn;An observation is originated by a stimulus;passed
+http://www.w3.org/ns/ssn;["Property"];http://www.w3.org/ns/ssn;What is a property?;passed
+http://www.w3.org/ns/ssn;'["Stimulus","isProxyFor","Property","isPropertyOf","FeatureOfInterest"]';http://www.w3.org/ns/ssn;The stimulus is proxy for a property;passed
+http://www.w3.org/ns/ssn;'["Actuator","madeActuation","Actuation"]';http://www.w3.org/ns/ssn;An actuator mades only actuations;passed
+http://www.w3.org/ns/ssn;'["Procedure","implementedBy","System"]';http://www.w3.org/ns/ssn;A procedure is implemented by a system;passed
+http://www.w3.org/ns/ssn;'["Deployment","deployedOnPlatform","Platform"]';http://www.w3.org/ns/ssn;A deplopyment is deployed in a platform;passed
+http://www.w3.org/ns/ssn;'["Sampling","hasFeatureOfInterest","FeatureOfInterest"]';http://www.w3.org/ns/ssn;A sampling has one feature of interest;passed
+https://w3id.org/saref#;'["Device","hasFunction","SensingFunction"]';http://www.w3.org/ns/ssn;A device can be used for  the purpose of sensing;undefined
+https://w3id.org/saref#;'["Water","Commodity","Gas"]';http://www.w3.org/ns/ssn;Water or gas are examples of commodities;undefined
+https://w3id.org/saref#;'["Device","isUsedFor","Commodity"]';http://www.w3.org/ns/ssn;A device can be used for  the purpose of offering a commodity;undefined
+https://w3id.org/saref#;'["EnergyRelated","Device","BuildingRelated","FunctionRelated"]';http://www.w3.org/ns/ssn;The devices can belong to several categories;undefined
+https://w3id.org/saref#;'["EventFunction","Function","MeteringFunction","SensingFunction","ActuatingFunction"]';http://www.w3.org/ns/ssn;"Examples of functions are the  the actuating; sensing; metering or event functions";undefined
+https://w3id.org/saref#;["Function"];http://www.w3.org/ns/ssn;A function represents the functionality necessary to accomplish the task for which a device is designed;undefined
+https://w3id.org/saref#;'["EnergyMeter","hasFunction","MeteringFunction"]';http://www.w3.org/ns/ssn;An energy meter is a device that has category Meter;undefined
+https://w3id.org/saref#;'["EnergyMeter","consistsOf","Meter"]';http://www.w3.org/ns/ssn;An energy meter is a device that consists of a meter;undefined
+https://w3id.org/saref#;'["Load","EnergyRelated","Storage","Generator"]';http://www.w3.org/ns/ssn;"The EnergyRelated category can be specialized into: Load; Generator and Storage";undefined
+https://w3id.org/saref#;'["LightingDevice","FunctionRelated","Actuator","Appliance","Meter","Device","HVAC"]';http://www.w3.org/ns/ssn;"The FunctionRelated category can be specialized into: Actuator; Applicance; HVAC; Lighting; Meter; MicroRenewable; Multimedia; Network; Sensor";undefined
+https://w3id.org/saref#;'["EnergyRelated","Device","BuildingRelated","FunctionRelated"]';http://www.w3.org/ns/ssn;"The devices can be classified into categories: FunctionRelated; EneryRelated and BuildingRelated";undefined
+https://w3id.org/saref#;'["Device","hasDescription","string"]';http://www.w3.org/ns/ssn;A device can optionally  have a description;undefined
+https://w3id.org/saref#;'["Device","hasModel","string"]';http://www.w3.org/ns/ssn;A device shall have a model property;undefined
+https://w3id.org/saref#;'["Device","hasModel","string"]';http://www.w3.org/ns/ssn;A device shall have a model property;undefined
+https://w3id.org/saref#;'["WashingMachine","Device","TemperatureSensor","EnergyMeter"]';http://www.w3.org/ns/ssn;"Examples of devices are a light switch; a temperature sensor; an energy meter; a washing machine";undefined
+https://w3id.org/saref#;'["Device","hasFunction","Function"]';http://www.w3.org/ns/ssn;A device performs one or more functions;undefined
+https://w3id.org/saref#;["Device"];http://www.w3.org/ns/ssn;What is a device?;undefined
+https://w3id.org/saref#;'["CloseCommand","Command","ToggleCommand","OffCommand","OnCommand"]';http://www.w3.org/ns/ssn;"The commands can be: on; off; open; toggle; close; startm pause; step up; step down; set level; get and notify";undefined
+https://w3id.org/saref#;'["Device","hasState","State"]';http://www.w3.org/ns/ssn;A device can be found in a correponding state;undefined
+https://w3id.org/saref#;'["EnergyMeter","Meter"]';http://www.w3.org/ns/ssn;An energy meter is a device that has category Meter;undefined
+https://w3id.org/saref#;'["Meter","hasFunction","MeteringFunction"]';http://www.w3.org/ns/ssn;A meter performs a metering function;undefined
+https://w3id.org/saref#;'["Meter","FunctionRelated"]';http://www.w3.org/ns/ssn;A meter is a functionRelated device ;undefined
+https://w3id.org/saref#;'["DimmerLamp","control","Light"]';http://www.w3.org/ns/ssn;A dimmer lamp performs an actuating level control ;undefined
+https://w3id.org/saref#;'["DimmerLamp","performs","LevelControl"]';http://www.w3.org/ns/ssn;A dimmer lamp performs an actuating level control ;undefined
+https://w3id.org/saref#;'["DimmerLamp","Actuator","Lighting"]';http://www.w3.org/ns/ssn;A dimmer lamp is a device that has category Lighting and Actuator;undefined
+https://w3id.org/saref#;'["DoorSwitch","accomplishes","Safety"]';http://www.w3.org/ns/ssn;A door switch is used for the purpose of controlling doors;undefined
+https://w3id.org/saref#;'["DoorSwitch","hasFunction","OpenCloseFunction"]';http://www.w3.org/ns/ssn;A door switch  performs the open/close function;undefined
+https://w3id.org/saref#;'["DoorSwitch","consistsOf","Switch"]';http://www.w3.org/ns/ssn;A door switch is a device that consists of a switch;undefined
+https://w3id.org/saref#;'["Switch","Actuator"]';http://www.w3.org/ns/ssn; A switch is a device that has category Actuator;undefined
+https://w3id.org/saref#;'["Command","actsUpon","State"]';http://www.w3.org/ns/ssn;A command can act upon a state  to represent that the consequence of a command can be a change of state of the device;undefined
+https://w3id.org/saref#;'["SmokeSensor","measuresProperty","Smoke"]';http://www.w3.org/ns/ssn;A smoke sensor  is used for the purpose of sensing smoke;undefined
+https://w3id.org/saref#;'["SmokeSensor","hasFunction","SensingFunction","EventFunction"]';http://www.w3.org/ns/ssn;A smoke sensor performs a sensing and event function;undefined
+https://w3id.org/saref#;'["SmokeSensor","consistsOf","Sensor"]';http://www.w3.org/ns/ssn;A smoke sensor is a device that consists of a sensor;undefined
+https://w3id.org/saref#;'["SmokeSensor","Sensor"]';http://www.w3.org/ns/ssn;A smoke sensor is a device that has category Sensor;undefined
+https://w3id.org/saref#;'["WashingMachine","hasFunction","StartStopFunction"]';http://www.w3.org/ns/ssn;A washing machine performs an actuating start/pause function;undefined
+https://w3id.org/saref#;'["WashingMachine","accomplishes","Washing","Task"]';http://www.w3.org/ns/ssn;A washing machine accomplishes the task of washing ;undefined
+https://w3id.org/saref#;'["WashingMachine","Appliance","Load"]';http://www.w3.org/ns/ssn;A washing machine is a device that has category Appliance  and Load;undefined
+https://w3id.org/saref#;'["TemperatureSensor","hasFunction","SensingFunction"]';http://www.w3.org/ns/ssn;A temperature senso performs the sensing function and is used for the purpose of sensing temperature;undefined
+https://w3id.org/saref#;'["TemperatureSensor","consistsOf","Sensor"]';http://www.w3.org/ns/ssn;A temperature sensor consists of a sensor;undefined
+https://w3id.org/saref#;'["TemperatureSensor","Sensor"]';http://www.w3.org/ns/ssn;A temperature sensor is a device that has category sensor;undefined
+https://w3id.org/saref#;'["OnOffFunction","ActuatingFunction","LevelControlFunction"]';http://www.w3.org/ns/ssn;"An actuating function can be specialized into on/off; open/close; start/stop or level control functions";undefined
+https://w3id.org/saref#;'["MeteringFunction","Function","SensingFunction","ActuatingFunction","EventFunction"]';http://www.w3.org/ns/ssn;A function can belong to a function category;undefined
+https://w3id.org/saref#;'["Function","hasCommand","Command"]';http://www.w3.org/ns/ssn;A function shall have at least one command associated to it;undefined
+https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';http://www.w3.org/ns/ssn;A sensor performs a sensing function;undefined
+https://w3id.org/saref#;'["Sensor","Device"]';http://www.w3.org/ns/ssn;A device may consists of other devices;undefined
+https://w3id.org/saref#;'["Device","consistsOf"]';http://www.w3.org/ns/ssn;A device may consists of other devices;undefined
+https://w3id.org/saref#;'["Temperature","Property","Energy","Smoke"]';http://www.w3.org/ns/ssn;"Examples of properties are temperature; energy or smoke";undefined
+https://w3id.org/saref#;'["Function","hasCommand","Command","Device","hasFunction","NotifyCommand"]';http://www.w3.org/ns/ssn;A device can be used for notifying  a property;undefined
+https://w3id.org/saref#;'["Device","measuresProperty","Property"]';http://www.w3.org/ns/ssn;A device can be used for measuring a property;undefined

@@ -35,10 +35,8 @@ public class Implementation {
                 if (cls.toString().replace(">","").replace("<","").equals(op.getSubject().toString().replace("<","").replace(">",""))) {
                     if (op.getProperty().toString().contains("http://w3id.org/def/vtc#desiredBehaviour")) {
                         purpose = op.getValue().toString().replace("\"","").replace("  "," ").replace("^^xsd:string","").trim();
-                        System.out.println("op2 "+op.getValue());
                         purposes.add(purpose);
                         tc.setPurpose(purposes);
-                        System.out.println("purposes "+ purposes);
                     } else if (op.getProperty().toString().contains("http://purl.org/dc/terms/identifier")) {
                         source = op.getValue().toString().replace("\"","");
                         tc.setSource(source);
@@ -46,14 +44,13 @@ public class Implementation {
                         description = op.getValue().toString().replace("\"","");
                         tc.setDescription(description);
                     }
-                }else if(op.getProperty().toString().contains("http://purl.org/dc/terms/references")){
+                }else if(op.getProperty().toString().contains("http://purl.org/dc/terms/source")){
                     tc.setProvenance(op.getValue().toString().replace("\"","").replace("  "," ").replace("^^xsd:string","").trim());
                 }
             }
             for (OWLDataPropertyAssertionAxiom dp : ontology.getAxioms(AxiomType.DATA_PROPERTY_ASSERTION)) {
                 if (cls.toString().replace(">","").replace("<","").equals(dp.getSubject().toString().replace("<","").replace(">",""))) {
                     if (dp.getProperty().toString().contains("http://w3id.org/def/vtc#desiredBehaviour")) {
-                        System.out.println("entra tambien");
                         purpose = dp.getObject().toString().replace("\"","").replace("  "," ").replace("^^xsd:string","").trim();
                         purposes.add(purpose);
                         tc.setPurpose(purposes);
@@ -65,19 +62,20 @@ public class Implementation {
                         tc.setDescription(description);
                     }
                 }else if(dp.getProperty().toString().contains("http://purl.org/dc/terms/references")){
-                    System.out.println("entra provenance");
                     tc.setProvenance(dp.getObject().toString().replace("\"","").replace("  "," ").replace("^^xsd:string","").trim());
                 }
             }
-            testsuite.add(tc);
+            if(tc.getPurpose().size()>0)
+                testsuite.add(tc);
         }
         return testsuite;
     }
 
     public static void processReqsExpressionTemplates(String purpose, TestCaseImplementation testCase){
+
         purpose.replaceAll("  "," ");
         String purposecloned= purpose.toLowerCase();
-        if(purposecloned.matches("[^\\s]+ subclassof [^\\s]+ some [^\\s]+ or [^\\s]+")){
+        if(purposecloned.matches("[^\\s]+ subclassof [^\\s]+ only [^\\s]+ or [^\\s]+")){
             unionTest(purpose.replace(","," "),"union", testCase);
         }else if(purposecloned.matches("[^\\s]+ subclassof [^\\s]+ value [^\\s]+")){
             individualValue(purpose.replace(","," "),testCase);
@@ -147,7 +145,7 @@ public class Implementation {
             subClassTest(purpose, "strict subclass",testCase);
         }
         else{
-            System.out.println("not match found");
+            System.out.println("not match found  in implementation"+ purpose);
         }
     }
 
@@ -181,20 +179,10 @@ public class Implementation {
                 OWLAxiom relatedToDesignAssertion = dataFactory.getOWLObjectPropertyAssertionAxiom(relatedToDesign, subject, design);
                 manager.addAxiom(ont, relatedToDesignAssertion);
                 /*Add precondition*/
-                //String[] purposes = tc.getPurpose()
                 ArrayList<Integer> array = new ArrayList();
-                // for (String purpose : tc.getPurpose())
                 processReqsExpressionTemplates(purpose, ti);
                 ArrayList<String> precondarray = new ArrayList<>();
                 String preconditionquery = "";
-
-     /*   preconditionquery+=  "ASK{";
-        for(String prec: ti.getPrecondition()) {
-            if(!prec.contains("/")|| prec.contains("#")) {
-                preconditionquery +=  prec + ",";
-            }
-        }
-        preconditionquery+="}";*/
 
                 for (String query : ti.getPrecondition()) {
                     preconditionquery = "";
@@ -1549,7 +1537,7 @@ public class Implementation {
 
     /*for union */
     public static ArrayList<String> unionTest(String purpose, String type, TestCaseImplementation testCase){
-        Pattern p = Pattern.compile("(.*) subclassOf (.*) some (.*) or (.*)", Pattern.CASE_INSENSITIVE);
+        Pattern p = Pattern.compile("(.*) subclassOf (.*) only (.*) or (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
         /*Generation of classes*/

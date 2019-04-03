@@ -4,8 +4,10 @@ import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class Ontology {
     public OWLOntology ontology;
@@ -74,44 +76,6 @@ public class Ontology {
 
     public void setProv(IRI prov) {
         this.prov = prov;
-    }
-
-    public HashMap<String, IRI> getClasses(){
-        HashMap<String, IRI> hashMapClasses = new HashMap<String, IRI>();
-        Iterator<OWLClass> iter = ontology.getClassesInSignature(true).iterator();
-        while(iter.hasNext()){
-            OWLClass nextClass=iter.next();
-            if(!hashMapClasses.containsKey(nextClass.getIRI().getFragment().toString()))
-                hashMapClasses.put(nextClass.getIRI().getFragment().toString(),nextClass.getIRI());
-            else{
-                String[] uri = nextClass.getIRI().getNamespace().toString().split("/");
-                hashMapClasses.put(uri[uri.length-1]+nextClass.getIRI().getFragment().toString(),nextClass.getIRI());
-            }
-        }
-        return  hashMapClasses;
-
-    }
-
-    public HashMap<String, IRI> getObjectProperties(){
-        HashMap<String, IRI> hashMapProp = new HashMap<String, IRI>();
-        Iterator<OWLObjectProperty> iter = ontology.getObjectPropertiesInSignature(true).iterator();
-
-        while(iter.hasNext()){
-            OWLObjectProperty nextProp=iter.next();
-            hashMapProp.put(nextProp.getIRI().getFragment().toString(),nextProp.getIRI());
-        }
-        return  hashMapProp;
-    }
-
-    public HashMap<String, IRI> getDatatypeProperties(){
-        HashMap<String, IRI> hashMapdataProp = new HashMap<String, IRI>();
-        Iterator<OWLDataProperty> iter = ontology.getDataPropertiesInSignature(true).iterator();
-
-        while(iter.hasNext()){
-            OWLDataProperty nextProp=iter.next();
-            hashMapdataProp.put(nextProp.getIRI().getFragment().toString(),nextProp.getIRI());
-        }
-        return  hashMapdataProp;
     }
 
 

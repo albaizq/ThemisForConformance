@@ -2,12 +2,14 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc:    <http://purl.org/dc/terms/> .
 @prefix vtc: <http://w3id.org/def/vtc#> .
-@prefix  :     <> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  :     <http://vicinity.iot.linkeddata.es/vicinity/testing/testsuite-saref.ttl#> .
 
 
 
 :TestsuiteSAREF rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
-            dc:references <https://w3id.org/saref#>.
+            dcterms:source <https://w3id.org/saref#>.
 
 :Test-case1 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteSAREF;
@@ -28,3 +30,310 @@
 	vtc:desiredBehaviour "TemperatureSensor subClassOf Device";
 	vtc:desiredBehaviour "EnergyMeter subClassOf Device";
 	vtc:desiredBehaviour "WashingMachine subClassOf Device".
+
+:Test-case4 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref4>;
+	dc:description "A device shall have a model property";
+	vtc:desiredBehaviour "Device subClassOf hasModel max 1 string". 
+
+:Test-case5 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref5>;
+	dc:description "A device shall have a model property";
+	vtc:desiredBehaviour "Device subClassOf hasModel max 1 string".
+
+:Test-case6 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref6>;
+	dc:description "A device can optionally  have a description";
+	vtc:desiredBehaviour "Device subclassOf hasDescription only string".
+
+:Test-case7 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref12>;
+	dc:description "The devices can be classified into categories: FunctionRelated, EneryRelated and BuildingRelated";
+	vtc:desiredBehaviour "FunctionRelated subClassOf Device";
+	vtc:desiredBehaviour "EnergyRelated subClassOf Device";
+	vtc:desiredBehaviour "BuildingRelated subClassOf Device".
+
+:Test-case8 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref13>;
+	dc:description "The FunctionRelated category can be specialized into: Actuator, Applicance, HVAC, Lighting, Meter, MicroRenewable, Multimedia, Network, Sensor";
+	vtc:desiredBehaviour "Actuator subclassOf  FunctionRelated";
+	vtc:desiredBehaviour "Appliance subclassOf  FunctionRelated";
+	vtc:desiredBehaviour "HVAC subclassOf FunctionRelated";
+	vtc:desiredBehaviour "LightingDevice  subclassOf  FunctionRelated";
+	vtc:desiredBehaviour "Meter subclassOf Device".
+
+:Test-case9 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref14>;
+	dc:description "The EnergyRelated category can be specialized into: Load, Generator and Storage";
+	vtc:desiredBehaviour "Load subclassOf EnergyRelated";
+	vtc:desiredBehaviour "Generator subclassOf EnergyRelated";
+	vtc:desiredBehaviour "Storage subclassOf EnergyRelated".
+
+:Test-case10 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref15>;
+	dc:description "The devices can belong to several categories";
+	vtc:desiredBehaviour "FunctionRelated subclassOf  Device";
+	vtc:desiredBehaviour "EnergyRelated subclassOf  Device";
+	vtc:desiredBehaviour "BuildingRelated subclassOf  Device".
+
+:Test-case11 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref16>;
+	dc:description "A device can be used for  the purpose of offering a commodity";
+	vtc:desiredBehaviour "Device subclassOf isUsedFor only Commodity".
+
+:Test-case12 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref17>;
+	dc:description "Water or gas are examples of commodities";
+	vtc:desiredBehaviour "Water subclassOf Commodity";
+	vtc:desiredBehaviour "Gas subclassOf Commodity".	
+
+:Test-case13 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref18>;
+	dc:description "A device can be used for  the purpose of sensing";
+	vtc:desiredBehaviour "Device subclassOf hasFunction some SensingFunction".	
+
+:Test-case14 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref19>;
+	dc:description "A device can be used for measuring a property";
+	vtc:desiredBehaviour "Device subclassOf measuresProperty only Property".	
+
+:Test-case15 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref20>;
+	dc:description "A device can be used for notifying  a property";
+	vtc:desiredBehaviour "Device subclassOf hasFunction min 1 Function";	
+	vtc:desiredBehaviour "NotifyCommand subclassOf Command";
+	vtc:desiredBehaviour "Function subClassOf hasCommand min 1 Command".
+
+:Test-case16 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref21>;
+	dc:description "Examples of properties are temperature, energy or smoke";
+	vtc:desiredBehaviour "Temperature subclassOf  Property";
+	vtc:desiredBehaviour "Smoke subclassof  Property";
+	vtc:desiredBehaviour "Energy subclassof  Property".	
+
+:Test-case17 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref23>;
+	dc:description "A device may consists of other devices";
+	vtc:desiredBehaviour "Device subclassOf consistsOf  only Device".	
+
+:Test-case18 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref24>;
+	dc:description "A device may consists of other devices";
+	vtc:desiredBehaviour "Sensor subClassOf Device".	
+
+:Test-case19 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref25>;
+	dc:description "A sensor performs a sensing function";
+	vtc:desiredBehaviour "Sensor subclassOf hasFunction some SensingFunction".	
+
+:Test-case20 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref26>;
+	dc:description "A temperature sensor is a device that has category sensor";
+	vtc:desiredBehaviour "TemperatureSensor subClassOf Sensor".	
+
+:Test-case21 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref27>;
+	dc:description "A temperature sensor consists of a sensor";
+	vtc:desiredBehaviour "TemperatureSensor subclassOf consistsOf some Sensor".	
+
+:Test-case22 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref28>;
+	dc:description "A temperature senso performs the sensing function and is used for the purpose of sensing temperature";
+	vtc:desiredBehaviour "TemperatureSensor subclassOf hasFunction some SensingFunction".	
+
+:Test-case23 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref29>;
+	dc:description "A washing machine is a device that has category Appliance  and Load";
+	vtc:desiredBehaviour "WashingMachine subClassOf Appliance and Load".
+
+:Test-case24 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref30>;
+	dc:description "A washing machine accomplishes the task of washing ";
+	vtc:desiredBehaviour "WashingMachine subclassOf accomplishes value  Washing";
+	vtc:desiredBehaviour "Washing type Task".	
+
+:Test-case25 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref31>;
+	dc:description "A washing machine performs an actuating start/pause function";
+	vtc:desiredBehaviour "WashingMachine subclassOf hasFunction some StartStopFunction".	
+
+:Test-case26 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref32>;
+	dc:description "A smoke sensor is a device that has category Sensor";
+	vtc:desiredBehaviour "SmokeSensor subClassOf Sensor".	
+
+:Test-case27 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref33>;
+	dc:description "A smoke sensor is a device that consists of a sensor";
+	vtc:desiredBehaviour "SmokeSensor subclassOf consistsOf some Sensor".	
+
+:Test-case28 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref34>;
+	dc:description "A smoke sensor performs a sensing and event function";
+	vtc:desiredBehaviour "SmokeSensor subclassOf hasFunction some  SensingFunction";
+	vtc:desiredBehaviour "SmokeSensor subclassOf hasFunction some EventFunction".	
+
+:Test-case29 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref35>;
+	dc:description "A smoke sensor  is used for the purpose of sensing smoke";
+	vtc:desiredBehaviour "SmokeSensor subclassOf measuresProperty some Smoke".	
+
+:Test-case30 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref36>;
+	dc:description " A switch is a device that has category Actuator";
+	vtc:desiredBehaviour "Switch subClassOf Actuator".	
+
+:Test-case31 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref37>;
+	dc:description "A door switch is a device that consists of a switch";
+	vtc:desiredBehaviour "DoorSwitch subclassOf consistsOf some Switch".	
+
+:Test-case32 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref38>;
+	dc:description "A door switch  performs the open/close function";
+	vtc:desiredBehaviour "DoorSwitch subclassOf hasFunction some OpenCloseFunction".	
+
+:Test-case33 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref39>;
+	dc:description "A door switch is used for the purpose of controlling doors";
+	vtc:desiredBehaviour "DoorSwitch subclassOf accomplishes value Safety".	
+
+:Test-case34 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref40>;
+	dc:description "A dimmer lamp is a device that has category Lighting and Actuator";
+	vtc:desiredBehaviour "DimmerLamp subClassOf Lighting"; 
+	vtc:desiredBehaviour "DimmerLamp subClassOf Actuator".	
+
+
+:Test-case35 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref41>;
+	dc:description "A dimmer lamp performs an actuating level control ";
+	vtc:desiredBehaviour "DimmerLamp subclassOf performs some LevelControl".	
+
+:Test-case36 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref42>;
+	dc:description "A dimmer lamp performs an actuating level control ";
+	vtc:desiredBehaviour "DimmerLamp subclassOf control some Light".	
+
+:Test-case37 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref43>;
+	dc:description "A meter is a functionRelated device ";
+	vtc:desiredBehaviour "Meter subClassOf FunctionRelated".	
+
+:Test-case38 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref44>;
+	dc:description "A meter performs a metering function";
+	vtc:desiredBehaviour "Meter subclassOf hasFunction some MeteringFunction".	
+
+:Test-case39 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref45>;
+	dc:description "An energy meter is a device that has category Meter";
+	vtc:desiredBehaviour "EnergyMeter subClassOf Meter".	
+
+:Test-case40 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref46>;
+	dc:description "An energy meter is a device that consists of a meter";
+	vtc:desiredBehaviour "EnergyMeter subclassOf consistsOf some Meter".
+
+
+:Test-case41 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref47>;
+	dc:description "An energy meter is a device that has category Meter";
+	vtc:desiredBehaviour "EnergyMeter subclassOf hasFunction some MeteringFunction".
+
+:Test-case42 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref48>;
+	dc:description "A function represents the functionality necessary to accomplish the task for which a device is designed";
+	vtc:desiredBehaviour "Function type Class".
+
+:Test-case43 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref49>;
+	dc:description "Examples of functions are the  the actuating, sensing, metering or event functions";
+	vtc:desiredBehaviour "ActuatingFunction subClassOf Function";
+	vtc:desiredBehaviour "SensingFunction subClassOf Function";
+	vtc:desiredBehaviour "MeteringFunction subClassOf Function";
+	vtc:desiredBehaviour "EventFunction subClassOf Function".
+
+:Test-case44 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref50>;
+	dc:description "An actuating function can be specialized into on/off, open/close, start/stop or level control functions";
+	vtc:desiredBehaviour "OnOffFunction subClassOf ActuatingFunction";
+	vtc:desiredBehaviour "LevelControlFunction subClassOf ActuatingFunction".
+
+:Test-case45 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref51>;
+	dc:description "A function can belong to a function category";
+	vtc:desiredBehaviour "ActuatingFunction subClassOf Function";
+	vtc:desiredBehaviour "SensingFunction subClassOf Function";
+	vtc:desiredBehaviour "MeteringFunction subClassOf Function";
+	vtc:desiredBehaviour "EventFunction subClassOf Function".
+
+:Test-case46 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref52>;
+	dc:description "A function shall have at least one command associated to it";
+	vtc:desiredBehaviour "Function subClassOf hasCommand min 1 Command".
+
+:Test-case47 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref53>;
+	dc:description "The commands can be: on, off, open, toggle, close, startm pause, step up, step down, set level, get and notify";
+	vtc:desiredBehaviour "OnCommand subClassOf Command";
+	vtc:desiredBehaviour "OffCommand subClassOf Command";
+	vtc:desiredBehaviour "ToggleCommand subClassOf Command";
+	vtc:desiredBehaviour "CloseCommand subClassOf Command".
+
+:Test-case48 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref54>;
+	dc:description "A device can be found in a correponding state";
+	vtc:desiredBehaviour "Device subclassOf hasState only State".
+
+:Test-case49 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteSAREF;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-saref-results.html#saref55>;
+	dc:description "A command can act upon a state  to represent that the consequence of a command can be a change of state of the device";
+	vtc:desiredBehaviour "Command subclassOf actsUpon only  State".
+

@@ -9,6 +9,7 @@ import tests.TestCaseImplementation;
 import tests.TestCaseResult;
 import utils.Ontology;
 import utils.ProcessCSV;
+import utils.Utils;
 
 
 import java.io.File;
@@ -32,18 +33,23 @@ public class main {
             System.exit(1);
         }
 
-        ArrayList<Ontology> ontologies = loadOntologies(args[1]);
-        ArrayList<TestCaseDesign> testsuiteDesign = loadTests(args[1]);
-        JSONArray tableResultsComplete = new JSONArray();
+        ArrayList<Ontology> ontologies = Utils.loadOntologies(args[1]);
+        ArrayList<TestCaseDesign> testsuiteDesign = Utils.loadTests(args[1]);
+        JSONArray tableResultsAllOntologies = new JSONArray();
         JSONArray gottotal = new JSONArray();
-        //Create GoT
+
+        //create implementations
+
         int i = 1;
         for(Ontology ontology: ontologies){
-            JSONArray got = createGot(testsuiteDesign, ontology);
+
+
+            //create got per ontology
+            JSONArray got = Utils.createGot(testsuiteDesign, ontology);
             String csv = CDL.toString(got).replace(",", ";");
             FileUtils.writeStringToFile(new File("got-o"+i+".csv"), csv);
             got = ProcessCSV.processCSVGoT("got-o"+i+".csv");
-            //if ok then
+            //if the got is ok then
             System.out.println("Is the GoT ok? ");
             Scanner scanner = new Scanner(System.in);
             String result = scanner.nextLine();
@@ -52,165 +58,130 @@ public class main {
                 scanner = new Scanner(System.in);
                 result = scanner.nextLine();
             }
-            System.out.println("implement tests...");
-            //Implement tests
             got = ProcessCSV.processCSVGoT("got-o"+i+".csv");
             for(int j = 0; j< got.length();j++) {
                 gottotal.put(got.getJSONObject(j));
             }
-            ArrayList<TestCaseImplementation> testsuiteImpl = Implementation.createTestImplementation(testsuiteDesign);
-
-            // Execute all tests on each ontology
+            // Execute all tests on each ontology using the got
             Execution exec = new Execution();
             JSONArray tableResults = new JSONArray();
             JSONObject array = new JSONObject();
             ArrayList<TestCaseResult> testCaseResults = new ArrayList<>();
+            System.out.println("create individual results...");
             for (TestCaseDesign testCaseDesign : testsuiteDesign) {
                 ArrayList<TestCaseImplementation> implementations = new ArrayList<>();
+                ArrayList<TestCaseImplementation> testsuiteImpl = Implementation.createTestImplementation(testsuiteDesign);
+                //first the implementation of the test is created
                 for (TestCaseImplementation tci : testsuiteImpl) {
                     if (testCaseDesign.getUri().toString().equals(tci.getRelatedTestDesign().toString())) {
                         implementations.add(tci);
                     }
                 }
-                try {
-                    ArrayList<Ontology> ontos = new ArrayList<>();
-                    ontos.add(ontology);
-                    testCaseResults = exec.execute(implementations, testCaseDesign,ontology , got);
-                    array = Execution.printReportPerOntology(ontology, testCaseDesign, testCaseResults);
-                } catch (URISyntaxException e) {
-                    e.printStackTrace();
-                }
+                testCaseResults = exec.execute(implementations, testCaseDesign,ontology , got);
+                // this is a report PER ONTOLOGY (individual)
+                array = Execution.printReportPerOntology(ontology, testCaseDesign, testCaseResults);
                 tableResults.put(array);
             }
-            /*Test results*/
+            /*Store the results*/
+            /*Individual results*/
             String csvResults = CDL.toString(tableResults).replace(",", ";").replace("\";\"", "\",\"");
-            System.out.println("store results...");
+            System.out.println("store individual results...");
             FileUtils.writeStringToFile(new File("results-o"+i+".csv"), csvResults);
             for(int j = 0; j< tableResults.length();j++) {
-                tableResultsComplete.put(tableResults.getJSONObject(j));
+                tableResultsAllOntologies.put(tableResults.getJSONObject(j));
             }
             i++;
         }
-        /*Analyse joint results*/
+        /*Join results*/
+        System.out.println("create joint results...");
+        JSONArray jointResults = jointResults( testsuiteDesign,  ontologies,  tableResultsAllOntologies,  gottotal );
+        System.out.println("store joint results...");
+        String csvResults = CDL.toString(jointResults);
+        if(csvResults != null){
+            csvResults = csvResults.replace(",", ";").replace("\";\"", "\",\"");
+        }
+        FileUtils.writeStringToFile(new File("jointResults.csv"), csvResults);
 
-        ArrayList<String> terms = new ArrayList<>();
-        ArrayList<String> terms2 = new ArrayList<>();
-        JSONArray jointResults = new JSONArray();
-        HashMap<Ontology, ArrayList<String>> termsInvolved = new HashMap<>();
+        /*TODO Requirements analysis*/
+        /*if two requirements has the same formalization --> they are related*/
+        JSONArray relatedRequirments = new JSONArray();
+
         for (TestCaseDesign testCaseDesign : testsuiteDesign) {
-            ArrayList<String> ontologies1= new ArrayList<>();
-            for(Ontology ontology: ontologies){
-                for(int j = 0; j< tableResultsComplete.length();j++) {
-                    JSONObject obj = tableResultsComplete.getJSONObject(j);
+            ArrayList<String> realtedReqs = new ArrayList<>();
+            realtedReqs.add(testCaseDesign.getDescription());
+            for (TestCaseDesign testCaseDesign2 : testsuiteDesign) {
+                if (!testCaseDesign.getUri().toString().equals(testCaseDesign2.getUri().toString())) {
+                    for(String purpose1: testCaseDesign.getPurpose()){
+                        for(String purpose2: testCaseDesign2.getPurpose()){
+                            System.out.println(purpose2);
+                            System.out.println(purpose1);
+                            if(purpose1.trim().equals(purpose2.trim())){
+                                realtedReqs.add(testCaseDesign2.getDescription()); /*TODO el containts no funciona*/
+                                break;
+                            }
+                        }
+                    }
+
+                }
+            }
+            if(realtedReqs.size()>1) {
+                JSONObject objresults = new JSONObject();
+                objresults.put("Relations", testCaseDesign.getDescription());
+                relatedRequirments.put(objresults);
+            }
+        }
+        System.out.println(relatedRequirments);
+    }
+
+
+
+    public static JSONArray jointResults(ArrayList<TestCaseDesign> testsuiteDesign, ArrayList<Ontology> ontologies, JSONArray tableResultsAllOntologies, JSONArray gottotal ) throws JSONException {
+
+        JSONArray jointResults = new JSONArray();
+        HashMap<Ontology, ArrayList<String>> termsInvolvedInTest = new HashMap<>();
+        //if several ontologies passes the same tests, the terms involved in that test may be related
+        for (TestCaseDesign testCaseDesign : testsuiteDesign) {
+            ArrayList<String> termValueInOntology = new ArrayList<>(); // term with uri
+            ArrayList<String> termKeys = new ArrayList<>(); //term without uri
+            ArrayList<String> ontologiesRelated = new ArrayList<>();
+            for (Ontology ontology : ontologies) {
+                for (int j = 0; j < tableResultsAllOntologies.length(); j++) {
+                    JSONObject obj = tableResultsAllOntologies.getJSONObject(j);
+                   //get competency question of the requirement, and the ontology that passes the associated test
                     if (obj.has("Requirement description")) {
                         if (obj.getString("Requirement description").equals(testCaseDesign.getDescription()) && obj.getString("Ontology").equals(ontology.getProv().toString()) && obj.getString("Result").equals("passed")) {
-                            ontologies1.add(ontology.getProv().toString());
+                            ontologiesRelated.add(ontology.getProv().toString());
                             for (String purpose : testCaseDesign.getPurpose())
-                                terms2.addAll(processTestExpressionToExtractTerms(purpose));
-
-                            for (String term : terms2) {
-
+                                termKeys.addAll(processTestExpressionToExtractTerms(purpose));
+                            //get terms involved in the test
+                            for (String term : termKeys) {
                                 for (int k = 0; k < gottotal.length(); k++) {
                                     JSONObject gotelement = new JSONObject();
                                     gotelement = gottotal.getJSONObject(k);
                                     if (gotelement.getString("Term").equals(term) && gotelement.getString("Ontology").equals(ontology.getProv().toString())) {
-                                        if(!terms.contains(gotelement.getString("Value")))
-                                            terms.add(gotelement.getString("Value"));
+                                        if (!termValueInOntology.contains(gotelement.getString("Value")))
+                                            termValueInOntology.add(gotelement.getString("Value")); //get uri of the term
                                     }
                                 }
 
                             }
 
-                            termsInvolved.put(ontology, terms2);
+                            termsInvolvedInTest.put(ontology, termValueInOntology);
                         }
                     }
                 }
             }
-            if(ontologies1.size()>1) {
+            //store results
+            if (ontologiesRelated.size() > 1) {
                 JSONObject objresults = new JSONObject();
                 objresults.put("Requirement description", testCaseDesign.getDescription());
-                objresults.put("Ontologies that passes the test", ontologies1);
+                objresults.put("Ontologies that passes the test", ontologiesRelated);
                 objresults.put("Provenance", testCaseDesign.getProvenance());
-                objresults.put("Terms related", terms);
+                objresults.put("Terms related", termValueInOntology);
                 jointResults.put(objresults);
             }
-
         }
-        String csvResults = CDL.toString(jointResults);
-        if(csvResults.length()>0){
-            csvResults.replace(",", ";").replace("\";\"", "\",\"");
-        }
-        System.out.println("store results...");
-        FileUtils.writeStringToFile(new File("jointResults.csv"), csvResults);
-
-
-    }
-
-    public static JSONArray createGot(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology) throws Exception {
-
-        //Create GoT
-        System.out.println("create got...");
-        ArrayList<String> terms = new ArrayList<>();
-        for (TestCaseDesign test : testsuiteDesign) {
-            for (String purpose : test.getPurpose())
-                terms.addAll(Mapping.processTestExpressionToExtractTerms(purpose));
-        }
-        JSONArray got = new JSONArray();
-        int i = 1;
-
-        ArrayList<String> entities = new ArrayList();
-        Iterator it = ontology.getOntology().getSignature(true).iterator();
-        while (it.hasNext()) {
-            OWLEntity entity = (OWLEntity) it.next();
-            JSONObject ontologyobjterm = new JSONObject();
-            if (entity.getIRI().getFragment() != null) {
-                if (!entities.contains(entity.getIRI().getFragment().toString())) {
-                    entities.add(entity.getIRI().getFragment().toString());
-                    ontologyobjterm.put("Term", entity.getIRI().getFragment());
-                    ontologyobjterm.put("Value", entity.getIRI().toString()); //get the value with higher smilarity
-                    ontologyobjterm.put("Ontology", ontology.getProv());
-                    got.put(ontologyobjterm);
-                } else {
-                    entities.add(entity.getIRI().getFragment().toString());
-                    String[] uri = entity.getIRI().getNamespace().toString().split("/");
-                    ontologyobjterm.put("Term", uri[uri.length - 1] + entity.getIRI().getFragment().toString());
-                    ontologyobjterm.put("Value", entity.getIRI().toString()); //get the value with higher smilarity
-                    ontologyobjterm.put("Ontology", ontology.getProv());
-                    got.put(ontologyobjterm);
-                }
-            }
-        }
-        return got;
-    }
-
-    public static ArrayList<Ontology> loadOntologies(String file) throws Exception {
-
-        //Process CVS, list of ontologies and  tests
-        System.out.println("process csv...");
-        HashMap<String, String> ontoAndTest = ProcessCSV.processCSVVocabs(file);
-
-        ArrayList<Ontology> ontologies = new ArrayList<>();
-        for (Map.Entry<String, String> entry : ontoAndTest.entrySet()) {
-            //Load ontologies
-            Ontology ontology = new Ontology();
-            if(entry.getKey().length()!=0) {
-                ontology.load_ontologyURL(entry.getKey());
-                ontologies.add(ontology);
-            }
-        }
-       return  ontologies;
-    }
-
-    public static ArrayList<TestCaseDesign> loadTests(String file) throws Exception {
-
-        HashMap<String, String> ontoAndTest = ProcessCSV.processCSVVocabs(file);
-        ArrayList<TestCaseDesign> testsuiteDesign = new ArrayList<>();
-        for (Map.Entry<String, String> entry : ontoAndTest.entrySet()) {
-            // Load tests
-            System.out.println("load test...");
-            testsuiteDesign.addAll(Implementation.processTestCaseDesign(entry.getValue()));
-        }
-        return testsuiteDesign;
+        return jointResults;
     }
 
 

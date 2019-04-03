@@ -140,25 +140,8 @@ public class Execution {
                 ontology.getManager().applyChange(addAxiom);
         }
 
-        //File file = new File("corefin.ttl");
-        //ontology.manager.saveOntology(ontology.getOntology(), IRI.create(file.toURI()));
-        // System.out.println("*************************");
-        //System.out.println(ontology.getOntology().getAxioms());
-        //System.out.println("************************");
 
-        // System.exit(1);
-        ConsoleProgressMonitor progressMonitor = new ConsoleProgressMonitor();
-        //configuration.reasonerProgressMonitor= progressMonitor;
-        //OWLReasoner reasoner = factory.createReasoner(ontology.getOntology());
-        //System.out.println(ontology.getOntology());
-       // Reasoner reasoner=new Reasoner( ontology.getOntology());
         PelletReasoner reasoner = com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory.getInstance().createReasoner( ontology.ontology );
-       // reasoner.precomputeInferences();
-        //      /* System.out.println(reasoner.getReasonerName());
-       /* System.out.println(reasoner.isConsistent());
-        System.out.println(reasoner.getBufferingMode());
-        reasoner.precomputeInferences();*/
-
         String result;
         if(!reasoner.isConsistent())
             result = "inconsistent";
@@ -167,8 +150,6 @@ public class Execution {
         else
             result= "consistent";
 
-        // if(result == "inconsistent" || result == "unsatisfiable") {
-        // System.out.println(type);
         if(!type.equals("preparation")) {
             ontology.getManager().removeAxioms(ontology.getOntology(), axiommodify.stream().collect(Collectors.toSet()));
         }
@@ -176,7 +157,6 @@ public class Execution {
     }
 
     public void removePreparationAxioms(String textAxioms, Ontology ontology){
-
         Set<OWLAxiom> axioms = Utils.convertStringToAxioms(textAxioms.replace("\\\"", "\""));
         OWLDataFactory dataFactory = ontology.getManager().getOWLDataFactory();
         Configuration configuration = new Configuration();
@@ -218,9 +198,8 @@ public class Execution {
                 if (tc.getPreconditionQuery() != null) { //map the test terms with ontology terms and add the axioms to the ontology. If the addition results in a consistent ontology the preconditions are passed
                     for (String prec : tc.getPreconditionQuery()) {
                         String precondWithURI = Utils.mappingValue(prec, ontology.getProv().toString(), got); // all  mappings received by the webapp
+                       // System.out.println(precondWithURI);
                         realResult = tbox_test(precondWithURI, tc.getUri(), ontology.getManager(), ontology.getOntology());
-                        //System.out.println(realResult);
-                        //System.out.println(precondWithURI);
                         if (realResult.equals("false")) {
                             undefinedterms.add(Utils.getPrecTerm(prec).replace(">", "").replace("<", ""));
                         }
@@ -230,8 +209,6 @@ public class Execution {
                         if (tc.getPreparation() != null) {
                             // test preparation
                             String prepWithURI = Utils.mappingValue(tc.getPreparation(), ontology.getProv().toString(), got);
-                            //
-                            //System.out.println(prepWithURI);
                             realResult = abox_test(prepWithURI, ontology, "preparation");
                             if (!realResult.toLowerCase().contains("consistent")) {
                                 resultsforabsence.add("inconsistent");
@@ -245,7 +222,7 @@ public class Execution {
                                     //System.out.println(assertionWithURI);
                                     realResult = abox_test(assertionWithURI, ontology, "assertion");
                                     //System.out.println(realResult);
-                                    //System.out.println(tc.getAxiomExpectedResult().get(entry.getKey()));
+                                   // System.out.println(tc.getAxiomExpectedResult().get(entry.getKey()));
                                     if (realResult.toLowerCase().equals("consistent")) {
                                         resultsforabsence.add("consistent");
                                     } else {
@@ -288,8 +265,11 @@ public class Execution {
                     tr.setTestResult("passed");
                 //    System.out.println("passed");
                 }
+               // System.out.println("requirement "+ tr.getTestResult());
+
                 testsuiteResult.add(tr);
             }
+
 
 
         return  testsuiteResult;
@@ -316,14 +296,17 @@ public class Execution {
         if(finalResult==""){
             finalResult="passed";
         }
-
         objresults.put("Requirement description", requirement.getDescription());
         objresults.put("Result", finalResult);
         objresults.put("Ontology", onto.getProv());
         objresults.put("Provenance", requirement.getProvenance());
         ArrayList<String> terms = new ArrayList<>();
-        for(String purpose: requirement.getPurpose())
-            terms.addAll(processTestExpressionToExtractTerms(purpose));
+        for(String purpose: requirement.getPurpose()) {
+            for (String term: processTestExpressionToExtractTerms(purpose)) {
+                if(!terms.contains(term))
+                    terms.add(term);
+            }
+        }
         objresults.put("Terms involved", terms);
 
         return objresults;

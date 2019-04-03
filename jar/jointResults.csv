@@ -1,2 +1,11 @@
-Provenance,Terms related,Requirement description,Ontologies that passes the test
-http://www.w3.org/ns/ssn,'["http://www.w3.org/ns/ssn/Property","https://w3id.org/saref#Property"]',What is a property?,'["http://www.w3.org/ns/ssn","https://w3id.org/saref"]'
+Provenance;Terms related;Requirement description;Ontologies that passes the test
+http://www.w3.org/ns/ssn;'["http://www.w3.org/ns/sosa/Sensor","https://w3id.org/saref#Sensor"]';What is a sensor?;'["http://www.w3.org/ns/ssn","http://www.w3.org/ns/ssn","https://w3id.org/saref","https://w3id.org/saref"]'
+http://www.w3.org/ns/ssn;'["http://www.w3.org/ns/sosa/Actuator","https://w3id.org/saref#Actuator"]';What is an actuator?;'["http://www.w3.org/ns/ssn","https://w3id.org/saref"]'
+http://www.w3.org/ns/ssn;'["http://www.w3.org/ns/sosa/Sensor","https://w3id.org/saref#Sensor"]';What is a sensor?;'["http://www.w3.org/ns/ssn","http://www.w3.org/ns/ssn","https://w3id.org/saref","https://w3id.org/saref"]'
+http://www.w3.org/ns/ssn;'["http://www.w3.org/ns/ssn/Property","https://w3id.org/saref#Property"]';What is a property?;'["http://www.w3.org/ns/ssn","https://w3id.org/saref"]'
+https://w3id.org/saref#;'["https://w3id.org/saref#EnergyMeter","https://w3id.org/saref#hasFunction","https://w3id.org/saref#MeteringFunction"]';An energy meter is a device that has category Meter;'["https://w3id.org/saref","https://w3id.org/saref"]'
+https://w3id.org/saref#;'["https://w3id.org/saref#Device","https://w3id.org/saref#hasModel","http://www.w3.org/2001/XMLSchema#string"]';A device shall have a model property;'["https://w3id.org/saref","https://w3id.org/saref"]'
+https://w3id.org/saref#;'["https://w3id.org/saref#Device","https://w3id.org/saref#hasModel","http://www.w3.org/2001/XMLSchema#string"]';A device shall have a model property;'["https://w3id.org/saref","https://w3id.org/saref"]'
+https://w3id.org/saref#;'["https://w3id.org/saref#EnergyMeter","https://w3id.org/saref#Meter"]';An energy meter is a device that has category Meter;'["https://w3id.org/saref","https://w3id.org/saref"]'
+https://w3id.org/saref#;'["https://w3id.org/saref#Sensor","https://w3id.org/saref#Device"]';A device may consists of other devices;'["https://w3id.org/saref","https://w3id.org/saref"]'
+https://w3id.org/saref#;'["https://w3id.org/saref#Device","https://w3id.org/saref#consistsOf"]';A device may consists of other devices;'["https://w3id.org/saref","https://w3id.org/saref"]'
