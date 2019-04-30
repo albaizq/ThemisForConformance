@@ -1,84 +1,138 @@
 Provenance;Terms involved;Ontology;Requirement description;Result
-http://www.w3.org/ns/ssn;'["Procedure","hasOutput","Output"]';https://w3id.org/saref;A procedure has an output;undefined
-http://www.w3.org/ns/ssn;'["Sampling","hasResult","Result"]';https://w3id.org/saref;A sampling has a result;undefined
-http://www.w3.org/ns/ssn;'["Actuation","hasResult","Result"]';https://w3id.org/saref;An actuation has a result;undefined
-http://www.w3.org/ns/ssn;'["Sample","FeatureOfInterest","Result"]';https://w3id.org/saref;A sample is a type of feature of interest and result;undefined
-http://www.w3.org/ns/ssn;'["Deployment","forProperty","Property"]';https://w3id.org/saref;Deployment is associated to a property;undefined
-http://www.w3.org/ns/ssn;["Sensor"];https://w3id.org/saref;What is a sensor?;passed
-http://www.w3.org/ns/ssn;["Actuator"];https://w3id.org/saref;What is an actuator?;passed
-http://www.w3.org/ns/ssn;["Procedure"];https://w3id.org/saref;What is a procedure?;undefined
-http://www.w3.org/ns/ssn;["Deployment"];https://w3id.org/saref;What is a deployment?;undefined
-http://www.w3.org/ns/ssn;'["Platform","inDeployment","Deployment"]';https://w3id.org/saref;Platform has a deployment;undefined
-http://www.w3.org/ns/ssn;'["Platform","deployedSystem","System"]';https://w3id.org/saref;A platform is deployed by some system;undefined
-http://www.w3.org/ns/ssn;["System"];https://w3id.org/saref;What is a system?;undefined
-http://www.w3.org/ns/ssn;'["Sampling","hasResult","Sample"]';https://w3id.org/saref;A sampling is linked to at least one sample;undefined
-http://www.w3.org/ns/ssn;'["Sensor","observes","ObservableProperty"]';https://w3id.org/saref;A sensor observes only observable properties;undefined
-http://www.w3.org/ns/ssn;'["ObservableProperty","Property"]';https://w3id.org/saref;An observable property is a type of property;undefined
-http://www.w3.org/ns/ssn;'["ObservableProperty","isObservedBy","Sensor"]';https://w3id.org/saref;An observable property is observed by only sensors;undefined
-http://www.w3.org/ns/ssn;'["Observation","hasFeatureOfInterest","FeatureOfInterest"]';https://w3id.org/saref;An observation is related only to one feature of interest;undefined
-http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';https://w3id.org/saref;The observation is originated by  exactly one stimulus;undefined
-http://www.w3.org/ns/ssn;'["Observation","hasResult","Result"]';https://w3id.org/saref;An observation has only  results;undefined
-http://www.w3.org/ns/ssn;'["Sensor","System"]';https://w3id.org/saref;A sensor is a type of system;undefined
-http://www.w3.org/ns/ssn;["FeatureOfInterest"];https://w3id.org/saref;What is feature of interest?;undefined
-http://www.w3.org/ns/ssn;'["System","implements","Procedure"]';https://w3id.org/saref;A system implements a procedure;undefined
-http://www.w3.org/ns/ssn;'["System","hasSubSystem"]';https://w3id.org/saref;A system can have subsystems;undefined
-http://www.w3.org/ns/ssn;'["Procedure","hasInput","Input"]';https://w3id.org/saref;A procedure has an input;undefined
-http://www.w3.org/ns/ssn;["Sensor"];https://w3id.org/saref;What is a sensor?;passed
-http://www.w3.org/ns/ssn;'["Sensor","detects","Stimulus"]';https://w3id.org/saref;Sensor detects an stimulus;undefined
-http://www.w3.org/ns/ssn;["Stimulus"];https://w3id.org/saref;What is a stimulus?;undefined
-http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';https://w3id.org/saref;An observation is originated by a stimulus;undefined
-http://www.w3.org/ns/ssn;["Property"];https://w3id.org/saref;What is a property?;passed
-http://www.w3.org/ns/ssn;'["Stimulus","isProxyFor","Property","isPropertyOf","FeatureOfInterest"]';https://w3id.org/saref;The stimulus is proxy for a property;undefined
-http://www.w3.org/ns/ssn;'["Actuator","madeActuation","Actuation"]';https://w3id.org/saref;An actuator mades only actuations;undefined
-http://www.w3.org/ns/ssn;'["Procedure","implementedBy","System"]';https://w3id.org/saref;A procedure is implemented by a system;undefined
-http://www.w3.org/ns/ssn;'["Deployment","deployedOnPlatform","Platform"]';https://w3id.org/saref;A deplopyment is deployed in a platform;undefined
-http://www.w3.org/ns/ssn;'["Sampling","hasFeatureOfInterest","FeatureOfInterest"]';https://w3id.org/saref;A sampling has one feature of interest;undefined
-https://w3id.org/saref#;'["Device","hasFunction","SensingFunction"]';https://w3id.org/saref;A device can be used for  the purpose of sensing;absent
-https://w3id.org/saref#;'["Water","Commodity","Gas"]';https://w3id.org/saref;Water or gas are examples of commodities;passed
-https://w3id.org/saref#;'["Device","isUsedFor","Commodity"]';https://w3id.org/saref;A device can be used for  the purpose of offering a commodity;passed
-https://w3id.org/saref#;'["EnergyRelated","Device","BuildingRelated","FunctionRelated"]';https://w3id.org/saref;The devices can belong to several categories;passed
-https://w3id.org/saref#;'["EventFunction","Function","MeteringFunction","SensingFunction","ActuatingFunction"]';https://w3id.org/saref;"Examples of functions are the  the actuating; sensing; metering or event functions";passed
-https://w3id.org/saref#;["Function"];https://w3id.org/saref;A function represents the functionality necessary to accomplish the task for which a device is designed;passed
-https://w3id.org/saref#;'["EnergyMeter","hasFunction","MeteringFunction"]';https://w3id.org/saref;An energy meter is a device that has category Meter;passed
-https://w3id.org/saref#;'["EnergyMeter","consistsOf","Meter"]';https://w3id.org/saref;An energy meter is a device that consists of a meter;passed
-https://w3id.org/saref#;'["Load","EnergyRelated","Storage","Generator"]';https://w3id.org/saref;"The EnergyRelated category can be specialized into: Load; Generator and Storage";passed
-https://w3id.org/saref#;'["LightingDevice","FunctionRelated","Actuator","Appliance","Meter","Device","HVAC"]';https://w3id.org/saref;"The FunctionRelated category can be specialized into: Actuator; Applicance; HVAC; Lighting; Meter; MicroRenewable; Multimedia; Network; Sensor";passed
-https://w3id.org/saref#;'["EnergyRelated","Device","BuildingRelated","FunctionRelated"]';https://w3id.org/saref;"The devices can be classified into categories: FunctionRelated; EneryRelated and BuildingRelated";passed
-https://w3id.org/saref#;'["Device","hasDescription","string"]';https://w3id.org/saref;A device can optionally  have a description;passed
-https://w3id.org/saref#;'["Device","hasModel","string"]';https://w3id.org/saref;A device shall have a model property;passed
-https://w3id.org/saref#;'["Device","hasModel","string"]';https://w3id.org/saref;A device shall have a model property;passed
-https://w3id.org/saref#;'["WashingMachine","Device","TemperatureSensor","EnergyMeter"]';https://w3id.org/saref;"Examples of devices are a light switch; a temperature sensor; an energy meter; a washing machine";passed
-https://w3id.org/saref#;'["Device","hasFunction","Function"]';https://w3id.org/saref;A device performs one or more functions;passed
-https://w3id.org/saref#;["Device"];https://w3id.org/saref;What is a device?;passed
-https://w3id.org/saref#;'["CloseCommand","Command","ToggleCommand","OffCommand","OnCommand"]';https://w3id.org/saref;"The commands can be: on; off; open; toggle; close; startm pause; step up; step down; set level; get and notify";passed
-https://w3id.org/saref#;'["Device","hasState","State"]';https://w3id.org/saref;A device can be found in a correponding state;passed
-https://w3id.org/saref#;'["EnergyMeter","Meter"]';https://w3id.org/saref;An energy meter is a device that has category Meter;passed
-https://w3id.org/saref#;'["Meter","hasFunction","MeteringFunction"]';https://w3id.org/saref;A meter performs a metering function;passed
-https://w3id.org/saref#;'["Meter","FunctionRelated"]';https://w3id.org/saref;A meter is a functionRelated device ;passed
-https://w3id.org/saref#;'["DimmerLamp","control","Light"]';https://w3id.org/saref;A dimmer lamp performs an actuating level control ;undefined
-https://w3id.org/saref#;'["DimmerLamp","performs","LevelControl"]';https://w3id.org/saref;A dimmer lamp performs an actuating level control ;undefined
-https://w3id.org/saref#;'["DimmerLamp","Actuator","Lighting"]';https://w3id.org/saref;A dimmer lamp is a device that has category Lighting and Actuator;undefined
-https://w3id.org/saref#;'["DoorSwitch","accomplishes","Safety"]';https://w3id.org/saref;A door switch is used for the purpose of controlling doors;passed
-https://w3id.org/saref#;'["DoorSwitch","hasFunction","OpenCloseFunction"]';https://w3id.org/saref;A door switch  performs the open/close function;passed
-https://w3id.org/saref#;'["DoorSwitch","consistsOf","Switch"]';https://w3id.org/saref;A door switch is a device that consists of a switch;passed
-https://w3id.org/saref#;'["Switch","Actuator"]';https://w3id.org/saref; A switch is a device that has category Actuator;passed
-https://w3id.org/saref#;'["Command","actsUpon","State"]';https://w3id.org/saref;A command can act upon a state  to represent that the consequence of a command can be a change of state of the device;passed
-https://w3id.org/saref#;'["SmokeSensor","measuresProperty","Smoke"]';https://w3id.org/saref;A smoke sensor  is used for the purpose of sensing smoke;passed
-https://w3id.org/saref#;'["SmokeSensor","hasFunction","SensingFunction","EventFunction"]';https://w3id.org/saref;A smoke sensor performs a sensing and event function;passed
-https://w3id.org/saref#;'["SmokeSensor","consistsOf","Sensor"]';https://w3id.org/saref;A smoke sensor is a device that consists of a sensor;passed
-https://w3id.org/saref#;'["SmokeSensor","Sensor"]';https://w3id.org/saref;A smoke sensor is a device that has category Sensor;passed
-https://w3id.org/saref#;'["WashingMachine","hasFunction","StartStopFunction"]';https://w3id.org/saref;A washing machine performs an actuating start/pause function;passed
-https://w3id.org/saref#;'["WashingMachine","accomplishes","Washing","Task"]';https://w3id.org/saref;A washing machine accomplishes the task of washing ;passed
-https://w3id.org/saref#;'["WashingMachine","Appliance","Load"]';https://w3id.org/saref;A washing machine is a device that has category Appliance  and Load;passed
-https://w3id.org/saref#;'["TemperatureSensor","hasFunction","SensingFunction"]';https://w3id.org/saref;A temperature senso performs the sensing function and is used for the purpose of sensing temperature;passed
-https://w3id.org/saref#;'["TemperatureSensor","consistsOf","Sensor"]';https://w3id.org/saref;A temperature sensor consists of a sensor;passed
-https://w3id.org/saref#;'["TemperatureSensor","Sensor"]';https://w3id.org/saref;A temperature sensor is a device that has category sensor;passed
-https://w3id.org/saref#;'["OnOffFunction","ActuatingFunction","LevelControlFunction"]';https://w3id.org/saref;"An actuating function can be specialized into on/off; open/close; start/stop or level control functions";passed
-https://w3id.org/saref#;'["MeteringFunction","Function","SensingFunction","ActuatingFunction","EventFunction"]';https://w3id.org/saref;A function can belong to a function category;passed
-https://w3id.org/saref#;'["Function","hasCommand","Command"]';https://w3id.org/saref;A function shall have at least one command associated to it;passed
-https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';https://w3id.org/saref;A sensor performs a sensing function;passed
-https://w3id.org/saref#;'["Sensor","Device"]';https://w3id.org/saref;A device may consists of other devices;passed
-https://w3id.org/saref#;'["Device","consistsOf"]';https://w3id.org/saref;A device may consists of other devices;passed
-https://w3id.org/saref#;'["Temperature","Property","Energy","Smoke"]';https://w3id.org/saref;"Examples of properties are temperature; energy or smoke";passed
-https://w3id.org/saref#;'["Function","hasCommand","Command","Device","hasFunction","NotifyCommand"]';https://w3id.org/saref;A device can be used for notifying  a property;passed
-https://w3id.org/saref#;'["Device","measuresProperty","Property"]';https://w3id.org/saref;A device can be used for measuring a property;passed
+http://www.w3.org/ns/ssn;'["Procedure","hasOutput","Output"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A procedure has an output;undefined
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Result"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A sampling has a result;undefined
+http://www.w3.org/ns/ssn;'["Actuation","hasResult","Result"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An actuation has a result;undefined
+http://www.w3.org/ns/ssn;'["Sample","FeatureOfInterest","Result"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A sample is a type of feature of interest and result;undefined
+http://www.w3.org/ns/ssn;'["Deployment","forProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Deployment is associated to a property;undefined
+http://www.w3.org/ns/ssn;["Sensor"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is a sensor?;undefined
+http://www.w3.org/ns/ssn;["Actuator"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is an actuator?;undefined
+http://www.w3.org/ns/ssn;["Procedure"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is a procedure?;undefined
+http://www.w3.org/ns/ssn;["Deployment"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is a deployment?;undefined
+http://www.w3.org/ns/ssn;'["Platform","inDeployment","Deployment"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Platform has a deployment;undefined
+http://www.w3.org/ns/ssn;'["Platform","deployedSystem","System"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A platform is deployed by some system;undefined
+http://www.w3.org/ns/ssn;["System"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is a system?;undefined
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Sample"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A sampling is linked to at least one sample;undefined
+http://www.w3.org/ns/ssn;'["Sensor","observes","ObservableProperty"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A sensor observes only observable properties;undefined
+http://www.w3.org/ns/ssn;'["ObservableProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An observable property is a type of property;undefined
+http://www.w3.org/ns/ssn;'["ObservableProperty","isObservedBy","Sensor"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An observable property is observed by only sensors;undefined
+http://www.w3.org/ns/ssn;'["Observation","hasFeatureOfInterest","FeatureOfInterest"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An observation is related only to one feature of interest;undefined
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;The observation is originated by  exactly one stimulus;undefined
+http://www.w3.org/ns/ssn;'["Observation","hasResult","Result"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An observation has only  results;undefined
+http://www.w3.org/ns/ssn;'["Sensor","System"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A sensor is a type of system;undefined
+http://www.w3.org/ns/ssn;["FeatureOfInterest"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is feature of interest?;undefined
+http://www.w3.org/ns/ssn;'["System","implements","Procedure"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A system implements a procedure;undefined
+http://www.w3.org/ns/ssn;'["System","hasSubSystem"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A system can have subsystems;undefined
+http://www.w3.org/ns/ssn;'["Procedure","hasInput","Input"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A procedure has an input;undefined
+http://www.w3.org/ns/ssn;["Sensor"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is a sensor?;undefined
+http://www.w3.org/ns/ssn;'["Sensor","detects","Stimulus"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Sensor detects an stimulus;undefined
+http://www.w3.org/ns/ssn;["Stimulus"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is a stimulus?;undefined
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An observation is originated by a stimulus;undefined
+http://www.w3.org/ns/ssn;["Property"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is a property?;undefined
+http://www.w3.org/ns/ssn;'["Stimulus","isProxyFor","Property","isPropertyOf","FeatureOfInterest"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;The stimulus is proxy for a property;undefined
+http://www.w3.org/ns/ssn;'["Actuator","madeActuation","Actuation"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An actuator mades only actuations;undefined
+http://www.w3.org/ns/ssn;'["Procedure","implementedBy","System"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A procedure is implemented by a system;undefined
+http://www.w3.org/ns/ssn;'["Deployment","deployedOnPlatform","Platform"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A deplopyment is deployed in a platform;undefined
+http://www.w3.org/ns/ssn;'["Sampling","hasFeatureOfInterest","FeatureOfInterest"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A sampling has one feature of interest;undefined
+;'["Variable","hasMetaData","MetaData"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A variable can have metadata;passed
+;'["SimpleTypeVariable","Variable"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"A simple type variable is a variable that only consists of variables of simple XML types like xsd:integer; string; etc.; potentially including restrictions";passed
+;'["Command","hasOutput","OperationOutput"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A command has as output one or more operation outputs;absent
+;'["Command","hasInput","OperationInput"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A command has as input one or more operation inputs;absent
+;["Operation"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A command represents an action that can be performed to support a functionality;passed
+;'["Operation","oneM2MTargetURI","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation has a target URI;absent
+;'["Operation","oneM2MMethod","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation has a method;passed
+;'["SimpleTypeVariable","oneM2MAttribute","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A simple type variable contains the name of the attribute of the resource that is referenced with the target URI and that stores the value of the simple type variables;passed
+;'["Operation","hasOutput","OperationOutput"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation may produce data into operation outputs (transient entities that are deleted when the operation finishes);passed
+;'["Operation","hasOutput","OperationOutput"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation may produce output data into output data points (persistent entities);passed
+;'["Operation","hasInput","OperationInput"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation may receive data from operation inputs (transient entities that are deleted when the operation finishes);passed
+;'["Operation","hasInput","OperationInput"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation may receive input data from input data points (persistent entities);passed
+;'["SimpleTypeVariable","hasDataType","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A simple type variable has exactly one datatype;passed
+;'["SimpleTypeVariable","hasDataRestriction","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A simple type variable has a data restriction;passed
+;'["SimpleTypeVariable","Variable"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"A simple type variable is a variable that only consists of variables of simple XML types like xsd:integer; string; etc.; potentially including restrictions";passed
+;["Operation"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation is the -machine interpretable- exposure of a -human understandable- command to a network;passed
+;["Operation"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation is the means of a service to communicate in a procedure-type manner over the network (i.e. transmit data to/from other devices);passed
+;'["MeasuringFunction","Function"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"A measuring functionality represents a functionality that has no impacts on the real world; but only gathers data";passed
+;'["ControllingFunction","Function"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"A controlling functionality represents a functionality that has impacts on the real world; but does not gather data";passed
+;'["Function","hasCommand","Command"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A functionality has commands that allow human users to influence/observe such functionality;passed
+;'["Device","hasFunction","Function"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A functionality represents the functionality necessary to accomplish the task for which a device is designed;passed
+;'["Service","hasOutputDataPoint","OutputDataPoint"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A service has an output data point;passed
+;'["Service","hasInputDataPoint","InputDataPoint"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A service has an input data point;passed
+;'["Service","hasOperation","Operation"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A service has an operation;passed
+;'["Service","hasSubService"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A service can be composed of independent (sub-)services;passed
+;'["Variable","oneM2MTargetURI","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A variable has a URI of a resource through which the instantiation of the value of the variable can be manipulated;absent
+;'["Variable","oneM2MMethod","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A variable has a CRUD method through which the instantiation of the variable value can be manipulated;passed
+;'["Variable","hasValue","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A variable may have a value (useful for values that are relatively static);absent
+;'["Variable","hasSubStructure","StructuredTypeVariable"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A variable can be structured using other variables;absent
+;'["Command","hasOutput","OperationOutput"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation output describes an output of an operation and also describes the output of a command;not passed
+;'["InputDataPoint","Variable"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An input data point is a variable of a service that is accessed by a RESTful device in its environment and that the device reads out autonomously (e.g. at periodic times);passed
+;["Aspect"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An aspect could be a (physical or non-physical) entity or it could be a quality;passed
+;'["Command","hasInput","OperationInput"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An operation input describes an input of an operation and also describes the input of a command;not passed
+;'["Device","hasFunction","Function"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device performs one or more functionalities in order to accomplish a particular task;passed
+;["Device"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device may be a physical or non-physical entity;passed
+;'["Device","isPartOf","AreaNetwork"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device is a thing that is able to interact electronically with its environment via a network;passed
+;'["Variable","hasMetaData","MetaData"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"Metadata contain data (like units; precision-ranges) about a variable or about an aspect";passed
+;'["Aspect","hasMetaData","MetaData"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An aspect can have metadata;passed
+;'["InterworkedDevice","isPartOf","AreaNetwork"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An interworked device is part of an area network;passed
+;'["Thing","hasThingRelation"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A thing can have relations to other things;passed
+;'["Thing","hasThingProperty","ThingProperty"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A thing may have properties;passed
+;["Thing"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A thing is an entity that can be identified in the oneM2M System.;passed
+;'["AreaNetwork","netTechnologyProfile","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An area network follows a profile;passed
+;'["AreaNetwork","netTechnologyCommunicationProtocol","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An area network follows a communication protocol;passed
+;'["AreaNetwork","netTechnologyPhysicalStandard","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An area network follows an standard that defines its physical properties;passed
+;["InterworkedDevice"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An area network is a network that provides data transport services between an interworked device and the oneM2M System;passed
+;'["Service","exposesFunction","Function"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A service is an electronic representation of a functionality in a network;passed
+;["InterworkedDevice"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An interworked device is a device that does not support oneM2M interfaces and can only be accessed from the oneM2M System by communicating with a proxied (virtual) device that has been created by an interworking proxy entity;passed
+;'["Service","hasSubService"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device can be composed of several (sub-)devices;passed
+;'["Device","hasService","Service"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device has one or more services that expose in the network its functionalities;absent
+;'["OutputDataPoint","Variable"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An output data point is a variable of a service that is set by a RESTful device in its environment and that the device updates autonomously (e.g. at periodic times));passed
+;'["Variable","describes","Aspect"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A variable describes a real-world aspect;passed
+;'["Service","exposesFunction","Function"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A service can expose one or more functionalities;passed
+;["Variable"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"A variable describes an entity that stores some data (e.g. integers; text; etc.; or structured data) that can change over time";passed
+https://w3id.org/saref#;'["Device","hasFunction","SensingFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device can be used for  the purpose of sensing;undefined
+https://w3id.org/saref#;'["Water","Commodity","Gas"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Water or gas are examples of commodities;undefined
+https://w3id.org/saref#;'["Device","isUsedFor","Commodity"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device can be used for  the purpose of offering a commodity;undefined
+https://w3id.org/saref#;'["EnergyRelated","Device","BuildingRelated","FunctionRelated"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;The devices can belong to several categories;undefined
+https://w3id.org/saref#;'["EventFunction","Function","MeteringFunction","SensingFunction","ActuatingFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"Examples of functions are the  the actuating; sensing; metering or event functions";undefined
+https://w3id.org/saref#;["Function"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A function represents the functionality necessary to accomplish the task for which a device is designed;passed
+https://w3id.org/saref#;'["EnergyMeter","hasFunction","MeteringFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An energy meter is a device that has category Meter;undefined
+https://w3id.org/saref#;'["EnergyMeter","consistsOf","Meter"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An energy meter is a device that consists of a meter;undefined
+https://w3id.org/saref#;'["Load","EnergyRelated","Storage","Generator"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"The EnergyRelated category can be specialized into: Load; Generator and Storage";undefined
+https://w3id.org/saref#;'["LightingDevice","FunctionRelated","Actuator","Appliance","Meter","Device","HVAC"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"The FunctionRelated category can be specialized into: Actuator; Applicance; HVAC; Lighting; Meter; MicroRenewable; Multimedia; Network; Sensor";undefined
+https://w3id.org/saref#;'["EnergyRelated","Device","BuildingRelated","FunctionRelated"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"The devices can be classified into categories: FunctionRelated; EneryRelated and BuildingRelated";undefined
+https://w3id.org/saref#;'["Device","hasDescription","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device can optionally  have a description;undefined
+https://w3id.org/saref#;'["Device","hasModel","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device shall have a model property;undefined
+https://w3id.org/saref#;'["Device","hasModel","string"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device shall have a model property;undefined
+https://w3id.org/saref#;'["WashingMachine","Device","TemperatureSensor","EnergyMeter"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"Examples of devices are a light switch; a temperature sensor; an energy meter; a washing machine";undefined
+https://w3id.org/saref#;'["Device","hasFunction","Function"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device performs one or more functions;passed
+https://w3id.org/saref#;["Device"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;What is a device?;passed
+https://w3id.org/saref#;'["CloseCommand","Command","ToggleCommand","OffCommand","OnCommand"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"The commands can be: on; off; open; toggle; close; startm pause; step up; step down; set level; get and notify";undefined
+https://w3id.org/saref#;'["Device","hasState","State"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device can be found in a correponding state;undefined
+https://w3id.org/saref#;'["EnergyMeter","Meter"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;An energy meter is a device that has category Meter;undefined
+https://w3id.org/saref#;'["Meter","hasFunction","MeteringFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A meter performs a metering function;undefined
+https://w3id.org/saref#;'["Meter","FunctionRelated"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A meter is a functionRelated device ;undefined
+https://w3id.org/saref#;'["DimmerLamp","control","Light"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A dimmer lamp performs an actuating level control ;undefined
+https://w3id.org/saref#;'["DimmerLamp","performs","LevelControl"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A dimmer lamp performs an actuating level control ;undefined
+https://w3id.org/saref#;'["DimmerLamp","Actuator","Lighting"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A dimmer lamp is a device that has category Lighting and Actuator;undefined
+https://w3id.org/saref#;'["DoorSwitch","accomplishes","Safety"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A door switch is used for the purpose of controlling doors;undefined
+https://w3id.org/saref#;'["DoorSwitch","hasFunction","OpenCloseFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A door switch  performs the open/close function;undefined
+https://w3id.org/saref#;'["DoorSwitch","consistsOf","Switch"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A door switch is a device that consists of a switch;undefined
+https://w3id.org/saref#;'["Switch","Actuator"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl; A switch is a device that has category Actuator;undefined
+https://w3id.org/saref#;'["Command","actsUpon","State"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A command can act upon a state  to represent that the consequence of a command can be a change of state of the device;undefined
+https://w3id.org/saref#;'["SmokeSensor","measuresProperty","Smoke"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A smoke sensor  is used for the purpose of sensing smoke;undefined
+https://w3id.org/saref#;'["SmokeSensor","hasFunction","SensingFunction","EventFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A smoke sensor performs a sensing and event function;undefined
+https://w3id.org/saref#;'["SmokeSensor","consistsOf","Sensor"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A smoke sensor is a device that consists of a sensor;undefined
+https://w3id.org/saref#;'["SmokeSensor","Sensor"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A smoke sensor is a device that has category Sensor;undefined
+https://w3id.org/saref#;'["WashingMachine","hasFunction","StartStopFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A washing machine performs an actuating start/pause function;undefined
+https://w3id.org/saref#;'["WashingMachine","accomplishes","Washing","Task"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A washing machine accomplishes the task of washing ;undefined
+https://w3id.org/saref#;'["WashingMachine","Appliance","Load"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A washing machine is a device that has category Appliance  and Load;undefined
+https://w3id.org/saref#;'["TemperatureSensor","hasFunction","SensingFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A temperature senso performs the sensing function and is used for the purpose of sensing temperature;undefined
+https://w3id.org/saref#;'["TemperatureSensor","consistsOf","Sensor"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A temperature sensor consists of a sensor;undefined
+https://w3id.org/saref#;'["TemperatureSensor","Sensor"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A temperature sensor is a device that has category sensor;undefined
+https://w3id.org/saref#;'["OnOffFunction","ActuatingFunction","LevelControlFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"An actuating function can be specialized into on/off; open/close; start/stop or level control functions";undefined
+https://w3id.org/saref#;'["MeteringFunction","Function","SensingFunction","ActuatingFunction","EventFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A function can belong to a function category;undefined
+https://w3id.org/saref#;'["Function","hasCommand","Command"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A function shall have at least one command associated to it;absent
+https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A sensor performs a sensing function;undefined
+https://w3id.org/saref#;'["Sensor","Device"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device may consists of other devices;undefined
+https://w3id.org/saref#;'["Device","consistsOf"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device may consists of other devices;passed
+https://w3id.org/saref#;'["Temperature","Property","Energy","Smoke"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"Examples of properties are temperature; energy or smoke";undefined
+https://w3id.org/saref#;'["Function","hasCommand","Command","Device","hasFunction","NotifyCommand"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device can be used for notifying  a property;absent
+https://w3id.org/saref#;'["Device","measuresProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device can be used for measuring a property;undefined
