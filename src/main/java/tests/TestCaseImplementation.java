@@ -1,6 +1,7 @@
 package tests;
 
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLOntology;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -8,7 +9,11 @@ import java.util.LinkedHashMap;
 public class TestCaseImplementation {
     private LinkedHashMap<String, String> axiomExpectedResult;
     private LinkedHashMap<String, String> assertions;
+    private LinkedHashMap<String, OWLOntology> assertionsAxioms;
+    private LinkedHashMap<String, String> axiomExpectedResultAxioms;
+
     private String preparation;
+    private OWLOntology preparationaxioms;
     private ArrayList<String> precondition;
     private ArrayList<String> preconditionQuery;
     private IRI relatedTestDesign;
@@ -16,9 +21,38 @@ public class TestCaseImplementation {
     private String type;
 
     public TestCaseImplementation() {
-        this.axiomExpectedResult = new LinkedHashMap<String, String>();
-        this.assertions = new LinkedHashMap<String, String>();
-        this.precondition= new ArrayList<>();
+        this.type = "";
+        this.assertionsAxioms = new LinkedHashMap<>();
+        this.axiomExpectedResultAxioms = new LinkedHashMap<>();
+        this.axiomExpectedResult = new LinkedHashMap<>();
+        this.axiomExpectedResult = new LinkedHashMap<>();
+        this.assertions = new LinkedHashMap<>();
+        this.precondition = new ArrayList<>();
+    }
+
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public LinkedHashMap<String, String> getAxiomExpectedResultAxioms() {
+        return axiomExpectedResultAxioms;
+    }
+
+    public void setAxiomExpectedResultAxioms(LinkedHashMap<String, String> axiomExpectedResultAxioms) {
+        this.axiomExpectedResultAxioms = axiomExpectedResultAxioms;
+    }
+
+    public OWLOntology getPreparationaxioms() {
+        return preparationaxioms;
+    }
+
+    public void setPreparationaxioms(OWLOntology preparationaxioms) {
+        this.preparationaxioms = preparationaxioms;
     }
 
     public LinkedHashMap<String, String> getAxiomExpectedResult() {
@@ -27,14 +61,6 @@ public class TestCaseImplementation {
 
     public void setAxiomExpectedResult(LinkedHashMap<String, String> axiomExpectedResult) {
         this.axiomExpectedResult = axiomExpectedResult;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public LinkedHashMap<String, String> getAssertions() {
@@ -83,5 +109,13 @@ public class TestCaseImplementation {
 
     public void setUri(IRI uri) {
         this.uri = uri;
+    }
+
+    public LinkedHashMap<String, OWLOntology> getAssertionsAxioms() {
+        return assertionsAxioms;
+    }
+
+    public void setAssertionsAxioms(LinkedHashMap<String, OWLOntology> assertionsAxioms) {
+        this.assertionsAxioms = assertionsAxioms;
     }
 }

@@ -1,0 +1,185 @@
+@prefix : <http://vicinity.iot.linkeddata.es/vicinity/testing/testsuite-datatype.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vtc: <http://w3id.org/def/vtc#> .
+@base <http://vicinity.iot.linkeddata.es/vicinity/testing/testsuite-datatype.ttl#> .
+
+: rdf:type owl:Ontology .
+
+:TestsuiteDatatype rdf:type <http://w3id.org/def/vtc#TestsuiteDatatype>;
+            dcterms:source <http://iot.linkeddata.es/def/datatype>.
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://w3id.org/def/vtc#desiredBehaviour
+
+<http://w3id.org/def/vtc#desiredBehaviour> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://w3id.org/def/vtc#TestCaseDesign
+
+<http://w3id.org/def/vtc#TestCaseDesign> rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test1
+
+:Test1 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                         owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+             vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-11>;
+             <http://w3id.org/def/vtc#desiredBehaviour> "Array subclassOf firstArraryItem only JSONSchema"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test10
+
+:Test10 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                          owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+              vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-2>;
+              <http://w3id.org/def/vtc#desiredBehaviour> "xsd_integer type XSDDatatype"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test11
+
+:Test11 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                          owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+              vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-2>;
+              <http://w3id.org/def/vtc#desiredBehaviour> "xsd_float type XSDDatatype"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test12
+
+:Test12 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                          owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+              vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-1>;
+              <http://w3id.org/def/vtc#desiredBehaviour> "XSDDatatype subclassOf DataSchema"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test13
+
+:Test13 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                          owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+              vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-1>;
+              <http://w3id.org/def/vtc#desiredBehaviour> "JSONSchema subclassOf DataSchema"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test2
+
+:Test2 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                         owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+             vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-10>;
+             <http://w3id.org/def/vtc#desiredBehaviour> "Array subclassOf minItems only integer"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test3
+
+:Test3 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                         owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+             vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-10>;
+             <http://w3id.org/def/vtc#desiredBehaviour> "Array subclassOf maxItems only integer"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test4
+
+:Test4 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                         owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+             vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-9>;
+             <http://w3id.org/def/vtc#desiredBehaviour> "Array subclassOf JSONSchema"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test5
+
+:Test5 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                         owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+             vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-8>;
+             <http://w3id.org/def/vtc#desiredBehaviour> "Object subclassOf field only ObjectField"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test6
+
+:Test6 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                         owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+             vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-6>;
+             <http://w3id.org/def/vtc#desiredBehaviour> "Object subclassof JSONSchema"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test7
+
+:Test7 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                         owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+             vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-5>;
+             <http://w3id.org/def/vtc#desiredBehaviour> "Number subclassof JSONSchema"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test8
+
+:Test8 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                         owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+             vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-4>;
+             <http://w3id.org/def/vtc#desiredBehaviour> "Boolean subclassof JSONSchema"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/untitled-ontology-53#Test9
+
+:Test9 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                         owl:NamedIndividual ;
+             vtc:belongsTo :TestsuiteDatatype;
+             vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-datatypes.html#datatypes-3>;
+             <http://w3id.org/def/vtc#desiredBehaviour> "JSONSchema subclassOf nextArrayItem only JSONSchema"^^xsd:string .
+
+
+
+
+###  Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net

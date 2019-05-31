@@ -3,6 +3,7 @@ package utils;
 import org.coode.owlapi.turtle.TurtleOntologyFormat;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.json.Test;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.OWLOntologyDocumentSource;
 import org.semanticweb.owlapi.io.OWLParserException;
@@ -35,19 +36,6 @@ public class Utils {
             return  m.group();
         }
         return  m.group();
-    }
-
-    public static ArrayList<String> getPurposeTerms(ArrayList<String> queries){
-
-        ArrayList<String> terms = new ArrayList<>();
-        Pattern p = Pattern.compile("\\<(.*?)\\>");
-        for(String query: queries){
-            Matcher m = p.matcher(query);
-            while(m.find()){
-                terms.add(m.group().toString().replace("<","").replace(">","").trim());
-            }
-        }
-        return  terms;
     }
 
     public static  Set convertStringToAxioms(String axioms) {
@@ -108,7 +96,6 @@ public class Utils {
 
     }
 
-
     public static void unZipIt(String resourceName, String outputFolder) {
 
         byte[] buffer = new byte[1024];
@@ -145,6 +132,7 @@ public class Utils {
             System.err.println("Error while extracting the resources: " + ex.getMessage());
         }
     }
+
     public static JSONArray createGot(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology) throws Exception {
 
         //Create GoT
@@ -156,7 +144,6 @@ public class Utils {
             }
         }
         JSONArray got = new JSONArray();
-        int i = 1;
 
         ArrayList<String> entities = new ArrayList();
         Iterator it = ontology.getOntology().getSignature(true).iterator();
@@ -183,33 +170,255 @@ public class Utils {
         return got;
     }
 
-    public static ArrayList<Ontology> loadOntologies(String file) throws Exception {
+    public static Ontology loadOntology(String url, ArrayList<TestCaseDesign> testCaseDesigns) throws Exception {
 
-        //Process CVS, list of ontologies and  tests
-        System.out.println("process csv...");
-        HashMap<String, String> ontoAndTest = ProcessCSV.processCSVVocabs(file);
-
-        ArrayList<Ontology> ontologies = new ArrayList<>();
-        for (Map.Entry<String, String> entry : ontoAndTest.entrySet()) {
             //Load ontologies
             Ontology ontology = new Ontology();
-            if(entry.getKey().length()!=0) {
-                ontology.load_ontologyURL(entry.getKey());
-                ontologies.add(ontology);
+            if(url.length()!=0) {
+                ontology.load_ontologyURL(url);
+            }else{
+                ontology = createSkeletonFromTestCases(testCaseDesigns.get(0).getProvenance(),testCaseDesigns);
             }
-        }
-        return  ontologies;
+           return ontology;
     }
 
-    public static ArrayList<TestCaseDesign> loadTests(String file) throws Exception {
+    public static Ontology createSkeletonFromTestCases(String key, ArrayList<TestCaseDesign> testCaseDesigns) throws OWLOntologyCreationException {
+        Ontology ontology = new Ontology();
+        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+        OWLOntology onto = manager.createOntology() ;
+        ontology.setManager(manager);
+        OWLDataFactory dataFactory = manager.getOWLDataFactory();
+        for(TestCaseDesign testCaseDesign: testCaseDesigns){
+            for(String purpose: testCaseDesign.getPurpose()){
+                String purposecloned= purpose.toLowerCase();
+                if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) only ([^\\s]+) or ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+)(some|only) \\(([^\\s]+) or ([^\\s]+)\\)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String term3 = m.group(4).toString().replaceAll(" ","");
+                    String term4 = m.group(5).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLObjectProperty prop = dataFactory.getOWLObjectProperty(IRI.create(term2));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term3));
+                    OWLClass class3 = dataFactory.getOWLClass(IRI.create(term4));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1, dataFactory.getOWLObjectAllValuesFrom(prop, dataFactory.getOWLObjectUnionOf(class2,class3))));
+                }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) (some|only) \\(([^\\s]+) and ([^\\s]+)\\)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+) (some|only) \\(([^\\s]+) and ([^\\s]+)\\)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String term3 = m.group(4).toString().replaceAll(" ","");
+                    String term4 = m.group(5).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLObjectProperty prop = dataFactory.getOWLObjectProperty(IRI.create(term2));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term3));
+                    OWLClass class3 = dataFactory.getOWLClass(IRI.create(term4));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1, dataFactory.getOWLObjectAllValuesFrom(prop, dataFactory.getOWLObjectIntersectionOf(class2,class3))));
+                }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) value ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+) value ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String term3 = m.group(3).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLObjectProperty prop = dataFactory.getOWLObjectProperty(IRI.create(term2));
+                    OWLIndividual ind1 = dataFactory.getOWLNamedIndividual(IRI.create(term3));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1, dataFactory.getOWLObjectHasValue(prop, ind1)));
+                }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+)\\s*and\\s*([^\\s]+) subclassof ([^\\s]+) that disjointwith ([^\\s]+)")){
+                    Pattern p = Pattern.compile("(([^\\s]+)) subclassof ([^\\s])+\\s*and\\s*(([^\\s]+)) subclassof (([^\\s]+)) that disjointwith (([^\\s]+))",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String term3 = m.group(3).toString().replaceAll(" ","");
+                    String term4 = m.group(4).toString().replaceAll(" ","");
+                    String term5 = m.group(5).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term2));
+                    OWLClass class3 = dataFactory.getOWLClass(IRI.create(term3));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,class2));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class3,class2));
+                    manager.addAxiom(onto, dataFactory.getOWLDisjointClassesAxiom(class3,class1));
+                }else if(purposecloned.matches("([^\\s]+) equivalentto ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) equivalentto ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term2));
+                    manager.addAxiom(onto, dataFactory.getOWLEquivalentClassesAxiom(class1,class2));
+                }else if(purposecloned.matches("([^\\s]+) disjointwith ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) disjointwith ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term2));
+                    manager.addAxiom(onto, dataFactory.getOWLDisjointClassesAxiom(class1,class2));
+                }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) min (\\d+) ([^\\s]+) and ([^\\s]+) subclassof ([^\\s]+) some ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+) min (\\d+) ([^\\s]+) and ([^\\s]+) subclassof ([^\\s]+) some ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String digit = m.group(3).toString().replaceAll(" ","");
+                    String term3 = m.group(4).toString().replaceAll(" ","");
+                    String term4 = m.group(5).toString().replaceAll(" ","");
+                    String term5 = m.group(6).toString().replaceAll(" ","");
+                    String term6 = m.group(8).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLObjectProperty prop1 = dataFactory.getOWLObjectProperty(IRI.create(term2));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term3));
+                    OWLClass class3 = dataFactory.getOWLClass(IRI.create(term4));
+                    OWLObjectProperty prop2 = dataFactory.getOWLObjectProperty(IRI.create(term5));
+                    OWLClass class4 = dataFactory.getOWLClass(IRI.create(term6));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,
+                            dataFactory.getOWLObjectMinCardinality(Integer.parseInt(digit),prop1,class2)));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class3,
+                            dataFactory.getOWLObjectSomeValuesFrom(prop2,class4)));
+                }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) (max|min|exactly) (\\d+) \\(([^\\s]+) and ([^\\s]+)\\)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+) (max|min|exactly) (\\d+) \\(([^\\s]+) and ([^\\s]+)\\)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String type = m.group(3).toString().replaceAll(" ","");
+                    String digit = m.group(4).toString().replaceAll(" ","");
+                    String term3 = m.group(5).toString().replaceAll(" ","");
+                    String term4 = m.group(6).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLObjectProperty prop1 = dataFactory.getOWLObjectProperty(IRI.create(term2));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term3));
+                    OWLClass class3 = dataFactory.getOWLClass(IRI.create(term4));
+                    if(type.equals("min"))
+                         manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,
+                            dataFactory.getOWLObjectMinCardinality(Integer.parseInt(digit),prop1,dataFactory.getOWLObjectIntersectionOf(class2,class3))));
+                    else if(type.equals("max"))
+                        manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,
+                                dataFactory.getOWLObjectMaxCardinality(Integer.parseInt(digit),prop1,dataFactory.getOWLObjectIntersectionOf(class2,class3))));
+                    else
+                        manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,
+                                dataFactory.getOWLObjectExactCardinality(Integer.parseInt(digit),prop1,dataFactory.getOWLObjectIntersectionOf(class2,class3))));
+                }else if(purposecloned.matches("([^\\s]+) subclassof symmetricproperty\\(([^\\s]+)\\) (some|only) ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof symmetricproperty\\(([^\\s]+)\\) (some|only) ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String term3 = m.group(4).toString().replaceAll(" ","");
+                }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) (max|min|exactly) (\\d+) ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+) (max|min|exactly) (\\d+) ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String type = m.group(3).toString().replaceAll(" ","");
+                    String digit = m.group(4).toString().replaceAll(" ","");
+                    String term3 = m.group(5).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLObjectProperty prop1 = dataFactory.getOWLObjectProperty(IRI.create(term2));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term3));
+                    if(type.equals("min"))
+                        manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,
+                                dataFactory.getOWLObjectMinCardinality(Integer.parseInt(digit),prop1, class2)));
+                    else if(type.equals("max"))
+                        manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,
+                                dataFactory.getOWLObjectMaxCardinality(Integer.parseInt(digit),prop1,class2)));
+                    else
+                        manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,
+                                dataFactory.getOWLObjectExactCardinality(Integer.parseInt(digit),prop1,class2)));
+                }else if(purposecloned.matches("([^\\s]+) type class")) {
+                    Pattern p = Pattern.compile("([^\\s]+) type class",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    manager.addAxiom(ontology.getOntology(), dataFactory.getOWLDeclarationAxiom(class1));
+                }else if(purposecloned.matches("([^\\s]+) type ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) type ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    OWLIndividual ind1 = dataFactory.getOWLNamedIndividual(IRI.create(term1));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term2));
+                    manager.addAxiom(onto, dataFactory.getOWLClassAssertionAxiom(class2, ind1));
+                }else if(purposecloned.matches("(([^\\s]+)) subclassof (([^\\s]+)) that (([^\\s]+)) some (([^\\s]+))")){
+                    Pattern p = Pattern.compile("(([^\\s]+)) subclassof (([^\\s]+)) that (([^\\s]+)) some (([^\\s]+))",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String term3 = m.group(3).toString().replaceAll(" ","");
+                    String term4 = m.group(4).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term2));
+                    OWLObjectProperty prop1 = dataFactory.getOWLObjectProperty(IRI.create(term3));
+                    OWLClass class3 = dataFactory.getOWLClass(IRI.create(term4));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1, class2));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1, dataFactory.getOWLObjectSomeValuesFrom(prop1, class3)));
+                }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) (some|only) ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+) (some|only) ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String type = m.group(3).toString().replaceAll(" ","");
+                    String term3 = m.group(4).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLObjectProperty prop = dataFactory.getOWLObjectProperty(IRI.create(term2));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term3));
+                    if(type.equals("some"))
+                        manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,
+                                dataFactory.getOWLObjectSomeValuesFrom(prop,class2)));
+                    else
+                        manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,
+                                dataFactory.getOWLObjectAllValuesFrom(prop,class2)));
+                }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) and ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+) and ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    String term3 = m.group(3).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term2));
+                    OWLClass class3 = dataFactory.getOWLClass(IRI.create(term3));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,class2));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,class3));
+                }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+)")){
+                    Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+                    Matcher m = p.matcher(purpose);
+                    m.find();
+                    String term1 = m.group(1).toString().replaceAll(" ","");
+                    String term2 = m.group(2).toString().replaceAll(" ","");
+                    OWLClass class1 = dataFactory.getOWLClass(IRI.create(term1));
+                    OWLClass class2 = dataFactory.getOWLClass(IRI.create(term2));
+                    manager.addAxiom(onto, dataFactory.getOWLSubClassOfAxiom(class1,class2));
+                }
+                else{
+                    System.out.println("not match found "+ purposecloned);
+                }
 
-        HashMap<String, String> ontoAndTest = ProcessCSV.processCSVVocabs(file);
-        ArrayList<TestCaseDesign> testsuiteDesign = new ArrayList<>();
-        for (Map.Entry<String, String> entry : ontoAndTest.entrySet()) {
-            // Load tests
-            System.out.println("loading tests...");
-            testsuiteDesign.addAll(Implementation.processTestCaseDesign(entry.getValue()));
+            }
         }
+        ontology.setOntology(onto);
+        ontology.setProv(IRI.create(key));
+        return ontology;
+
+    }
+
+
+    public static ArrayList<TestCaseDesign> loadTest(String file) throws Exception {
+
+        ArrayList<TestCaseDesign> testsuiteDesign = new ArrayList<>();
+        testsuiteDesign.addAll(Implementation.processTestCaseDesign(file));
         return testsuiteDesign;
     }
 

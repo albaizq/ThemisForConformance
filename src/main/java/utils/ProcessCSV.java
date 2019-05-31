@@ -21,6 +21,7 @@ public class ProcessCSV {
         int lineN = 0;
         String ontology="";
         String test="";
+        String name="";
         try {
             while ((currentLine = in.readLine()) != null) {
                 if (lineN == 0) {

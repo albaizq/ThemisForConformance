@@ -1,0 +1,307 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix vtc: <http://w3id.org/def/vtc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix : <http://vicinity.iot.linkeddata.es/vicinity/testing/testsuite-core.ttl#> .
+
+
+
+
+:TestsuiteCore rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
+            dcterms:source <http://iot.linkeddata.es/def/core>.
+
+:Test-case1 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform2>;
+	dc:description "What is an IoT device?" ;
+	vtc:desiredBehaviour "Device subClassOf PhysicalThing" .
+
+
+
+:Test-case2 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform4>;
+	dc:description "What is a partnership?" ;
+	vtc:desiredBehaviour "Organization subclassOf SymmetricProperty(hasPartnershipWith) some Organization" .
+
+:Test-case3 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform5>;
+	dc:description "What attributes has a partnership?" ;
+	vtc:desiredBehaviour "Organization subclassOf SymmetricProperty(hasPartnershipWith) some Organization" .
+
+
+:Test-case4 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform8>;
+	dc:description "Which are the relationships a partnership is involved in?";
+	vtc:desiredBehaviour "Organization subclassOf hasPartnershipWith some Organization>".
+
+:Test-case5 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform9>;
+	dc:description "How many organizations can have a partnership?";
+	vtc:desiredBehaviour "Organization subclassOf SymmetricProperty(hasPartnershipWith) some Organization" .
+
+
+
+:Test-case6 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform11>;
+	dc:description "What is the relation between organization and devices?";
+	vtc:desiredBehaviour " Agent subclassOf memberOf some Organization".
+
+:Test-case7 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform21>;
+	dc:description "Who is the owner of a given device?";
+	vtc:desiredBehaviour "Agent subclassOf owns some  Device" .
+
+
+:Test-case8 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform22>;
+	dc:description "A device has a unique identifier";
+	vtc:desiredBehaviour "Device subclassOf serialNumber only string".
+
+
+:Test-case9 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform23>;
+	dc:description "Which attributes can have a device?";
+	vtc:desiredBehaviour "Device subclassOf deviceName only string";
+	vtc:desiredBehaviour "Device subclassOf avatar some Image";
+	vtc:desiredBehaviour "Device subclassOf serialNumber only string".
+
+:Test-case10 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform33>;
+	dc:description "What is a device profile?";
+	vtc:desiredBehaviour "Device subclassOf deviceName only string";
+	vtc:desiredBehaviour "Device subclassOf avatar some Image";
+	vtc:desiredBehaviour "Device subclassOf serialNumber only string";
+	vtc:desiredBehaviour "Device subclassOf deviceDescription only string".
+
+
+:Test-case11 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#35>;
+	dc:description "A device can have a status";
+	vtc:desiredBehaviour "Device subclassOf observes some Property".
+
+
+:Test-case12 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#37>;
+	dc:description "A device can have a location";
+	vtc:desiredBehaviour "Device subClassOf SpatialThing".
+
+
+
+:Test-case13 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#41>;
+	dc:description "A device can have a location";
+	vtc:desiredBehaviour "Device subClassOf SpatialThing".
+
+:Test-case14 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#42>;
+	dc:description "Which are the social relationships a device can be involved in?";
+	vtc:desiredBehaviour "Device subclassof hasOwner some Agent".
+
+
+:Test-case15 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#43>;
+	dc:description "Which roles are involved in a ownership relationship?";
+	vtc:desiredBehaviour "Device subclassOf hasOwner some Agent";
+	vtc:desiredBehaviour "Service subclassOf hasOwner some Agent" .
+
+
+:Test-case16 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#44>;
+	dc:description "What is a user?";
+	vtc:desiredBehaviour "HumanUser subClassOf Person" .
+
+:Test-case17 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#46>;
+	dc:description "Who is a service provider?";
+	vtc:desiredBehaviour "Agent subclassOf owns some Service" .
+
+:Test-case18 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#52>;
+	dc:description "What are the parameters that has a service?";
+	vtc:desiredBehaviour "Service subclassOf serviceName only string";
+	vtc:desiredBehaviour "Service subclassOf avatar some Image";
+	vtc:desiredBehaviour "Service subclassOf hasOwner some Agent";
+	vtc:desiredBehaviour "Service subclassOf serviceDescription only string" .
+
+:Test-case19 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#57>;
+	dc:description "What is a service logical name?";
+	vtc:desiredBehaviour "Service subclassOf serviceName only string" .
+
+:Test-case20 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#79>;
+	dc:description "What is an IoT device agent?";
+	vtc:desiredBehaviour "Device subclassOf hasOwner some Agent" .
+
+
+:Test-case21 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#80>;
+	dc:description "Which devices are there?";
+	vtc:desiredBehaviour "Device subClassOf PhysicalThing" .
+
+
+:Test-case22 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#81>;
+	dc:description "What are the devices of a given agent or organization?";
+	vtc:desiredBehaviour "Organization subclassOf hasMember some Agent" .
+
+:Test-case23 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#82>;
+	dc:description "Which devices can I see?";
+	vtc:desiredBehaviour "Device SubClassOf PhysicalThing" .
+
+
+:Test-case24 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#83>;
+	dc:description "Which services can I see?";
+	vtc:desiredBehaviour "Service SubClassOf VirtualThing" .
+
+:Test-case25 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#85>;
+	dc:description "What are the devices of a specific partner?";
+	vtc:desiredBehaviour "Device subclassOf hasOwner some Agent" .
+
+
+:Test-case26 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#87>;
+	dc:description "Which is the profile of a given device?";
+	vtc:desiredBehaviour "Device subclassOf deviceName some string";
+	vtc:desiredBehaviour "Device subclassOf avatar some Image";
+	vtc:desiredBehaviour "Device subclassOf serialNumber only string";
+	vtc:desiredBehaviour "Device subclassOf deviceDescription only string".
+
+
+
+:Test-case27 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#88>;
+	dc:description "A device profile indicates the device name";
+	vtc:desiredBehaviour "Device subclassOf deviceName only string" .
+
+
+:Test-case28 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#89>;
+	dc:description "A device profile indicates the device avatar";
+	vtc:desiredBehaviour "Device subclassOf avatar some Image" .
+
+
+:Test-case29 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#90>;
+	dc:description "A device profile indicates the type of device, e.g: sensor or actuator";
+	vtc:desiredBehaviour "Sensor subClassOf Device";
+	vtc:desiredBehaviour "Actuator subClassOf Device"  .
+
+
+:Test-case30 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#91>;
+	dc:description "A device profile indicates the device vendor";
+	vtc:desiredBehaviour "Device subclassOf hasOwner some Agent"  .
+
+
+
+:Test-case31 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#92>;
+	dc:description "A device profile indicates the device serial number";
+	vtc:desiredBehaviour "Device subclassOf serialNumber only string"  .
+
+
+:Test-case32 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#94>;
+	dc:description "A device profile indicates the device owner";
+	vtc:desiredBehaviour "Device subclassOf hasOwner some Agent"  .
+
+
+:Test-case33 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#95>;
+	dc:description "A service profile indicates the service name";
+	vtc:desiredBehaviour "Service subclassOf serviceName only string"  .
+
+
+:Test-case34 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#96>;
+	dc:description "A service profile indicates the service avatar";
+	vtc:desiredBehaviour "Service subclassOf avatar some Image"  .
+
+
+:Test-case35 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#97>;
+	dc:description "A service profile indicates the service  owner";
+	vtc:desiredBehaviour "Service subclassOf hasOwner some Agent"  .
+
+
+:Test-case36 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#98>;
+	dc:description "A service profile indicates the service provider";
+	vtc:desiredBehaviour "Service subclassOf hasOwner some Agent"  .
+
+:Test-case37 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#99>;
+	dc:description "A service profile indicates the service description (in text)";
+	vtc:desiredBehaviour "Service subclassOf serviceDescription only string"  .
+
+:Test-case38 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#101>;
+	dc:description "A partnership is established between organizations";
+	vtc:desiredBehaviour "Organization subclassOf hasPartnershipWith only Organization"  .
+
+:Test-case39 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#102>;
+	dc:description "A partnership is established between only 2 organizations";
+	vtc:desiredBehaviour "Organization subclassOf SymmetricProperty(hasPartnershipWith) only Organization"  .
+
+:Test-case40 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#103>;
+	dc:description "A neighbourhood is the group of partnerships you have";
+	vtc:desiredBehaviour "Agent subclassOf hasNeighbourhood only Neighbourhood"  .
+
+:Test-case41 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#104>;
+	dc:description "An organization has users";
+	vtc:desiredBehaviour "Agent subclassOf memberOf only Organization";
+	vtc:desiredBehaviour "DigitalUser subClassOf Agent";
+	vtc:desiredBehaviour "HumanUser subClassOf Person"  .
+
+:Test-case42 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#105>;
+	dc:description "One of the users of an organization is the manager";
+	vtc:desiredBehaviour "Agent subclassOf hasMembership some Membership"  .
+
+:Test-case43 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#106>;
+	dc:description "Users has to belong to one organization";
+	vtc:desiredBehaviour "Agent subclassOf memberOf some Organization"  .
+
+:Test-case44 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#107>;
+	dc:description "All organizations have the same roles in a partnership";
+	vtc:desiredBehaviour "Organization subclassOf  SymmetricProperty(hasPartnershipWith) some Organization"  .
+
+
+:Test-case45 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#108>;
+	dc:description "Users can have different roles in the organization";
+	vtc:desiredBehaviour "Agent subclassOf hasMembership some Membership";
+	vtc:desiredBehaviour "Membership subclassOf role some Role"  .
+
+:Test-case46 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#112>;
+	dc:description "What is a building?";
+	vtc:desiredBehaviour "PhysicalThing subclassOf isContainedIn some BuildingSpace"  .
+
+
+
+:Test-case47 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#113>;
+	dc:description "Where is something located?";
+	vtc:desiredBehaviour "PhysicalThing subclassOf isLocatedAt  some Feature"  .
+
+
+:Test-case48 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#155>;
+	dc:description "What is a thing description?";
+	vtc:desiredBehaviour "ThingDescription type Class"  .
+
+:Test-case49 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#156>;
+	dc:description "Each thing is described by WoT Thing Descriptions";
+	vtc:desiredBehaviour "ThingDescription subclassOf describes some Thing"  .

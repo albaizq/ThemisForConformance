@@ -135,24 +135,6 @@
             <http://purl.org/dc/terms/description> ""^^xsd:string ;
             
             <http://w3id.org/def/vtc#testAxioms> """
-                       	<Command1>    rdfs:subClassOf <Command> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasInput> ;
-                                                                       owl:maxQualifiedCardinality \"0\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <OperationInput>
-                                                                     ] .
-                                                                     <hasInput> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<Command1>    rdfs:subClassOf <Command> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasOutput> ;
-                                                                       owl:maxQualifiedCardinality \"0\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <OperationOutput>
-                                                                     ] .
-                                                                     <hasOutput> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
                        	<Device1>    rdfs:subClassOf <Device> ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <hasFunction> ;
@@ -169,15 +151,6 @@
                                                                        owl:onDataRange <http://www.w3.org/2001/XMLSchema#string>
                                                                      ] .
                                                                      <hasModel>a owl:DatatypeProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<Device1>    rdfs:subClassOf <Device> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasService> ;
-                                                                       owl:maxQualifiedCardinality \"0\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <Service>
-                                                                     ] .
-                                                                     <hasService> a owl:ObjectProperty.
 """^^xsd:string ,
                                                  """
                        	<Function1>    rdfs:subClassOf <Function> ,
@@ -214,46 +187,6 @@
                                                                        owl:onClass <Sample>
                                                                      ] .
                                                                      <hasResult> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<Service1>    rdfs:subClassOf <Service> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <exposesFunction> ;
-                                                                       owl:maxQualifiedCardinality \"0\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <Function>
-                                                                     ] .
-                                                                     <exposesFunction> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<SimpleTypeVariable1>    rdfs:subClassOf <SimpleTypeVariable> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasDataType> ;
-                                                                       owl:maxQualifiedCardinality \"0\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onDataRange <http://www.w3.org/2001/XMLSchema#string>
-                                                                     ] .
-                                                                     <hasDataType>a owl:DatatypeProperty.
-"""^^xsd:string ,
-                                                 """
-                       <Command1> rdfs:subClassOf <Command>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasInput> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individua002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individua001> <hasInput> <individua002>.
-"""^^xsd:string ,
-                                                 """
-                       <Command1> rdfs:subClassOf <Command>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasOutput> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individua002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individua001> <hasOutput> <individua002>.
 """^^xsd:string ,
                                                  """
                        <Device1> rdfs:subClassOf <Device>,
@@ -432,31 +365,7 @@
                        <individua001> <hasFunction> <individua002>.
 """^^xsd:string ,
                                                  """
-                       <individual001> <hasDataRestriction> \"1\"^^<Nostring>.
-"""^^xsd:string ,
-                                                 """
                        <individual001> <hasDescription> \"1\"^^<Nostring>.
-"""^^xsd:string ,
-                                                 """
-                       <individual001> <hasValue> \"1\"^^<Nostring>.
-"""^^xsd:string ,
-                                                 """
-                       <individual001> <netTechnologyCommunicationProtocol> \"1\"^^<Nostring>.
-"""^^xsd:string ,
-                                                 """
-                       <individual001> <netTechnologyPhysicalStandard> \"1\"^^<Nostring>.
-"""^^xsd:string ,
-                                                 """
-                       <individual001> <netTechnologyProfile> \"1\"^^<Nostring>.
-"""^^xsd:string ,
-                                                 """
-                       <individual001> <oneM2MAttribute> \"1\"^^<Nostring>.
-"""^^xsd:string ,
-                                                 """
-                       <individual001> <oneM2MMethod> \"1\"^^<Nostring>.
-"""^^xsd:string ,
-                                                 """
-                       <individual001> <oneM2MTargetURI> \"1\"^^<Nostring>.
 """^^xsd:string ,
                                                  """
                       <ActuatingFunction1>      rdfs:subClassOf [
@@ -486,12 +395,6 @@
                       <CloseCommand1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <NoCloseCommand> 
                                                                 <Command>
-                                                               );
-                                           rdf:type owl:Class     ] ."""^^xsd:string ,
-                                                 """
-                      <ControllingFunction1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <NoControllingFunction> 
-                                                                <Function>
                                                                );
                                            rdf:type owl:Class     ] ."""^^xsd:string ,
                                                  """
@@ -561,12 +464,6 @@
                                                                );
                                            rdf:type owl:Class     ] ."""^^xsd:string ,
                                                  """
-                      <InputDataPoint1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <NoInputDataPoint> 
-                                                                <Variable>
-                                                               );
-                                           rdf:type owl:Class     ] ."""^^xsd:string ,
-                                                 """
                       <LevelControlFunction1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <NoLevelControlFunction> 
                                                                 <ActuatingFunction>
@@ -582,12 +479,6 @@
                       <Load1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <NoLoad> 
                                                                 <EnergyRelated>
-                                                               );
-                                           rdf:type owl:Class     ] ."""^^xsd:string ,
-                                                 """
-                      <MeasuringFunction1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <NoMeasuringFunction> 
-                                                                <Function>
                                                                );
                                            rdf:type owl:Class     ] ."""^^xsd:string ,
                                                  """
@@ -639,12 +530,6 @@
                                                                );
                                            rdf:type owl:Class     ] ."""^^xsd:string ,
                                                  """
-                      <OutputDataPoint1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <NoOutputDataPoint> 
-                                                                <Variable>
-                                                               );
-                                           rdf:type owl:Class     ] ."""^^xsd:string ,
-                                                 """
                       <Sample1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <NoSample> 
                                                                 <FeatureOfInterest>
@@ -666,12 +551,6 @@
                       <Sensor1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <NoSensor> 
                                                                 <System>
-                                                               );
-                                           rdf:type owl:Class     ] ."""^^xsd:string ,
-                                                 """
-                      <SimpleTypeVariable1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <NoSimpleTypeVariable> 
-                                                                <Variable>
                                                                );
                                            rdf:type owl:Class     ] ."""^^xsd:string ,
                                                  """
@@ -760,16 +639,6 @@
                                            ] .
                        <individual001> <madeActuation> <individual002>.
 """^^xsd:string ,
-                                                 """                       <Aspect1> rdfs:subClassOf <Aspect>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasMetaData> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasMetaData> <individual002>.
-"""^^xsd:string ,
                                                  """                       <Command1> rdfs:subClassOf <Command>,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <actsUpon> ;
@@ -812,16 +681,6 @@
 """^^xsd:string ,
                                                  """                       <Device1> rdfs:subClassOf <Device>,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasFunction> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasFunction> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Device1> rdfs:subClassOf <Device>,
-                                           [ rdf:type owl:Restriction ;
                                              owl:onProperty <hasState> ;
                                              owl:someValuesOf [ rdf:type owl:Class ;
                                                                  owl:oneOf ( <individual002>
@@ -829,16 +688,6 @@
                                                                ]
                                            ] .
                        <individual001> <hasState> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Device1> rdfs:subClassOf <Device>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <isPartOf> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <isPartOf> <individual002>.
 """^^xsd:string ,
                                                  """                       <Device1> rdfs:subClassOf <Device>,
                                            [ rdf:type owl:Restriction ;
@@ -868,26 +717,6 @@
                                                                            )
                                                                ]
                                            ] .
-"""^^xsd:string ,
-                                                 """                       <Function1> rdfs:subClassOf <Function>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasCommand> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasCommand> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <InterworkedDevice1> rdfs:subClassOf <InterworkedDevice>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <isPartOf> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <isPartOf> <individual002>.
 """^^xsd:string ,
                                                  """                       <ObservableProperty1> rdfs:subClassOf <ObservableProperty>,
                                            [ rdf:type owl:Restriction ;
@@ -928,26 +757,6 @@
                                                                ]
                                            ] .
                        <individual001> <wasOriginatedBy> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Operation1> rdfs:subClassOf <Operation>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasInput> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasInput> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Operation1> rdfs:subClassOf <Operation>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasOutput> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasOutput> <individual002>.
 """^^xsd:string ,
                                                  """                       <Platform1> rdfs:subClassOf <Platform>,
                                            [ rdf:type owl:Restriction ;
@@ -1029,56 +838,6 @@
                                            ] .
                        <individual001> <observes> <individual002>.
 """^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <exposesFunction> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <exposesFunction> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasInputDataPoint> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasInputDataPoint> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasOperation> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasOperation> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasOutputDataPoint> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasOutputDataPoint> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasSubService> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasSubService> <individual002>.
-"""^^xsd:string ,
                                                  """                       <Stimulus1> rdfs:subClassOf <Stimulus>,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <isProxyFor> ;
@@ -1109,56 +868,6 @@
                                            ] .
                        <individual001> <implements> <individual002>.
 """^^xsd:string ,
-                                                 """                       <Thing1> rdfs:subClassOf <Thing>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasThingProperty> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasThingProperty> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Thing1> rdfs:subClassOf <Thing>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasThingRelation> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasThingRelation> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Variable1> rdfs:subClassOf <Variable>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <describes> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <describes> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Variable1> rdfs:subClassOf <Variable>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasMetaData> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasMetaData> <individual002>.
-"""^^xsd:string ,
-                                                 """                       <Variable1> rdfs:subClassOf <Variable>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasSubStructure> ;
-                                             owl:someValuesOf [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual001> <hasSubStructure> <individual002>.
-"""^^xsd:string ,
                                                  """                       <Washing> rdf:type owl:NamedIndividual.
                        <Washing> rdf:type <NoTask>.
 """^^xsd:string ,
@@ -1186,24 +895,6 @@
             <http://purl.org/dc/terms/description> ""^^xsd:string ;
             
             <http://w3id.org/def/vtc#testAxioms> """
-                       	<Command1> rdfs:subClassOf <Command> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasInput> ;
-                                                                       owl:minQualifiedCardinality \"2\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <OperationInput>
-                                                                     ] .
-                                                                     <hasInput> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<Command1> rdfs:subClassOf <Command> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasOutput> ;
-                                                                       owl:minQualifiedCardinality \"2\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <OperationOutput>
-                                                                     ] .
-                                                                     <hasOutput> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
                        	<Device1> rdfs:subClassOf <Device> ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <hasFunction> ;
@@ -1220,15 +911,6 @@
                                                                        owl:onDataRange <http://www.w3.org/2001/XMLSchema#string>
                                                                      ] .
                                                                      <hasModel>a owl:DatatypeProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<Device1> rdfs:subClassOf <Device> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasService> ;
-                                                                       owl:minQualifiedCardinality \"2\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <Service>
-                                                                     ] .
-                                                                     <hasService> a owl:ObjectProperty.
 """^^xsd:string ,
                                                  """
                        	<Function1> rdfs:subClassOf <Function> ,
@@ -1267,24 +949,6 @@
                                                                      <hasResult> a owl:ObjectProperty.
 """^^xsd:string ,
                                                  """
-                       	<Service1> rdfs:subClassOf <Service> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <exposesFunction> ;
-                                                                       owl:minQualifiedCardinality \"2\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <Function>
-                                                                     ] .
-                                                                     <exposesFunction> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<SimpleTypeVariable1> rdfs:subClassOf <SimpleTypeVariable> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasDataType> ;
-                                                                       owl:minQualifiedCardinality \"2\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onDataRange <http://www.w3.org/2001/XMLSchema#string>
-                                                                     ] .
-                                                                     <hasDataType>a owl:DatatypeProperty.
-"""^^xsd:string ,
-                                                 """
                       <ActuatingFunction1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <ActuatingFunction> 
                                                                 <NoFunction>
@@ -1312,12 +976,6 @@
                       <CloseCommand1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <CloseCommand> 
                                                                 <NoCommand>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
-                      <ControllingFunction1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <ControllingFunction> 
-                                                                <NoFunction>
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
@@ -1387,12 +1045,6 @@
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
-                      <InputDataPoint1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <InputDataPoint> 
-                                                                <NoVariable>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
                       <LevelControlFunction1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <LevelControlFunction> 
                                                                 <NoActuatingFunction>
@@ -1408,12 +1060,6 @@
                       <Load1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <Load> 
                                                                 <NoEnergyRelated>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
-                      <MeasuringFunction1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <MeasuringFunction> 
-                                                                <NoFunction>
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
@@ -1465,12 +1111,6 @@
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
-                      <OutputDataPoint1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <OutputDataPoint> 
-                                                                <NoVariable>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
                       <Sample1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <Sample> 
                                                                 <NoFeatureOfInterest>
@@ -1492,12 +1132,6 @@
                       <Sensor1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <Sensor> 
                                                                 <NoSystem>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
-                      <SimpleTypeVariable1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <SimpleTypeVariable> 
-                                                                <NoVariable>
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
@@ -1592,19 +1226,6 @@
                        <individual001> <madeActuation> <individual002>.
                        <individual001> <madeActuation> <individual003>.
 """^^xsd:string ,
-                                                 """                       <Aspect1> rdfs:subClassOf <Aspect>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasMetaData> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasMetaData> <individual002>.
-                       <individual001> <hasMetaData> <individual003>.
-"""^^xsd:string ,
                                                  """                       <Command1> rdfs:subClassOf <Command>,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <actsUpon> ;
@@ -1617,30 +1238,6 @@
                        <individual002> owl:differentFrom <individual003>.
                        <individual001> <actsUpon> <individual002>.
                        <individual001> <actsUpon> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Command1> rdfs:subClassOf <Command>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasInput> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individua002>
-                                                                             <individua003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individua001> <hasInput> <individua002>.
-                       <individua001> <hasInput> <individua003>.
-"""^^xsd:string ,
-                                                 """                       <Command1> rdfs:subClassOf <Command>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasOutput> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individua002>
-                                                                             <individua003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individua001> <hasOutput> <individua002>.
-                       <individua001> <hasOutput> <individua003>.
 """^^xsd:string ,
                                                  """                       <Deployment1> rdfs:subClassOf <Deployment>,
                                            [ rdf:type owl:Restriction ;
@@ -1695,19 +1292,6 @@
 """^^xsd:string ,
                                                  """                       <Device1> rdfs:subClassOf <Device>,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasFunction> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasFunction> <individual002>.
-                       <individual001> <hasFunction> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Device1> rdfs:subClassOf <Device>,
-                                           [ rdf:type owl:Restriction ;
                                              owl:onProperty <hasState> ;
                                              owl:allValuesFrom [ rdf:type owl:Class ;
                                                                  owl:oneOf ( <individual002>
@@ -1718,19 +1302,6 @@
                        <individual002> owl:differentFrom <individual003>.
                        <individual001> <hasState> <individual002>.
                        <individual001> <hasState> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Device1> rdfs:subClassOf <Device>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <isPartOf> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <isPartOf> <individual002>.
-                       <individual001> <isPartOf> <individual003>.
 """^^xsd:string ,
                                                  """                       <Device1> rdfs:subClassOf <Device>,
                                            [ rdf:type owl:Restriction ;
@@ -1839,32 +1410,6 @@
                        <individua001> <hasFunction> <individua002>.
                        <individua001> <hasFunction> <individua003>.
 """^^xsd:string ,
-                                                 """                       <Function1> rdfs:subClassOf <Function>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasCommand> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasCommand> <individual002>.
-                       <individual001> <hasCommand> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <InterworkedDevice1> rdfs:subClassOf <InterworkedDevice>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <isPartOf> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <isPartOf> <individual002>.
-                       <individual001> <isPartOf> <individual003>.
-"""^^xsd:string ,
                                                  """                       <Meter1> rdfs:subClassOf <Meter>,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <hasFunction> ;
@@ -1928,32 +1473,6 @@
                        <individual002> owl:differentFrom <individual003>.
                        <individual001> <wasOriginatedBy> <individual002>.
                        <individual001> <wasOriginatedBy> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Operation1> rdfs:subClassOf <Operation>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasInput> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasInput> <individual002>.
-                       <individual001> <hasInput> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Operation1> rdfs:subClassOf <Operation>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasOutput> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasOutput> <individual002>.
-                       <individual001> <hasOutput> <individual003>.
 """^^xsd:string ,
                                                  """                       <Platform1> rdfs:subClassOf <Platform>,
                                            [ rdf:type owl:Restriction ;
@@ -2083,71 +1602,6 @@
                        <individual001> <observes> <individual002>.
                        <individual001> <observes> <individual003>.
 """^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <exposesFunction> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <exposesFunction> <individual002>.
-                       <individual001> <exposesFunction> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasInputDataPoint> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasInputDataPoint> <individual002>.
-                       <individual001> <hasInputDataPoint> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasOperation> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasOperation> <individual002>.
-                       <individual001> <hasOperation> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasOutputDataPoint> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasOutputDataPoint> <individual002>.
-                       <individual001> <hasOutputDataPoint> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Service1> rdfs:subClassOf <Service>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasSubService> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasSubService> <individual002>.
-                       <individual001> <hasSubService> <individual003>.
-"""^^xsd:string ,
                                                  """                       <SmokeSensor1> rdfs:subClassOf <SmokeSensor>,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <consistsOf> ;
@@ -2247,71 +1701,6 @@
                        <individua001> <hasFunction> <individua002>.
                        <individua001> <hasFunction> <individua003>.
 """^^xsd:string ,
-                                                 """                       <Thing1> rdfs:subClassOf <Thing>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasThingProperty> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasThingProperty> <individual002>.
-                       <individual001> <hasThingProperty> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Thing1> rdfs:subClassOf <Thing>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasThingRelation> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasThingRelation> <individual002>.
-                       <individual001> <hasThingRelation> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Variable1> rdfs:subClassOf <Variable>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <describes> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <describes> <individual002>.
-                       <individual001> <describes> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Variable1> rdfs:subClassOf <Variable>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasMetaData> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasMetaData> <individual002>.
-                       <individual001> <hasMetaData> <individual003>.
-"""^^xsd:string ,
-                                                 """                       <Variable1> rdfs:subClassOf <Variable>,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty <hasSubStructure> ;
-                                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                 owl:oneOf ( <individual002>
-                                                                             <individual003>
-                                                                           )
-                                                               ]
-                                           ] .
-                       <individual002> owl:differentFrom <individual003>.
-                       <individual001> <hasSubStructure> <individual002>.
-                       <individual001> <hasSubStructure> <individual003>.
-"""^^xsd:string ,
                                                  """                       <WashingMachine1> rdfs:subClassOf <WashingMachine>,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <accomplishes> ;
@@ -2333,32 +1722,8 @@
                        <individua001> <hasFunction> <individua002>.
                        <individua001> <hasFunction> <individua003>.
 """^^xsd:string ,
-                                                 """                       <individual001> <hasDataRestriction> \"1\"^^<Nostring>.
-                       <individual001> <hasDataRestriction> \"1\"^^<http://www.w3.org/2001/XMLSchema#string>.
-"""^^xsd:string ,
                                                  """                       <individual001> <hasDescription> \"1\"^^<Nostring>.
                        <individual001> <hasDescription> \"1\"^^<http://www.w3.org/2001/XMLSchema#string>.
-"""^^xsd:string ,
-                                                 """                       <individual001> <hasValue> \"1\"^^<Nostring>.
-                       <individual001> <hasValue> \"1\"^^<http://www.w3.org/2001/XMLSchema#string>.
-"""^^xsd:string ,
-                                                 """                       <individual001> <netTechnologyCommunicationProtocol> \"1\"^^<Nostring>.
-                       <individual001> <netTechnologyCommunicationProtocol> \"1\"^^<http://www.w3.org/2001/XMLSchema#string>.
-"""^^xsd:string ,
-                                                 """                       <individual001> <netTechnologyPhysicalStandard> \"1\"^^<Nostring>.
-                       <individual001> <netTechnologyPhysicalStandard> \"1\"^^<http://www.w3.org/2001/XMLSchema#string>.
-"""^^xsd:string ,
-                                                 """                       <individual001> <netTechnologyProfile> \"1\"^^<Nostring>.
-                       <individual001> <netTechnologyProfile> \"1\"^^<http://www.w3.org/2001/XMLSchema#string>.
-"""^^xsd:string ,
-                                                 """                       <individual001> <oneM2MAttribute> \"1\"^^<Nostring>.
-                       <individual001> <oneM2MAttribute> \"1\"^^<http://www.w3.org/2001/XMLSchema#string>.
-"""^^xsd:string ,
-                                                 """                       <individual001> <oneM2MMethod> \"1\"^^<Nostring>.
-                       <individual001> <oneM2MMethod> \"1\"^^<http://www.w3.org/2001/XMLSchema#string>.
-"""^^xsd:string ,
-                                                 """                       <individual001> <oneM2MTargetURI> \"1\"^^<Nostring>.
-                       <individual001> <oneM2MTargetURI> \"1\"^^<http://www.w3.org/2001/XMLSchema#string>.
 """^^xsd:string ;
             
             <http://w3id.org/def/vtc#hasAssertionResult> <http://w3id.org/def/vtc#Consistent> ,
@@ -2375,24 +1740,6 @@
             <http://purl.org/dc/terms/description> ""^^xsd:string ;
             
             <http://w3id.org/def/vtc#testAxioms> """
-                       	<Command1> rdfs:subClassOf <Command> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasInput> ;
-                                                                       owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <OperationInput>
-                                                                     ] .
-                                                                     <hasInput> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<Command1> rdfs:subClassOf <Command> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasOutput> ;
-                                                                       owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <OperationOutput>
-                                                                     ] .
-                                                                     <hasOutput> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
                        	<Device1> rdfs:subClassOf <Device> ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <hasFunction> ;
@@ -2409,15 +1756,6 @@
                                                                         owl:onDataRange <http://www.w3.org/2001/XMLSchema#string>
                                                                      ] .
                                                                      <hasModel>a owl:DatatypeProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<Device1> rdfs:subClassOf <Device> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasService> ;
-                                                                       owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <Service>
-                                                                     ] .
-                                                                     <hasService> a owl:ObjectProperty.
 """^^xsd:string ,
                                                  """
                        	<Function1> rdfs:subClassOf <Function> ,
@@ -2456,24 +1794,6 @@
                                                                      <hasResult> a owl:ObjectProperty.
 """^^xsd:string ,
                                                  """
-                       	<Service1> rdfs:subClassOf <Service> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <exposesFunction> ;
-                                                                       owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <Function>
-                                                                     ] .
-                                                                     <exposesFunction> a owl:ObjectProperty.
-"""^^xsd:string ,
-                                                 """
-                       	<SimpleTypeVariable1> rdfs:subClassOf <SimpleTypeVariable> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <hasDataType> ;
-                                                                       owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ;
-                                                                        owl:onDataRange <http://www.w3.org/2001/XMLSchema#string>
-                                                                     ] .
-                                                                     <hasDataType>a owl:DatatypeProperty.
-"""^^xsd:string ,
-                                                 """
                       <ActuatingFunction1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <ActuatingFunction> 
                                                                 <Function>
@@ -2501,12 +1821,6 @@
                       <CloseCommand1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <CloseCommand> 
                                                                 <Command>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
-                      <ControllingFunction1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <ControllingFunction> 
-                                                                <Function>
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
@@ -2576,12 +1890,6 @@
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
-                      <InputDataPoint1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <InputDataPoint> 
-                                                                <Variable>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
                       <LevelControlFunction1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <LevelControlFunction> 
                                                                 <ActuatingFunction>
@@ -2597,12 +1905,6 @@
                       <Load1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <Load> 
                                                                 <EnergyRelated>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
-                      <MeasuringFunction1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <MeasuringFunction> 
-                                                                <Function>
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
@@ -2654,12 +1956,6 @@
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
-                      <OutputDataPoint1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <OutputDataPoint> 
-                                                                <Variable>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
                       <Sample1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <Sample> 
                                                                 <FeatureOfInterest>
@@ -2681,12 +1977,6 @@
                       <Sensor1>      rdfs:subClassOf [
                                            owl:intersectionOf ( <Sensor> 
                                                                 <System>
-                                                               );
-                                           rdf:type owl:Class    ] ."""^^xsd:string ,
-                                                 """
-                      <SimpleTypeVariable1>      rdfs:subClassOf [
-                                           owl:intersectionOf ( <SimpleTypeVariable> 
-                                                                <Variable>
                                                                );
                                            rdf:type owl:Class    ] ."""^^xsd:string ,
                                                  """
@@ -2840,10 +2130,6 @@
               <http://purl.org/dc/terms/description> ""^^xsd:string ;
               
               <http://w3id.org/def/vtc#testAxioms> """
-                       	<Command> rdf:type owl:Class.
-                        	<Command1> rdfs:subClassOf <Command>.
- """^^xsd:string ,
-                                                   """
                        	<Device> rdf:type owl:Class.
                         	<Device1> rdfs:subClassOf <Device>.
  """^^xsd:string ,
@@ -2859,24 +2145,6 @@
                        	<Sampling> rdf:type owl:Class.
                         	<Sampling1> rdfs:subClassOf <Sampling>.
  """^^xsd:string ,
-                                                   """
-                       	<Service> rdf:type owl:Class.
-                        	<Service1> rdfs:subClassOf <Service>.
- """^^xsd:string ,
-                                                   """
-                       	<SimpleTypeVariable> rdf:type owl:Class.
-                        	<SimpleTypeVariable1> rdfs:subClassOf <SimpleTypeVariable>.
- """^^xsd:string ,
-                                                   """
-                       <AreaNetwork1> rdfs:subClassOf <AreaNetwork>.
-
-                       <Nostring> rdf:type rdfs:Datatype .
-
-                       <Nostring> owl:equivalentClass [ rdf:type rdfs:Datatype ;
-                                owl:datatypeComplementOf <http://www.w3.org/2001/XMLSchema#string>
-                              ] .
-                       <individual001> rdf:type  owl:NamedIndividual, <AreaNetwork1>.
-"""^^xsd:string ,
                                                    """
                        <Device1> rdfs:subClassOf <Device>.
 
@@ -2928,30 +2196,6 @@
                        <NoLoad> owl:complementOf <Load> .
                        """^^xsd:string ,
                                                    """
-                       <NoAreaNetwork> rdf:type owl:Class .
-                       <NoAreaNetwork> owl:complementOf <AreaNetwork>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Device1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoAreaNetwork>.
-
-                       <Device1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoAreaNetwork> rdf:type owl:Class .
-                       <NoAreaNetwork> owl:complementOf <AreaNetwork>.
-                       <individual001> rdf:type  owl:NamedIndividual, <InterworkedDevice1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoAreaNetwork>.
-
-                       <InterworkedDevice1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoAspect> rdf:type owl:Class .
-                       <NoAspect> owl:complementOf <Aspect>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Variable1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoAspect>.
-
-                       <Variable1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
                        <NoCommand> rdf:type owl:Class .
                        <NoCommand> owl:complementOf <Command>.
                        <NoCloseCommand> rdf:type owl:Class .
@@ -2981,14 +2225,6 @@
                        <NoToggleCommand> rdf:type owl:Class .
                        <NoToggleCommand> owl:complementOf <ToggleCommand> .
                        """^^xsd:string ,
-                                                   """
-                       <NoCommand> rdf:type owl:Class .
-                       <NoCommand> owl:complementOf <Command>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Function1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoCommand>.
-
-                       <Function1> rdf:type owl:Class .
-"""^^xsd:string ,
                                                    """
                        <NoCommodity> rdf:type owl:Class .
                        <NoCommodity> owl:complementOf <Commodity>.
@@ -3132,20 +2368,8 @@
                                                    """
                        <NoFunction> rdf:type owl:Class .
                        <NoFunction> owl:complementOf <Function>.
-                       <NoControllingFunction> rdf:type owl:Class .
-                       <NoControllingFunction> owl:complementOf <ControllingFunction> .
-                       """^^xsd:string ,
-                                                   """
-                       <NoFunction> rdf:type owl:Class .
-                       <NoFunction> owl:complementOf <Function>.
                        <NoEventFunction> rdf:type owl:Class .
                        <NoEventFunction> owl:complementOf <EventFunction> .
-                       """^^xsd:string ,
-                                                   """
-                       <NoFunction> rdf:type owl:Class .
-                       <NoFunction> owl:complementOf <Function>.
-                       <NoMeasuringFunction> rdf:type owl:Class .
-                       <NoMeasuringFunction> owl:complementOf <MeasuringFunction> .
                        """^^xsd:string ,
                                                    """
                        <NoFunction> rdf:type owl:Class .
@@ -3159,22 +2383,6 @@
                        <NoSensingFunction> rdf:type owl:Class .
                        <NoSensingFunction> owl:complementOf <SensingFunction> .
                        """^^xsd:string ,
-                                                   """
-                       <NoFunction> rdf:type owl:Class .
-                       <NoFunction> owl:complementOf <Function>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Device1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoFunction>.
-
-                       <Device1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoFunction> rdf:type owl:Class .
-                       <NoFunction> owl:complementOf <Function>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Service1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoFunction>.
-
-                       <Service1> rdf:type owl:Class .
-"""^^xsd:string ,
                                                    """
                        <NoFunctionRelated> rdf:type owl:Class .
                        <NoFunctionRelated> owl:complementOf <FunctionRelated>.
@@ -3214,14 +2422,6 @@
                        <Procedure1> rdf:type owl:Class .
 """^^xsd:string ,
                                                    """
-                       <NoInputDataPoint> rdf:type owl:Class .
-                       <NoInputDataPoint> owl:complementOf <InputDataPoint>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Service1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoInputDataPoint>.
-
-                       <Service1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
                        <NoLevelControl> rdf:type owl:Class .
                        <NoLevelControl> owl:complementOf <LevelControl>.
                        <individua001> rdf:type  owl:NamedIndividual, <DimmerLamp1>.
@@ -3243,22 +2443,6 @@
                        <NoDimmerLamp> rdf:type owl:Class .
                        <NoDimmerLamp> owl:complementOf <DimmerLamp> .
                        """^^xsd:string ,
-                                                   """
-                       <NoMetaData> rdf:type owl:Class .
-                       <NoMetaData> owl:complementOf <MetaData>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Aspect1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoMetaData>.
-
-                       <Aspect1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoMetaData> rdf:type owl:Class .
-                       <NoMetaData> owl:complementOf <MetaData>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Variable1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoMetaData>.
-
-                       <Variable1> rdf:type owl:Class .
-"""^^xsd:string ,
                                                    """
                        <NoMeter> rdf:type owl:Class .
                        <NoMeter> owl:complementOf <Meter>.
@@ -3306,60 +2490,12 @@
                        <DoorSwitch1> rdf:type owl:Class .
 """^^xsd:string ,
                                                    """
-                       <NoOperation> rdf:type owl:Class .
-                       <NoOperation> owl:complementOf <Operation>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Service1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoOperation>.
-
-                       <Service1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoOperationInput> rdf:type owl:Class .
-                       <NoOperationInput> owl:complementOf <OperationInput>.
-                       <individua001> rdf:type  owl:NamedIndividual, <Command1>.
-                       <individua002> rdf:type owl:NamedIndividual, <NoOperationInput>.
-
-                       <Command1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoOperationInput> rdf:type owl:Class .
-                       <NoOperationInput> owl:complementOf <OperationInput>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Operation1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoOperationInput>.
-
-                       <Operation1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoOperationOutput> rdf:type owl:Class .
-                       <NoOperationOutput> owl:complementOf <OperationOutput>.
-                       <individua001> rdf:type  owl:NamedIndividual, <Command1>.
-                       <individua002> rdf:type owl:NamedIndividual, <NoOperationOutput>.
-
-                       <Command1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoOperationOutput> rdf:type owl:Class .
-                       <NoOperationOutput> owl:complementOf <OperationOutput>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Operation1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoOperationOutput>.
-
-                       <Operation1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
                        <NoOutput> rdf:type owl:Class .
                        <NoOutput> owl:complementOf <Output>.
                        <individual001> rdf:type  owl:NamedIndividual, <Procedure1>.
                        <individual002> rdf:type owl:NamedIndividual, <NoOutput>.
 
                        <Procedure1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoOutputDataPoint> rdf:type owl:Class .
-                       <NoOutputDataPoint> owl:complementOf <OutputDataPoint>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Service1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoOutputDataPoint>.
-
-                       <Service1> rdf:type owl:Class .
 """^^xsd:string ,
                                                    """
                        <NoPlatform> rdf:type owl:Class .
@@ -3518,14 +2654,6 @@
                        <ObservableProperty1> rdf:type owl:Class .
 """^^xsd:string ,
                                                    """
-                       <NoService> rdf:type owl:Class .
-                       <NoService> owl:complementOf <Service>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Service1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoService>.
-
-                       <Service1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
                        <NoSmoke> rdf:type owl:Class .
                        <NoSmoke> owl:complementOf <Smoke>.
                        <individua001> rdf:type  owl:NamedIndividual, <SmokeSensor1>.
@@ -3574,14 +2702,6 @@
                        <Sensor1> rdf:type owl:Class .
 """^^xsd:string ,
                                                    """
-                       <NoStructuredTypeVariable> rdf:type owl:Class .
-                       <NoStructuredTypeVariable> owl:complementOf <StructuredTypeVariable>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Variable1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoStructuredTypeVariable>.
-
-                       <Variable1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
                        <NoSwitch> rdf:type owl:Class .
                        <NoSwitch> owl:complementOf <Switch>.
                        <individua001> rdf:type  owl:NamedIndividual, <DoorSwitch1>.
@@ -3619,70 +2739,6 @@
 
                        <System1> rdf:type owl:Class .
 """^^xsd:string ,
-                                                   """
-                       <NoThing> rdf:type owl:Class .
-                       <NoThing> owl:complementOf <Thing>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Thing1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoThing>.
-
-                       <Thing1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoThingProperty> rdf:type owl:Class .
-                       <NoThingProperty> owl:complementOf <ThingProperty>.
-                       <individual001> rdf:type  owl:NamedIndividual, <Thing1>.
-                       <individual002> rdf:type owl:NamedIndividual, <NoThingProperty>.
-
-                       <Thing1> rdf:type owl:Class .
-"""^^xsd:string ,
-                                                   """
-                       <NoVariable> rdf:type owl:Class .
-                       <NoVariable> owl:complementOf <Variable>.
-                       <NoInputDataPoint> rdf:type owl:Class .
-                       <NoInputDataPoint> owl:complementOf <InputDataPoint> .
-                       """^^xsd:string ,
-                                                   """
-                       <NoVariable> rdf:type owl:Class .
-                       <NoVariable> owl:complementOf <Variable>.
-                       <NoOutputDataPoint> rdf:type owl:Class .
-                       <NoOutputDataPoint> owl:complementOf <OutputDataPoint> .
-                       """^^xsd:string ,
-                                                   """
-                       <NoVariable> rdf:type owl:Class .
-                       <NoVariable> owl:complementOf <Variable>.
-                       <NoSimpleTypeVariable> rdf:type owl:Class .
-                       <NoSimpleTypeVariable> owl:complementOf <SimpleTypeVariable> .
-                       """^^xsd:string ,
-                                                   """
-                       <Operation1> rdfs:subClassOf <Operation>.
-
-                       <Nostring> rdf:type rdfs:Datatype .
-
-                       <Nostring> owl:equivalentClass [ rdf:type rdfs:Datatype ;
-                                owl:datatypeComplementOf <http://www.w3.org/2001/XMLSchema#string>
-                              ] .
-                       <individual001> rdf:type  owl:NamedIndividual, <Operation1>.
-"""^^xsd:string ,
-                                                   """
-                       <SimpleTypeVariable1> rdfs:subClassOf <SimpleTypeVariable>.
-
-                       <Nostring> rdf:type rdfs:Datatype .
-
-                       <Nostring> owl:equivalentClass [ rdf:type rdfs:Datatype ;
-                                owl:datatypeComplementOf <http://www.w3.org/2001/XMLSchema#string>
-                              ] .
-                       <individual001> rdf:type  owl:NamedIndividual, <SimpleTypeVariable1>.
-"""^^xsd:string ,
-                                                   """
-                       <Variable1> rdfs:subClassOf <Variable>.
-
-                       <Nostring> rdf:type rdfs:Datatype .
-
-                       <Nostring> owl:equivalentClass [ rdf:type rdfs:Datatype ;
-                                owl:datatypeComplementOf <http://www.w3.org/2001/XMLSchema#string>
-                              ] .
-                       <individual001> rdf:type  owl:NamedIndividual, <Variable1>.
-"""^^xsd:string ,
                                                    """                       <NoTask> rdf:type owl:Class .
                        <NoTask> owl:complementOf <Task>.
                        """^^xsd:string ,
@@ -3710,12 +2766,9 @@
                                                             "Class(<Actuation>)"^^xsd:string ,
                                                             "Class(<Actuator>)"^^xsd:string ,
                                                             "Class(<Appliance>)"^^xsd:string ,
-                                                            "Class(<AreaNetwork>)"^^xsd:string ,
-                                                            "Class(<Aspect>)"^^xsd:string ,
                                                             "Class(<CloseCommand>)"^^xsd:string ,
                                                             "Class(<Command>)"^^xsd:string ,
                                                             "Class(<Commodity>)"^^xsd:string ,
-                                                            "Class(<ControllingFunction>)"^^xsd:string ,
                                                             "Class(<Deployment>)"^^xsd:string ,
                                                             "Class(<Device>)"^^xsd:string ,
                                                             "Class(<DimmerLamp>)"^^xsd:string ,
@@ -3727,25 +2780,17 @@
                                                             "Class(<Function>)"^^xsd:string ,
                                                             "Class(<FunctionRelated>)"^^xsd:string ,
                                                             "Class(<Input>)"^^xsd:string ,
-                                                            "Class(<InputDataPoint>)"^^xsd:string ,
-                                                            "Class(<InterworkedDevice>)"^^xsd:string ,
                                                             "Class(<LevelControl>)"^^xsd:string ,
                                                             "Class(<Light>)"^^xsd:string ,
                                                             "Class(<LightingDevice>)"^^xsd:string ,
                                                             "Class(<Load>)"^^xsd:string ,
-                                                            "Class(<MeasuringFunction>)"^^xsd:string ,
-                                                            "Class(<MetaData>)"^^xsd:string ,
                                                             "Class(<Meter>)"^^xsd:string ,
                                                             "Class(<MeteringFunction>)"^^xsd:string ,
                                                             "Class(<ObservableProperty>)"^^xsd:string ,
                                                             "Class(<Observation>)"^^xsd:string ,
                                                             "Class(<OnOffFunction>)"^^xsd:string ,
                                                             "Class(<OpenCloseFunction>)"^^xsd:string ,
-                                                            "Class(<Operation>)"^^xsd:string ,
-                                                            "Class(<OperationInput>)"^^xsd:string ,
-                                                            "Class(<OperationOutput>)"^^xsd:string ,
                                                             "Class(<Output>)"^^xsd:string ,
-                                                            "Class(<OutputDataPoint>)"^^xsd:string ,
                                                             "Class(<Platform>)"^^xsd:string ,
                                                             "Class(<Procedure>)"^^xsd:string ,
                                                             "Class(<Property>)"^^xsd:string ,
@@ -3754,21 +2799,15 @@
                                                             "Class(<Sampling>)"^^xsd:string ,
                                                             "Class(<SensingFunction>)"^^xsd:string ,
                                                             "Class(<Sensor>)"^^xsd:string ,
-                                                            "Class(<Service>)"^^xsd:string ,
-                                                            "Class(<SimpleTypeVariable>)"^^xsd:string ,
                                                             "Class(<Smoke>)"^^xsd:string ,
                                                             "Class(<SmokeSensor>)"^^xsd:string ,
                                                             "Class(<StartStopFunction>)"^^xsd:string ,
                                                             "Class(<State>)"^^xsd:string ,
                                                             "Class(<Stimulus>)"^^xsd:string ,
-                                                            "Class(<StructuredTypeVariable>)"^^xsd:string ,
                                                             "Class(<Switch>)"^^xsd:string ,
                                                             "Class(<System>)"^^xsd:string ,
                                                             "Class(<Temperature>)"^^xsd:string ,
                                                             "Class(<TemperatureSensor>)"^^xsd:string ,
-                                                            "Class(<Thing>)"^^xsd:string ,
-                                                            "Class(<ThingProperty>)"^^xsd:string ,
-                                                            "Class(<Variable>)"^^xsd:string ,
                                                             "Class(<WashingMachine>)"^^xsd:string ,
                                                             "Class(<Water>)"^^xsd:string ,
                                                             "Individual(<Safety>)"^^xsd:string ,
@@ -3779,48 +2818,27 @@
                                                             "Property(<control>)"^^xsd:string ,
                                                             "Property(<deployedOnPlatform>)"^^xsd:string ,
                                                             "Property(<deployedSystem>)"^^xsd:string ,
-                                                            "Property(<describes>)"^^xsd:string ,
                                                             "Property(<detects>)"^^xsd:string ,
-                                                            "Property(<exposesFunction>)"^^xsd:string ,
                                                             "Property(<forProperty>)"^^xsd:string ,
                                                             "Property(<hasCommand>)"^^xsd:string ,
-                                                            "Property(<hasDataRestriction>)"^^xsd:string ,
-                                                            "Property(<hasDataType>)"^^xsd:string ,
                                                             "Property(<hasDescription>)"^^xsd:string ,
                                                             "Property(<hasFeatureOfInterest>)"^^xsd:string ,
                                                             "Property(<hasFunction>)"^^xsd:string ,
                                                             "Property(<hasInput>)"^^xsd:string ,
-                                                            "Property(<hasInputDataPoint>)"^^xsd:string ,
-                                                            "Property(<hasMetaData>)"^^xsd:string ,
                                                             "Property(<hasModel>)"^^xsd:string ,
-                                                            "Property(<hasOperation>)"^^xsd:string ,
                                                             "Property(<hasOutput>)"^^xsd:string ,
-                                                            "Property(<hasOutputDataPoint>)"^^xsd:string ,
                                                             "Property(<hasResult>)"^^xsd:string ,
-                                                            "Property(<hasService>)"^^xsd:string ,
                                                             "Property(<hasState>)"^^xsd:string ,
-                                                            "Property(<hasSubService>)"^^xsd:string ,
-                                                            "Property(<hasSubStructure>)"^^xsd:string ,
                                                             "Property(<hasSubSystem>)"^^xsd:string ,
-                                                            "Property(<hasThingProperty>)"^^xsd:string ,
-                                                            "Property(<hasThingRelation>)"^^xsd:string ,
-                                                            "Property(<hasValue>)"^^xsd:string ,
                                                             "Property(<implementedBy>)"^^xsd:string ,
                                                             "Property(<implements>)"^^xsd:string ,
                                                             "Property(<inDeployment>)"^^xsd:string ,
                                                             "Property(<isObservedBy>)"^^xsd:string ,
-                                                            "Property(<isPartOf>)"^^xsd:string ,
                                                             "Property(<isProxyFor>)"^^xsd:string ,
                                                             "Property(<isUsedFor>)"^^xsd:string ,
                                                             "Property(<madeActuation>)"^^xsd:string ,
                                                             "Property(<measuresProperty>)"^^xsd:string ,
-                                                            "Property(<netTechnologyCommunicationProtocol>)"^^xsd:string ,
-                                                            "Property(<netTechnologyPhysicalStandard>)"^^xsd:string ,
-                                                            "Property(<netTechnologyProfile>)"^^xsd:string ,
                                                             "Property(<observes>)"^^xsd:string ,
-                                                            "Property(<oneM2MAttribute>)"^^xsd:string ,
-                                                            "Property(<oneM2MMethod>)"^^xsd:string ,
-                                                            "Property(<oneM2MTargetURI>)"^^xsd:string ,
                                                             "Property(<performs>)"^^xsd:string ,
                                                             "Property(<wasOriginatedBy>)"^^xsd:string ;
                      

@@ -1,0 +1,115 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix vtc: <http://w3id.org/def/vtc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix  :     <http://vicinity.iot.linkeddata.es/vicinity/testing/testsuite-map.ttl#> .
+
+
+:TestsuiteMappings rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
+            dcterms:source "Open Connectivity Foundation (OCF)".
+
+:Test-case1 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings1>;
+	dc:description "A TED describes one or more web thing";
+	vtc:desiredBehaviour "ThingEcosystemDescription subclassOf describes some Ecosystem";
+	vtc:desiredBehaviour "Ecosystem subclassOf hasComponent some Thing" .
+
+
+:Test-case2 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings2>;
+	dc:description "A TED refers to a service accesible in an URI";
+	vtc:desiredBehaviour "ThingEcosystemDescription subclassOf describes some Ecosystem"; 
+	vtc:desiredBehaviour 	"Ecosystem subclassOf hasComponent some Thing";
+	vtc:desiredBehaviour "Thing subclassOf isAccessibleThrough some Link" .
+
+
+:Test-case3 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings3>;
+	dc:description "A Thing ecosystem describes relations between TEDs";
+	vtc:desiredBehaviour "Ecosystem subclassOf isDescribedBy some ThingEcosystemDescription" .
+	
+
+
+:Test-case4 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings4>;
+	dc:description "A thing description can have access mappings defined";
+	vtc:desiredBehaviour "ThingDescription subclassOf hasAccessMapping only AccessMapping" .
+			
+
+:Test-case5 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings6>;
+	dc:description "An access mapping defines the transformation to be carried out for a specific key";
+	vtc:desiredBehaviour "Mapping subclassOf key only string".
+	
+
+:Test-case6 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings7>;
+	dc:description "An access mapping can have many mappings defined";
+	vtc:desiredBehaviour "AccessMapping subclassOf hasMapping only Mapping" .
+
+
+:Test-case7 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings8>;
+	dc:description "A mapping can transform keys to object properties or datatype properties";
+	vtc:desiredBehaviour "ObjectPropertyMapping SubClassOf Mapping";
+	vtc:desiredBehaviour "DatatypePropertyMapping SubClassOf Mapping" .
+
+
+:Test-case8 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings9>;
+	dc:description "An object property mapping transforms keys to object properties";
+	vtc:desiredBehaviour "ObjectPropertyMapping  SubClassOf predicate only ObjectProperty".
+
+
+
+:Test-case9 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings10>;
+	dc:description "A datatype property mapping transforms keys to datatype properties";
+	vtc:desiredBehaviour "DatatypePropertyMapping  SubClassOf predicate only DatatypeProperty" .
+
+
+
+
+:Test-case10 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings11>;
+	dc:description "An object property mapping can have many target classes to be the type of the generated instances";
+	vtc:desiredBehaviour "ObjectPropertyMapping SubClassOf targetClass only Class" .
+	
+
+
+
+
+:Test-case11 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings12>;
+	dc:description "A datatype property mapping can have many target (consistent) datatypes to be the datatype of the generated values";
+	vtc:desiredBehaviour "DatatypePropertyMapping SubClassOf targetDatatype only Datatype" . 
+	
+
+
+:Test-case12 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings13>;
+	dc:description "An object property mapping generate instances transforming values following the mappings defined in a another thing description.";
+	vtc:desiredBehaviour "ObjectPropertyMapping SubClassOf valuesTransformedBy max 1 ThingDescription" .
+	
+
+
+:Test-case14 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings14>;
+	dc:description "A mapping might be needed to be executed befor another mapping";
+	vtc:desiredBehaviour "AccessMapping SubClassOf isExecutedAfter only AccessMapping" . 
+	
+
+:Test-case15 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings15>;
+	dc:description "A mapping has a JSON path";
+	vtc:desiredBehaviour "Mapping SubClassOf jsonPath only string" . 
+	
+
+
+:Test-case16 a vtc:TestCaseDesign,  owl:NamedIndividual ;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings16>;
+	dc:description "An access mapping can be applied at most to one endpoint";
+	vtc:desiredBehaviour "AccessMapping SubClassOf mapsResourcesFrom exactly 1 Link" .
+	

@@ -1,0 +1,274 @@
+
+Jsquid:S1168ï"+Return an empty collection instead of null.(¥¹ï8¥Èù¯-
+csquid:S1858°"?"group" returns a string, there's no need to call "toString()".(ÊùÆïşÿÿÿÿ8¥Èù¯-
+csquid:S1858†"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+]squid:S1858¢"?"group" returns a string, there's no need to call "toString()".(ÛÀÅY8¥Èù¯-
+csquid:S1858é"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+Jsquid:S1168Ã"+Return an empty collection instead of null.(¥¹ï8¥Èù¯-
+csquid:S1858ë"?"group" returns a string, there's no need to call "toString()".(¨Í÷æúÿÿÿÿ8¥Èù¯-
+”squid:S1319» "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÑÜ›ÿùÿÿÿÿ8¥Èù¯-
+Msquid:S1481Å".Remove this unused "axiomInd4" local variable.(êù¡8¥Èù¯-
+vsquid:S00117¾"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+hsquid:S1192Î"IDefine a constant instead of duplicating this literal "isRoleOf" 4 times.(ÓÌ²8¥Èù¯-
+ksquid:S1192‰"GDefine a constant instead of duplicating this literal "string" 6 times.(³ú‚üÿÿÿÿ8¥Èù¯-
+ksquid:S1192Œ
+"MDefine a constant instead of duplicating this literal "Assertion 5" 14 times.(’¬³68¥Èù¯-
+Psquid:S1481±",Remove this unused "classA1" local variable.(ğ—ïºıÿÿÿÿ8¥Èù¯-
+Jsquid:S1168Ã"+Return an empty collection instead of null.(¥¹ï8¥Èù¯-
+qsquid:S00117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı»ä¥8¥Èù¯-
+ˆsquid:S11927"eDefine a constant instead of duplicating this literal "http://purl.org/dc/terms/description" 3 times.(‡ŠÕøüÿÿÿÿ8™ÂÂù¯-
+csquid:S1858Ë"?"group" returns a string, there's no need to call "toString()".(Ú¨ÿ€ûÿÿÿÿ8¥Èù¯-
+csquid:S1858¯"?"group" returns a string, there's no need to call "toString()".(ßõÄ·üÿÿÿÿ8¥Èù¯-
+‡squid:S1157Ë"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(™¨Æşÿÿÿÿ8¥Èù¯-
+Ysquid:S1481Ä"5Remove this unused "subClassOfAxiom2" local variable.(¹…µøÿÿÿÿ8¥Èù¯-
+”squid:S1319ö"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(“Şßùÿÿÿÿ8¥Èù¯-
+dsquid:S1854Ê"ERemove this useless assignment to local variable "classA1withouturi".(İö‡8¥Èù¯-
+osquid:CommentedOutCodeLineÙ"<This block of commented-out lines of code should be removed.(æİş¯üÿÿÿÿ8¥Èù¯-
+^squid:S1858ê"?"group" returns a string, there's no need to call "toString()".(éÑÀî8¥Èù¯-
+Isquid:UselessImportCheck	"Remove this duplicated import.(†šÔ¦8™ÂÂù¯-
+Zsquid:S1854é";Remove this useless assignment to local variable "classB1".(Ú›ãº8¥Èù¯-
+]squid:S1118":Add a private constructor to hide the implicit public one.(¨€ ½ıÿÿÿÿ8¥Èù¯-
+]squid:S1858ê"?"group" returns a string, there's no need to call "toString()".(øæ 8¥Èù¯-
+‡squid:S1157Å"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(šäñˆıÿÿÿÿ8¥Èù¯-
+vsquid:S3776Û "RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ëØ™åıÿÿÿÿ8¥Èù¯-
+msquid:S1192º"IDefine a constant instead of duplicating this literal "Class(<" 53 times.(Ç…Ú¨şÿÿÿÿ8¥Èù¯-
+\
+squid:S106ö"9Replace this use of System.out or System.err by a logger.(äâÈÕüÿÿÿÿ8¥Èù¯-
+vsquid:S00117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+csquid:S1858"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+vsquid:S00117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+”squid:S1319­"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ü »øøÿÿÿÿ8¥Èù¯-
+csquid:S1858µ"?"group" returns a string, there's no need to call "toString()".(ÿ—¸¼ûÿÿÿÿ8¥Èù¯-
+qsquid:S00117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÑ¯8¥Èù¯-
+psquid:S3776\"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(Ç½¯¹8™ÂÂù¯-
+”squid:S1319ó"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¯§Æıøÿÿÿÿ8¥Èù¯-
+^squid:S1858"?"group" returns a string, there's no need to call "toString()".(ˆÄ«Ö8¥Èù¯-
+csquid:S1858™"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+csquid:S1858å "?"group" returns a string, there's no need to call "toString()".(îããóüÿÿÿÿ8¥Èù¯-
+csquid:S1858ã "?"group" returns a string, there's no need to call "toString()".(¨Í÷æúÿÿÿÿ8¥Èù¯-
+^squid:S1858Í"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+]squid:S1858ÿ"?"group" returns a string, there's no need to call "toString()".(øæ 8¥Èù¯-
+squid:S1319‘"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(º‹“8¥Èù¯-
+^squid:S1858¡"?"group" returns a string, there's no need to call "toString()".(“Í°¯8¥Èù¯-
+qsquid:S1192‹
+"MDefine a constant instead of duplicating this literal "Assertion 4" 24 times.(ÿ–×õøÿÿÿÿ8¥Èù¯-
+osquid:CommentedOutCodeLine²"<This block of commented-out lines of code should be removed.(ï¸‘áşÿÿÿÿ8¥Èù¯-
+^squid:S1858æ"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+msquid:S1192Æ"ODefine a constant instead of duplicating this literal "hasParticipant" 4 times.(ª€+8¥Èù¯-
+csquid:S1858î"?"group" returns a string, there's no need to call "toString()".(†„Øƒüÿÿÿÿ8¥Èù¯-
+squid:S1319ı"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¶ê³ª8¥Èù¯-
+^squid:S1858¼"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+”squid:S1319’"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ƒÕĞûÿÿÿÿ8¥Èù¯-
+csquid:S1858ó"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+lsquid:S1192Ê"HDefine a constant instead of duplicating this literal "hasRole" 4 times.(åñ¥ƒúÿÿÿÿ8¥Èù¯-
+osquid:CommentedOutCodeLineÏ"<This block of commented-out lines of code should be removed.(Ó¨ğşÿÿÿÿ8¥Èù¯-
+csquid:S1858…"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+bsquid:S1854™"CRemove this useless assignment to local variable "subClassOfAxiom".(çŸ™•8¥Èù¯-
+csquid:S1858ò""?"group" returns a string, there's no need to call "toString()".(îããóüÿÿÿÿ8Ú»¾ù¯-
+^squid:S1858²"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+Qsquid:S2201^".The return value of "replaceAll" must be used.(ì¤£×úÿÿÿÿ8™ÂÂù¯-
+csquid:S1858ƒ"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+”squid:S1319¶"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(º¦Ãşÿÿÿÿ8¥Èù¯-
+lsquid:S1192Ì"MDefine a constant instead of duplicating this literal "isLocationOf" 4 times.(Íİÿ8¥Èù¯-
+^squid:S1858ş"?"group" returns a string, there's no need to call "toString()".(ˆÄ«Ö8¥Èù¯-
+”squid:S1319Û "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ëØ™åıÿÿÿÿ8¥Èù¯-
+Ssquid:EmptyStatementUsageCheckü"Remove this empty statement.(Ê…£úÿÿÿÿ8¥Èù¯-
+csquid:S1858„"?"group" returns a string, there's no need to call "toString()".(ƒøùÖøÿÿÿÿ8¥Èù¯-
+lsquid:S1192‰"HDefine a constant instead of duplicating this literal "boolean" 3 times.(³ú‚üÿÿÿÿ8¥Èù¯-
+qsquid:S1192à"MDefine a constant instead of duplicating this literal "individua003" 4 times.(·˜ÒÔúÿÿÿÿ8¥Èù¯-
+psquid:S1192»"LDefine a constant instead of duplicating this literal "Property(<" 25 times.(é¼ÛÉùÿÿÿÿ8¥Èù¯-
+Tsquid:S1481"0Remove this unused "axiomClass5" local variable.(÷»ìşÿÿÿÿ8¥Èù¯-
+csquid:S1858í"?"group" returns a string, there's no need to call "toString()".(Ú¾çüüÿÿÿÿ8¥Èù¯-
+Jsquid:S1168ø"+Return an empty collection instead of null.(¥¹ï8¥Èù¯-
+csquid:S1858¹"?"group" returns a string, there's no need to call "toString()".(ÊùÆïşÿÿÿÿ8¥Èù¯-
+Msquid:EmptyStatementUsageCheckÿ"Remove this empty statement.(øæ 8¥Èù¯-
+Msquid:S1481Ô".Remove this unused "axiomInd1" local variable.(¶ÁÅ˜8¥Èù¯-
+hsquid:S1192†"IDefine a constant instead of duplicating this literal "(#|\\/)" 82 times.(Ù´Üâ8¥Èù¯-
+psquid:S1192Ë"LDefine a constant instead of duplicating this literal "haslocation" 4 times.(™¨Æşÿÿÿÿ8¥Èù¯-
+^squid:S1858†"?"group" returns a string, there's no need to call "toString()".(ÛŞ¶å8¥Èù¯-
+csquid:S1858À"?"group" returns a string, there's no need to call "toString()".(Ä¶ß£ùÿÿÿÿ8¥Èù¯-
+]squid:S1858ƒ"?"group" returns a string, there's no need to call "toString()".(è­Ø 8¥Èù¯-
+hsquid:S1192‹"IDefine a constant instead of duplicating this literal "rational" 6 times.(£”²8¥Èù¯-
+^squid:S1858î"?"group" returns a string, there's no need to call "toString()".(ñúšŸ8¥Èù¯-
+msquid:S1192‘"NDefine a constant instead of duplicating this literal "inconsistent" 39 times.(²öœ¬8Ú»¾ù¯-
+psquid:S1192¼"LDefine a constant instead of duplicating this literal "consistent" 49 times.(¥—¥äúÿÿÿÿ8¥Èù¯-
+^squid:S1858ô""?"group" returns a string, there's no need to call "toString()".(Ü·¨–8Ú»¾ù¯-
+^squid:S1858î""?"group" returns a string, there's no need to call "toString()".(Äêó¢8Ú»¾ù¯-
+^squid:S1858¤"?"group" returns a string, there's no need to call "toString()".(ı»ä¥8¥Èù¯-
+squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ˆ­Ü8™ÂÂù¯-
+Tsquid:S1481œ"5Remove this unused "classBwithouturi" local variable.(¯æ¨£8¥Èù¯-
+csquid:S1854"?Remove this useless assignment to local variable "axiomClass5".(÷»ìşÿÿÿÿ8¥Èù¯-
+psquid:S11921"MDefine a constant instead of duplicating this literal "^^xsd:string" 4 times.(ˆÕâùûÿÿÿÿ8™ÂÂù¯-
+vsquid:S00117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+^squid:S1858™"?"group" returns a string, there's no need to call "toString()".(ñÌÿÚ8¥Èù¯-
+csquid:S1858…"?"group" returns a string, there's no need to call "toString()".(¢äË—ıÿÿÿÿ8¥Èù¯-
+^squid:S1858ô"?"group" returns a string, there's no need to call "toString()".(éÑÀî8¥Èù¯-
+^squid:S1858Ÿ"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+ksquid:S1192¯"LDefine a constant instead of duplicating this literal "individual1" 3 times.(ÒëÅ“8¥Èù¯-
+csquid:S1854Ë"DRemove this useless assignment to local variable "classBwithouturi".(¯æ¨£8¥Èù¯-
+jsquid:CommentedOutCodeLineğ"<This block of commented-out lines of code should be removed.(ƒÒ¾8¥Èù¯-
+vsquid:S3776è""RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(İ¾Æóøÿÿÿÿ8Ú»¾ù¯-
+^squid:S1858ê"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+_squid:S1854±";Remove this useless assignment to local variable "classA1".(ğ—ïºıÿÿÿÿ8¥Èù¯-
+\
+squid:S106Ö"9Replace this use of System.out or System.err by a logger.(éÁ«‘şÿÿÿÿ8¥Èù¯-
+Msquid:EmptyStatementUsageCheckê"Remove this empty statement.(øæ 8¥Èù¯-
+qsquid:S3776ı"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¶ê³ª8¥Èù¯-
+^squid:S1858"?"group" returns a string, there's no need to call "toString()".(Î‘ÒÎ8¥Èù¯-
+squid:S1319¥
+"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÇÁŸ8¥Èù¯-
+vsquid:S00117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+^squid:S1858¥"?"group" returns a string, there's no need to call "toString()".(Óû¾Í8¥Èù¯-
+^squid:S1858á "?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+squid:S1319à"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Öğ²â8¥Èù¯-
+lsquid:S1192
+"MDefine a constant instead of duplicating this literal "Assertion 6" 10 times.(¢¸•¦8¥Èù¯-
+vsquid:S00117é"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+qsquid:S1192Ç"MDefine a constant instead of duplicating this literal "islocationof" 4 times.(Ó„íüøÿÿÿÿ8¥Èù¯-
+^squid:S1858¶"?"group" returns a string, there's no need to call "toString()".(µûÏ‘8¥Èù¯-
+Osquid:S1481«"+Remove this unused "indNoC" local variable.(„òÿ­ÿÿÿÿÿ8¥Èù¯-
+csquid:S1858…"?"group" returns a string, there's no need to call "toString()".(†„Øƒüÿÿÿÿ8¥Èù¯-
+‡squid:S1157Ç"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(Ó„íüøÿÿÿÿ8¥Èù¯-
+Ksquid:S1481é",Remove this unused "classB1" local variable.(Ú›ãº8¥Èù¯-
+vsquid:S00117û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¼È®ÿÿÿÿÿ8¥Èù¯-
+lsquid:S1192ß"MDefine a constant instead of duplicating this literal "individua002" 4 times.(ëÅôß8¥Èù¯-
+Ssquid:S1481™"4Remove this unused "subClassOfAxiom" local variable.(çŸ™•8¥Èù¯-
+Hsquid:S1481ª")Remove this unused "indB" local variable.(õà¬Ã8¥Èù¯-
+^squid:S1858§"?"group" returns a string, there's no need to call "toString()".(«Šä‘8¥Èù¯-
+osquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(¼¾­Şıÿÿÿÿ8¥Èù¯-
+squid:S1319™"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¬°•8¥Èù¯-
+vsquid:S00117ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+csquid:S1858"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+”squid:S1319©"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÑÎßşùÿÿÿÿ8¥Èù¯-
+”squid:S1319ù"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¸§éáùÿÿÿÿ8¥Èù¯-
+psquid:S1192È"LDefine a constant instead of duplicating this literal "hasLocation" 4 times.(Óãà„ıÿÿÿÿ8¥Èù¯-
+squid:S1319ú"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(»¡»Ü8¥Èù¯-
+‡squid:S1157Í"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(Àœºêıÿÿÿÿ8¥Èù¯-
+csquid:S1858û"?"group" returns a string, there's no need to call "toString()".(€¼È®ÿÿÿÿÿ8¥Èù¯-
+vsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+psquid:S1192©"LDefine a constant instead of duplicating this literal "Assertion 8" 6 times.(ê Õıÿÿÿÿ8¥Èù¯-
+\squid:S1854Ô"=Remove this useless assignment to local variable "axiomInd1".(¶ÁÅ˜8¥Èù¯-
+”squid:S1319ö"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(”§çÖşÿÿÿÿ8¥Èù¯-
+^squid:S1858‚"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+]squid:S1858Ó"?"group" returns a string, there's no need to call "toString()".(›¾Éa8¥Èù¯-
+^squid:S1858ğ"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+lsquid:S1192ê"MDefine a constant instead of duplicating this literal "Assertion 1" 54 times.(ìá¥Á8¥Èù¯-
+csquid:S1858Ñ"?"group" returns a string, there's no need to call "toString()".(Ä¶ß£ùÿÿÿÿ8¥Èù¯-
+squid:S1319å"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(³÷Ê¦8¥Èù¯-
+csquid:S1858´
+"?"group" returns a string, there's no need to call "toString()".(Ä¶ß£ùÿÿÿÿ8¥Èù¯-
+csquid:S1858è"?"group" returns a string, there's no need to call "toString()".(†„Øƒüÿÿÿÿ8¥Èù¯-
+”squid:S1319è""pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(İ¾Æóøÿÿÿÿ8Ú»¾ù¯-
+vsquid:S00117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ—¸¼ûÿÿÿÿ8¥Èù¯-
+”squid:S1319¶"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(µãÏıÿÿÿÿ8¥Èù¯-
+^squid:S1858€"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+csquid:S1858˜"?"group" returns a string, there's no need to call "toString()".(ßõÄ·üÿÿÿÿ8¥Èù¯-
+vsquid:S00117ã "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Í÷æúÿÿÿÿ8¥Èù¯-
+^squid:S1858ã"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+‚squid:S1157É"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(èáˆ8¥Èù¯-
+vsquid:S00117ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¼È®ÿÿÿÿÿ8¥Èù¯-
+\squid:S1155#">Use isEmpty() to check whether the collection is empty or not.(¦…ˆó8™ÂÂù¯-
+squid:S1319ü"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(²Ç¾—8¥Èù¯-
+squid:S1319º"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(òŒÌ¿8™ÂÂù¯-
+csquid:S1858Ç"?"group" returns a string, there's no need to call "toString()".(¼ÁŞéûÿÿÿÿ8¥Èù¯-
+csquid:S1858‹"?"group" returns a string, there's no need to call "toString()".(¤ªÛ§ıÿÿÿÿ8¥Èù¯-
+^squid:S1858—"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+^squid:S1854«":Remove this useless assignment to local variable "indNoC".(„òÿ­ÿÿÿÿÿ8¥Èù¯-
+qsquid:S00117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÑ¯8¥Èù¯-
+csquid:S1858ù"?"group" returns a string, there's no need to call "toString()".(Ê…£úÿÿÿÿ8¥Èù¯-
+csquid:S1858¸"?"group" returns a string, there's no need to call "toString()".(ßõÄ·üÿÿÿÿ8¥Èù¯-
+vsquid:S00117ğ""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Í÷æúÿÿÿÿ8Ú»¾ù¯-
+”squid:S1319İ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(æ¯’†ùÿÿÿÿ8¥Èù¯-
+dsquid:S1854›"ERemove this useless assignment to local variable "classA1withouturi".(İö‡8¥Èù¯-
+Nsquid:EmptyStatementUsageCheckî"Remove this empty statement.(ñúšŸ8¥Èù¯-
+vsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+vsquid:S00117ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Í÷æúÿÿÿÿ8¥Èù¯-
+”squid:S1319²"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(üôÜ®ÿÿÿÿÿ8¥Èù¯-
+csquid:S1858Â "?"group" returns a string, there's no need to call "toString()".(ßõÄ·üÿÿÿÿ8¥Èù¯-
+^squid:S1858ğ"?"group" returns a string, there's no need to call "toString()".(ØğÚ¹8¥Èù¯-
+squid:S1319‡"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(›åø˜8¥Èù¯-
+¤%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ˆ­Ü8™ÂÂù¯-
+\squid:S1854Ê"=Remove this useless assignment to local variable "axiomInd4".(º°¤8¥Èù¯-
+csquid:S1858Ï"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+^squid:S1858ˆ"?"group" returns a string, there's no need to call "toString()".(öşì°8¥Èù¯-
+^squid:S1858€	"?"group" returns a string, there's no need to call "toString()".(ØğÚ¹8¥Èù¯-
+”squid:S1319Ç"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(±‚—Ÿÿÿÿÿÿ8¥Èù¯-
+Qsquid:S1135ı"2Complete the task associated to this TODO comment.(¶ê³ª8¥Èù¯-
+qsquid:S3776º"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(òŒÌ¿8™ÂÂù¯-
+csquid:S1858í"?"group" returns a string, there's no need to call "toString()".(Ëí½äüÿÿÿÿ8¥Èù¯-
+tsquid:S1192Å"PDefine a constant instead of duplicating this literal "isparticipantin" 4 times.(šäñˆıÿÿÿÿ8¥Èù¯-
+ksquid:S1192‰"GDefine a constant instead of duplicating this literal "anyuri" 8 times.(³ú‚üÿÿÿÿ8¥Èù¯-
+osquid:CommentedOutCodeLineû"<This block of commented-out lines of code should be removed.(¼¾­Şıÿÿÿÿ8¥Èù¯-
+”squid:S1319ş"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ªÙ¼¬ıÿÿÿÿ8¥Èù¯-
+Usquid:S1481›"6Remove this unused "classA1withouturi" local variable.(İö‡8¥Èù¯-
+Ssquid:EmptyStatementUsageCheckù"Remove this empty statement.(Ê…£úÿÿÿÿ8¥Èù¯-
+csquid:S1858‘"?"group" returns a string, there's no need to call "toString()".(Ä¶ß£ùÿÿÿÿ8¥Èù¯-
+rsquid:S1871©"NThis branch's code block is the same as the block for the branch on line 1957.(İÆÊ¡úÿÿÿÿ8¥Èù¯-
+^squid:S1858"?"group" returns a string, there's no need to call "toString()".(ÛŞ¶å8¥Èù¯-
+csquid:S1858ğ""?"group" returns a string, there's no need to call "toString()".(¨Í÷æúÿÿÿÿ8Ú»¾ù¯-
+Vsquid:UselessImportCheck
+"+Remove this unused import 'utils.Ontology'.(£ú¬³8™ÂÂù¯-
+csquid:S1858Ä"?"group" returns a string, there's no need to call "toString()".(±¬¥úÿÿÿÿ8¥Èù¯-
+vsquid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+^squid:S1858ç "?"group" returns a string, there's no need to call "toString()".(Ü·¨–8¥Èù¯-
+Jsquid:S1172™"+Remove this unused method parameter "type".(¬°•8¥Èù¯-
+squid:S1319› "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(«Êèì8¥Èù¯-
+^squid:S1858á"?"group" returns a string, there's no need to call "toString()".(Š÷ñæ8¥Èù¯-
+^squid:S1858ˆ"?"group" returns a string, there's no need to call "toString()".(À‡Âç8¥Èù¯-
+Usquid:S1481Ê"6Remove this unused "classA1withouturi" local variable.(İö‡8¥Èù¯-
+osquid:CommentedOutCodeLine’"<This block of commented-out lines of code should be removed.(¼¾­Şıÿÿÿÿ8¥Èù¯-
+csquid:S1858°
+"?"group" returns a string, there's no need to call "toString()".(ŸÚÚûÿÿÿÿ8¥Èù¯-
+^squid:S1858ƒ"?"group" returns a string, there's no need to call "toString()".(ñúšŸ8¥Èù¯-
+qsquid:S3776¥
+"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(ÇÁŸ8¥Èù¯-
+\
+squid:S106Ä"9Replace this use of System.out or System.err by a logger.(ş¸Ú“üÿÿÿÿ8¥Èù¯-
+qsquid:S1192ç"MDefine a constant instead of duplicating this literal "Assertion 3" 32 times.(®·Úüÿÿÿÿ8¥Èù¯-
+Jsquid:S1481‚"+Remove this unused "result" local variable.(ìş“8Ú»¾ù¯-
+csquid:S1858¾"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+csquid:S1858ş"?"group" returns a string, there's no need to call "toString()".(€¼È®ÿÿÿÿÿ8¥Èù¯-
+^squid:S1858¢ "?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+lsquid:S1192Í"HDefine a constant instead of duplicating this literal "hasrole" 4 times.(Àœºêıÿÿÿÿ8¥Èù¯-
+”squid:S1319Ç"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ïï…Šıÿÿÿÿ8¥Èù¯-
+Wsquid:S1854ª"8Remove this useless assignment to local variable "indB".(õà¬Ã8¥Èù¯-
+Tsquid:S1481Ë"5Remove this unused "classBwithouturi" local variable.(¯æ¨£8¥Èù¯-
+csquid:S1858ü"?"group" returns a string, there's no need to call "toString()".(Ê…£úÿÿÿÿ8¥Èù¯-
+qsquid:S1192æ"MDefine a constant instead of duplicating this literal "Assertion 2" 50 times.(¶Û”£ıÿÿÿÿ8¥Èù¯-
+csquid:S1858É"?"group" returns a string, there's no need to call "toString()".(±¬¥úÿÿÿÿ8¥Èù¯-
+W
+squid:S106²"9Replace this use of System.out or System.err by a logger.(–‡8¥Èù¯-
+csquid:S1858ì"?"group" returns a string, there's no need to call "toString()".(Ø¥áµúÿÿÿÿ8¥Èù¯-
+qsquid:S3776å"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(³÷Ê¦8¥Èù¯-
+Osquid:S1172ê"+Remove this unused method parameter "type".(Ø¾µöıÿÿÿÿ8¥Èù¯-
+vsquid:S3776Û"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¶ğ—˜üÿÿÿÿ8¥Èù¯-
+csquid:S1854œ"DRemove this useless assignment to local variable "classBwithouturi".(¯æ¨£8¥Èù¯-
+psquid:S1192Ç"LDefine a constant instead of duplicating this literal "Assertion 7" 8 times.(ıøÒ›şÿÿÿÿ8¥Èù¯-
+”squid:S1319Û"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¶ğ—˜üÿÿÿÿ8¥Èù¯-
+csquid:S1858›"?"group" returns a string, there's no need to call "toString()".(Ä¶ß£ùÿÿÿÿ8¥Èù¯-
+@squid:S1643Ü"Use a StringBuilder instead.(òÊùÔıÿÿÿÿ8Ú»¾ù¯-
+qsquid:S00117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Í°¯8¥Èù¯-
+]squid:S1858Ì"?"group" returns a string, there's no need to call "toString()".(­¸8¥Èù¯-
+qsquid:S3776ü"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(²Ç¾—8¥Èù¯-
+vsquid:S00117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥áµúÿÿÿÿ8¥Èù¯-
+^squid:S1858"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+Jsquid:S1172à"+Remove this unused method parameter "type".(Öğ²â8¥Èù¯-
+squid:S1319º"nThe type of the "tcs" object should be an interface such as "List" rather than the implementation "ArrayList".(òŒÌ¿8™ÂÂù¯-
+ssquid:S1192"ODefine a constant instead of duplicating this literal "unsatisfiable" 24 times.(ÿÜøÄüÿÿÿÿ8Ú»¾ù¯-
+Nsquid:EmptyStatementUsageCheckƒ"Remove this empty statement.(ñúšŸ8¥Èù¯-
+jsquid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(Ù¸Ã¤8¥Èù¯-
+”squid:S1319ê"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ø¾µöıÿÿÿÿ8¥Èù¯-
+csquid:S1858ø"?"group" returns a string, there's no need to call "toString()".(Ëí½äüÿÿÿÿ8¥Èù¯-
+^squid:S1858û"?"group" returns a string, there's no need to call "toString()".(Äêó¢8¥Èù¯-
+csquid:S1858ş"?"group" returns a string, there's no need to call "toString()".(†„Øƒüÿÿÿÿ8¥Èù¯-
+hsquid:S1192É"IDefine a constant instead of duplicating this literal "isroleof" 4 times.(èáˆ8¥Èù¯-
+jsquid:S1192o"LDefine a constant instead of duplicating this literal "equivalence" 3 times.(ë˜¸É8»ÛÌù¯-
+gsquid:S1192"HDefine a constant instead of duplicating this literal "exactly" 9 times.(÷ë“‹8»ÛÌù¯-
+W
+squid:S106™"9Replace this use of System.out or System.err by a logger.(Ğ€Ç†8»ÛÌù¯-
+Nsquid:S00108Œ")Either remove or fill this block of code.(Ëü·ùÿÿÿÿ8»ÛÌù¯-
+Isquid:S00108")Either remove or fill this block of code.(¡¿Í8»ÛÌù¯-
+Isquid:S00108")Either remove or fill this block of code.(øå†8»ÛÌù¯-
+Hsquid:S00108’")Either remove or fill this block of code.(Å¹&8»ÛÌù¯-
+Isquid:S00108”")Either remove or fill this block of code.(Ÿâ“á8»ÛÌù¯-
+Nsquid:S00108–")Either remove or fill this block of code.(ë¢õ¤ùÿÿÿÿ8»ÛÌù¯-

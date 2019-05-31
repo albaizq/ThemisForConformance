@@ -56,8 +56,6 @@ public class Mapping {
             String term3 = m.group(3).toString().replaceAll(" ","");
             String term4 = m.group(4).toString().replaceAll(" ","");
             String term5 = m.group(5).toString().replaceAll(" ","");
-            // String term6 = m.group(6).toString().replaceAll(" ","");
-
             if(term1.equals(term5) && term2.equals(term4) ){
                 terms.add(term1);
                 terms.add(term2);
@@ -149,12 +147,10 @@ public class Mapping {
             String term2 = m.group(2).toString().replaceAll(" ","");
             String term3 = m.group(3).toString().replaceAll(" ","");
             String term4 = m.group(4).toString().replaceAll(" ","");
-            //String term5 = m.group(5).toString().replaceAll(" ","");
             terms.add(term1.replace(" ",""));
             terms.add(term2.replace(" ",""));
             terms.add(term3.replace(" ",""));
             terms.add(term4.replace(" ",""));
-            //terms.add(term5.replace(" ",""));
         }else if(purposecloned.matches("([^\\s]+) subclassof ([^\\s]+) (some|only) ([^\\s]+)")){
             Pattern p = Pattern.compile("([^\\s]+) subclassof ([^\\s]+) (some|only) ([^\\s]+)",Pattern.CASE_INSENSITIVE);
             Matcher m = p.matcher(purpose);

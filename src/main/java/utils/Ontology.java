@@ -35,19 +35,6 @@ public class Ontology {
         this.manager = manager;
     }
 
-    public String load_ontologyFile(String ontologyURL) throws  Exception{
-        String response = " ";
-        this.manager = OWLManager.createOWLOntologyManager();
-
-        String ext = org.apache.commons.io.FilenameUtils.getExtension(ontologyURL);
-        File initialFile = new File(ontologyURL);
-        this.setOntology(this.manager.loadOntologyFromOntologyDocument(initialFile));
-        this.setProv(IRI.create(initialFile.getAbsoluteFile()));
-
-        return response;
-
-    }
-
     public String load_ontologyURL(String ontologyURL) {
         String response = " ";
         this.manager = OWLManager.createOWLOntologyManager();
