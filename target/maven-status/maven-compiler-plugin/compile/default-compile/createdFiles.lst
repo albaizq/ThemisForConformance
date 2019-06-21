@@ -2,6 +2,7 @@ main.class
 reports\TextConstants.class
 utils\Utils.class
 testingsteps\Execution.class
+utils\Report.class
 utils\Ontology.class
 utils\ProcessCSV.class
 reports\Report.class
@@ -10,3 +11,4 @@ testingsteps\Implementation.class
 testingsteps\Mapping.class
 tests\TestCaseResult.class
 tests\TestCaseDesign.class
+tests\TestingEnvironment.class

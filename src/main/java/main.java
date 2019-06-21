@@ -1,6 +1,7 @@
 import de.derivo.sparqldlapi.exceptions.QueryEngineException;
 import de.derivo.sparqldlapi.exceptions.QueryParserException;
 import org.apache.commons.io.FileUtils;
+import org.coode.owlapi.obo.parser.OWLOBOParser;
 import org.json.*;
 import org.semanticweb.owlapi.model.*;
 import testingsteps.Execution;
@@ -12,6 +13,7 @@ import tests.TestCaseResult;
 import tests.TestingEnvironment;
 import utils.Ontology;
 import utils.ProcessCSV;
+import utils.Report;
 import utils.Utils;
 
 
@@ -31,7 +33,8 @@ public class main {
             System.exit(1);
         }
         //initialize variables
-        TestingEnvironment env = createTestingEnvironment(args[1]);
+        TestingEnvironment envClass= new TestingEnvironment();
+        TestingEnvironment env = envClass.createTestingEnvironment(args[1]);
         JSONArray tableResultsAllOntologies = new JSONArray();
         JSONArray gottotal = new JSONArray();
         ArrayList<Ontology> ontologies = env.getOntologies();
@@ -41,7 +44,7 @@ public class main {
         int i = 1;
         for(Ontology ontology: ontologies){
              //create got per ontology
-            JSONArray got = createGot(testsuiteDesign,ontology, i);
+            HashMap<String, IRI> got = createGot(testsuiteDesign,ontology, i);
             //if the got is ok then
             System.out.println("Is the GoT ok? ");
             Scanner scanner = new Scanner(System.in);
@@ -51,7 +54,7 @@ public class main {
                 scanner = new Scanner(System.in);
                 result = scanner.nextLine();
             }
-            updateGot(i);
+            got = updateGot(i);
             // Execute all tests on each ontology using the got
             JSONArray tableResults = executeTests(testsuiteDesign, ontology, implementations, got);
             /*Store the results*/
@@ -98,7 +101,6 @@ public class main {
                 relatedRequirments.put(objresults);
             }
         }
-        System.out.println(relatedRequirments);
     }
 
     public static  void storeJointResults(ArrayList<TestCaseDesign> testsuiteDesign, ArrayList<Ontology> ontologies, JSONArray tableResultsAllOntologies, JSONArray gottotal) throws JSONException, IOException {
@@ -112,64 +114,42 @@ public class main {
         FileUtils.writeStringToFile(new File("jointResults.csv"), csvResults);
     }
 
-    public  static JSONArray executeTests(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology, ArrayList<TestCaseImplementation> implementations, JSONArray got) throws OWLOntologyStorageException, QueryParserException, QueryEngineException, OWLOntologyCreationException, JSONException {
+    public  static JSONArray executeTests(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology, ArrayList<TestCaseImplementation> implementations, HashMap<String, IRI> got) throws OWLOntologyStorageException, QueryParserException, QueryEngineException, OWLOntologyCreationException, JSONException {
         Execution exec = new Execution();
         JSONArray tableResults = new JSONArray();
         JSONObject array = new JSONObject();
         ArrayList<TestCaseResult> testCaseResults = new ArrayList<>();
         System.out.println("create individual results...");
         for (TestCaseDesign testCaseDesign : testsuiteDesign) {
-            testCaseResults = exec.execute(implementations,ontology , got);
+            System.out.println(testCaseDesign.getUri());
             // this is a report PER ONTOLOGY (individual)
-            array = Execution.printReportPerOntology(ontology, testCaseDesign, testCaseResults);
+            ArrayList<TestCaseImplementation> implementationsForTestDesign = new ArrayList<>();
+            for (TestCaseImplementation tci : implementations) {
+                if (testCaseDesign.getUri().toString().equals(tci.getRelatedTestDesign().toString())) {
+                    implementationsForTestDesign.add(tci);
+                }
+            }
+            testCaseResults = exec.execute(implementationsForTestDesign, ontology , got);
+
+            array = Report.printReportPerOntology(ontology, testCaseDesign, testCaseResults);
             tableResults.put(array);
         }
         return tableResults;
     }
 
-    public static JSONArray createGot(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology, int i) throws Exception {
-        JSONArray got = Utils.createGot(testsuiteDesign, ontology);
-        String csv = CDL.toString(got).replace(",", ";");
-        FileUtils.writeStringToFile(new File("got-o"+i+".csv"), csv);
-        got = ProcessCSV.processCSVGoT("got-o"+i+".csv");
+    public static HashMap<String, IRI> createGot(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology, int i) throws Exception {
+        HashMap<String, IRI> got = Utils.createGot(testsuiteDesign, ontology);
+        //String csv = CDL.toString(got).replace(",", ";");
+        Utils.storeFile("got-o"+i+".csv", got);
+
+        //FileUtils.writeStringToFile(new File("got-o"+i+".csv"), csv);
+        //got = ProcessCSV.processCSVGoT("got-o"+i+".csv");
         return got;
     }
 
-    public static JSONArray updateGot(int i) throws JSONException, FileNotFoundException {
-        JSONArray gottotal = null;
-        JSONArray got = ProcessCSV.processCSVGoT("got-o"+i+".csv");
-        for(int j = 0; j< got.length();j++) {
-            gottotal.put(got.getJSONObject(j));
-        }
+    public static HashMap<String, IRI>  updateGot(int i) throws JSONException, FileNotFoundException {
+        HashMap<String, IRI>  gottotal = ProcessCSV.processCSVGoTHash("got-o"+i+".csv");
         return  gottotal;
-    }
-
-    public static TestingEnvironment createTestingEnvironment(String file) throws Exception {
-        TestingEnvironment testingEnvironment = new TestingEnvironment();
-        ArrayList<TestCaseImplementation> implementations = new ArrayList<>();
-        HashMap<String, String> ontoAndTest = ProcessCSV.processCSVVocabs(file);
-        ArrayList<TestCaseDesign> testsuiteDesign = new ArrayList<>();
-        ArrayList<Ontology> ontologies = new ArrayList<>();
-        for (Map.Entry<String, String> entry : ontoAndTest.entrySet()) {
-            //load tests
-            testsuiteDesign.addAll(Utils.loadTest(entry.getValue()));
-            //load ontology
-            ontologies.add(Utils.loadOntology(entry.getKey(),testsuiteDesign));
-            //create implementation
-            for (TestCaseDesign testCaseDesign : testsuiteDesign) {
-                ArrayList<TestCaseImplementation> testsuiteImpl = Implementation.createTestImplementation(testsuiteDesign);
-                //first the implementation of the test is created
-                for (TestCaseImplementation tci : testsuiteImpl) {
-                    if (testCaseDesign.getUri().toString().equals(tci.getRelatedTestDesign().toString())) {
-                        implementations.add(tci);
-                    }
-                }
-            }
-        }
-        testingEnvironment.setOntologies(ontologies);
-        testingEnvironment.setTestCaseDesigns(testsuiteDesign);
-        testingEnvironment.setTestCaseImplementations(implementations);
-        return testingEnvironment;
     }
 
     public static JSONArray jointResults(ArrayList<TestCaseDesign> testsuiteDesign, ArrayList<Ontology> ontologies, JSONArray tableResultsAllOntologies, JSONArray gottotal ) throws JSONException {

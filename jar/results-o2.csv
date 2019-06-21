@@ -1,329 +1,39 @@
 Provenance;Terms involved;Ontology;Requirement description;Result
-http://iot.linkeddata.es/def/core;'["Service","serviceName","string"]';http://www.w3.org/ns/ssn;What is a service logical name?;undefined
-http://iot.linkeddata.es/def/core;'["Service","hasOwner","Agent","serviceName","string","avatar","Image","serviceDescription"]';http://www.w3.org/ns/ssn;What are the parameters that has a service?;undefined
-http://iot.linkeddata.es/def/core;'["Agent","owns","Service"]';http://www.w3.org/ns/ssn;Who is a service provider?;undefined
-http://iot.linkeddata.es/def/core;'["HumanUser","Person"]';http://www.w3.org/ns/ssn;What is a user?;undefined
-http://iot.linkeddata.es/def/core;'["Service","hasOwner","Agent","Device"]';http://www.w3.org/ns/ssn;Which roles are involved in a ownership relationship?;undefined
-http://iot.linkeddata.es/def/core;'["Device","hasOwner","Agent"]';http://www.w3.org/ns/ssn;Which are the social relationships a device can be involved in?;undefined
-http://iot.linkeddata.es/def/core;'["Device","SpatialThing"]';http://www.w3.org/ns/ssn;A device can have a location;undefined
-http://iot.linkeddata.es/def/core;'["Device","SpatialThing"]';http://www.w3.org/ns/ssn;A device can have a location;undefined
-http://iot.linkeddata.es/def/core;'["Device","observes","Property"]';http://www.w3.org/ns/ssn;A device can have a status;undefined
-http://iot.linkeddata.es/def/core;'["Device","avatar","Image","deviceName","string","deviceDescription","serialNumber"]';http://www.w3.org/ns/ssn;What is a device profile?;undefined
-http://iot.linkeddata.es/def/core;'["Agent","memberOf","Organization"]';http://www.w3.org/ns/ssn;Users has to belong to one organization;undefined
-http://iot.linkeddata.es/def/core;'["Agent","hasMembership","Membership"]';http://www.w3.org/ns/ssn;One of the users of an organization is the manager;undefined
-http://iot.linkeddata.es/def/core;'["HumanUser","Person","Agent","memberOf","Organization","DigitalUser"]';http://www.w3.org/ns/ssn;An organization has users;undefined
-http://iot.linkeddata.es/def/core;'["Agent","hasNeighbourhood","Neighbourhood"]';http://www.w3.org/ns/ssn;A neighbourhood is the group of partnerships you have;undefined
-http://iot.linkeddata.es/def/core;'["PhysicalThing","isLocatedAt","Feature"]';http://www.w3.org/ns/ssn;Where is something located?;undefined
-http://iot.linkeddata.es/def/core;'["Device","serialNumber","string","deviceName","avatar","Image"]';http://www.w3.org/ns/ssn;Which attributes can have a device?;undefined
-http://iot.linkeddata.es/def/core;'["Device","serialNumber","string"]';http://www.w3.org/ns/ssn;A device has a unique identifier;undefined
-http://iot.linkeddata.es/def/core;'["Agent","owns","Device"]';http://www.w3.org/ns/ssn;Who is the owner of a given device?;undefined
-http://iot.linkeddata.es/def/core;'["Agent","memberOf","Organization"]';http://www.w3.org/ns/ssn;What is the relation between organization and devices?;undefined
-http://iot.linkeddata.es/def/core;'["Organization","hasPartnershipWith"]';http://www.w3.org/ns/ssn;How many organizations can have a partnership?;undefined
-http://iot.linkeddata.es/def/core;'["Organization","hasPartnershipWith","Organization>"]';http://www.w3.org/ns/ssn;Which are the relationships a partnership is involved in?;undefined
-http://iot.linkeddata.es/def/core;'["Organization","hasPartnershipWith"]';http://www.w3.org/ns/ssn;What attributes has a partnership?;undefined
-http://iot.linkeddata.es/def/core;'["Organization","hasPartnershipWith"]';http://www.w3.org/ns/ssn;What is a partnership?;undefined
-http://iot.linkeddata.es/def/core;'["Device","PhysicalThing"]';http://www.w3.org/ns/ssn;What is an IoT device?;undefined
-http://iot.linkeddata.es/def/core;'["Organization","hasPartnershipWith"]';http://www.w3.org/ns/ssn;All organizations have the same roles in a partnership;undefined
-http://iot.linkeddata.es/def/core;'["Organization","hasPartnershipWith"]';http://www.w3.org/ns/ssn;A partnership is established between only 2 organizations;undefined
-http://iot.linkeddata.es/def/core;'["Organization","hasPartnershipWith"]';http://www.w3.org/ns/ssn;A partnership is established between organizations;undefined
-http://iot.linkeddata.es/def/core;'["Service","serviceName","string"]';http://www.w3.org/ns/ssn;A service profile indicates the service name;undefined
-http://iot.linkeddata.es/def/core;'["Service","hasOwner","Agent"]';http://www.w3.org/ns/ssn;A service profile indicates the service provider;undefined
-http://iot.linkeddata.es/def/core;'["Sensor","Device","Actuator"]';http://www.w3.org/ns/ssn;"A device profile indicates the type of device; e.g: sensor or actuator";undefined
-http://iot.linkeddata.es/def/core;'["Service","avatar","Image"]';http://www.w3.org/ns/ssn;A service profile indicates the service avatar;undefined
-http://iot.linkeddata.es/def/core;'["Service","hasOwner","Agent"]';http://www.w3.org/ns/ssn;A service profile indicates the service  owner;undefined
-http://iot.linkeddata.es/def/core;'["Device","hasOwner","Agent"]';http://www.w3.org/ns/ssn;A device profile indicates the device owner;undefined
-http://iot.linkeddata.es/def/core;'["Device","serialNumber","string"]';http://www.w3.org/ns/ssn;A device profile indicates the device serial number;undefined
-http://iot.linkeddata.es/def/core;'["Device","hasOwner","Agent"]';http://www.w3.org/ns/ssn;A device profile indicates the device vendor;undefined
-http://iot.linkeddata.es/def/core;'["Service","serviceDescription","string"]';http://www.w3.org/ns/ssn;A service profile indicates the service description (in text);undefined
-http://iot.linkeddata.es/def/core;'["PhysicalThing","isContainedIn","BuildingSpace"]';http://www.w3.org/ns/ssn;What is a building?;undefined
-http://iot.linkeddata.es/def/core;'["Device","avatar","Image"]';http://www.w3.org/ns/ssn;A device profile indicates the device avatar;undefined
-http://iot.linkeddata.es/def/core;'["Device","deviceName","string"]';http://www.w3.org/ns/ssn;A device profile indicates the device name;undefined
-http://iot.linkeddata.es/def/core;'["Device","avatar","Image","serialNumber","string","deviceName","deviceDescription"]';http://www.w3.org/ns/ssn;Which is the profile of a given device?;undefined
-http://iot.linkeddata.es/def/core;'["Device","hasOwner","Agent"]';http://www.w3.org/ns/ssn;What are the devices of a specific partner?;undefined
-http://iot.linkeddata.es/def/core;'["Service","VirtualThing"]';http://www.w3.org/ns/ssn;Which services can I see?;undefined
-http://iot.linkeddata.es/def/core;'["Device","PhysicalThing"]';http://www.w3.org/ns/ssn;Which devices can I see?;undefined
-http://iot.linkeddata.es/def/core;'["Organization","hasMember","Agent"]';http://www.w3.org/ns/ssn;What are the devices of a given agent or organization?;undefined
-http://iot.linkeddata.es/def/core;'["Device","PhysicalThing"]';http://www.w3.org/ns/ssn;Which devices are there?;undefined
-http://iot.linkeddata.es/def/core;'["Device","hasOwner","Agent"]';http://www.w3.org/ns/ssn;What is an IoT device agent?;undefined
-http://iot.linkeddata.es/def/core;'["Agent","hasMembership","Membership","role","Role"]';http://www.w3.org/ns/ssn;Users can have different roles in the organization;undefined
-http://iot.linkeddata.es/def/core;["ThingDescription"];http://www.w3.org/ns/ssn;What is a thing description?;undefined
-http://iot.linkeddata.es/def/core;'["ThingDescription","describes","Thing"]';http://www.w3.org/ns/ssn;Each thing is described by WoT Thing Descriptions;undefined
-http://www.w3.org/ns/ssn;'["Procedure","hasOutput","Output"]';http://www.w3.org/ns/ssn;A procedure has an output;passed
-http://www.w3.org/ns/ssn;'["Sampling","hasResult","Result"]';http://www.w3.org/ns/ssn;A sampling has a result;passed
-http://www.w3.org/ns/ssn;'["Actuation","hasResult","Result"]';http://www.w3.org/ns/ssn;An actuation has a result;passed
-http://www.w3.org/ns/ssn;'["Sample","FeatureOfInterest","Result"]';http://www.w3.org/ns/ssn;A sample is a type of feature of interest and result;passed
-http://www.w3.org/ns/ssn;'["Deployment","forProperty","Property"]';http://www.w3.org/ns/ssn;Deployment is associated to a property;passed
-http://www.w3.org/ns/ssn;["Sensor"];http://www.w3.org/ns/ssn;What is a sensor?;passed
-http://www.w3.org/ns/ssn;["Actuator"];http://www.w3.org/ns/ssn;What is an actuator?;passed
-http://www.w3.org/ns/ssn;["Procedure"];http://www.w3.org/ns/ssn;What is a procedure?;passed
-http://www.w3.org/ns/ssn;["Deployment"];http://www.w3.org/ns/ssn;What is a deployment?;passed
-http://www.w3.org/ns/ssn;'["Platform","inDeployment","Deployment"]';http://www.w3.org/ns/ssn;Platform has a deployment;passed
-http://www.w3.org/ns/ssn;'["Platform","deployedSystem","System"]';http://www.w3.org/ns/ssn;A platform is deployed by some system;absent
-http://www.w3.org/ns/ssn;["System"];http://www.w3.org/ns/ssn;What is a system?;passed
-http://www.w3.org/ns/ssn;'["Sampling","hasResult","Sample"]';http://www.w3.org/ns/ssn;A sampling is linked to at least one sample;passed
-http://www.w3.org/ns/ssn;'["Sensor","observes","ObservableProperty"]';http://www.w3.org/ns/ssn;A sensor observes only observable properties;passed
-http://www.w3.org/ns/ssn;'["ObservableProperty","Property"]';http://www.w3.org/ns/ssn;An observable property is a type of property;passed
-http://www.w3.org/ns/ssn;'["ObservableProperty","isObservedBy","Sensor"]';http://www.w3.org/ns/ssn;An observable property is observed by only sensors;passed
-http://www.w3.org/ns/ssn;'["Observation","hasFeatureOfInterest","FeatureOfInterest"]';http://www.w3.org/ns/ssn;An observation is related only to one feature of interest;passed
-http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';http://www.w3.org/ns/ssn;The observation is originated by  exactly one stimulus;passed
-http://www.w3.org/ns/ssn;'["Observation","hasResult","Result"]';http://www.w3.org/ns/ssn;An observation has only  results;passed
-http://www.w3.org/ns/ssn;'["Sensor","System"]';http://www.w3.org/ns/ssn;A sensor is a type of system;passed
-http://www.w3.org/ns/ssn;["FeatureOfInterest"];http://www.w3.org/ns/ssn;What is feature of interest?;passed
-http://www.w3.org/ns/ssn;'["System","implements","Procedure"]';http://www.w3.org/ns/ssn;A system implements a procedure;passed
-http://www.w3.org/ns/ssn;'["System","hasSubSystem"]';http://www.w3.org/ns/ssn;A system can have subsystems;passed
-http://www.w3.org/ns/ssn;'["Procedure","hasInput","Input"]';http://www.w3.org/ns/ssn;A procedure has an input;passed
-http://www.w3.org/ns/ssn;["Sensor"];http://www.w3.org/ns/ssn;What is a sensor?;passed
-http://www.w3.org/ns/ssn;'["Sensor","detects","Stimulus"]';http://www.w3.org/ns/ssn;Sensor detects an stimulus;passed
-http://www.w3.org/ns/ssn;["Stimulus"];http://www.w3.org/ns/ssn;What is a stimulus?;passed
-http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';http://www.w3.org/ns/ssn;An observation is originated by a stimulus;passed
-http://www.w3.org/ns/ssn;["Property"];http://www.w3.org/ns/ssn;What is a property?;passed
-http://www.w3.org/ns/ssn;'["Stimulus","isProxyFor","Property","isPropertyOf","FeatureOfInterest"]';http://www.w3.org/ns/ssn;The stimulus is proxy for a property;passed
-http://www.w3.org/ns/ssn;'["Actuator","madeActuation","Actuation"]';http://www.w3.org/ns/ssn;An actuator mades only actuations;passed
-http://www.w3.org/ns/ssn;'["Procedure","implementedBy","System"]';http://www.w3.org/ns/ssn;A procedure is implemented by a system;passed
-http://www.w3.org/ns/ssn;'["Deployment","deployedOnPlatform","Platform"]';http://www.w3.org/ns/ssn;A deplopyment is deployed in a platform;passed
-http://www.w3.org/ns/ssn;'["Sampling","hasFeatureOfInterest","FeatureOfInterest"]';http://www.w3.org/ns/ssn;A sampling has one feature of interest;passed
-http://iot.linkeddata.es/def/wot-mappings;'["Mapping","key","string"]';http://www.w3.org/ns/ssn;An access mapping defines the transformation to be carried out for a specific key;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["ThingDescription","hasAccessMapping","AccessMapping"]';http://www.w3.org/ns/ssn;A thing description can have access mappings defined;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["Ecosystem","isDescribedBy","ThingEcosystemDescription"]';http://www.w3.org/ns/ssn;A Thing ecosystem describes relations between TEDs;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["Thing","isAccessibleThrough","Link","ThingEcosystemDescription","describes","Ecosystem","hasComponent"]';http://www.w3.org/ns/ssn;A TED refers to a service accesible in an URI;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["Ecosystem","hasComponent","Thing","ThingEcosystemDescription","describes"]';http://www.w3.org/ns/ssn;A TED describes one or more web thing;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["ObjectPropertyMapping","targetClass","Class"]';http://www.w3.org/ns/ssn;An object property mapping can have many target classes to be the type of the generated instances;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["AccessMapping","mapsResourcesFrom","Link"]';http://www.w3.org/ns/ssn;An access mapping can be applied at most to one endpoint;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["Mapping","jsonPath","string"]';http://www.w3.org/ns/ssn;A mapping has a JSON path;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["AccessMapping","isExecutedAfter"]';http://www.w3.org/ns/ssn;A mapping might be needed to be executed befor another mapping;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["ObjectPropertyMapping","valuesTransformedBy","ThingDescription"]';http://www.w3.org/ns/ssn;An object property mapping generate instances transforming values following the mappings defined in a another thing description.;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["DatatypePropertyMapping","targetDatatype","Datatype"]';http://www.w3.org/ns/ssn;A datatype property mapping can have many target (consistent) datatypes to be the datatype of the generated values;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["DatatypePropertyMapping","predicate","DatatypeProperty"]';http://www.w3.org/ns/ssn;A datatype property mapping transforms keys to datatype properties;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["ObjectPropertyMapping","predicate","ObjectProperty"]';http://www.w3.org/ns/ssn;An object property mapping transforms keys to object properties;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["ObjectPropertyMapping","Mapping","DatatypePropertyMapping"]';http://www.w3.org/ns/ssn;A mapping can transform keys to object properties or datatype properties;undefined
-http://iot.linkeddata.es/def/wot-mappings;'["AccessMapping","hasMapping","Mapping"]';http://www.w3.org/ns/ssn;An access mapping can have many mappings defined;undefined
-https://w3id.org/saref#;'["Device","hasFunction","SensingFunction"]';http://www.w3.org/ns/ssn;A device can be used for  the purpose of sensing;undefined
-https://w3id.org/saref#;'["Water","Commodity","Gas"]';http://www.w3.org/ns/ssn;Water or gas are examples of commodities;undefined
-https://w3id.org/saref#;'["Device","isUsedFor","Commodity"]';http://www.w3.org/ns/ssn;A device can be used for  the purpose of offering a commodity;undefined
-https://w3id.org/saref#;'["EnergyRelated","Device","BuildingRelated","FunctionRelated"]';http://www.w3.org/ns/ssn;The devices can belong to several categories;undefined
-https://w3id.org/saref#;'["EventFunction","Function","MeteringFunction","SensingFunction","ActuatingFunction"]';http://www.w3.org/ns/ssn;"Examples of functions are the  the actuating; sensing; metering or event functions";undefined
-https://w3id.org/saref#;["Function"];http://www.w3.org/ns/ssn;A function represents the functionality necessary to accomplish the task for which a device is designed;undefined
-https://w3id.org/saref#;'["EnergyMeter","hasFunction","MeteringFunction"]';http://www.w3.org/ns/ssn;An energy meter is a device that has category Meter;undefined
-https://w3id.org/saref#;'["EnergyMeter","consistsOf","Meter"]';http://www.w3.org/ns/ssn;An energy meter is a device that consists of a meter;undefined
-https://w3id.org/saref#;'["Load","EnergyRelated","Storage","Generator"]';http://www.w3.org/ns/ssn;"The EnergyRelated category can be specialized into: Load; Generator and Storage";undefined
-https://w3id.org/saref#;'["LightingDevice","FunctionRelated","Actuator","Appliance","Meter","Device","HVAC"]';http://www.w3.org/ns/ssn;"The FunctionRelated category can be specialized into: Actuator; Applicance; HVAC; Lighting; Meter; MicroRenewable; Multimedia; Network; Sensor";undefined
-https://w3id.org/saref#;'["EnergyRelated","Device","BuildingRelated","FunctionRelated"]';http://www.w3.org/ns/ssn;"The devices can be classified into categories: FunctionRelated; EneryRelated and BuildingRelated";undefined
-https://w3id.org/saref#;'["Device","hasDescription","string"]';http://www.w3.org/ns/ssn;A device can optionally  have a description;undefined
-https://w3id.org/saref#;'["Device","hasModel","string"]';http://www.w3.org/ns/ssn;A device shall have a model property;undefined
-https://w3id.org/saref#;'["Device","hasModel","string"]';http://www.w3.org/ns/ssn;A device shall have a model property;undefined
-https://w3id.org/saref#;'["WashingMachine","Device","TemperatureSensor","EnergyMeter"]';http://www.w3.org/ns/ssn;"Examples of devices are a light switch; a temperature sensor; an energy meter; a washing machine";undefined
-https://w3id.org/saref#;'["Device","hasFunction","Function"]';http://www.w3.org/ns/ssn;A device performs one or more functions;undefined
-https://w3id.org/saref#;["Device"];http://www.w3.org/ns/ssn;What is a device?;undefined
-https://w3id.org/saref#;'["CloseCommand","Command","ToggleCommand","OffCommand","OnCommand"]';http://www.w3.org/ns/ssn;"The commands can be: on; off; open; toggle; close; startm pause; step up; step down; set level; get and notify";undefined
-https://w3id.org/saref#;'["Device","hasState","State"]';http://www.w3.org/ns/ssn;A device can be found in a correponding state;undefined
-https://w3id.org/saref#;'["EnergyMeter","Meter"]';http://www.w3.org/ns/ssn;An energy meter is a device that has category Meter;undefined
-https://w3id.org/saref#;'["Meter","hasFunction","MeteringFunction"]';http://www.w3.org/ns/ssn;A meter performs a metering function;undefined
-https://w3id.org/saref#;'["Meter","FunctionRelated"]';http://www.w3.org/ns/ssn;A meter is a functionRelated device ;undefined
-https://w3id.org/saref#;'["DimmerLamp","control","Light"]';http://www.w3.org/ns/ssn;A dimmer lamp performs an actuating level control ;undefined
-https://w3id.org/saref#;'["DimmerLamp","performs","LevelControl"]';http://www.w3.org/ns/ssn;A dimmer lamp performs an actuating level control ;undefined
-https://w3id.org/saref#;'["DimmerLamp","Actuator","Lighting"]';http://www.w3.org/ns/ssn;A dimmer lamp is a device that has category Lighting and Actuator;undefined
-https://w3id.org/saref#;'["DoorSwitch","accomplishes","Safety"]';http://www.w3.org/ns/ssn;A door switch is used for the purpose of controlling doors;undefined
-https://w3id.org/saref#;'["DoorSwitch","hasFunction","OpenCloseFunction"]';http://www.w3.org/ns/ssn;A door switch  performs the open/close function;undefined
-https://w3id.org/saref#;'["DoorSwitch","consistsOf","Switch"]';http://www.w3.org/ns/ssn;A door switch is a device that consists of a switch;undefined
-https://w3id.org/saref#;'["Switch","Actuator"]';http://www.w3.org/ns/ssn; A switch is a device that has category Actuator;undefined
-https://w3id.org/saref#;'["Command","actsUpon","State"]';http://www.w3.org/ns/ssn;A command can act upon a state  to represent that the consequence of a command can be a change of state of the device;undefined
-https://w3id.org/saref#;'["SmokeSensor","measuresProperty","Smoke"]';http://www.w3.org/ns/ssn;A smoke sensor  is used for the purpose of sensing smoke;undefined
-https://w3id.org/saref#;'["SmokeSensor","hasFunction","SensingFunction","EventFunction"]';http://www.w3.org/ns/ssn;A smoke sensor performs a sensing and event function;undefined
-https://w3id.org/saref#;'["SmokeSensor","consistsOf","Sensor"]';http://www.w3.org/ns/ssn;A smoke sensor is a device that consists of a sensor;undefined
-https://w3id.org/saref#;'["SmokeSensor","Sensor"]';http://www.w3.org/ns/ssn;A smoke sensor is a device that has category Sensor;undefined
-https://w3id.org/saref#;'["WashingMachine","hasFunction","StartStopFunction"]';http://www.w3.org/ns/ssn;A washing machine performs an actuating start/pause function;undefined
-https://w3id.org/saref#;'["WashingMachine","accomplishes","Washing","Task"]';http://www.w3.org/ns/ssn;A washing machine accomplishes the task of washing ;undefined
-https://w3id.org/saref#;'["WashingMachine","Appliance","Load"]';http://www.w3.org/ns/ssn;A washing machine is a device that has category Appliance  and Load;undefined
-https://w3id.org/saref#;'["TemperatureSensor","hasFunction","SensingFunction"]';http://www.w3.org/ns/ssn;A temperature senso performs the sensing function and is used for the purpose of sensing temperature;undefined
-https://w3id.org/saref#;'["TemperatureSensor","consistsOf","Sensor"]';http://www.w3.org/ns/ssn;A temperature sensor consists of a sensor;undefined
-https://w3id.org/saref#;'["TemperatureSensor","Sensor"]';http://www.w3.org/ns/ssn;A temperature sensor is a device that has category sensor;undefined
-https://w3id.org/saref#;'["OnOffFunction","ActuatingFunction","LevelControlFunction"]';http://www.w3.org/ns/ssn;"An actuating function can be specialized into on/off; open/close; start/stop or level control functions";undefined
-https://w3id.org/saref#;'["MeteringFunction","Function","SensingFunction","ActuatingFunction","EventFunction"]';http://www.w3.org/ns/ssn;A function can belong to a function category;undefined
-https://w3id.org/saref#;'["Function","hasCommand","Command"]';http://www.w3.org/ns/ssn;A function shall have at least one command associated to it;undefined
-https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';http://www.w3.org/ns/ssn;A sensor performs a sensing function;undefined
-https://w3id.org/saref#;'["Sensor","Device"]';http://www.w3.org/ns/ssn;A device may consists of other devices;undefined
-https://w3id.org/saref#;'["Device","consistsOf"]';http://www.w3.org/ns/ssn;A device may consists of other devices;undefined
-https://w3id.org/saref#;'["Temperature","Property","Energy","Smoke"]';http://www.w3.org/ns/ssn;"Examples of properties are temperature; energy or smoke";undefined
-https://w3id.org/saref#;'["Function","hasCommand","Command","Device","hasFunction","NotifyCommand"]';http://www.w3.org/ns/ssn;A device can be used for notifying  a property;undefined
-https://w3id.org/saref#;'["Device","measuresProperty","Property"]';http://www.w3.org/ns/ssn;A device can be used for measuring a property;undefined
-http://iot.linkeddata.es/def/wot;'["InteraccionPattern","isAccessibleThrough","Link"]';http://www.w3.org/ns/ssn;Each interaction pattern has an endpoint;undefined
-http://iot.linkeddata.es/def/wot;'["Link","hasMediaType","string","href"]';http://www.w3.org/ns/ssn;Each endpoints has minimun two attributes URI and mediatype;undefined
-http://iot.linkeddata.es/def/wot;'["Thing","implementsSecurity","Security"]';http://www.w3.org/ns/ssn;Security is associated with things;undefined
-http://iot.linkeddata.es/def/wot;'["Thing","isAccessibleThrough","Link"]';http://www.w3.org/ns/ssn;An endpoint can be associated with a thing without determine the interaction patterns;undefined
-http://iot.linkeddata.es/def/wot;'["InteractionPattern","isAccessibleThrough","Link","interactionName","string"]';http://www.w3.org/ns/ssn;Each interaction pattern has a name and a Web Resource address;undefined
-http://iot.linkeddata.es/def/wot;'["Property","InteractionPattern","isRequired","boolean","isWritable"]';http://www.w3.org/ns/ssn;Each interaction pattern has its own attributes;undefined
-http://iot.linkeddata.es/def/wot;'["InteractionPattern","isAccessibleThrough","Link"]';http://www.w3.org/ns/ssn;An interaction pattern can have different endpoints;undefined
-http://iot.linkeddata.es/def/wot;'["Thing","providesInteractionPattern","InteractionPattern"]';http://www.w3.org/ns/ssn;Each thing has at least an interaction pattern;undefined
-http://iot.linkeddata.es/def/wot;["CommunicationProtocol"];http://www.w3.org/ns/ssn;What is a protocol?;undefined
-http://iot.linkeddata.es/def/wot;'["InteractionPattern","isProvidedOverProtocol","CommunicationProtocol"]';http://www.w3.org/ns/ssn;A thing interaction can be available over different or multiple protocols;undefined
-http://iot.linkeddata.es/def/wot;'["Event","InteractionPattern"]';http://www.w3.org/ns/ssn;What is an event?;undefined
-http://iot.linkeddata.es/def/wot;'["Action","InteractionPattern"]';http://www.w3.org/ns/ssn;What is an action?;undefined
-http://iot.linkeddata.es/def/wot;'["Property","InteractionPattern"]';http://www.w3.org/ns/ssn;What is a Property?;undefined
-http://iot.linkeddata.es/def/wot;["Thing"];http://www.w3.org/ns/ssn;What is a thing in the web thing context?;passed
-http://iot.linkeddata.es/def/datatype;'["Number","JSONSchema"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["Object","JSONSchema"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["Object","field","ObjectField"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["Array","JSONSchema"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["Array","maxItems","integer"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["Array","minItems","integer"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["Array","firstArraryItem","JSONSchema"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["JSONSchema","DataSchema"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["XSDDatatype","DataSchema"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["xsd_float","XSDDatatype"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["xsd_integer","XSDDatatype"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["JSONSchema","nextArrayItem"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/datatype;'["Boolean","JSONSchema"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["LuminanceMeter","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["NoiseSensor","core"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["IndoorClimateQualitySensor","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["NoiseLevel","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Presence","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PeopleCounter","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["RelativeHumidity","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["LightSwitch","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PowerConsumption","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["DeviceStatus","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["DimmingLevel","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PowerMeter","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["MotionSensor","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["MotionProperty","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["NoiseSensor","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Sound","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["HVACSensor","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["OperationalStatus","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["FanSpeed","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["OnOff","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["MeatProbeTemperature","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["WeightScale","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Weight","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BloodPressureMonitor","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["SystolicBloodPressure","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["DiastolicBloodPressure","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["HeartRate","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActivityTracker","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Steps","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["DistanceWalked","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["CaloriesBurned","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ChildLock","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["FastFreeze","OperatingProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["SuperCool","OperatingProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["FreezerTemperature","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["RefrigeratorTemperature","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["RefrigeratorTemperature","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["FreezerDoorStatus","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["HeartRate","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Sleep","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Battery","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PanicButton","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PressureMat","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BeaconReader","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ElectricVehicle","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BatteryNominalCapacity","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["NominalElectricVehicleCurrent","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["EnergySupplySystem","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["DelayedBaking","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Baking","OperationalStatus"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Thermometer","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BatteryNominalCapacity","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["OperationalStatus","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Mode","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ChargeStatus","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActivePowerSetPoint","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["MaximalCurrentOfChargingCable","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ChargeStatus","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BatteryStorageUnit","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PhotovoltaicPanel","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ValvePosition","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Charger","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["NumberOfConnectors","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["MaximalPowerPerConnector","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["SimultaneousCharging","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Location","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ConnectorDesiredMaxPower","ActutableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ConnectorSmartChargingProfile","ActutableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualReactivePowerLoad","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualActivePowerLoad","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualActivePowerInjectedToGrid","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ChargeStatus","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ChargeStatus","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Lightbulb","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ValvePosition","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Thermostat","Sensor","Actuator"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["AmbientTemperatureProperty","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["DoorSensor","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["DimmingLevel","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["OnOff","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["LightColor","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualEnergyConsumedChargingSession","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["OperationalStatus","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ConnectorStatus","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualEnergyConsumedChargingSession","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ConnectorDesiredMaxPower","ActuatableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ConnectorSmartChargingProfile","ActuatableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BatteryStorageUnit","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BatteryNominalCapacity","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["InverterNominalPower","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PowerFactorLowerBound","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["OvenEmergency","OperationalStatus"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Mode","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["TemperatureProperty","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["EBikeCharger","Charger"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["MotionProperty","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["MotionSensor","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["AmbientHumidityProperty","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["HumiditySensor","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["TemperatureProperty","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["UpperStateOfChargeBoundary","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["LowerStateOfChargeBoundary","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ChargeStatus","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualActivePowerLoad","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Mode","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualReactivePowerLoad","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["RefrigeratorDoorStatus","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualActivePowerLoad","ActuatableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualActivePowerGeneration","ActuatableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualReactivePowerGeneration","ActuatableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["RefrigeratorLightStatus","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["CO2Sensor","Sensor"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["FreezerLightStatus","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BakingStartTimeMinute","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BakingStartTimeHour","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualReactivePowerLoad","ActuatableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PhotovoltaicPanel","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["NominalProductionCapacity","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Location","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Azimuth","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Elevation","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PhotoVoltaicPanelServiceLevel","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualReactivePowerProduction","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualActivePowerProduction","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["AccumulatedEnergyInjectedToGrid","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["SmartOven","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["LightProperty","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["CarbonDioxide","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActivePowerSetPoint","ActuatableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ReactivePowerSetPoint","ActuatableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["PowerMeter","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ReactivePowerAbsorbedFromGrid","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["HeaterSystem","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["HeaterMaxTemperature","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["HeaterMinTemperature","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["HeaterDefaultTemperature","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["HeaterMeatProbeAllowed","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BakingTemperature","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BakingTime","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ElapsedBakingTime","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["BakingRemainingTime","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["RefrigeratorEmergency","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["TemperatureProperty","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualActivePowerGeneration","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["SmartRefrigerator","Device"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["InverterNominalPower","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["AccumulatedEnergyInjectedToGrid","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["AccumulatedEnergyConsumed","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ReactivePowerInjectedToGrid","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActivePowerInjectedToGrid","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActivePowerAbsorbedFromGrid","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["RefrigeratorLightStatus","ssnProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["ActualReactivePowerGeneration","ObservableProperty"]';http://www.w3.org/ns/ssn;;undefined
-http://iot.linkeddata.es/def/adapters;'["Stop","OperationalStatus"]';http://www.w3.org/ns/ssn;;undefined
+https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';https://w3id.org/saref;A device can be used for  the purpose of sensing;passed
+https://w3id.org/saref#;'["Water","Commodity","Gas"]';https://w3id.org/saref;Water or gas are examples of commodities;passed
+https://w3id.org/saref#;'["SensingFunction","Function","ActuatingFunction","MeteringFunction","EventFunction"]';https://w3id.org/saref;A function can belong to a function category;passed
+https://w3id.org/saref#;'["LevelControlFunction","ActuatingFunction","OnOffFunction"]';https://w3id.org/saref;"An actuating function can be specialized into on/off; open/close; start/stop or level control functions";passed
+https://w3id.org/saref#;'["EventFunction","Function","SensingFunction","ActuatingFunction","MeteringFunction"]';https://w3id.org/saref;"Examples of functions are the  the actuating; sensing; metering or event functions";passed
+https://w3id.org/saref#;["Function"];https://w3id.org/saref;A function represents the functionality necessary to accomplish the task for which a device is designed;passed
+https://w3id.org/saref#;'["EnergyMeter","hasFunction","MeteringFunction"]';https://w3id.org/saref;An energy meter is a device that has category Meter;passed
+https://w3id.org/saref#;'["EnergyMeter","consistsOf","Meter"]';https://w3id.org/saref;An energy meter is a device that consists of a meter;passed
+https://w3id.org/saref#;'["Command","actsUpon","State"]';https://w3id.org/saref;A command can act upon a state  to represent that the consequence of a command can be a change of state of the device;absent
+https://w3id.org/saref#;'["ToggleCommand","Command","OffCommand","OnCommand","CloseCommand"]';https://w3id.org/saref;"The commands can be: on; off; open; toggle; close; startm pause; step up; step down; set level; get and notify";passed
+https://w3id.org/saref#;'["Device","hasState","State"]';https://w3id.org/saref;A device can be found in a correponding state;absent
+https://w3id.org/saref#;'["EnergyMeter","Meter"]';https://w3id.org/saref;An energy meter is a device that has category Meter;passed
+https://w3id.org/saref#;'["Meter","hasFunction","MeteringFunction"]';https://w3id.org/saref;A meter performs a metering function;passed
+https://w3id.org/saref#;'["Meter","FunctionRelated"]';https://w3id.org/saref;A meter is a functionRelated device ;passed
+https://w3id.org/saref#;'["DimmerLamp","control","Light"]';https://w3id.org/saref;A dimmer lamp performs an actuating level control ;undefined
+https://w3id.org/saref#;'["DimmerLamp","performs","LevelControl"]';https://w3id.org/saref;A dimmer lamp performs an actuating level control ;undefined
+https://w3id.org/saref#;'["DimmerLamp","Actuator","Lighting"]';https://w3id.org/saref;A dimmer lamp is a device that has category Lighting and Actuator;undefined
+https://w3id.org/saref#;'["DoorSwitch","accomplishes","Safety"]';https://w3id.org/saref;A door switch is used for the purpose of controlling doors;passed
+https://w3id.org/saref#;'["DoorSwitch","hasFunction","OpenCloseFunction"]';https://w3id.org/saref;A door switch  performs the open/close function;passed
+https://w3id.org/saref#;'["DoorSwitch","consistsOf","Switch"]';https://w3id.org/saref;A door switch is a device that consists of a switch;passed
+https://w3id.org/saref#;'["Switch","Actuator"]';https://w3id.org/saref; A switch is a device that has category Actuator;passed
+https://w3id.org/saref#;'["SmokeSensor","consistsOf","Sensor"]';https://w3id.org/saref;A smoke sensor is a device that consists of a sensor;passed
+https://w3id.org/saref#;'["SmokeSensor","measuresProperty","Smoke"]';https://w3id.org/saref;A smoke sensor  is used for the purpose of sensing smoke;passed
+https://w3id.org/saref#;'["SmokeSensor","hasFunction","EventFunction","SensingFunction"]';https://w3id.org/saref;A smoke sensor performs a sensing and event function;passed
+https://w3id.org/saref#;'["Function","hasCommand","Command"]';https://w3id.org/saref;A function shall have at least one command associated to it;absent
+https://w3id.org/saref#;'["SmokeSensor","Sensor"]';https://w3id.org/saref;A smoke sensor is a device that has category Sensor;passed
+https://w3id.org/saref#;'["WashingMachine","hasFunction","StartStopFunction"]';https://w3id.org/saref;A washing machine performs an actuating start/pause function;passed
+https://w3id.org/saref#;'["WashingMachine","accomplishes","Washing","Task"]';https://w3id.org/saref;A washing machine accomplishes the task of washing ;passed
+https://w3id.org/saref#;'["WashingMachine","Appliance","Load"]';https://w3id.org/saref;A washing machine is a device that has category Appliance  and Load;passed
+https://w3id.org/saref#;'["TemperatureSensor","hasFunction","SensingFunction"]';https://w3id.org/saref;A temperature senso performs the sensing function and is used for the purpose of sensing temperature;passed
+https://w3id.org/saref#;'["TemperatureSensor","consistsOf","Sensor"]';https://w3id.org/saref;A temperature sensor consists of a sensor;passed
+https://w3id.org/saref#;'["TemperatureSensor","Sensor"]';https://w3id.org/saref;A temperature sensor is a device that has category sensor;passed
+https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';https://w3id.org/saref;A sensor performs a sensing function;passed
+https://w3id.org/saref#;'["Sensor","Device"]';https://w3id.org/saref;A device may consists of other devices;passed
+https://w3id.org/saref#;'["Device","consistsOf"]';https://w3id.org/saref;A device may consists of other devices;absent
+https://w3id.org/saref#;'["Temperature","Property","Energy","Smoke"]';https://w3id.org/saref;"Examples of properties are temperature; energy or smoke";passed
+https://w3id.org/saref#;'["Device","hasFunction","Function","hasCommand","Command","NotifyCommand"]';https://w3id.org/saref;A device can be used for notifying  a property;absent
+https://w3id.org/saref#;'["Device","measuresProperty","Property"]';https://w3id.org/saref;A device can be used for measuring a property;absent

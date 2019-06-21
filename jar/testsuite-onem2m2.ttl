@@ -1,0 +1,18 @@
+
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix vtc:    <http://w3id.org/def/vtc#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  :     <> .
+
+
+
+:TestsuiteOneM2M rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
+            dcterms:source <https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl>.
+:Test-case53 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m53>;
+	dc:description "A variable has a URI of a resource through which the instantiation of the value of the variable can be manipulated" ;
+	vtc:desiredBehaviour "Service subClassOf exposesFunction only Function".

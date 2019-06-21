@@ -1,47 +1,47 @@
 
-psquid:S1192¡"XDefine a constant instead of duplicating this literal "Requirement description" 3 times.(Ü÷¦¯
-]squid:S1192D"FDefine a constant instead of duplicating this literal "got-o" 3 times.(óµ 
-Lsquid:S1066¢"/Merge this if statement with the enclosing one.(ÙûŠşÿÿÿÿ
-Lsquid:S1066¬"/Merge this if statement with the enclosing one.(Ä±¾ıÿÿÿÿ
-bsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(¿æ˜Ë
-‘squid:S1319”"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(¼Çö9
-Œsquid:S1319”"uThe type of the "ontologies" object should be an interface such as "List" rather than the implementation "ArrayList".(¼Çö9
-T
-squid:S106 "9Replace this use of System.out or System.err by a logger.(„ô—êúÿÿÿÿ
-O
-squid:S106G"9Replace this use of System.out or System.err by a logger.(êá—¬
-O
-squid:S106K"9Replace this use of System.out or System.err by a logger.(êá—¬
-T
-squid:S106X"9Replace this use of System.out or System.err by a logger.(Æ‡ª¼øÿÿÿÿ
-T
-squid:S106b"9Replace this use of System.out or System.err by a logger.(Î¯ù‘üÿÿÿÿ
-O
-squid:S106j"9Replace this use of System.out or System.err by a logger.(ÈÕ˜Î
-O
-squid:S106l"9Replace this use of System.out or System.err by a logger.(µ¬’­
-T
-squid:S106~"9Replace this use of System.out or System.err by a logger.(€¸”³ÿÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(°‚îœûÿÿÿÿ
-U
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ş¡•½ùÿÿÿÿ
-Nsquid:S1135s"2Complete the task associated to this TODO comment.(àÃÙûÿÿÿÿ
-Osquid:S1135"2Complete the task associated to this TODO comment.(øç„İúÿÿÿÿ
-1squid:S1220""Move this file to a named package.
-hsquid:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(ÙØ¤Şıÿÿÿÿ
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 44 to the 15 allowed.(ÙØ¤Şıÿÿÿÿ
-isquid:S3776”"RRefactor this method to reduce its Cognitive Complexity from 55 to the 15 allowed.(¼Çö9
-asquid:CallToDeprecatedMethodD"9Remove this use of "writeStringToFile"; it is deprecated.(óµ 
-asquid:CallToDeprecatedMethodc"9Remove this use of "writeStringToFile"; it is deprecated.(·“£Â
-fsquid:CallToDeprecatedMethodq"9Remove this use of "writeStringToFile"; it is deprecated.(ÀĞêùıÿÿÿÿ
 esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
-Nsquid:S1854E"7Remove this useless assignment to local variable "got".(âİ”
-_squid:S1854W"CRemove this useless assignment to local variable "testCaseResults".(“ºÍ¬øÿÿÿÿ
-Usquid:S1854V"9Remove this useless assignment to local variable "array".(«ÀÇüÿÿÿÿ
-[squid:S1854©">Remove this useless assignment to local variable "gotelement".(Üöóøÿÿÿÿ
-Zsquid:UselessImportCheck"1Remove this unused import 'testingsteps.Mapping'.(üáØ‡ùÿÿÿÿ
+1squid:S1220""Move this file to a named package.
+squid:S1319s"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(¯ö•íøÿÿÿÿ8¤Ğãô°-
+[
+squid:S106E"9Replace this use of System.out or System.err by a logger.(Î¯ù‘üÿÿÿÿ8‡½×ô°-
+\squid:S1854v"9Remove this useless assignment to local variable "array".(«ÀÇüÿÿÿÿ8¤Ğãô°-
+psquid:S3776M"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Ï¥Êî8¢ìô°-
 asquid:UselessImportCheck"8Remove this unused import 'java.net.URISyntaxException'.(Ä®íÿÿÿÿÿ
-Xsquid:UselessImportCheck"/Remove this unused import 'java.io.FileWriter'.(Ã‘ÅÃıÿÿÿÿ
-Ysquid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ
-Tsquid:UselessImportCheck"+Remove this unused import 'java.io.Writer'.(Î”øÿÿÿÿ
+hsquid:CallToDeprecatedMethodF"9Remove this use of "writeStringToFile"; it is deprecated.(·“£Â8‡½×ô°-
+O
+squid:S106."9Replace this use of System.out or System.err by a logger.(êá—¬
+V
+squid:S106i"9Replace this use of System.out or System.err by a logger.(ÈÕ˜Î8¤Ğãô°-
+˜squid:S1319²"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(¼Çö98¤Ğãô°-
+O
+squid:S1062"9Replace this use of System.out or System.err by a logger.(êá—¬
+hsquid:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(ÙØ¤Şıÿÿÿÿ
+Zsquid:UselessImportCheck"1Remove this unused import 'testingsteps.Mapping'.(üáØ‡ùÿÿÿÿ
+[
+squid:S106x"9Replace this use of System.out or System.err by a logger.(Æ‡ª¼øÿÿÿÿ8¤Ğãô°-
+fsquid:S1854w"CRemove this useless assignment to local variable "testCaseResults".(“ºÍ¬øÿÿÿÿ8¤Ğãô°-
+\
+squid:S106¡"9Replace this use of System.out or System.err by a logger.(ù²˜æüÿÿÿÿ8ø¬·-
+esquid:S1192…"FDefine a constant instead of duplicating this literal "got-o" 4 times.(óµ 8¤Ğãô°-
+“squid:S1319²"uThe type of the "ontologies" object should be an interface such as "List" rather than the implementation "ArrayList".(¼Çö98¤Ğãô°-
+W
+squid:S106¢"9Replace this use of System.out or System.err by a logger.(Ìÿô8ø¬·-
+˜squid:S1319h"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(öé±¢8Ù»æô°-
+V
+squid:S106k"9Replace this use of System.out or System.err by a logger.(µ¬’­8¤Ğãô°-
+wsquid:S1192¿"XDefine a constant instead of duplicating this literal "Requirement description" 3 times.(Ü÷¦¯8¤Ğãô°-
+˜squid:S1319M"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(Ï¥Êî8Üãìô°-
+Ssquid:S1066À"/Merge this if statement with the enclosing one.(ÙûŠşÿÿÿÿ8¤Ğãô°-
+squid:S1319s"zThe type of the "implementations" object should be an interface such as "List" rather than the implementation "ArrayList".(¯ö•íøÿÿÿÿ8¤Ğãô°-
+Usquid:S1135X"2Complete the task associated to this TODO comment.(øç„İúÿÿÿÿ8¢ìô°-
+msquid:CallToDeprecatedMethodp"9Remove this use of "writeStringToFile"; it is deprecated.(ÀĞêùıÿÿÿÿ8¤Ğãô°-
+isquid:CallToDeprecatedMethod…"9Remove this use of "writeStringToFile"; it is deprecated.(óµ 8¤Ğãô°-
+™squid:S1319‚"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(£³”ó8¤Ğãô°-
+[
+squid:S106e"9Replace this use of System.out or System.err by a logger.(Ş¡•½ùÿÿÿÿ8¢ìô°-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(„ô—êúÿÿÿÿ
+W
+squid:S106Œ"9Replace this use of System.out or System.err by a logger.(Ëñ¸ˆ8¯¾Á¬·-
+“squid:S1319h"uThe type of the "ontologies" object should be an interface such as "List" rather than the implementation "ArrayList".(öé±¢8Ù»æô°-
+psquid:S3776²"RRefactor this method to reduce its Cognitive Complexity from 46 to the 15 allowed.(¼Çö98¤Ğãô°-

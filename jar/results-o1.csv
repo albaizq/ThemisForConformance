@@ -1,16 +1,2 @@
 Provenance;Terms involved;Ontology;Requirement description;Result
-Open Connectivity Foundation (OCF);'["Mapping","key","string"]';Open Connectivity Foundation (OCF);An access mapping defines the transformation to be carried out for a specific key;absent
-Open Connectivity Foundation (OCF);'["ThingDescription","hasAccessMapping","AccessMapping"]';Open Connectivity Foundation (OCF);A thing description can have access mappings defined;absent
-Open Connectivity Foundation (OCF);'["Ecosystem","isDescribedBy","ThingEcosystemDescription"]';Open Connectivity Foundation (OCF);A Thing ecosystem describes relations between TEDs;absent
-Open Connectivity Foundation (OCF);'["Thing","isAccessibleThrough","Link","ThingEcosystemDescription","describes","Ecosystem","hasComponent"]';Open Connectivity Foundation (OCF);A TED refers to a service accesible in an URI;absent
-Open Connectivity Foundation (OCF);'["Ecosystem","hasComponent","Thing","ThingEcosystemDescription","describes"]';Open Connectivity Foundation (OCF);A TED describes one or more web thing;absent
-Open Connectivity Foundation (OCF);'["ObjectPropertyMapping","targetClass","Class"]';Open Connectivity Foundation (OCF);An object property mapping can have many target classes to be the type of the generated instances;absent
-Open Connectivity Foundation (OCF);'["AccessMapping","mapsResourcesFrom","Link"]';Open Connectivity Foundation (OCF);An access mapping can be applied at most to one endpoint;absent
-Open Connectivity Foundation (OCF);'["Mapping","jsonPath","string"]';Open Connectivity Foundation (OCF);A mapping has a JSON path;absent
-Open Connectivity Foundation (OCF);'["AccessMapping","isExecutedAfter"]';Open Connectivity Foundation (OCF);A mapping might be needed to be executed befor another mapping;absent
-Open Connectivity Foundation (OCF);'["ObjectPropertyMapping","valuesTransformedBy","ThingDescription"]';Open Connectivity Foundation (OCF);An object property mapping generate instances transforming values following the mappings defined in a another thing description.;absent
-Open Connectivity Foundation (OCF);'["DatatypePropertyMapping","targetDatatype","Datatype"]';Open Connectivity Foundation (OCF);A datatype property mapping can have many target (consistent) datatypes to be the datatype of the generated values;absent
-Open Connectivity Foundation (OCF);'["DatatypePropertyMapping","predicate","DatatypeProperty"]';Open Connectivity Foundation (OCF);A datatype property mapping transforms keys to datatype properties;absent
-Open Connectivity Foundation (OCF);'["ObjectPropertyMapping","predicate","ObjectProperty"]';Open Connectivity Foundation (OCF);An object property mapping transforms keys to object properties;absent
-Open Connectivity Foundation (OCF);'["ObjectPropertyMapping","Mapping","DatatypePropertyMapping"]';Open Connectivity Foundation (OCF);A mapping can transform keys to object properties or datatype properties;absent
-Open Connectivity Foundation (OCF);'["AccessMapping","hasMapping","Mapping"]';Open Connectivity Foundation (OCF);An access mapping can have many mappings defined;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","exposesFunction","Function"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A variable has a URI of a resource through which the instantiation of the value of the variable can be manipulated;passed

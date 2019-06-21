@@ -55,7 +55,6 @@ http://www.w3.org/ns/ssn;http://xmlns.com/foaf/0.1/Agent;Agent
 http://www.w3.org/ns/ssn;http://www.w3.org/ns/sosa/hasSample;hasSample
 http://www.w3.org/ns/ssn;http://purl.org/dc/terms/license;license
 http://www.w3.org/ns/ssn;http://purl.org/dc/terms/description;description
-http://www.w3.org/ns/ssn;http://www.w3.org/ns/ssn/;
 http://www.w3.org/ns/ssn;http://purl.org/vocab/vann/preferredNamespacePrefix;preferredNamespacePrefix
 http://www.w3.org/ns/ssn;http://www.w3.org/ns/sosa/Platform;Platform
 http://www.w3.org/ns/ssn;http://www.w3.org/ns/sosa/Sensor;Sensor

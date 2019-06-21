@@ -2,6 +2,8 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc:    <http://purl.org/dc/terms/> .
 @prefix vtc:    <http://w3id.org/def/vtc#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix  :     <> .
 
 
@@ -67,8 +69,8 @@
 :Test-case10 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m10>;
-	dc:description "A device has one or more services that expose in the network its functionalities" ;
-	vtc:desiredBehaviour "Device subClassOf hasService min 1 Service".
+	dc:description "A device has one or more services that expose in the network its functionalities (refined)" ;
+	vtc:desiredBehaviour "Device subClassOf hasService only Service".
 
 :Test-case11 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
@@ -229,14 +231,14 @@
 :Test-case38 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m38>;
-	dc:description "A command has as input one or more operation inputs" ;
-	vtc:desiredBehaviour "Command subClassOf hasInput min 1 OperationInput".
+	dc:description "A command has as input one or more operation inputs (refined)" ;
+	vtc:desiredBehaviour "Command subClassOf hasInput only OperationInput".
 
 :Test-case39 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m39>;
-	dc:description "A command has as output one or more operation outputs" ;
-	vtc:desiredBehaviour "Command subClassOf hasOutput min 1 OperationOutput".
+	dc:description "A command has as output one or more operation outputs (refined)" ;
+	vtc:desiredBehaviour "Command subClassOf hasOutput only OperationOutput".
 
 :Test-case40 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
@@ -287,7 +289,7 @@
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m50>;
 	dc:description "A variable can be structured using other variables" ;
-	vtc:desiredBehaviour "Variable subClassOf hasSubStructure only StructuredTypeVariable".
+	vtc:desiredBehaviour "StructuredTypeVariable subClassOf hasSubStructure only Variable".
 
 :Test-case51 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;

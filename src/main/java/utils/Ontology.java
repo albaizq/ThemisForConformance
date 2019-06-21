@@ -65,6 +65,65 @@ public class Ontology {
         this.prov = prov;
     }
 
+    public HashMap<String, IRI> getClasses(){
+        HashMap<String, IRI> hashMapClasses = new HashMap<String, IRI>();
+        Iterator<OWLClass> iter = ontology.getClassesInSignature(true).iterator();
+        while(iter.hasNext()){
+            OWLClass nextClass=iter.next();
+
+            if(!hashMapClasses.containsKey(nextClass.getIRI().getFragment().toString()))
+                hashMapClasses.put(nextClass.getIRI().getFragment().toString(),nextClass.getIRI());
+            else{
+                String[] uri = nextClass.getIRI().getNamespace().toString().split("/");
+                hashMapClasses.put(uri[uri.length-1]+nextClass.getIRI().getFragment().toString(),nextClass.getIRI());
+            }
+        }
+        return  hashMapClasses;
+
+    }
+
+    public HashMap<String, IRI> getIndividuals(){
+        HashMap<String, IRI> hashMapIndividuals = new HashMap<String, IRI>();
+        Iterator<OWLNamedIndividual> iter = ontology.getIndividualsInSignature(true).iterator();
+        while(iter.hasNext()){
+            OWLNamedIndividual nextIndividual=iter.next();
+            if(!nextIndividual.getIRI().toString().endsWith("/") && !nextIndividual.getIRI().toString().endsWith("#")) { //si es solo una uri
+                if(!hashMapIndividuals.containsKey(nextIndividual.getIRI().getFragment().toString())) {
+
+                    hashMapIndividuals.put(nextIndividual.getIRI().getFragment().toString(), nextIndividual.getIRI());
+                }
+                else{
+                    String[] uri = nextIndividual.getIRI().getNamespace().toString().split("/");
+                    hashMapIndividuals.put(uri[uri.length-1]+nextIndividual.getIRI().getFragment().toString(),nextIndividual.getIRI());
+                }
+            }
+
+        }
+        return  hashMapIndividuals;
+
+    }
+
+    public HashMap<String, IRI> getObjectProperties(){
+        HashMap<String, IRI> hashMapProp = new HashMap<String, IRI>();
+        Iterator<OWLObjectProperty> iter = ontology.getObjectPropertiesInSignature(true).iterator();
+
+        while(iter.hasNext()){
+            OWLObjectProperty nextProp=iter.next();
+            hashMapProp.put(nextProp.getIRI().getFragment().toString(),nextProp.getIRI());
+        }
+        return  hashMapProp;
+    }
+
+    public HashMap<String, IRI> getDatatypeProperties(){
+        HashMap<String, IRI> hashMapdataProp = new HashMap<String, IRI>();
+        Iterator<OWLDataProperty> iter = ontology.getDataPropertiesInSignature(true).iterator();
+
+        while(iter.hasNext()){
+            OWLDataProperty nextProp=iter.next();
+            hashMapdataProp.put(nextProp.getIRI().getFragment().toString(),nextProp.getIRI());
+        }
+        return  hashMapdataProp;
+    }
 
 
 }

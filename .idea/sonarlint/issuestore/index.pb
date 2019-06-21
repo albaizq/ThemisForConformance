@@ -19,3 +19,7 @@ _
 /src/main/java/tests/TestCaseImplementation.java,2\3\237486021729bd62c92820bc158e6e53f67178d4
 ^
 .src/main/java/testingsteps/Implementation.java,4\0\40652d14b35a3818bf82044dc949fe73ae5a8402
+[
++src/main/java/tests/TestingEnvironment.java,b\e\be1d696892e2992983da0635e2ce3f1f8a475d18
+W
+'src/main/java/testingsteps/Mapping.java,8\4\840b7706ad9aa75a5f041a08e77dfed2b4b7166a

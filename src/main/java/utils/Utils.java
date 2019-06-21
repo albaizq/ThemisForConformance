@@ -9,6 +9,7 @@ import org.semanticweb.owlapi.io.OWLOntologyDocumentSource;
 import org.semanticweb.owlapi.io.OWLParserException;
 import org.semanticweb.owlapi.io.StringDocumentSource;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.util.OWLEntityRenamer;
 import testingsteps.Implementation;
 import testingsteps.Mapping;
 import tests.TestCaseDesign;
@@ -16,7 +17,10 @@ import tests.TestCaseResult;
 import uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser;
 
 
+import javax.print.DocFlavor;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
@@ -65,34 +69,26 @@ public class Utils {
 
     }
 
-    public static String mappingValue(String query, String ontology, JSONArray allvalues){
+    public static String mappingValue(String query, String ontology, HashMap<String, IRI> allvalues){
         Pattern p = Pattern.compile("\\<(.*?)\\>");
         Matcher m = p.matcher(query);
         String querym = query;
-
         while (m.find()) {
             try {
                 int flag = 0;
-
-                for (int i = 0; i < allvalues.length(); i++) {
-                    JSONObject object = allvalues.getJSONObject(i);
-                    if(ontology.equals(object.getString("Ontology"))){
-                        querym = querym.replace("<"+object.get("Term")+">", "<" + object.get("Value")+ ">");
+                for (Map.Entry<String, IRI> entry : allvalues.entrySet()) {
+                    if (entry.getKey().toLowerCase().equals(m.group().toLowerCase().replace("<", "").replace(">", ""))) {
+                        querym = querym.replace("<" + entry.getKey() + ">", "<" + entry.getValue() + ">");
                         flag++;
                     }
                 }
-               /* if(flag==0 && !m.group().contains("http")){
-                    querym = querym.replace(m.group(), "<" + ontology.toString() +m.group().replace("<","").replace(">","")+ ">");
-                }*/
-
+                querym = querym.replace("<string>", "<http://www.w3.org/2001/XMLSchema#string>");
 
             } catch (Exception e) {
-                System.out.println("Error while parsing " + e.getMessage());
-                e.printStackTrace();
+
             }
         }
         return querym;
-
 
     }
 
@@ -133,40 +129,22 @@ public class Utils {
         }
     }
 
-    public static JSONArray createGot(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology) throws Exception {
+    public static HashMap<String, IRI> createGot(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology) throws Exception {
 
         //Create GoT
-        System.out.println("create got...");
+        System.out.println("creating got...");
         ArrayList<String> terms = new ArrayList<>();
         for (TestCaseDesign test : testsuiteDesign) {
             for (String purpose : test.getPurpose()) {
                 terms.addAll(Mapping.processTestExpressionToExtractTerms(purpose));
             }
         }
-        JSONArray got = new JSONArray();
+        HashMap<String, IRI> got = new HashMap<>();
+        got.putAll(ontology.getClasses());
+        got.putAll(ontology.getObjectProperties());
+        got.putAll(ontology.getDatatypeProperties());
+        got.putAll(ontology.getIndividuals());
 
-        ArrayList<String> entities = new ArrayList();
-        Iterator it = ontology.getOntology().getSignature(true).iterator();
-        while (it.hasNext()) {
-            OWLEntity entity = (OWLEntity) it.next();
-            JSONObject ontologyobjterm = new JSONObject();
-            if (entity.getIRI().getFragment() != null) {
-                if (!entities.contains(entity.getIRI().getFragment().toString())) {
-                    entities.add(entity.getIRI().getFragment().toString());
-                    ontologyobjterm.put("Term", entity.getIRI().getFragment());
-                    ontologyobjterm.put("Value", entity.getIRI().toString()); //get the value with higher smilarity
-                    ontologyobjterm.put("Ontology", ontology.getProv());
-                    got.put(ontologyobjterm);
-                } else {
-                    entities.add(entity.getIRI().getFragment().toString());
-                    String[] uri = entity.getIRI().getNamespace().toString().split("/");
-                    ontologyobjterm.put("Term", uri[uri.length - 1] + entity.getIRI().getFragment().toString());
-                    ontologyobjterm.put("Value", entity.getIRI().toString()); //get the value with higher smilarity
-                    ontologyobjterm.put("Ontology", ontology.getProv());
-                    got.put(ontologyobjterm);
-                }
-            }
-        }
         return got;
     }
 
@@ -422,5 +400,68 @@ public class Utils {
         return testsuiteDesign;
     }
 
+    public static void storeFile(String file, HashMap<String, IRI> got) throws IOException {
+        BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+        bw.write("Term;Key");
+        bw.newLine();
+        for(String p:got.keySet())
+        {
+            bw.write(p + ";" + got.get(p));
+            bw.newLine();
+        }
+        bw.flush();
+        bw.close();
+    }
 
+    public static String mapImplementationTerms(String  query, HashMap<String, IRI> allvalues) {
+        Pattern p = Pattern.compile("\\<(.*?)\\>");
+        Matcher m = p.matcher(query);
+        String querym = query;
+        while (m.find()) {
+            try {
+                int flag = 0;
+                for (Map.Entry<String, IRI> entry : allvalues.entrySet()) {
+                    if (entry.getKey().toLowerCase().equals(m.group().toLowerCase().replace("<", "").replace(">", ""))) {
+                        querym = querym.replace("<" + entry.getKey() + ">", "<" + entry.getValue() + ">");
+                        flag++;
+                    }
+                }
+                querym = querym.replace("<string>", "<http://www.w3.org/2001/XMLSchema#string>");
+
+            } catch (Exception e) {
+                System.out.println("ERROR WHILE PARSING IMPLEMENTATION TERMS: "+ e.getMessage());
+            }
+        }
+        return querym;
+
+    }
+
+    public static Set<OWLAxiom> mapImplementationTerms(OWLOntology queries, HashMap<String, IRI> allvalues) {
+        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+        OWLEntityRenamer renamer = new OWLEntityRenamer(manager, Collections.singleton(queries));
+
+        for(OWLAxiom axiom: queries.getAxioms()) {
+
+            Pattern p = Pattern.compile("\\<(.*?)\\>");
+            String query = axiom.toString();
+            Matcher m = p.matcher(query);
+            while (m.find()) {
+                try {
+                    int flag = 0;
+                    for (Map.Entry<String, IRI> entry : allvalues.entrySet()) {
+                        if (entry.getKey().equals(m.group().replace("<", "").replace(">", ""))) {
+                            queries.getOWLOntologyManager().applyChanges(renamer.changeIRI(IRI.create(entry.getKey()), entry.getValue()));
+                            flag++;
+                        }
+
+                    }
+                    queries.getOWLOntologyManager().applyChanges(renamer.changeIRI(IRI.create("string"), IRI.create("http://www.w3.org/2001/XMLSchema#string")));
+
+                } catch (Exception e) {
+                    System.out.println("ERROR WHILE PARSING IMPLEMENTATION TERMS: "+ e.getMessage());
+                }
+            }
+        }
+        return queries.getAxioms();
+    }
 }

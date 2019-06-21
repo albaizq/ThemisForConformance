@@ -1,137 +1,113 @@
 
-`squid:S1192\"IDefine a constant instead of duplicating this literal "Ontology" 3 times.(ı üÙ
-csquid:S1192!"LDefine a constant instead of duplicating this literal "\\<(.*?)\\>" 3 times.(è–Ùã
-]squid:S1192]"FDefine a constant instead of duplicating this literal "Value" 3 times.(İ»Œ
-Msquid:S1751$"6Remove this "return" statement or make it conditional.(ÛÍô
-esquid:S2095„"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(…ÚÒO
-gsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(ö«ĞØÿÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÂÏåøùÿÿÿÿ
-‡squid:S1319)"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(°Ô¨Ê
-‰squid:S1319)"rThe type of the "queries" object should be an interface such as "List" rather than the implementation "ArrayList".(°Ô¨Ê
-’squid:S1319–"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(Œ„šÙ
-ˆsquid:S1319¼"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(åÉ
-’squid:S1319¼"zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(åÉ
-’squid:S1319Ò"zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(İ½³
-’squid:S1319à"zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(öÅä¸
-squid:S1319È"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(§ÕØµÿÿÿÿÿ
-squid:S1319Ô"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Òƒâ»ùÿÿÿÿ
-N
-squid:S106H"9Replace this use of System.out or System.err by a logger.(²ØŒm
-T
-squid:S106g"9Replace this use of System.out or System.err by a logger.(Ø¨¦¯üÿÿÿÿ
-U
-squid:S106’"9Replace this use of System.out or System.err by a logger.(µÔÂüÿÿÿÿ
-U
-squid:S106™"9Replace this use of System.out or System.err by a logger.(»Êîøûÿÿÿÿ
-U
-squid:S106¿"9Replace this use of System.out or System.err by a logger.(Ñ“ùÿÿÿÿ
-U
-squid:S106Ë"9Replace this use of System.out or System.err by a logger.(Šöï°ÿÿÿÿÿ
-O
-squid:S106Ì"9Replace this use of System.out or System.err by a logger.(ÏÒŞ^
-U
-squid:S106Û"9Replace this use of System.out or System.err by a logger.(Šöï°ÿÿÿÿÿ
-O
-squid:S106Ü"9Replace this use of System.out or System.err by a logger.(ÏÒŞ^
-U
-squid:S106½"9Replace this use of System.out or System.err by a logger.(’ëÑ«ıÿÿÿÿ
-P
-squid:S106Î"9Replace this use of System.out or System.err by a logger.(„Ñ‹
-?squid:S1481X")Remove this unused "flag" local variable.(ŒÖı$
-Csquid:S1481v"'Remove this unused "in" local variable.(ÍÕ•Úùÿÿÿÿ
->squid:S1481¡"&Remove this unused "i" local variable.(»ŸÜš
-Gsquid:S1481•"*Remove this unused "term4" local variable.(«ŠùÉûÿÿÿÿ
-Bsquid:S1481–"*Remove this unused "term5" local variable.(ã†«û
-Asquid:S1481ß"*Remove this unused "term1" local variable.(Ìã®{
-Gsquid:S1481à"*Remove this unused "term2" local variable.(İÑƒŒùÿÿÿÿ
-Gsquid:S1481á"*Remove this unused "term3" local variable.(£»Œ¨ÿÿÿÿÿ
-jsquid:S3776à"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(öÅä¸
-asquid:CallToDeprecatedMethod¨"3Remove this use of "getFragment"; it is deprecated.(•ùíıÿÿÿÿ
-asquid:CallToDeprecatedMethod©"3Remove this use of "getFragment"; it is deprecated.(ÖçÒùÿÿÿÿ
-asquid:CallToDeprecatedMethodª"3Remove this use of "getFragment"; it is deprecated.(°£Ê—úÿÿÿÿ
-\squid:CallToDeprecatedMethod«"3Remove this use of "getFragment"; it is deprecated.(›¸Âá
-asquid:CallToDeprecatedMethod°"3Remove this use of "getFragment"; it is deprecated.(°£Ê—úÿÿÿÿ
-asquid:CallToDeprecatedMethod²"3Remove this use of "getFragment"; it is deprecated.(×´ÿŸøÿÿÿÿ
-Qsquid:S1118":Add a private constructor to hide the implicit public one.(¼Øûì
-Bsquid:S1168:"+Return an empty collection instead of null.(¥¹ï
-Bsquid:S1168I"+Return an empty collection instead of null.(¥¹ï
-Bsquid:S1168L"+Return an empty collection instead of null.(¥¹ï
-_squid:S00112–"FDefine and throw a dedicated exception instead of using a generic one.(Œ„šÙ
-_squid:S00112¼"FDefine and throw a dedicated exception instead of using a generic one.(åÉ
-_squid:S00112Ò"FDefine and throw a dedicated exception instead of using a generic one.(İ½³
-dsquid:S00112È"FDefine and throw a dedicated exception instead of using a generic one.(§ÕØµÿÿÿÿÿ
-dsquid:S00112Ô"FDefine and throw a dedicated exception instead of using a generic one.(Òƒâ»ùÿÿÿÿ
-Rsquid:S1854v"6Remove this useless assignment to local variable "in".(ÍÕ•Úùÿÿÿÿ
-Qsquid:S1854–"9Remove this useless assignment to local variable "term5".(ã†«û
-Vsquid:S1854•"9Remove this useless assignment to local variable "term4".(«ŠùÉûÿÿÿÿ
-Vsquid:S1854á"9Remove this useless assignment to local variable "term3".(£»Œ¨ÿÿÿÿÿ
-Vsquid:S1854à"9Remove this useless assignment to local variable "term2".(İÑƒŒùÿÿÿÿ
-Psquid:S1854ß"9Remove this useless assignment to local variable "term1".(Ìã®{
-Vsquid:S18580"?"group" returns a string, there's no need to call "toString()".(ä˜Ø´
-bsquid:S1858©"E"getFragment" returns a string, there's no need to call "toString()".(ÖçÒùÿÿÿÿ
-bsquid:S1858ª"E"getFragment" returns a string, there's no need to call "toString()".(°£Ê—úÿÿÿÿ
-bsquid:S1858°"E"getFragment" returns a string, there's no need to call "toString()".(°£Ê—úÿÿÿÿ
-^squid:S1858±"F"getNamespace" returns a string, there's no need to call "toString()".(€ø é
-bsquid:S1858²"E"getFragment" returns a string, there's no need to call "toString()".(×´ÿŸøÿÿÿÿ
-Vsquid:S1858í"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858î"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-\squid:S1858ï"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
-\squid:S1858ğ"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
-Vsquid:S1858ú"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858û"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-\squid:S1858ü"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
-\squid:S1858ı"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
-Vsquid:S1858‡"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858ˆ"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Wsquid:S1858‰"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
-Vsquid:S1858’"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858“"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Wsquid:S1858”"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
-\squid:S1858•"?"group" returns a string, there's no need to call "toString()".(«ŠùÉûÿÿÿÿ
-Wsquid:S1858–"?"group" returns a string, there's no need to call "toString()".(ã†«û
-Vsquid:S1858¡"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858¢"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Vsquid:S1858ª"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858«"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Vsquid:S1858³"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858´"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Wsquid:S1858µ"?"group" returns a string, there's no need to call "toString()".(ö•Á—
-\squid:S1858¶"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
-\squid:S1858·"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
-Wsquid:S1858¸"?"group" returns a string, there's no need to call "toString()".(éŞæÇ
-Wsquid:S1858¹"?"group" returns a string, there's no need to call "toString()".(ñğ› 
-Vsquid:S1858È"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858É"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Wsquid:S1858Ê"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
-Wsquid:S1858Ë"?"group" returns a string, there's no need to call "toString()".(±èÄò
-\squid:S1858Ì"?"group" returns a string, there's no need to call "toString()".(ÊÉŠĞûÿÿÿÿ
-\squid:S1858Í"?"group" returns a string, there's no need to call "toString()".(×°°òøÿÿÿÿ
-Vsquid:S1858ß"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858à"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-\squid:S1858á"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
-Vsquid:S1858æ"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858ç"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Wsquid:S1858è"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
-Wsquid:S1858é"?"group" returns a string, there's no need to call "toString()".(±èÄò
-\squid:S1858ê"?"group" returns a string, there's no need to call "toString()".(ÊÉŠĞûÿÿÿÿ
+Gsquid:S1481æ"*Remove this unused "term4" local variable.(«ŠùÉûÿÿÿÿ
+\squid:S1858ˆ"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
+Qsquid:S1854ç"9Remove this useless assignment to local variable "term5".(ã†«û
+Rsquid:S1854`"6Remove this useless assignment to local variable "in".(ÍÕ•Úùÿÿÿÿ
+\squid:S1858ó"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+\squid:S1858"?"group" returns a string, there's no need to call "toString()".(ÊÉŠĞûÿÿÿÿ
+bsquid:S1858™"E"getFragment" returns a string, there's no need to call "toString()".(°£Ê—úÿÿÿÿ
+Vsquid:S1858„"?"group" returns a string, there's no need to call "toString()".(Ìã®{
 Vsquid:S1858û"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Vsquid:S1858‚"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858ƒ"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Vsquid:S1858‹"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858Œ"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Wsquid:S1858"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
-\squid:S1858"?"group" returns a string, there's no need to call "toString()".(«ŠùÉûÿÿÿÿ
-Vsquid:S1858™"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858š"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Wsquid:S1858›"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
-\squid:S1858œ"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
-Vsquid:S1858ª"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858«"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Wsquid:S1858¬"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
-Vsquid:S1858¶"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858·"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+?squid:S1148>"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Vsquid:S1854±"9Remove this useless assignment to local variable "term2".(İÑƒŒùÿÿÿÿ
+\squid:S1858æ"?"group" returns a string, there's no need to call "toString()".(«ŠùÉûÿÿÿÿ
+U
+squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(»Êîøûÿÿÿÿ
+Vsquid:S1858°"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Wsquid:S1858ì"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
+’squid:S1319€"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(Œ„šÙ
 msquid:UselessImportCheck"IRemove this unused import 'org.coode.owlapi.turtle.TurtleOntologyFormat'.(Ì®à“
-Zsquid:UselessImportCheck"1Remove this unused import 'tests.TestCaseResult'.(ÀÎ¶§úÿÿÿÿ
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(¼Øûì
+\squid:S1858"?"group" returns a string, there's no need to call "toString()".(×°°òøÿÿÿÿ
+Vsquid:S1858Ø"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Asquid:S1481°"*Remove this unused "term1" local variable.(Ìã®{
+_squid:S00112¥"FDefine and throw a dedicated exception instead of using a generic one.(İ½³
+squid:S1319š"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Òƒâ»ùÿÿÿÿ
+Vsquid:S1858û"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+\squid:S1858…"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+\squid:S1858Í"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
+Hsquid:S00108S")Either remove or fill this block of code.(”ı¾8Ê•õ¬·-
+N
+squid:S106;"9Replace this use of System.out or System.err by a logger.(²ØŒm
+’squid:S1319±"zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(öÅä¸
+Bsquid:S1168-"+Return an empty collection instead of null.(¥¹ï
+dsquid:S2095n"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(…ÚÒO
+\squid:CallToDeprecatedMethod”"3Remove this use of "getFragment"; it is deprecated.(›¸Âá
+Wsquid:S1858Ú"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
+Fsquid:S1481J")Remove this unused "flag" local variable.(ŒÖı$8Ñúô¬·-
+asquid:CallToDeprecatedMethod’"3Remove this use of "getFragment"; it is deprecated.(ÖçÒùÿÿÿÿ
+Bsquid:S1481ç"*Remove this unused "term5" local variable.(ã†«û
+Vsquid:S1858ã"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Vsquid:S1858™"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+\squid:S1858ß"?"group" returns a string, there's no need to call "toString()".(«ŠùÉûÿÿÿÿ
+asquid:CallToDeprecatedMethod‘"3Remove this use of "getFragment"; it is deprecated.(•ùíıÿÿÿÿ
+asquid:CallToDeprecatedMethod›"3Remove this use of "getFragment"; it is deprecated.(×´ÿŸøÿÿÿÿ
+Vsquid:S1858ê"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Wsquid:S1858º"?"group" returns a string, there's no need to call "toString()".(±èÄò
+Psquid:S1854°"9Remove this useless assignment to local variable "term1".(Ìã®{
+Vsquid:S1858ò"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Gsquid:S1481±"*Remove this unused "term2" local variable.(İÑƒŒùÿÿÿÿ
+Vsquid:S1858Ó"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Vsquid:S1854æ"9Remove this useless assignment to local variable "term4".(«ŠùÉûÿÿÿÿ
+\squid:S1858±"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
 Ssquid:UselessImportCheck"*Remove this unused import 'org.json.Test'.(€‚â‹ùÿÿÿÿ
-?squid:S1148K"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-?squid:S1148h"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+^squid:S1858š"F"getNamespace" returns a string, there's no need to call "toString()".(€ø é
+\squid:S1858š"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+\squid:S1858í"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
+bsquid:S1858’"E"getFragment" returns a string, there's no need to call "toString()".(ÖçÒùÿÿÿÿ
+gsquid:CommentedOutCodeLinei"<This block of commented-out lines of code should be removed.(ÂÏåøùÿÿÿÿ
+asquid:CallToDeprecatedMethod™"3Remove this use of "getFragment"; it is deprecated.(°£Ê—úÿÿÿÿ
+\squid:S1858À"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
+\squid:S1858ˆ"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+jsquid:S3776±"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(öÅä¸
+Wsquid:S1858Š"?"group" returns a string, there's no need to call "toString()".(ñğ› 
+Wsquid:S1858ç"?"group" returns a string, there's no need to call "toString()".(ã†«û
+Vsquid:S1854²"9Remove this useless assignment to local variable "term3".(£»Œ¨ÿÿÿÿÿ
+Wsquid:S1858‰"?"group" returns a string, there's no need to call "toString()".(éŞæÇ
+\squid:S1858‡"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
+T
+squid:S106|"9Replace this use of System.out or System.err by a logger.(µÔÂüÿÿÿÿ
+Vsquid:S1858‡"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Wsquid:S1858¹"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
+\squid:S1858İ"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+\squid:S1858ë"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+Wsquid:S1858Ş"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
+Bsquid:S1168?"+Return an empty collection instead of null.(¥¹ï
+Wsquid:S1858å"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
+Vsquid:S1858Ü"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+dsquid:S00112š"FDefine and throw a dedicated exception instead of using a generic one.(Òƒâ»ùÿÿÿÿ
+bsquid:S1858“"E"getFragment" returns a string, there's no need to call "toString()".(°£Ê—úÿÿÿÿ
+’squid:S1319¥"zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(İ½³
+Wsquid:S1858†"?"group" returns a string, there's no need to call "toString()".(ö•Á—
+Vsquid:S1858·"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+\squid:S1858Ì"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+Vsquid:S1858Ì"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Bsquid:S1168<"+Return an empty collection instead of null.(¥¹ï
+Vsquid:S1858¾"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+\squid:S1858Ô"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+\squid:S1858ü"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+Gsquid:S1481²"*Remove this unused "term3" local variable.(£»Œ¨ÿÿÿÿÿ
+\squid:S1858ü"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+Wsquid:S1858œ"?"group" returns a string, there's no need to call "toString()".(±èÄò
+\squid:S1858Ù"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+\squid:S1858¸"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+Csquid:S1481`"'Remove this unused "in" local variable.(ÍÕ•Úùÿÿÿÿ
+Wsquid:S1858ı"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
+\squid:S1858Î"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
+\squid:S1858ä"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+Msquid:S1751$"6Remove this "return" statement or make it conditional.(ÛÍô
+Vsquid:S1858Ë"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+bsquid:S1858›"E"getFragment" returns a string, there's no need to call "toString()".(×´ÿŸøÿÿÿÿ
+Zsquid:UselessImportCheck"1Remove this unused import 'tests.TestCaseResult'.(ÀÎ¶§úÿÿÿÿ
+asquid:CallToDeprecatedMethod“"3Remove this use of "getFragment"; it is deprecated.(°£Ê—úÿÿÿÿ
+\squid:S1858¿"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+U
+squid:S106"9Replace this use of System.out or System.err by a logger.(’ëÑ«ıÿÿÿÿ
+\squid:S1858»"?"group" returns a string, there's no need to call "toString()".(ÊÉŠĞûÿÿÿÿ
+\squid:S1858²"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
+\squid:S1858Á"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
+†squid:S1157L"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(µ¡Ş´şÿÿÿÿ8Ñúô¬·-
+Wsquid:S1858›"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
+_squid:S00112€"FDefine and throw a dedicated exception instead of using a generic one.(Œ„šÙ
+Rsquid:S1172D"/Remove this unused method parameter "ontology".(ÙÒ¥´şÿÿÿÿ8Ñúô¬·-
+”squid:S1319D"qThe type of the "allvalues" object should be an interface such as "Map" rather than the implementation "HashMap".(ÙÒ¥´şÿÿÿÿ8´¼õ¬·-
