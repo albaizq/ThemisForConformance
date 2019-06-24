@@ -1,13 +1,13 @@
 
-–squid:S1319r"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(ßÎá¦üÿÿÿÿ8£Àù¯-
 Ÿsquid:S1319^"|The type of the "preconditionQuery" object should be an interface such as "List" rather than the implementation "ArrayList".(Äì±áşÿÿÿÿ8£Àù¯-
-–squid:S1319*"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(«ªÉÊüÿÿÿÿ8£Àù¯-
-¦squid:S1319."‡The type of the "axiomExpectedResultAxioms" object should be an interface such as "Map" rather than the implementation "LinkedHashMap".(åßßÀ8£Àù¯-
-•squid:S1319V"wThe type of the "precondition" object should be an interface such as "List" rather than the implementation "ArrayList".(ÿÔëş8£Àù¯-
- squid:S1319>"The type of the "axiomExpectedResult" object should be an interface such as "Map" rather than the implementation "LinkedHashMap".(êÕı¾8£Àù¯-
-‘squid:S1319:"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(¬¦¶»8£Àù¯-
 œsquid:S1319v"~The type of the "assertionsAxioms" object should be an interface such as "Map" rather than the implementation "LinkedHashMap".(¤¾ßØ8£Àù¯-
-–squid:S1319F"xThe type of the "assertions" object should be an interface such as "Map" rather than the implementation "LinkedHashMap".(€‘Û8£Àù¯-
+‘squid:S1319:"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(¬¦¶»8£Àù¯-
 “squid:S1319Z"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(şùÜÚüÿÿÿÿ8£Àù¯-
-squid:S1319R"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(²é¡™8£Àù¯-
+–squid:S1319r"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(ßÎá¦üÿÿÿÿ8£Àù¯-
+–squid:S1319*"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(«ªÉÊüÿÿÿÿ8£Àù¯-
 –squid:S1319B"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(‡™âÔûÿÿÿÿ8£Àù¯-
+squid:S1319R"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(²é¡™8£Àù¯-
+•squid:S1319V"wThe type of the "precondition" object should be an interface such as "List" rather than the implementation "ArrayList".(ÿÔëş8£Àù¯-
+–squid:S1319F"xThe type of the "assertions" object should be an interface such as "Map" rather than the implementation "LinkedHashMap".(€‘Û8£Àù¯-
+ squid:S1319>"The type of the "axiomExpectedResult" object should be an interface such as "Map" rather than the implementation "LinkedHashMap".(êÕı¾8£Àù¯-
+¦squid:S1319."‡The type of the "axiomExpectedResultAxioms" object should be an interface such as "Map" rather than the implementation "LinkedHashMap".(åßßÀ8£Àù¯-

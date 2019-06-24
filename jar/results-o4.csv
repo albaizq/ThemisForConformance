@@ -1,0 +1,195 @@
+Provenance;Terms involved;Ontology;Requirement description;Result
+http://www.w3.org/ns/ssn;'["Procedure","hasOutput","Output"]';Open Connectivity Foundation (OCF);A procedure has an output;absent
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Result"]';Open Connectivity Foundation (OCF);A sampling has a result;absent
+http://www.w3.org/ns/ssn;'["Actuation","hasResult","Result"]';Open Connectivity Foundation (OCF);An actuation has a result;absent
+http://www.w3.org/ns/ssn;'["Sample","FeatureOfInterest","Result"]';Open Connectivity Foundation (OCF);A sample is a type of feature of interest and result;absent
+http://www.w3.org/ns/ssn;'["Deployment","forProperty","Property"]';Open Connectivity Foundation (OCF);Deployment is associated to a property;absent
+http://www.w3.org/ns/ssn;["Sensor"];Open Connectivity Foundation (OCF);What is a sensor?;passed
+http://www.w3.org/ns/ssn;["Actuator"];Open Connectivity Foundation (OCF);What is an actuator?;passed
+http://www.w3.org/ns/ssn;["Procedure"];Open Connectivity Foundation (OCF);What is a procedure?;passed
+http://www.w3.org/ns/ssn;["Deployment"];Open Connectivity Foundation (OCF);What is a deployment?;passed
+http://www.w3.org/ns/ssn;'["Platform","inDeployment","Deployment"]';Open Connectivity Foundation (OCF);Platform has a deployment;absent
+http://www.w3.org/ns/ssn;'["Platform","deployedSystem","System"]';Open Connectivity Foundation (OCF);A platform is deployed by some system;absent
+http://www.w3.org/ns/ssn;["System"];Open Connectivity Foundation (OCF);What is a system?;passed
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Sample"]';Open Connectivity Foundation (OCF);A sampling is linked to at least one sample;absent
+http://www.w3.org/ns/ssn;'["Sensor","observes","ObservableProperty"]';Open Connectivity Foundation (OCF);A sensor observes only observable properties;absent
+http://www.w3.org/ns/ssn;'["ObservableProperty","Property"]';Open Connectivity Foundation (OCF);An observable property is a type of property;absent
+http://www.w3.org/ns/ssn;'["ObservableProperty","isObservedBy","Sensor"]';Open Connectivity Foundation (OCF);An observable property is observed by only sensors;absent
+http://www.w3.org/ns/ssn;'["Observation","hasFeatureOfInterest","FeatureOfInterest"]';Open Connectivity Foundation (OCF);An observation is related only to one feature of interest;absent
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';Open Connectivity Foundation (OCF);The observation is originated by  exactly one stimulus;absent
+http://www.w3.org/ns/ssn;'["Observation","hasResult","Result"]';Open Connectivity Foundation (OCF);An observation has only  results;absent
+http://www.w3.org/ns/ssn;'["Sensor","System"]';Open Connectivity Foundation (OCF);A sensor is a type of system;absent
+http://www.w3.org/ns/ssn;["FeatureOfInterest"];Open Connectivity Foundation (OCF);What is feature of interest?;passed
+http://www.w3.org/ns/ssn;'["System","implements","Procedure"]';Open Connectivity Foundation (OCF);A system implements a procedure;absent
+http://www.w3.org/ns/ssn;'["System","hasSubSystem"]';Open Connectivity Foundation (OCF);A system can have subsystems;absent
+http://www.w3.org/ns/ssn;'["Procedure","hasInput","Input"]';Open Connectivity Foundation (OCF);A procedure has an input;absent
+http://www.w3.org/ns/ssn;["Sensor"];Open Connectivity Foundation (OCF);What is a sensor?;passed
+http://www.w3.org/ns/ssn;'["Sensor","detects","Stimulus"]';Open Connectivity Foundation (OCF);Sensor detects an stimulus;absent
+http://www.w3.org/ns/ssn;["Stimulus"];Open Connectivity Foundation (OCF);What is a stimulus?;passed
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';Open Connectivity Foundation (OCF);An observation is originated by a stimulus;absent
+http://www.w3.org/ns/ssn;["Property"];Open Connectivity Foundation (OCF);What is a property?;passed
+http://www.w3.org/ns/ssn;'["Stimulus","isProxyFor","Property","isPropertyOf","FeatureOfInterest"]';Open Connectivity Foundation (OCF);The stimulus is proxy for a property;absent
+http://www.w3.org/ns/ssn;'["Actuator","madeActuation","Actuation"]';Open Connectivity Foundation (OCF);An actuator mades only actuations;absent
+http://www.w3.org/ns/ssn;'["Procedure","implementedBy","System"]';Open Connectivity Foundation (OCF);A procedure is implemented by a system;absent
+http://www.w3.org/ns/ssn;'["Deployment","deployedOnPlatform","Platform"]';Open Connectivity Foundation (OCF);A deplopyment is deployed in a platform;absent
+http://www.w3.org/ns/ssn;'["Sampling","hasFeatureOfInterest","FeatureOfInterest"]';Open Connectivity Foundation (OCF);A sampling has one feature of interest;absent
+ISO/IEC 30141:2017;'["Service","uses","DataStore","Gateway","Device"]';Open Connectivity Foundation (OCF);"Data associated with services; devices and gateways can be held in data stores";absent
+ISO/IEC 30141:2017;'["PhysicalThing","Thing","VirtualThing"]';Open Connectivity Foundation (OCF);Everything in an IoT system is a kind of entity;passed
+ISO/IEC 30141:2017;'["Sensor","monitors","Tag","PhysicalThing","hasTag"]';Open Connectivity Foundation (OCF);Sensors can monitor the tag attached to a physical entity rather than the physical entity itself;absent
+ISO/IEC 30141:2017;'["VirtualThing","isAccessibleThrough","Link"]';Open Connectivity Foundation (OCF);A virtual entity interacts through an endpoint;passed
+ISO/IEC 30141:2017;'["Service","uses","DataStore"]';Open Connectivity Foundation (OCF);A service can use data stores;absent
+ISO/IEC 30141:2017;'["Service","interactsWith"]';Open Connectivity Foundation (OCF);A service can interact with other services;absent
+ISO/IEC 30141:2017;'["Service","interactsWith","Device"]';Open Connectivity Foundation (OCF);A service interacts with zero or more IoT devices;absent
+ISO/IEC 30141:2017;'["Service","interactsWith","Gateway"]';Open Connectivity Foundation (OCF);A service interacts with zero or more IoT gateways;absent
+ISO/IEC 30141:2017;'["Service","interactsWith","Network"]';Open Connectivity Foundation (OCF);A service interacts with other entities via one or more networks;absent
+ISO/IEC 30141:2017;'["Device","isAccessibleThrough","Link"]';Open Connectivity Foundation (OCF);IoT device exposes one or more endpoints;absent
+ISO/IEC 30141:2017;'["Device","interactsWith","Network"]';Open Connectivity Foundation (OCF);IoT device interacts with one or more networks ;absent
+ISO/IEC 30141:2017;'["Gateway","uses","DataStore"]';Open Connectivity Foundation (OCF);IoT gateways use data stores;passed
+ISO/IEC 30141:2017;'["Gateway","connects","Device"]';Open Connectivity Foundation (OCF);IoT gateways connect IoT devices;passed
+ISO/IEC 30141:2017;'["Gateway","exposes","Links"]';Open Connectivity Foundation (OCF);IoT gateways expose endpoints;passed
+ISO/IEC 30141:2017;'["Gateway","interactsThrough","Network"]';Open Connectivity Foundation (OCF);IoT gateways interact through networks;passed
+ISO/IEC 30141:2017;'["Gateway","DigitalThing"]';Open Connectivity Foundation (OCF);An IoT gateway is a digital entity ;passed
+ISO/IEC 30141:2017;'["Service","exposes","Link"]';Open Connectivity Foundation (OCF);A service exposes one or more endpoints by which it can be invoked;absent
+ISO/IEC 30141:2017;'["Network","connects","Link"]';Open Connectivity Foundation (OCF);A network connects endpoints;passed
+ISO/IEC 30141:2017;'["Thing","thingName","string"]';Open Connectivity Foundation (OCF);An entity can have more than one identifier;absent
+ISO/IEC 30141:2017;'["Thing","thingName","string"]';Open Connectivity Foundation (OCF);An entity  has an identifier;absent
+ISO/IEC 30141:2017;'["DataStore","holds","IoTSystem"]';Open Connectivity Foundation (OCF);Data Stores hold data relating to IoT systems ;passed
+ISO/IEC 30141:2017;'["Device","areConnectedWith","Gateway"]';Open Connectivity Foundation (OCF);IoT devices are connected with an IoT gateway ;absent
+ISO/IEC 30141:2017;'["Device","interactsThrough","Network"]';Open Connectivity Foundation (OCF);IoT devices interact through a network;absent
+ISO/IEC 30141:2017;'["VirtualUser","Agent","HumanUser","Person"]';Open Connectivity Foundation (OCF);The IoT-User can be human (human user) or non-human (digital user);passed
+ISO/IEC 30141:2017;'["Actuator","Device","Sensor"]';Open Connectivity Foundation (OCF);Actuators and sensors are kinds of IoT device;absent
+ISO/IEC 30141:2017;'["VirtualThing","represents","PhysicalThing"]';Open Connectivity Foundation (OCF);A virtual entity represents a physical entity;passed
+ISO/IEC 30141:2017;'["PhysicalThing","hasTag","Tag"]';Open Connectivity Foundation (OCF);A physical entity may have one or more  attached tag;passed
+ISO/IEC 30141:2017;'["PhysicalThing","monitorsFeatureProperty","FeatureProperty"]';Open Connectivity Foundation (OCF);A physical entity is controlled by an actuator;passed
+ISO/IEC 30141:2017;'["PhysicalThing","actsOnFeatureProperty","FeatureProperty>"]';Open Connectivity Foundation (OCF);A physical entity is controlled by an actuator;passed
+ISO/IEC 30141:2017;'["PhysicalThing","Thing"]';Open Connectivity Foundation (OCF);An Entity can be physical or virtual;passed
+ISO/IEC 30141:2017;'["Application","interactsUsing","Network"]';Open Connectivity Foundation (OCF);An applications can interact with other services via the network;passed
+ISO/IEC 30141:2017;'["Application","Service"]';Open Connectivity Foundation (OCF);An application is a specialized form of service;passed
+ISO/IEC 30141:2017;'["HumanUser","interactsUsing","Application"]';Open Connectivity Foundation (OCF);A human user interacts using applications;passed
+ISO/IEC 30141:2017;'["DigitalUser","interactsUsing","Service"]';Open Connectivity Foundation (OCF);Digital user consumes services;passed
+ISO/IEC 30141:2017;'["Application","Service"]';Open Connectivity Foundation (OCF);An application typically uses Services;passed
+ISO/IEC 30141:2017;'["HumanUser","interactsUsing","Application"]';Open Connectivity Foundation (OCF);Human users uses applications;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","hasDataRestriction","string"]';Open Connectivity Foundation (OCF);A simple type variable has a data restriction;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];Open Connectivity Foundation (OCF);An operation is the -machine interpretable- exposure of a -human understandable- command to a network;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];Open Connectivity Foundation (OCF);An operation is the means of a service to communicate in a procedure-type manner over the network (i.e. transmit data to/from other devices);passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SensingFunction","Function"]';Open Connectivity Foundation (OCF);"A measuring functionality represents a functionality that has no impacts on the real world; but only gathers data";passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["ActuatingFunction","Function"]';Open Connectivity Foundation (OCF);"A controlling functionality represents a functionality that has impacts on the real world; but does not gather data";passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Function","hasCommand","Command"]';Open Connectivity Foundation (OCF);A functionality has commands that allow human users to influence/observe such functionality;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","hasFunction","Function"]';Open Connectivity Foundation (OCF);A functionality represents the functionality necessary to accomplish the task for which a device is designed;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasOutputDataPoint","OutputDataPoint"]';Open Connectivity Foundation (OCF);A service has an output data point;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasInputDataPoint","InputDataPoint"]';Open Connectivity Foundation (OCF);A service has an input data point;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasOperation","Operation"]';Open Connectivity Foundation (OCF);A service has an operation;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasSubService"]';Open Connectivity Foundation (OCF);A service can be composed of independent (sub-)services;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","oneM2MTargetURI","string"]';Open Connectivity Foundation (OCF);A variable has a URI of a resource through which the instantiation of the value of the variable can be manipulated;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","oneM2MMethod","string"]';Open Connectivity Foundation (OCF);A variable has a CRUD method through which the instantiation of the variable value can be manipulated;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","hasValue","string"]';Open Connectivity Foundation (OCF);A variable may have a value (useful for values that are relatively static);passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["StructuredTypeVariable","hasSubStructure","Variable"]';Open Connectivity Foundation (OCF);A variable can be structured using other variables;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["InputDataPoint","Variable"]';Open Connectivity Foundation (OCF);An input data point is a variable of a service that is accessed by a RESTful device in its environment and that the device reads out autonomously (e.g. at periodic times);absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["OutputDataPoint","Variable"]';Open Connectivity Foundation (OCF);An output data point is a variable of a service that is set by a RESTful device in its environment and that the device updates autonomously (e.g. at periodic times));absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Variable"];Open Connectivity Foundation (OCF);"A variable describes an entity that stores some data (e.g. integers; text; etc.; or structured data) that can change over time";passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","describes","Property"]';Open Connectivity Foundation (OCF);A variable describes a real-world aspect;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","represents","Function"]';Open Connectivity Foundation (OCF);A service can expose one or more functionalities;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","represents","Function"]';Open Connectivity Foundation (OCF);A service is an electronic representation of a functionality in a network;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["AreaNetwork","netTechnologyProfile","string"]';Open Connectivity Foundation (OCF);An area network follows a profile;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["AreaNetwork","netTechnologyCommunicationProtocol","string"]';Open Connectivity Foundation (OCF);An area network follows a communication protocol;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["AreaNetwork","netTechnologyPhysicalStandard","string"]';Open Connectivity Foundation (OCF);An area network follows an standard that defines its physical properties;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];Open Connectivity Foundation (OCF);An area network is a network that provides data transport services between an interworked device and the oneM2M System;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["InterworkedDevice","isPartOf","AreaNetwork"]';Open Connectivity Foundation (OCF);An interworked device is part of an area network;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];Open Connectivity Foundation (OCF);An interworked device is a device that does not support oneM2M interfaces and can only be accessed from the oneM2M System by communicating with a proxied (virtual) device that has been created by an interworking proxy entity;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasSubService"]';Open Connectivity Foundation (OCF);A device can be composed of several (sub-)devices;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","offers","Service"]';Open Connectivity Foundation (OCF);A device has one or more services that expose in the network its functionalities (refined);absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Command","hasOutput","OperationOutput","Operation"]';Open Connectivity Foundation (OCF);An operation output describes an output of an operation and also describes the output of a command;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasInput","OperationInput","Command"]';Open Connectivity Foundation (OCF);An operation input describes an input of an operation and also describes the input of a command;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","hasFunction","Function"]';Open Connectivity Foundation (OCF);A device performs one or more functionalities in order to accomplish a particular task;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Device"];Open Connectivity Foundation (OCF);A device may be a physical or non-physical entity;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","isPartOf","AreaNetwork"]';Open Connectivity Foundation (OCF);A device is a thing that is able to interact electronically with its environment via a network;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","hasMetaData","MetaData"]';Open Connectivity Foundation (OCF);"Metadata contain data (like units; precision-ranges) about a variable or about an aspect";absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Property","hasMetaData","MetaData"]';Open Connectivity Foundation (OCF);An aspect can have metadata;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Property"];Open Connectivity Foundation (OCF);An aspect could be a (physical or non-physical) entity or it could be a quality;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Thing","hasThingRelation"]';Open Connectivity Foundation (OCF);A thing can have relations to other things;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Thing","hasThingProperty","ThingProperty"]';Open Connectivity Foundation (OCF);A thing may have properties;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Thing"];Open Connectivity Foundation (OCF);A thing is an entity that can be identified in the oneM2M System.;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","hasMetaData","MetaData"]';Open Connectivity Foundation (OCF);A variable can have metadata;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Command","hasOutput","OperationOutput"]';Open Connectivity Foundation (OCF);A command has as output one or more operation outputs (refined);absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Command","hasInput","OperationInput"]';Open Connectivity Foundation (OCF);A command has as input one or more operation inputs (refined);absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];Open Connectivity Foundation (OCF);A command represents an action that can be performed to support a functionality;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","oneM2MTargetURI","string"]';Open Connectivity Foundation (OCF);An operation has a target URI;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","oneM2MMethod","string"]';Open Connectivity Foundation (OCF);An operation has a method;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasOutput","OperationOutput"]';Open Connectivity Foundation (OCF);An operation may produce data into operation outputs (transient entities that are deleted when the operation finishes);absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasOutput","OperationOutput"]';Open Connectivity Foundation (OCF);An operation may produce output data into output data points (persistent entities);absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasInput","OperationInput"]';Open Connectivity Foundation (OCF);An operation may receive data from operation inputs (transient entities that are deleted when the operation finishes);absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasInput","OperationInput"]';Open Connectivity Foundation (OCF);An operation may receive input data from input data points (persistent entities);absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","hasDataType","string"]';Open Connectivity Foundation (OCF);A simple type variable has exactly one datatype;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","Variable"]';Open Connectivity Foundation (OCF);"A simple type variable is a variable that only consists of variables of simple XML types like xsd:integer; string; etc.; potentially including restrictions";absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","Variable"]';Open Connectivity Foundation (OCF);"A simple type variable is a variable that only consists of variables of simple XML types like xsd:integer; string; etc.; potentially including restrictions";absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","oneM2MAttribute","string"]';Open Connectivity Foundation (OCF);A simple type variable contains the name of the attribute of the resource that is referenced with the target URI and that stores the value of the simple type variables;passed
+Open Connectivity Foundation (OCF);'["Lighting","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["SpaceConditioning","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Resource","consistsOf","Device"]';Open Connectivity Foundation (OCF);;absent
+Open Connectivity Foundation (OCF);["Resource"];Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Device","exposes","Resource"]';Open Connectivity Foundation (OCF);;absent
+Open Connectivity Foundation (OCF);["Entity"];Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Resource","hasUsers","string"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Resource","hasDevelopers","string"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Resource","isAccessibleThrough","Link"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Endpoint","isProvidedOverProtocol","CommunicationProtocol"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Device","isAccessibleThrough","Endpoint"]';Open Connectivity Foundation (OCF);;absent
+Open Connectivity Foundation (OCF);'["Endpoint","makesAccessible","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Maintenance","Resource"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Device","implementsSecurity","Security"]';Open Connectivity Foundation (OCF);;absent
+Open Connectivity Foundation (OCF);'["Security","Resource"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Device","communicatesWith"]';Open Connectivity Foundation (OCF);;absent
+Open Connectivity Foundation (OCF);'["Resource","serialNumber","string","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Device","address","string","Resource"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Device","deviceName","string","Resource"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Resource","encapsulates","State"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Resource","hasFunctionality","Functionality"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Device","hosts","Resource"]';Open Connectivity Foundation (OCF);;absent
+Open Connectivity Foundation (OCF);'["Resource","hasProperty","Property"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Property","describesAspect","Aspect"]';Open Connectivity Foundation (OCF);;absent
+Open Connectivity Foundation (OCF);'["Resource","hasManufacturer","string"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Electronics","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Infrastructure","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Transportation","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Fitness","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Medica","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["PersonalHealth","Device"]';Open Connectivity Foundation (OCF);;passed
+Open Connectivity Foundation (OCF);'["Device","hasRole","Role"]';Open Connectivity Foundation (OCF);;absent
+https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';Open Connectivity Foundation (OCF);A device can be used for  the purpose of sensing;absent
+https://w3id.org/saref#;'["Water","Commodity","Gas"]';Open Connectivity Foundation (OCF);Water or gas are examples of commodities;undefined
+https://w3id.org/saref#;'["SensingFunction","Function","ActuatingFunction","MeteringFunction","EventFunction"]';Open Connectivity Foundation (OCF);A function can belong to a function category;undefined
+https://w3id.org/saref#;'["LevelControlFunction","ActuatingFunction","OnOffFunction"]';Open Connectivity Foundation (OCF);"An actuating function can be specialized into on/off; open/close; start/stop or level control functions";undefined
+https://w3id.org/saref#;'["EventFunction","Function","SensingFunction","ActuatingFunction","MeteringFunction"]';Open Connectivity Foundation (OCF);"Examples of functions are the  the actuating; sensing; metering or event functions";undefined
+https://w3id.org/saref#;["Function"];Open Connectivity Foundation (OCF);A function represents the functionality necessary to accomplish the task for which a device is designed;passed
+https://w3id.org/saref#;'["EnergyMeter","hasFunction","MeteringFunction"]';Open Connectivity Foundation (OCF);An energy meter is a device that has category Meter;undefined
+https://w3id.org/saref#;'["EnergyMeter","consistsOf","Meter"]';Open Connectivity Foundation (OCF);An energy meter is a device that consists of a meter;undefined
+https://w3id.org/saref#;'["Command","actsUpon","State"]';Open Connectivity Foundation (OCF);A command can act upon a state  to represent that the consequence of a command can be a change of state of the device;absent
+https://w3id.org/saref#;'["ToggleCommand","Command","OffCommand","OnCommand","CloseCommand"]';Open Connectivity Foundation (OCF);"The commands can be: on; off; open; toggle; close; startm pause; step up; step down; set level; get and notify";undefined
+https://w3id.org/saref#;'["Device","hasState","State"]';Open Connectivity Foundation (OCF);A device can be found in a correponding state;absent
+https://w3id.org/saref#;'["EnergyMeter","Meter"]';Open Connectivity Foundation (OCF);An energy meter is a device that has category Meter;undefined
+https://w3id.org/saref#;'["Meter","hasFunction","MeteringFunction"]';Open Connectivity Foundation (OCF);A meter performs a metering function;undefined
+https://w3id.org/saref#;'["Meter","FunctionRelated"]';Open Connectivity Foundation (OCF);A meter is a functionRelated device ;undefined
+https://w3id.org/saref#;'["DimmerLamp","control","Light"]';Open Connectivity Foundation (OCF);A dimmer lamp performs an actuating level control ;undefined
+https://w3id.org/saref#;'["DimmerLamp","performs","LevelControl"]';Open Connectivity Foundation (OCF);A dimmer lamp performs an actuating level control ;undefined
+https://w3id.org/saref#;'["DimmerLamp","Actuator","Lighting"]';Open Connectivity Foundation (OCF);A dimmer lamp is a device that has category Lighting and Actuator;undefined
+https://w3id.org/saref#;'["DoorSwitch","accomplishes","Safety"]';Open Connectivity Foundation (OCF);A door switch is used for the purpose of controlling doors;undefined
+https://w3id.org/saref#;'["DoorSwitch","hasFunction","OpenCloseFunction"]';Open Connectivity Foundation (OCF);A door switch  performs the open/close function;undefined
+https://w3id.org/saref#;'["DoorSwitch","consistsOf","Switch"]';Open Connectivity Foundation (OCF);A door switch is a device that consists of a switch;undefined
+https://w3id.org/saref#;'["Switch","Actuator"]';Open Connectivity Foundation (OCF); A switch is a device that has category Actuator;undefined
+https://w3id.org/saref#;'["SmokeSensor","consistsOf","Sensor"]';Open Connectivity Foundation (OCF);A smoke sensor is a device that consists of a sensor;undefined
+https://w3id.org/saref#;'["SmokeSensor","measuresProperty","Smoke"]';Open Connectivity Foundation (OCF);A smoke sensor  is used for the purpose of sensing smoke;undefined
+https://w3id.org/saref#;'["SmokeSensor","hasFunction","EventFunction","SensingFunction"]';Open Connectivity Foundation (OCF);A smoke sensor performs a sensing and event function;undefined
+https://w3id.org/saref#;'["Function","hasCommand","Command"]';Open Connectivity Foundation (OCF);A function shall have at least one command associated to it;absent
+https://w3id.org/saref#;'["SmokeSensor","Sensor"]';Open Connectivity Foundation (OCF);A smoke sensor is a device that has category Sensor;undefined
+https://w3id.org/saref#;'["WashingMachine","hasFunction","StartStopFunction"]';Open Connectivity Foundation (OCF);A washing machine performs an actuating start/pause function;undefined
+https://w3id.org/saref#;'["WashingMachine","accomplishes","Washing","Task"]';Open Connectivity Foundation (OCF);A washing machine accomplishes the task of washing ;undefined
+https://w3id.org/saref#;'["WashingMachine","Appliance","Load"]';Open Connectivity Foundation (OCF);A washing machine is a device that has category Appliance  and Load;undefined
+https://w3id.org/saref#;'["TemperatureSensor","hasFunction","SensingFunction"]';Open Connectivity Foundation (OCF);A temperature senso performs the sensing function and is used for the purpose of sensing temperature;undefined
+https://w3id.org/saref#;'["TemperatureSensor","consistsOf","Sensor"]';Open Connectivity Foundation (OCF);A temperature sensor consists of a sensor;undefined
+https://w3id.org/saref#;'["TemperatureSensor","Sensor"]';Open Connectivity Foundation (OCF);A temperature sensor is a device that has category sensor;undefined
+https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';Open Connectivity Foundation (OCF);A sensor performs a sensing function;absent
+https://w3id.org/saref#;'["Sensor","Device"]';Open Connectivity Foundation (OCF);A device may consists of other devices;absent
+https://w3id.org/saref#;'["Device","consistsOf"]';Open Connectivity Foundation (OCF);A device may consists of other devices;absent
+https://w3id.org/saref#;'["Temperature","Property","Energy","Smoke"]';Open Connectivity Foundation (OCF);"Examples of properties are temperature; energy or smoke";undefined
+https://w3id.org/saref#;'["Device","hasFunction","Function","hasCommand","Command","NotifyCommand"]';Open Connectivity Foundation (OCF);A device can be used for notifying  a property;absent
+https://w3id.org/saref#;'["Device","measuresProperty","Property"]';Open Connectivity Foundation (OCF);A device can be used for measuring a property;absent

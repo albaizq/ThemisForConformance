@@ -33,13 +33,13 @@
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m4>;
 	dc:description "An aspect could be a (physical or non-physical) entity or it could be a quality" ;
-	vtc:desiredBehaviour "Aspect type Class".
+	vtc:desiredBehaviour "Property type Class".
 
 :Test-case5 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m5>;
 	dc:description "An aspect can have metadata" ;
-	vtc:desiredBehaviour "Aspect subClassOf hasMetaData only MetaData".
+	vtc:desiredBehaviour "Property subClassOf hasMetaData only MetaData".
 
 :Test-case6 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
@@ -70,7 +70,7 @@
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m10>;
 	dc:description "A device has one or more services that expose in the network its functionalities (refined)" ;
-	vtc:desiredBehaviour "Device subClassOf hasService only Service".
+	vtc:desiredBehaviour "Device subClassOf offers only Service".
 
 :Test-case11 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
@@ -118,13 +118,13 @@
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m18>;
 	dc:description "A service is an electronic representation of a functionality in a network" ;
-	vtc:desiredBehaviour "Service subClassOf exposesFunction only Function".
+	vtc:desiredBehaviour "Service subClassOf represents only Function".
 
 :Test-case19 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m19>;
 	dc:description "A service can expose one or more functionalities" ;
-	vtc:desiredBehaviour "Service subClassOf exposesFunction min 1 Function".
+	vtc:desiredBehaviour "Service subClassOf represents min 1 Function".
 
 :Test-case20 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
@@ -166,13 +166,13 @@
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m26>;
 	dc:description "A controlling functionality represents a functionality that has impacts on the real world, but does not gather data" ;
-	vtc:desiredBehaviour "ControllingFunction subClassOf Function".
+	vtc:desiredBehaviour "ActuatingFunction subClassOf Function".
 
 :Test-case27 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m27>;
 	dc:description "A measuring functionality represents a functionality that has no impacts on the real world, but only gathers data" ;
-	vtc:desiredBehaviour "MeasuringFunction subClassOf Function".
+	vtc:desiredBehaviour "SensingFunction subClassOf Function".
 
 :Test-case28 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;
@@ -277,7 +277,7 @@
 	vtc:belongsTo :TestsuiteOneM2M;
 	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m48>;
 	dc:description "A variable describes a real-world aspect" ;
-	vtc:desiredBehaviour "Variable subClassOf describes only Aspect".
+	vtc:desiredBehaviour "Variable subClassOf describes only Property".
 
 :Test-case49 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteOneM2M;

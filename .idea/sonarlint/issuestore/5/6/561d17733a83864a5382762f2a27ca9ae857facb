@@ -1,24 +1,39 @@
 
-fsquid:S1192‚"GDefine a constant instead of duplicating this literal "absent" 3 times.(şÉş8Ü´æó°-
-qsquid:S1192Š"MDefine a constant instead of duplicating this literal "inconsistent" 4 times.(›ÈÇ©øÿÿÿÿ8€é¬·-
-¢squid:S1319¾"‚The type of the "testCaseImplementations" object should be an interface such as "List" rather than the implementation "ArrayList".(­·Ã8Ü´æó°-
-Ï%squid:RedundantThrowsDeclarationCheck|"‘Remove the declaration of thrown exception 'org.semanticweb.owlapi.model.OWLOntologyStorageException', as it cannot be thrown from method's body.(˜äÚÔıÿÿÿÿ8€é¬·-
-vsquid:S3776Ş"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ö˜ìâùÿÿÿÿ8Ü´æó°-
-hsquid:UselessImportCheck"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8€é¬·-
-Ğ%squid:RedundantThrowsDeclarationCheckI"’Remove the declaration of thrown exception 'org.semanticweb.owlapi.model.OWLOntologyCreationException', as it cannot be thrown from method's body.(æâñ§úÿÿÿÿ8ÓÈß¬·-
-squid:S1319¾"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(­·Ã8Ü´æó°-
-Ï%squid:RedundantThrowsDeclarationCheckI"‘Remove the declaration of thrown exception 'org.semanticweb.owlapi.model.OWLOntologyStorageException', as it cannot be thrown from method's body.(æâñ§úÿÿÿÿ8ÓÈß¬·-
-squid:S1319‡"kThe type of the "got" object should be an interface such as "Map" rather than the implementation "HashMap".(©ÖÊÏúÿÿÿÿ8Âèò¬·-
-osquid:S1192å"KDefine a constant instead of duplicating this literal "not passed" 5 times.(öëàşÿÿÿÿ8Ü´æó°-
-”squid:S1319‡"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(©ÖÊÏúÿÿÿÿ8Ü´æó°-
+hsquid:S1192Ô"JDefine a constant instead of duplicating this literal "undefined" 4 times.( ¯ 8Ü´æó°-
+jsquid:CommentedOutCodeLineŸ"<This block of commented-out lines of code should be removed.(È®ãì8¶Å™Ğ·-
 usquid:S3776I"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(æâñ§úÿÿÿÿ8€é¬·-
-w
-squid:S135˜"YReduce the total number of break and continue statements in this loop to use at most one.(áóç‘8Ü´æó°-
-jsquid:S1192•"KDefine a constant instead of duplicating this literal "consistent" 8 times.(™ú÷8€é¬·-
-–squid:S1319•"rThe type of the "results" object should be an interface such as "List" rather than the implementation "ArrayList".(±ª‚—üÿÿÿÿ8Ü´æó°-
-Šsquid:S1319¾"kThe type of the "got" object should be an interface such as "Map" rather than the implementation "HashMap".(­·Ã8µÚë¬·-
+csquid:UselessImportCheck
+"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8€óüÌ·-
+esquid:S1192Ñ"GDefine a constant instead of duplicating this literal "passed" 4 times.(£²¬k8 ©Ì·-
+vsquid:S3776â"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Î÷—‘ûÿÿÿÿ8Ü´æó°-
+`squid:UselessImportCheck"0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ8€óüÌ·-
+Ï%squid:RedundantThrowsDeclarationCheck|"‘Remove the declaration of thrown exception 'org.semanticweb.owlapi.model.OWLOntologyStorageException', as it cannot be thrown from method's body.(˜äÚÔıÿÿÿÿ8€é¬·-
 V
 squid:S1066"9Replace this use of System.out or System.err by a logger.(°§şÆ8Ëâò°-
 Ğ%squid:RedundantThrowsDeclarationCheck|"’Remove the declaration of thrown exception 'org.semanticweb.owlapi.model.OWLOntologyCreationException', as it cannot be thrown from method's body.(˜äÚÔıÿÿÿÿ8€é¬·-
+squid:S1319’"kThe type of the "got" object should be an interface such as "Map" rather than the implementation "HashMap".(©ÖÊÏúÿÿÿÿ8ùœÂÖ·-
+squid:S1319¾"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(­·Ã8Ü´æó°-
+Í%squid:RedundantThrowsDeclarationCheckâ"Remove the declaration of thrown exception 'de.derivo.sparqldlapi.exceptions.QueryParserException', as it cannot be thrown from method's body.(Î÷—‘ûÿÿÿÿ8Ì«ÇÖ·-
+squid:S1319â"kThe type of the "got" object should be an interface such as "Map" rather than the implementation "HashMap".(Î÷—‘ûÿÿÿÿ8§»¹Ë·-
+jsquid:S1192•"KDefine a constant instead of duplicating this literal "consistent" 9 times.(™ú÷8€é¬·-
+\squid:UselessImportCheck"1Remove this unused import 'tests.TestCaseDesign'.(Ëæ’­8€óüÌ·-
 dsquid:S11921"FDefine a constant instead of duplicating this literal "false" 4 times.(éÚ†¨8ˆ…çò°-
-hsquid:S1192Ğ"JDefine a constant instead of duplicating this literal "undefined" 6 times.( ¯ 8Ü´æó°-
+Ğ%squid:RedundantThrowsDeclarationCheckI"’Remove the declaration of thrown exception 'org.semanticweb.owlapi.model.OWLOntologyCreationException', as it cannot be thrown from method's body.(æâñ§úÿÿÿÿ8ÓÈß¬·-
+qsquid:S1192Š"MDefine a constant instead of duplicating this literal "inconsistent" 4 times.(›ÈÇ©øÿÿÿÿ8€é¬·-
+”squid:S1319’"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(©ÖÊÏúÿÿÿÿ8ùœÂÖ·-
+hsquid:UselessImportCheck"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8€é¬·-
+Šsquid:S1319¾"kThe type of the "got" object should be an interface such as "Map" rather than the implementation "HashMap".(­·Ã8µÚë¬·-
+¢squid:S1319¾"‚The type of the "testCaseImplementations" object should be an interface such as "List" rather than the implementation "ArrayList".(­·Ã8Ü´æó°-
+jsquid:CommentedOutCodeLine¡"<This block of commented-out lines of code should be removed.(×˜Ê‡8¾›Ğ·-
+Ï%squid:RedundantThrowsDeclarationCheckI"‘Remove the declaration of thrown exception 'org.semanticweb.owlapi.model.OWLOntologyStorageException', as it cannot be thrown from method's body.(æâñ§úÿÿÿÿ8ÓÈß¬·-
+osquid:S1192é"KDefine a constant instead of duplicating this literal "not passed" 3 times.(öëàşÿÿÿÿ8Ü´æó°-
+Í%squid:RedundantThrowsDeclarationCheckâ"Remove the declaration of thrown exception 'de.derivo.sparqldlapi.exceptions.QueryEngineException', as it cannot be thrown from method's body.(Î÷—‘ûÿÿÿÿ8Ì«ÇÖ·-
+fsquid:S1854Â"BRemove this useless assignment to local variable "undefinedterms".(«¼á–şÿÿÿÿ8ã©—Í·-
+Ñ%squid:RedundantThrowsDeclarationCheck’"’Remove the declaration of thrown exception 'org.semanticweb.owlapi.model.OWLOntologyCreationException', as it cannot be thrown from method's body.(©ÖÊÏúÿÿÿÿ8ùœÂÖ·-
+_squid:UselessImportCheck	"/Remove this unused import 'org.json.JSONArray'.(¬¸Ê’üÿÿÿÿ8§»¹Ë·-
+\
+squid:S106ğ"9Replace this use of System.out or System.err by a logger.(´¶ÄÖùÿÿÿÿ8ÎÅ˜×·-
+\
+squid:S106ò"9Replace this use of System.out or System.err by a logger.(ó¿ĞÚúÿÿÿÿ8ÎÅ˜×·-
+\
+squid:S106ó"9Replace this use of System.out or System.err by a logger.(À÷Æ²úÿÿÿÿ8ÎÅ˜×·-

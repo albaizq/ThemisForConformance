@@ -14,10 +14,6 @@ public class Ontology {
     public OWLOntologyManager manager;
     public IRI prov;
 
-
-    public Ontology() {
-    }
-
     public OWLOntology getOntology() {
         return ontology;
     }
@@ -40,13 +36,13 @@ public class Ontology {
         this.manager = OWLManager.createOWLOntologyManager();
         IRI path = IRI.create(ontologyURL);
         try {
-            OWLOntology ontology = this.manager.loadOntology(path);
+            OWLOntology ontologyLoaded = this.manager.loadOntology(path);
             // remove all imports
-            for(OWLOntology imported: manager.getDirectImports(ontology)) {
+            for(OWLOntology imported: manager.getDirectImports(ontologyLoaded)) {
                 manager.removeOntology(imported);
             }
-            System.out.println(ontology.getImports());
-            this.setOntology(ontology);
+            System.out.println(ontologyLoaded.getImports());
+            this.setOntology(ontologyLoaded);
         } catch (Exception e) {
             System.err.println("could not load vocabulary." + e.getMessage());
             response = null;

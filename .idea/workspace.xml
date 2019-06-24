@@ -2,55 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92fbd69a-1e8f-435b-8aa6-fcecce41d8a6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/got-o3.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/got-o4.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/got-o5.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/got-o6.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/got-o7.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/got-o8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/results-o3.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/results-o4.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/results-o5.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/results-o6.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/results-o7.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/results-o8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/results.csv" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/testingsteps/Design.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/got-o1.0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/got-o2.0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/got-o4.0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/jointResults1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/passed.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jar/passedAbsent.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/reports/Report.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/reports/TextConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/reports/Report.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/reports/TextConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utils/ProcessCSV.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utils/Report.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/utils/ProcessCSV.java" afterPath="$PROJECT_DIR$/src/main/java/files/ProcessCSV.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/utils/Report.java" afterPath="$PROJECT_DIR$/src/main/java/files/Report.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0bed2286518b323a975ce5cf9b039f708d3d8630" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0bed2286518b323a975ce5cf9b039f708d3d8630" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10aef157c7e8522e7515cd33343943a2b5e41e1d" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10aef157c7e8522e7515cd33343943a2b5e41e1d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/237486021729bd62c92820bc158e6e53f67178d4" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/237486021729bd62c92820bc158e6e53f67178d4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bb149281c382f0b41ef802fa2d63b596cfd286d" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bb149281c382f0b41ef802fa2d63b596cfd286d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40652d14b35a3818bf82044dc949fe73ae5a8402" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40652d14b35a3818bf82044dc949fe73ae5a8402" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/561d17733a83864a5382762f2a27ca9ae857facb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/561d17733a83864a5382762f2a27ca9ae857facb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/745ef95cf652ba11a72bbb50af8bc979a903e787" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/745ef95cf652ba11a72bbb50af8bc979a903e787" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/840b7706ad9aa75a5f041a08e77dfed2b4b7166a" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/840b7706ad9aa75a5f041a08e77dfed2b4b7166a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95897af7778cd69b19369bb89eba910dd8ba7f3d" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95897af7778cd69b19369bb89eba910dd8ba7f3d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be1d696892e2992983da0635e2ce3f1f8a475d18" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be1d696892e2992983da0635e2ce3f1f8a475d18" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3c26bf08301c98991887bafaf09d331e2067b4c" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3c26bf08301c98991887bafaf09d331e2067b4c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/coverageTest-jar-with-dependencies.jar" afterPath="$PROJECT_DIR$/jar/coverageTest-jar-with-dependencies.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main.class" afterPath="$PROJECT_DIR$/target/classes/main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testingsteps/Execution.class" afterPath="$PROJECT_DIR$/target/classes/testingsteps/Execution.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testingsteps/Implementation.class" afterPath="$PROJECT_DIR$/target/classes/testingsteps/Implementation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testingsteps/Mapping.class" afterPath="$PROJECT_DIR$/target/classes/testingsteps/Mapping.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tests/TestCaseImplementation.class" afterPath="$PROJECT_DIR$/target/classes/tests/TestCaseImplementation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tests/TestingEnvironment.class" afterPath="$PROJECT_DIR$/target/classes/tests/TestingEnvironment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/Ontology.class" afterPath="$PROJECT_DIR$/target/classes/utils/Ontology.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/ProcessCSV.class" afterPath="$PROJECT_DIR$/target/classes/utils/ProcessCSV.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/Utils.class" afterPath="$PROJECT_DIR$/target/classes/utils/Utils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/coverageTest.jar" afterPath="$PROJECT_DIR$/target/coverageTest.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/got-o1.0.csv" afterPath="$PROJECT_DIR$/jar/got-o1.0.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/got-o1.csv" afterPath="$PROJECT_DIR$/jar/got-o1.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/got-o2.csv" afterPath="$PROJECT_DIR$/jar/got-o2.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/results-o1.csv" afterPath="$PROJECT_DIR$/jar/results-o1.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/results-o2.csv" afterPath="$PROJECT_DIR$/jar/results-o2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/test-implementation.ttl" afterPath="$PROJECT_DIR$/jar/test-implementation.ttl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/tests.csv" afterPath="$PROJECT_DIR$/jar/tests.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/testsuite-isoiec30141.ttl" afterPath="$PROJECT_DIR$/jar/testsuite-isoiec30141.ttl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/testsuite-ocf.ttl" afterPath="$PROJECT_DIR$/jar/testsuite-ocf.ttl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/testsuite-onem2m.ttl" afterPath="$PROJECT_DIR$/jar/testsuite-onem2m.ttl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/testsuite-saref.ttl" afterPath="$PROJECT_DIR$/jar/testsuite-saref.ttl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/testsuite-onem2m2.ttl" afterPath="$PROJECT_DIR$/jar/testsuite-onem2m2.ttl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main.java" afterPath="$PROJECT_DIR$/src/main/java/main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/testingsteps/Execution.java" afterPath="$PROJECT_DIR$/src/main/java/testingsteps/Execution.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/testingsteps/Implementation.java" afterPath="$PROJECT_DIR$/src/main/java/testingsteps/Implementation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/TestingEnvironment.java" afterPath="$PROJECT_DIR$/src/main/java/tests/TestingEnvironment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/Ontology.java" afterPath="$PROJECT_DIR$/src/main/java/utils/Ontology.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/ProcessCSV.java" afterPath="$PROJECT_DIR$/src/main/java/utils/ProcessCSV.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/utils/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
@@ -70,14 +72,16 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="134" column="31" lean-forward="false" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
+            <state relative-caret-position="80">
+              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1375#1388#0" expanded="true" />
+                <element signature="method#storeIndividualResults#0;class#main#0" expanded="false" />
                 <element signature="method#analyseReqs#0;class#main#0" expanded="false" />
                 <element signature="method#storeJointResults#0;class#main#0" expanded="false" />
+                <element signature="method#createGot#0;class#main#0" expanded="false" />
                 <element signature="method#updateGot#0;class#main#0" expanded="false" />
-                <element signature="method#jointResults#0;class#main#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -86,63 +90,21 @@
       <file leaf-file-name="TestingEnvironment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tests/TestingEnvironment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
-              <folding>
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessCSV.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/ProcessCSV.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="102" column="53" lean-forward="false" selection-start-line="102" selection-start-column="53" selection-end-line="102" selection-end-column="53" />
-              <folding>
-                <element signature="method#processCSVVocabs#0;class#ProcessCSV#0" expanded="false" />
-                <element signature="method#processCSVGoT#0;class#ProcessCSV#0" expanded="false" />
-                <element signature="e#3226#3239#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mapping.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/testingsteps/Mapping.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="57" column="68" lean-forward="false" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+            <state relative-caret-position="428">
+              <caret line="54" column="45" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Utils.java">
+      <file leaf-file-name="ProcessCSV.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/files/ProcessCSV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="127" column="18" lean-forward="false" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="18" />
+            <state relative-caret-position="580">
+              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="44" />
               <folding>
-                <element signature="method#getPrecTerm#0;class#Utils#0" expanded="false" />
-                <element signature="method#convertStringToAxioms#0;class#Utils#0" expanded="false" />
-                <element signature="method#loadOntology#0;class#Utils#0" expanded="false" />
-                <element signature="method#createSkeletonFromTestCases#0;class#Utils#0" expanded="false" />
-                <element signature="method#loadTest#0;class#Utils#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ontology.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Ontology.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-460">
-              <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
-              <folding>
-                <element signature="method#load_ontologyURL#0;class#Ontology#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#processCSVGoTHash#0;class#ProcessCSV#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -151,10 +113,11 @@
       <file leaf-file-name="Implementation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/testingsteps/Implementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1544">
-              <caret line="1871" column="94" lean-forward="false" selection-start-line="1871" selection-start-column="94" selection-end-line="1871" selection-end-column="94" />
+            <state relative-caret-position="-2517">
+              <caret line="294" column="91" lean-forward="false" selection-start-line="294" selection-start-column="91" selection-end-line="294" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#processReqsExpressionTemplates#0;class#Implementation#0" expanded="false" />
                 <element signature="method#createTestImplementation#0;class#Implementation#0" expanded="false" />
                 <element signature="method#individualValue#0;class#Implementation#0" expanded="false" />
                 <element signature="method#cardinalityDP#0;class#Implementation#0" expanded="false" />
@@ -167,32 +130,76 @@
                 <element signature="method#multipleSubClassTest#0;class#Implementation#0" expanded="false" />
                 <element signature="method#subClassTest#0;class#Implementation#0" expanded="false" />
                 <element signature="method#existentialRange#0;class#Implementation#0" expanded="false" />
-                <element signature="method#universalRange#0;class#Implementation#0" expanded="false" />
-                <element signature="method#universalRangeDP#0;class#Implementation#0" expanded="false" />
+                <element signature="method#existentialRangeDP#0;class#Implementation#0" expanded="false" />
                 <element signature="method#cardinality#0;class#Implementation#0" expanded="false" />
-                <element signature="method#unionTest#0;class#Implementation#0" expanded="false" />
+                <element signature="method#intersectionCardTest#0;class#Implementation#0" expanded="false" />
                 <element signature="method#intersectionTest#0;class#Implementation#0" expanded="false" />
-                <element signature="method#partWholeTestExistential#0;class#Implementation#0" expanded="false" />
-                <element signature="method#partWholeTestUniversal#0;class#Implementation#0" expanded="false" />
                 <element signature="method#subclassDisjointTest#0;class#Implementation#0" expanded="false" />
-                <element signature="method#participantODPTestExistential#0;class#Implementation#0" expanded="false" />
                 <element signature="method#participantODPTestUniversal#0;class#Implementation#0" expanded="false" />
-                <element signature="method#subClassOPTest#0;class#Implementation#0" expanded="false" />
-                <element signature="method#cardinalityOPTest#0;class#Implementation#0" expanded="false" />
-                <element signature="method#classDefinitionTest#0;class#Implementation#0" expanded="false" />
-                <element signature="method#propertyDefinitionTest#0;class#Implementation#0" expanded="false" />
                 <element signature="method#coParticipantODPTestExistential#0;class#Implementation#0" expanded="false" />
+                <element signature="method#coParticipantODPTestUniversal#0;class#Implementation#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCaseImplementation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tests/TestCaseImplementation.java">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="510">
+              <caret line="107" column="59" lean-forward="false" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
+              <folding>
+                <element signature="method#isValid#0;class#Utils#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Design.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/testingsteps/Design.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="50" column="58" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#processDataProperty#0;class#Design#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCaseDesign.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tests/TestCaseDesign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="115" column="17" lean-forward="false" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ontology.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Ontology.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="method#load_ontologyURL#0;class#Ontology#0" expanded="false" />
+                <element signature="method#getClasses#0;class#Ontology#0" expanded="false" />
+                <element signature="method#getIndividuals#0;class#Ontology#0" expanded="false" />
+                <element signature="method#getObjectProperties#0;class#Ontology#0" expanded="false" />
+                <element signature="method#getDatatypeProperties#0;class#Ontology#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -200,24 +207,14 @@
       <file leaf-file-name="Execution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/testingsteps/Execution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="238" column="62" lean-forward="false" selection-start-line="238" selection-start-column="62" selection-end-line="238" selection-end-column="62" />
+            <state relative-caret-position="488">
+              <caret line="236" column="52" lean-forward="false" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#aboxTest#0;class#Execution#0" expanded="false" />
                 <element signature="method#addChanges#0;class#Execution#0" expanded="false" />
+                <element signature="method#removePreparationAxioms#0;class#Execution#0" expanded="false" />
                 <element signature="method#checkPrecondition#0;class#Execution#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Report.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="153" lean-forward="false" selection-start-line="14" selection-start-column="153" selection-end-line="14" selection-end-column="153" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -242,6 +239,12 @@
       <find>createGot</find>
       <find>create ind</find>
       <find>Complement</find>
+      <find>passed.csv</find>
+      <find>printReportPerOntology</find>
+      <find>reasoner</find>
+      <find>return</find>
+      <find>retur</find>
+      <find>loadTEst</find>
       <find>System</find>
     </findStrings>
     <replaceStrings>
@@ -259,18 +262,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/TestCaseDesign.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/TestCaseImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/testingsteps/Mapping.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Ontology.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/ProcessCSV.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Report.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/TestingEnvironment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/testingsteps/Execution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reports/Report.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/ProcessCSV.java" />
         <option value="$PROJECT_DIR$/src/main/java/testingsteps/Implementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Ontology.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/files/ProcessCSV.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/TestingEnvironment.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/TestCaseDesign.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testingsteps/Design.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testingsteps/Execution.java" />
       </list>
     </option>
   </component>
@@ -306,6 +312,11 @@
           <item name="conformance-evaluation2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="conformance-evaluation2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -332,9 +343,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -366,6 +376,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conformance4evaluation - copia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conformance4evaluation - copia" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testingsteps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -388,13 +406,21 @@
               <item name="conformance4evaluation - copia" type="b2602c69:ProjectViewProjectNode" />
               <item name="conformance4evaluation - copia" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conformance4evaluation - copia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conformance4evaluation - copia" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,12 +554,13 @@
       <workItem from="1559057428750" duration="2852000" />
       <workItem from="1559306865291" duration="11582000" />
       <workItem from="1561044653837" duration="1763000" />
-      <workItem from="1561110345421" duration="18245000" />
+      <workItem from="1561110345421" duration="18693000" />
+      <workItem from="1561364006410" duration="17994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88404000" />
+    <option name="totallyTimeSpent" value="106846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1051" extended-state="0" />
@@ -544,16 +571,17 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11283186" sideWeight="0.32924226" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13767342" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20132743" sideWeight="0.33457845" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10565635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11283186" sideWeight="0.6707577" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20132743" sideWeight="0.66542155" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16008538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13827434" sideWeight="0.85165423" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16168623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44137168" sideWeight="0.8484525" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.49786553" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -565,7 +593,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,36 +606,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/testingsteps/Implementation.java</url>
-          <line>1879</line>
+          <line>1790</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/testingsteps/Execution.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/src/main/java/utils/Utils.java</url>
+          <line>355</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="74" column="48" lean-forward="false" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#analyseReqs#0;class#main#0" expanded="false" />
-            <element signature="method#storeJointResults#0;class#main#0" expanded="false" />
-            <element signature="method#updateGot#0;class#main#0" expanded="false" />
-            <element signature="method#jointResults#0;class#main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reports/Report.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/files/Report.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
           <caret line="96" column="2" lean-forward="false" selection-start-line="96" selection-start-column="2" selection-end-line="97" selection-end-column="37" />
@@ -637,6 +650,10 @@
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
             <element signature="method#load_ontologyURL#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getClasses#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getIndividuals#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getObjectProperties#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getDatatypeProperties#0;class#Ontology#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -647,7 +664,9 @@
           <caret line="132" column="29" lean-forward="false" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#aboxTest#0;class#Execution#0" expanded="false" />
             <element signature="method#addChanges#0;class#Execution#0" expanded="false" />
+            <element signature="method#removePreparationAxioms#0;class#Execution#0" expanded="false" />
             <element signature="method#checkPrecondition#0;class#Execution#0" expanded="false" />
           </folding>
         </state>
@@ -659,6 +678,7 @@
           <caret line="84" column="22" lean-forward="false" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#processReqsExpressionTemplates#0;class#Implementation#0" expanded="false" />
             <element signature="method#createTestImplementation#0;class#Implementation#0" expanded="false" />
             <element signature="method#individualValue#0;class#Implementation#0" expanded="false" />
             <element signature="method#cardinalityDP#0;class#Implementation#0" expanded="false" />
@@ -671,21 +691,14 @@
             <element signature="method#multipleSubClassTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#subClassTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#existentialRange#0;class#Implementation#0" expanded="false" />
-            <element signature="method#universalRange#0;class#Implementation#0" expanded="false" />
-            <element signature="method#universalRangeDP#0;class#Implementation#0" expanded="false" />
+            <element signature="method#existentialRangeDP#0;class#Implementation#0" expanded="false" />
             <element signature="method#cardinality#0;class#Implementation#0" expanded="false" />
-            <element signature="method#unionTest#0;class#Implementation#0" expanded="false" />
+            <element signature="method#intersectionCardTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#intersectionTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#partWholeTestExistential#0;class#Implementation#0" expanded="false" />
-            <element signature="method#partWholeTestUniversal#0;class#Implementation#0" expanded="false" />
             <element signature="method#subclassDisjointTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#participantODPTestExistential#0;class#Implementation#0" expanded="false" />
             <element signature="method#participantODPTestUniversal#0;class#Implementation#0" expanded="false" />
-            <element signature="method#subClassOPTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#cardinalityOPTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#classDefinitionTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#propertyDefinitionTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#coParticipantODPTestExistential#0;class#Implementation#0" expanded="false" />
+            <element signature="method#coParticipantODPTestUniversal#0;class#Implementation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -695,11 +708,7 @@
         <state relative-caret-position="420">
           <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding>
-            <element signature="method#getPrecTerm#0;class#Utils#0" expanded="false" />
-            <element signature="method#convertStringToAxioms#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadOntology#0;class#Utils#0" expanded="false" />
-            <element signature="method#createSkeletonFromTestCases#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadTest#0;class#Utils#0" expanded="false" />
+            <element signature="method#isValid#0;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -710,10 +719,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1375#1388#0" expanded="true" />
+            <element signature="method#storeIndividualResults#0;class#main#0" expanded="false" />
             <element signature="method#analyseReqs#0;class#main#0" expanded="false" />
             <element signature="method#storeJointResults#0;class#main#0" expanded="false" />
+            <element signature="method#createGot#0;class#main#0" expanded="false" />
             <element signature="method#updateGot#0;class#main#0" expanded="false" />
-            <element signature="method#jointResults#0;class#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -732,6 +743,10 @@
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
             <element signature="method#load_ontologyURL#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getClasses#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getIndividuals#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getObjectProperties#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getDatatypeProperties#0;class#Ontology#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -741,11 +756,7 @@
         <state relative-caret-position="440">
           <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
-            <element signature="method#getPrecTerm#0;class#Utils#0" expanded="false" />
-            <element signature="method#convertStringToAxioms#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadOntology#0;class#Utils#0" expanded="false" />
-            <element signature="method#createSkeletonFromTestCases#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadTest#0;class#Utils#0" expanded="false" />
+            <element signature="method#isValid#0;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -756,7 +767,9 @@
           <caret line="206" column="131" lean-forward="false" selection-start-line="206" selection-start-column="121" selection-end-line="206" selection-end-column="131" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#aboxTest#0;class#Execution#0" expanded="false" />
             <element signature="method#addChanges#0;class#Execution#0" expanded="false" />
+            <element signature="method#removePreparationAxioms#0;class#Execution#0" expanded="false" />
             <element signature="method#checkPrecondition#0;class#Execution#0" expanded="false" />
           </folding>
         </state>
@@ -768,10 +781,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1375#1388#0" expanded="true" />
+            <element signature="method#storeIndividualResults#0;class#main#0" expanded="false" />
             <element signature="method#analyseReqs#0;class#main#0" expanded="false" />
             <element signature="method#storeJointResults#0;class#main#0" expanded="false" />
+            <element signature="method#createGot#0;class#main#0" expanded="false" />
             <element signature="method#updateGot#0;class#main#0" expanded="false" />
-            <element signature="method#jointResults#0;class#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -789,11 +804,7 @@
         <state relative-caret-position="400">
           <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="51" />
           <folding>
-            <element signature="method#getPrecTerm#0;class#Utils#0" expanded="false" />
-            <element signature="method#convertStringToAxioms#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadOntology#0;class#Utils#0" expanded="false" />
-            <element signature="method#createSkeletonFromTestCases#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadTest#0;class#Utils#0" expanded="false" />
+            <element signature="method#isValid#0;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -804,7 +815,9 @@
           <caret line="321" column="47" lean-forward="false" selection-start-line="321" selection-start-column="40" selection-end-line="321" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#aboxTest#0;class#Execution#0" expanded="false" />
             <element signature="method#addChanges#0;class#Execution#0" expanded="false" />
+            <element signature="method#removePreparationAxioms#0;class#Execution#0" expanded="false" />
             <element signature="method#checkPrecondition#0;class#Execution#0" expanded="false" />
           </folding>
         </state>
@@ -816,10 +829,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1375#1388#0" expanded="true" />
+            <element signature="method#storeIndividualResults#0;class#main#0" expanded="false" />
             <element signature="method#analyseReqs#0;class#main#0" expanded="false" />
             <element signature="method#storeJointResults#0;class#main#0" expanded="false" />
+            <element signature="method#createGot#0;class#main#0" expanded="false" />
             <element signature="method#updateGot#0;class#main#0" expanded="false" />
-            <element signature="method#jointResults#0;class#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -838,7 +853,9 @@
           <caret line="321" column="47" lean-forward="false" selection-start-line="321" selection-start-column="40" selection-end-line="321" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#aboxTest#0;class#Execution#0" expanded="false" />
             <element signature="method#addChanges#0;class#Execution#0" expanded="false" />
+            <element signature="method#removePreparationAxioms#0;class#Execution#0" expanded="false" />
             <element signature="method#checkPrecondition#0;class#Execution#0" expanded="false" />
           </folding>
         </state>
@@ -849,11 +866,7 @@
         <state relative-caret-position="400">
           <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="51" />
           <folding>
-            <element signature="method#getPrecTerm#0;class#Utils#0" expanded="false" />
-            <element signature="method#convertStringToAxioms#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadOntology#0;class#Utils#0" expanded="false" />
-            <element signature="method#createSkeletonFromTestCases#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadTest#0;class#Utils#0" expanded="false" />
+            <element signature="method#isValid#0;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -864,10 +877,12 @@
           <caret line="57" column="72" lean-forward="false" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1375#1388#0" expanded="true" />
+            <element signature="method#storeIndividualResults#0;class#main#0" expanded="false" />
             <element signature="method#analyseReqs#0;class#main#0" expanded="false" />
             <element signature="method#storeJointResults#0;class#main#0" expanded="false" />
+            <element signature="method#createGot#0;class#main#0" expanded="false" />
             <element signature="method#updateGot#0;class#main#0" expanded="false" />
-            <element signature="method#jointResults#0;class#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -898,11 +913,7 @@
         <state relative-caret-position="400">
           <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="51" />
           <folding>
-            <element signature="method#getPrecTerm#0;class#Utils#0" expanded="false" />
-            <element signature="method#convertStringToAxioms#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadOntology#0;class#Utils#0" expanded="false" />
-            <element signature="method#createSkeletonFromTestCases#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadTest#0;class#Utils#0" expanded="false" />
+            <element signature="method#isValid#0;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -913,6 +924,7 @@
           <caret line="850" column="5" lean-forward="true" selection-start-line="818" selection-start-column="4" selection-end-line="850" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#processReqsExpressionTemplates#0;class#Implementation#0" expanded="false" />
             <element signature="method#createTestImplementation#0;class#Implementation#0" expanded="false" />
             <element signature="method#individualValue#0;class#Implementation#0" expanded="false" />
             <element signature="method#cardinalityDP#0;class#Implementation#0" expanded="false" />
@@ -925,21 +937,14 @@
             <element signature="method#multipleSubClassTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#subClassTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#existentialRange#0;class#Implementation#0" expanded="false" />
-            <element signature="method#universalRange#0;class#Implementation#0" expanded="false" />
-            <element signature="method#universalRangeDP#0;class#Implementation#0" expanded="false" />
+            <element signature="method#existentialRangeDP#0;class#Implementation#0" expanded="false" />
             <element signature="method#cardinality#0;class#Implementation#0" expanded="false" />
-            <element signature="method#unionTest#0;class#Implementation#0" expanded="false" />
+            <element signature="method#intersectionCardTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#intersectionTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#partWholeTestExistential#0;class#Implementation#0" expanded="false" />
-            <element signature="method#partWholeTestUniversal#0;class#Implementation#0" expanded="false" />
             <element signature="method#subclassDisjointTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#participantODPTestExistential#0;class#Implementation#0" expanded="false" />
             <element signature="method#participantODPTestUniversal#0;class#Implementation#0" expanded="false" />
-            <element signature="method#subClassOPTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#cardinalityOPTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#classDefinitionTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#propertyDefinitionTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#coParticipantODPTestExistential#0;class#Implementation#0" expanded="false" />
+            <element signature="method#coParticipantODPTestUniversal#0;class#Implementation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -958,10 +963,12 @@
           <caret line="57" column="72" lean-forward="false" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1375#1388#0" expanded="true" />
+            <element signature="method#storeIndividualResults#0;class#main#0" expanded="false" />
             <element signature="method#analyseReqs#0;class#main#0" expanded="false" />
             <element signature="method#storeJointResults#0;class#main#0" expanded="false" />
+            <element signature="method#createGot#0;class#main#0" expanded="false" />
             <element signature="method#updateGot#0;class#main#0" expanded="false" />
-            <element signature="method#jointResults#0;class#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -992,11 +999,7 @@
         <state relative-caret-position="400">
           <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="51" />
           <folding>
-            <element signature="method#getPrecTerm#0;class#Utils#0" expanded="false" />
-            <element signature="method#convertStringToAxioms#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadOntology#0;class#Utils#0" expanded="false" />
-            <element signature="method#createSkeletonFromTestCases#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadTest#0;class#Utils#0" expanded="false" />
+            <element signature="method#isValid#0;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1015,6 +1018,7 @@
           <caret line="105" column="45" lean-forward="true" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#processReqsExpressionTemplates#0;class#Implementation#0" expanded="false" />
             <element signature="method#createTestImplementation#0;class#Implementation#0" expanded="false" />
             <element signature="method#individualValue#0;class#Implementation#0" expanded="false" />
             <element signature="method#cardinalityDP#0;class#Implementation#0" expanded="false" />
@@ -1027,36 +1031,15 @@
             <element signature="method#multipleSubClassTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#subClassTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#existentialRange#0;class#Implementation#0" expanded="false" />
-            <element signature="method#universalRange#0;class#Implementation#0" expanded="false" />
-            <element signature="method#universalRangeDP#0;class#Implementation#0" expanded="false" />
+            <element signature="method#existentialRangeDP#0;class#Implementation#0" expanded="false" />
             <element signature="method#cardinality#0;class#Implementation#0" expanded="false" />
-            <element signature="method#unionTest#0;class#Implementation#0" expanded="false" />
+            <element signature="method#intersectionCardTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#intersectionTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#partWholeTestExistential#0;class#Implementation#0" expanded="false" />
-            <element signature="method#partWholeTestUniversal#0;class#Implementation#0" expanded="false" />
             <element signature="method#subclassDisjointTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#participantODPTestExistential#0;class#Implementation#0" expanded="false" />
             <element signature="method#participantODPTestUniversal#0;class#Implementation#0" expanded="false" />
-            <element signature="method#subClassOPTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#cardinalityOPTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#classDefinitionTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#propertyDefinitionTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#coParticipantODPTestExistential#0;class#Implementation#0" expanded="false" />
+            <element signature="method#coParticipantODPTestUniversal#0;class#Implementation#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="168" column="12" lean-forward="false" selection-start-line="168" selection-start-column="12" selection-end-line="168" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reports/TextConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1207,7 +1190,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reports/Report.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/files/Report.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
           <caret line="96" column="2" lean-forward="false" selection-start-line="96" selection-start-column="2" selection-end-line="97" selection-end-column="37" />
@@ -1215,10 +1198,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/TestCaseDesign.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/reports/TextConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="-700">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/files/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#printReportPerOntology#0;class#Report#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testingsteps/Mapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2020">
+          <caret line="12" column="72" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -1228,106 +1230,115 @@
         <state relative-caret-position="340">
           <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding>
-            <element signature="e#568#569#0" expanded="false" />
-            <element signature="e#606#607#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/testingsteps/Mapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="57" column="68" lean-forward="false" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Ontology.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-460">
-          <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
-          <folding>
-            <element signature="method#load_ontologyURL#0;class#Ontology#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="153" lean-forward="false" selection-start-line="14" selection-start-column="153" selection-end-line="14" selection-end-column="153" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ProcessCSV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="102" column="53" lean-forward="false" selection-start-line="102" selection-start-column="53" selection-end-line="102" selection-end-column="53" />
-          <folding>
-            <element signature="method#processCSVVocabs#0;class#ProcessCSV#0" expanded="false" />
-            <element signature="method#processCSVGoT#0;class#ProcessCSV#0" expanded="false" />
-            <element signature="e#3226#3239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/TestingEnvironment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
-          <folding>
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="134" column="31" lean-forward="false" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#analyseReqs#0;class#main#0" expanded="false" />
-            <element signature="method#storeJointResults#0;class#main#0" expanded="false" />
-            <element signature="method#updateGot#0;class#main#0" expanded="false" />
-            <element signature="method#jointResults#0;class#main#0" expanded="false" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/TestCaseImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="20">
           <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Ontology.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="method#load_ontologyURL#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getClasses#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getIndividuals#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getObjectProperties#0;class#Ontology#0" expanded="false" />
+            <element signature="method#getDatatypeProperties#0;class#Ontology#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/files/ProcessCSV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#processCSVGoTHash#0;class#ProcessCSV#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="115" column="17" lean-forward="false" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1375#1388#0" expanded="true" />
+            <element signature="method#storeIndividualResults#0;class#main#0" expanded="false" />
+            <element signature="method#analyseReqs#0;class#main#0" expanded="false" />
+            <element signature="method#storeJointResults#0;class#main#0" expanded="false" />
+            <element signature="method#createGot#0;class#main#0" expanded="false" />
+            <element signature="method#updateGot#0;class#main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/TestCaseDesign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/TestingEnvironment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="54" column="45" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testingsteps/Design.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="50" column="58" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#processDataProperty#0;class#Design#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="127" column="18" lean-forward="false" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="18" />
+        <state relative-caret-position="510">
+          <caret line="107" column="59" lean-forward="false" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
           <folding>
-            <element signature="method#getPrecTerm#0;class#Utils#0" expanded="false" />
-            <element signature="method#convertStringToAxioms#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadOntology#0;class#Utils#0" expanded="false" />
-            <element signature="method#createSkeletonFromTestCases#0;class#Utils#0" expanded="false" />
-            <element signature="method#loadTest#0;class#Utils#0" expanded="false" />
+            <element signature="method#isValid#0;class#Utils#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/testingsteps/Execution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="238" column="62" lean-forward="false" selection-start-line="238" selection-start-column="62" selection-end-line="238" selection-end-column="62" />
+        <state relative-caret-position="488">
+          <caret line="236" column="52" lean-forward="false" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#aboxTest#0;class#Execution#0" expanded="false" />
             <element signature="method#addChanges#0;class#Execution#0" expanded="false" />
+            <element signature="method#removePreparationAxioms#0;class#Execution#0" expanded="false" />
             <element signature="method#checkPrecondition#0;class#Execution#0" expanded="false" />
           </folding>
         </state>
@@ -1335,10 +1346,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/testingsteps/Implementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1544">
-          <caret line="1871" column="94" lean-forward="false" selection-start-line="1871" selection-start-column="94" selection-end-line="1871" selection-end-column="94" />
+        <state relative-caret-position="-2517">
+          <caret line="294" column="91" lean-forward="false" selection-start-line="294" selection-start-column="91" selection-end-line="294" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#processReqsExpressionTemplates#0;class#Implementation#0" expanded="false" />
             <element signature="method#createTestImplementation#0;class#Implementation#0" expanded="false" />
             <element signature="method#individualValue#0;class#Implementation#0" expanded="false" />
             <element signature="method#cardinalityDP#0;class#Implementation#0" expanded="false" />
@@ -1351,21 +1363,14 @@
             <element signature="method#multipleSubClassTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#subClassTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#existentialRange#0;class#Implementation#0" expanded="false" />
-            <element signature="method#universalRange#0;class#Implementation#0" expanded="false" />
-            <element signature="method#universalRangeDP#0;class#Implementation#0" expanded="false" />
+            <element signature="method#existentialRangeDP#0;class#Implementation#0" expanded="false" />
             <element signature="method#cardinality#0;class#Implementation#0" expanded="false" />
-            <element signature="method#unionTest#0;class#Implementation#0" expanded="false" />
+            <element signature="method#intersectionCardTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#intersectionTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#partWholeTestExistential#0;class#Implementation#0" expanded="false" />
-            <element signature="method#partWholeTestUniversal#0;class#Implementation#0" expanded="false" />
             <element signature="method#subclassDisjointTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#participantODPTestExistential#0;class#Implementation#0" expanded="false" />
             <element signature="method#participantODPTestUniversal#0;class#Implementation#0" expanded="false" />
-            <element signature="method#subClassOPTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#cardinalityOPTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#classDefinitionTest#0;class#Implementation#0" expanded="false" />
-            <element signature="method#propertyDefinitionTest#0;class#Implementation#0" expanded="false" />
             <element signature="method#coParticipantODPTestExistential#0;class#Implementation#0" expanded="false" />
+            <element signature="method#coParticipantODPTestUniversal#0;class#Implementation#0" expanded="false" />
           </folding>
         </state>
       </provider>

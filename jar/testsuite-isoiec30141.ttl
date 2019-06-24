@@ -6,7 +6,7 @@
 
 
 :TestsuiteISOIEC30141 rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
-            dc:references "ISO/IEC 30141:2017".
+            dc:source "ISO/IEC 30141:2017".
 
 :Test-case-platfmor119 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteISOIEC30141;
@@ -98,13 +98,13 @@
 	vtc:belongsTo :TestsuiteISOIEC30141;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform133>;
 	dc:description "An entity  has an identifier";
-	vtc:desiredBehaviour "Thing subclassOf thingName some xsd:string".
+	vtc:desiredBehaviour "Thing subclassOf thingName some string".
 
 :Test-case-platform134 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteISOIEC30141;
 	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform134>;
 	dc:description "An entity can have more than one identifier";
-	vtc:desiredBehaviour "Thing subclassOf thingName min 1 xsd:string".
+	vtc:desiredBehaviour "Thing subclassOf thingName some string".
 
 :Test-case-platform135 a vtc:TestCaseDesign, owl:NamedIndividual;
 	vtc:belongsTo :TestsuiteISOIEC30141;

@@ -1,4 +1,4 @@
 
 ‰squid:S1319$"rThe type of the "purpose" object should be an interface such as "List" rather than the implementation "ArrayList".(ìúé
-]squid:UselessImportCheck"4Remove this unused import 'java.util.LinkedHashMap'.(ò†ŠŞùÿÿÿÿ
 ‡squid:S1319 "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(•ìû¥
+]squid:UselessImportCheck"4Remove this unused import 'java.util.LinkedHashMap'.(ò†ŠŞùÿÿÿÿ

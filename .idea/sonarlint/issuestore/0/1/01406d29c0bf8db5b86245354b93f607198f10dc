@@ -1,0 +1,5 @@
+
+v
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(áóç‘8‹•ıÌ·-
+]squid:S1118":Add a private constructor to hide the implicit public one.(„³ôÀûÿÿÿÿ8‹•ıÌ·-
+•squid:S1319"rThe type of the "results" object should be an interface such as "List" rather than the implementation "ArrayList".(±ª‚—üÿÿÿÿ8‹•ıÌ·-

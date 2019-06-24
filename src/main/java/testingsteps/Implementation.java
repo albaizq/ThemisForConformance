@@ -19,81 +19,8 @@ import java.util.regex.Pattern;
 public class Implementation {
 
 
-    public static ArrayList<TestCaseDesign> processTestCaseDesign(String filename) throws IOException, OWLOntologyCreationException {
-
-        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-        OWLOntology ontology =  manager.loadOntologyFromOntologyDocument(new File(filename));
-
-        ArrayList<TestCaseDesign> testsuite = new ArrayList<>();
-        for (OWLIndividual cls: ontology.getIndividualsInSignature()) {
-            TestCaseDesign tc = new TestCaseDesign();
-            tc.setUri(IRI.create(cls.toString().replace("<","").replace(">","")));
-            if(!ontology.getAxioms(AxiomType.ANNOTATION_ASSERTION).isEmpty())
-                tc = processAnnotation(cls, ontology);
-            else
-                tc = processDataProperty(cls, ontology);
-            if(tc.getPurpose().size()>0)
-                testsuite.add(tc);
-        }
-        return testsuite;
-    }
-    public static TestCaseDesign processAnnotation(OWLIndividual cls, OWLOntology ontology){
-        TestCaseDesign tc = new TestCaseDesign();
-        String purpose = "";
-        String source = "";
-        String description = "";
-        ArrayList<String> purposes = new ArrayList<>();
-        tc.setUri((IRI) cls.asOWLNamedIndividual().getIRI());
-        for (OWLAnnotationAssertionAxiom op : ontology.getAxioms(AxiomType.ANNOTATION_ASSERTION)) {
-            if (cls.toString().replace(">","").replace("<","").equals(op.getSubject().toString().replace("<","").replace(">",""))) {
-                if (op.getProperty().toString().contains("http://w3id.org/def/vtc#desiredBehaviour")) {
-                    purpose = op.getValue().toString().replace("\"","").replace("  "," ").replace("^^xsd:string","").trim();
-                    purposes.add(purpose);
-                    tc.setPurpose(purposes);
-
-                } else if (op.getProperty().toString().contains("http://purl.org/dc/terms/identifier")) {
-                    source = op.getValue().toString().replace("\"","");
-                    tc.setSource(source);
-                } else if (op.getProperty().toString().contains("http://purl.org/dc/terms/description")) {
-                    description = op.getValue().toString().replace("\"","");
-                    tc.setDescription(description);
-                }
-            }else if(op.getProperty().toString().contains("http://purl.org/dc/terms/source")){
-                tc.setProvenance(op.getValue().toString().replace("\"","").replace("  "," ").replace("^^xsd:string","").trim());
-            }
-        }
-        return tc;
-    }
-
-    public static TestCaseDesign processDataProperty(OWLIndividual cls, OWLOntology ontology){
-        TestCaseDesign tc = new TestCaseDesign();
-        String purpose = "";
-        String source = "";
-        String description = "";
-        ArrayList<String> purposes = new ArrayList<>();
-        for (OWLDataPropertyAssertionAxiom dp : ontology.getAxioms(AxiomType.DATA_PROPERTY_ASSERTION)) {
-            if (cls.toString().replace(">","").replace("<","").equals(dp.getSubject().toString().replace("<","").replace(">",""))) {
-                if (dp.getProperty().toString().contains("http://w3id.org/def/vtc#desiredBehaviour")) {
-                    purpose = dp.getObject().toString().replace("\"","").replace("  "," ").replace("^^xsd:string","").trim();
-                    purposes.add(purpose);
-                    tc.setPurpose(purposes);
-                } else if (dp.getProperty().toString().contains("http://purl.org/dc/terms/identifier")) {
-                    source = dp.getObject().toString().replace("\"","");
-                    tc.setSource(source);
-                } else if (dp.getProperty().toString().contains("http://purl.org/dc/terms/description")) {
-                    description = dp.getObject().toString().replace("\"","");
-                    tc.setDescription(description);
-                }
-            }else if(dp.getProperty().toString().contains("http://purl.org/dc/terms/references")){
-                tc.setProvenance(dp.getObject().toString().replace("\"","").replace("  "," ").replace("^^xsd:string","").trim());
-            }
-        }
-        return tc;
-    }
-
     public  void processReqsExpressionTemplates(String purpose, TestCaseImplementation testCase){
 
-        purpose.replaceAll("  "," ");
         String purposecloned= purpose.toLowerCase();
         if(purposecloned.matches("[^\\s]+ subclassof [^\\s]+ only [^\\s]+ or [^\\s]+")){
             unionTest(purpose.replace(","," "),"union", testCase);
@@ -287,7 +214,7 @@ public class Implementation {
      * preparation and the assertion for each type of test*****/
 
     /*for the generation of an individual of a given class*/
-    public ArrayList<String> individualValue(String purpose, TestCaseImplementation testCase){
+    public void individualValue(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassOf (.*) value (.*)",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
         /*Generation of classes*/
@@ -362,11 +289,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return null;
     }
 
     /*cardinality for DP*/
-    public ArrayList<String> cardinalityDP(String purpose, String type, TestCaseImplementation testCase){
+    public void cardinalityDP(String purpose, String type, TestCaseImplementation testCase){
         Pattern p1 = Pattern.compile("(.*) subclassof (.*) (min|max|exactly) (\\d+) (xsd:string|xsd:float|xsd:integer|string|float|integer|owl:rational|rational|boolean|xsd:boolean|anyuri|xsd:anyuri)", Pattern.CASE_INSENSITIVE);
         Matcher m = p1.matcher(purpose);
 
@@ -459,7 +385,6 @@ public class Implementation {
             ont3 = null;
         }
         OWLSubClassOfAxiom axiomsubclass6 = null;
-        //String assertion3 ="";
         if(type == "max") {
             axiomsubclass6 = dataFactory.getOWLSubClassOfAxiom(classOWLA, dataFactory.getOWLDataMinCardinality(num, prop, dp) );
         }else{
@@ -491,12 +416,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
-
     }
 
     /*for the generation of an individual of a given class*/
-    public ArrayList<String> typeTest(String purpose, TestCaseImplementation testCase){
+    public void typeTest(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) type (.*)",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -565,11 +488,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return null;
     }
 
     /*for the generation of symmetry*/
-    public ArrayList<String> symmetryTest(String purpose, TestCaseImplementation testCase){ /*Check*/
+    public void symmetryTest(String purpose, TestCaseImplementation testCase){ /*Check*/
         Pattern p = Pattern.compile("(.*) characteristic symmetricproperty",Pattern.CASE_INSENSITIVE );
         Matcher m = p.matcher(purpose);
         String classA;
@@ -675,10 +597,9 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
-    public ArrayList<String> symmetryWithDomainRangeTest(String purpose, TestCaseImplementation testCase){ /*Check*/
+    public void symmetryWithDomainRangeTest(String purpose, TestCaseImplementation testCase){ /*Check*/
         Pattern p = Pattern.compile("(.*) subclassof symmetricproperty\\((.*)\\) (some|only) (.*)",Pattern.CASE_INSENSITIVE );
         Matcher m = p.matcher(purpose);
 
@@ -798,11 +719,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for domain*/
-    public ArrayList<String> domainTest(String purpose, TestCaseImplementation testCase){
+    public void domainTest(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) domain (.*)",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -916,12 +836,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
-
     }
 
     /*for range*/
-    public ArrayList<String> rangeTest(String purpose, TestCaseImplementation testCase){
+    public void rangeTest(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) range (.*)",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -1022,11 +940,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for range dp*/
-    public ArrayList<String> rangeTestDP(String purpose, TestCaseImplementation testCase){
+    public void rangeTestDP(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) range (xsd:string|xsd:float|xsd:integer|string|float|integer|owl:rational|rational|boolean|xsd:boolean|anyuri|xsd:anyuri)",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -1122,11 +1039,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for the generation of subclass, disjoint and equivalence*/
-    public ArrayList<String> multipleSubClassTest(String purpose, TestCaseImplementation testCase){
+    public void multipleSubClassTest(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (.*) and (.*)",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
         /*Generation of classes*/
@@ -1297,11 +1213,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for the generation of subclass, disjoint and equivalence*/
-    public ArrayList<String> subClassTest(String purpose, String type, TestCaseImplementation testCase){
+    public void subClassTest(String purpose, String type, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("([^\\s]+) (subclassof|equivalentto|disjointwith) ([^\\s]+)",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
         String classA="";
@@ -1503,11 +1418,10 @@ public class Implementation {
 
         testCase.setAxiomExpectedResultAxioms(hashoutput);
         testCase.setAssertionsAxioms(hashinput);
-        return null;
     }
 
     /*for range (strict) universal restriction*/
-    public ArrayList<String> existentialRange(String purpose, TestCaseImplementation testCase){
+    public void existentialRange(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (\\w*)(?!hasparticipant | ?!isparticipantin | ?!haslocation| ?!islocationof | ?!hasrole| ?!isroleof) some (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -1634,11 +1548,10 @@ public class Implementation {
         }
         testCase.setAssertionsAxioms(hashinput);
         testCase.setType("existential");
-        return precond;
     }
 
     /*for range (strict) and for OP + universal restriction*/
-    public ArrayList<String> universalRange(String purpose, TestCaseImplementation testCase){
+    public void universalRange(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (\\w*)(?!hasparticipant | ?!isparticipantin | ?!haslocation| ?!islocationof | ?!hasrole| ?!isroleof) only (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -1765,11 +1678,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for range (strict) universal restriction DP*/
-    public ArrayList<String> existentialRangeDP(String purpose, TestCaseImplementation testCase){
+    public void existentialRangeDP(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (.*) some (xsd:string|xsd:float|xsd:integer|string|float|integer|owl:rational|rational|boolean|xsd:boolean|anyuri|xsd:anyuri|literal|rdfs:literal)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -1865,11 +1777,10 @@ public class Implementation {
         }
         testCase.setAssertionsAxioms(hashinput);
         testCase.setType("existential dp");
-        return precond;
     }
 
     /*for range (strict) and for DP + universal restriction*/
-    public ArrayList<String> universalRangeDP(String purpose, TestCaseImplementation testCase){
+    public void universalRangeDP(String purpose, TestCaseImplementation testCase){
         ArrayList<String> complementClasses = new ArrayList<>();
         if(purpose.contains("not(")){
             Pattern p = Pattern.compile("not\\((.*?)\\)");
@@ -1948,10 +1859,6 @@ public class Implementation {
             OWLNamedIndividual indOWL3 = dataFactory.getOWLNamedIndividual(IRI.create("ind3"));
             owlClassAssertionAxiom = dataFactory.getOWLClassAssertionAxiom(classOWLA1, indOWL3);
             objectPropertyAssertionAxiom2 = dataFactory.getOWLDataPropertyAssertionAxiom(prop, indOWL3, 1);
-        }else if(datatype.contains("anyuri")){
-            OWLNamedIndividual indOWL3 = dataFactory.getOWLNamedIndividual(IRI.create("ind3"));
-            owlClassAssertionAxiom = dataFactory.getOWLClassAssertionAxiom(classOWLA1, indOWL3);
-            objectPropertyAssertionAxiom2 = dataFactory.getOWLDataPropertyAssertionAxiom(prop, indOWL3, 1);
         }else if(datatype.contains("literal")){
             OWLNamedIndividual indOWL3 = dataFactory.getOWLNamedIndividual(IRI.create("ind3"));
             owlClassAssertionAxiom = dataFactory.getOWLClassAssertionAxiom(classOWLA1, indOWL3);
@@ -2006,8 +1913,6 @@ public class Implementation {
         manager.applyChanges(manager.addAxiom(ont2, axiomDatatype2));
         manager.applyChanges(manager.addAxiom(ont2, dataFactory.getOWLDeclarationAxiom(indOWL1)));
         manager.applyChanges(manager.addAxiom(ont2, assertionAxiom));
-       // manager.applyChanges(manager.addAxiom(ont2, objectPropertyAssertionAxiom2));
-        //manager.applyChanges(manager.addAxiom(ont2, owlClassAssertionAxiom));
         manager.applyChanges(manager.addAxiom(ont2, owlClassAssertionAxiom2));
         manager.applyChanges(manager.addAxiom(ont2, objectPropertyAssertionAxiom3));
         OWLOntology assertion2 = manager.getOntology(IRI.create(base));
@@ -2034,11 +1939,10 @@ public class Implementation {
         }
         testCase.setAssertionsAxioms(hashinput);
         testCase.setType("existential DP");
-        return precond;
     }
 
     /*for  cardinality */
-    public ArrayList<String> cardinality(String purpose, String type, TestCaseImplementation testCase){
+    public void cardinality(String purpose, String type, TestCaseImplementation testCase){
         Pattern p1 = Pattern.compile("(.*) subclassof (.*) (min|max|exactly) ([1-9][0-9]*) (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p1.matcher(purpose);
 
@@ -2135,7 +2039,7 @@ public class Implementation {
             axiomsubclass3 = dataFactory.getOWLSubClassOfAxiom(classOWLA1, dataFactory.getOWLObjectMinCardinality(num, prop, classOWLB));
 
         }else{
-            axiomsubclass3 = dataFactory.getOWLSubClassOfAxiom( dataFactory.getOWLObjectMaxCardinality(num, prop, classOWLB), classOWLA1);
+            axiomsubclass3 = dataFactory.getOWLSubClassOfAxiom(classOWLA1, dataFactory.getOWLObjectMaxCardinality(num, prop, classOWLB));
         }
         manager.applyChanges(manager.addAxiom(ont3, axiomsubclass3));
         manager.applyChanges(manager.addAxiom(ont3,axiomClass2));
@@ -2164,12 +2068,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
-
     }
 
     /*for intersection + cardinality */ /*Poner opciones para min, exact y sin cardinalidad?*/
-    public ArrayList<String> intersectionCardTest(String purpose, String type, TestCaseImplementation testCase ){ /*TODO*/
+    public void intersectionCardTest(String purpose, String type, TestCaseImplementation testCase ){ /*TODO*/
         Pattern p = Pattern.compile("(.*) subclassof (.*) (max|min|exactly) (\\d+) \\((.*) and (.*)\\)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -2392,11 +2294,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for union */
-    public ArrayList<String> unionTest(String purpose, String type, TestCaseImplementation testCase){
+    public void unionTest(String purpose, String type, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassOf (.*) only (.*) or (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -2444,7 +2345,6 @@ public class Implementation {
         OWLDeclarationAxiom axiomClass2 = dataFactory.getOWLDeclarationAxiom(classOWLC);
         OWLDeclarationAxiom axiomClass3 = dataFactory.getOWLDeclarationAxiom(noClassOWLC);
         OWLDeclarationAxiom axiomClass4 = dataFactory.getOWLDeclarationAxiom(classOWLA1);
-        OWLDeclarationAxiom axiomClass5 = dataFactory.getOWLDeclarationAxiom(noclassOWLCB);
         OWLEquivalentClassesAxiom equivalentClassesAxiom = dataFactory.getOWLEquivalentClassesAxiom(noClassOWLB, dataFactory.getOWLObjectComplementOf(classOWLB));
         OWLEquivalentClassesAxiom equivalentClassesAxiom2 = dataFactory.getOWLEquivalentClassesAxiom(noClassOWLC, dataFactory.getOWLObjectComplementOf(classOWLC));
         OWLEquivalentClassesAxiom equivalentClassesAxiom3 = dataFactory.getOWLEquivalentClassesAxiom(noclassOWLCB, dataFactory.getOWLObjectComplementOf(classOWLC));
@@ -2530,11 +2430,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for intersection*/
-    public ArrayList<String> intersectionTest(String purpose, String type, TestCaseImplementation testCase){
+    public void intersectionTest(String purpose, String type, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassOf (.*) some (.*) and (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -2702,11 +2601,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for part-whole relations*/
-    public ArrayList<String> partWholeTestExistential(String purpose, TestCaseImplementation testCase){
+    public void partWholeTestExistential(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (ispartof|partof) some (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -2725,10 +2623,6 @@ public class Implementation {
         precond.add("Property(<"+R+">)");
         precond.add("Class(<"+classB+">)");
         testCase.getPrecondition().addAll(precond);
-
-        String classA1withouturi = classA1.split("(#|\\/)")[classA1.split("(#|\\/)").length-1];
-        String classBwithouturi = classB.split("(#|\\/)")[noClassB.split("(#|\\/)").length-1];
-
 
         /*Axioms to be added -- we need to test if the relation is transitive*/
         /*Preparation*/
@@ -2877,11 +2771,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for part-whole relations*/
-    public ArrayList<String> partWholeTestUniversal(String purpose, TestCaseImplementation testCase){
+    public void partWholeTestUniversal(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (ispartof|partof) only (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -2900,9 +2793,6 @@ public class Implementation {
         precond.add("Property(<"+R+">)");
         precond.add("Class(<"+classB+">)");
         testCase.getPrecondition().addAll(precond);
-
-        String classA1withouturi = classA1.split("(#|\\/)")[classA1.split("(#|\\/)").length-1];
-        String classBwithouturi = classB.split("(#|\\/)")[noClassB.split("(#|\\/)").length-1];
 
         /*Axioms to be added -- we need to test if the relation is transitive*/
         /*Preparation*/
@@ -3052,11 +2942,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /* for subclass of two classes and disjointness between them  */
-    public ArrayList<String> subclassDisjointTest(String purpose, TestCaseImplementation testCase){
+    public void subclassDisjointTest(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (.*) and (.*) subclassof (.*) that disjointwith (.*)",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
         /*Generation of classes*/
@@ -3276,13 +3165,11 @@ public class Implementation {
                 hashinput.put(entry.getKey(), entry.getValue());
             }
             testCase.setAssertionsAxioms(hashinput);
-            return precond;
-        }else
-            return null;
+        }
     }
 
     /*for participant ODP, location ODP and ObjectRole ODP*/
-    public ArrayList<String> participantODPTestExistential(String purpose, TestCaseImplementation testCase){
+    public void participantODPTestExistential(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (hasparticipant|isparticipantin|haslocation|islocationof|hasrole|isroleof) some (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -3479,11 +3366,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*TEST*/
-    public ArrayList<String> participantODPTestUniversal(String purpose, TestCaseImplementation testCase){
+    public void participantODPTestUniversal(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (hasparticipant|isparticipantin|haslocation|islocationof|hasrole|isroleof) only (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -3683,11 +3569,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for subclass + OP Test*/
-    public ArrayList<String> subClassOPTest(String purpose,  TestCaseImplementation testCase){
+    public void subClassOPTest(String purpose,  TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) subclassof (.*) that (.*) some (.*)",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -3699,7 +3584,6 @@ public class Implementation {
         String classA1 =  classAnoSymb.split("(#|\\/)")[classA.split("(#)").length-1]+"1";
 
         String classB = m.group(2).toString();
-        String classB1 =  classB.split("(#|\\/)")[classB.split("(#)").length-1]+"1";
         String noClassB =  "No"+classB.replace(">","").replace("<","").replace(">","").replace("<","").split("(#|\\/)")[classB.split("(#|\\/)").length-1];
         String R = m.group(3).toString();
         String classC = "";
@@ -3805,7 +3689,6 @@ public class Implementation {
         OWLClass noClassOWLC = dataFactory.getOWLClass(IRI.create("no"+classC));
         OWLEquivalentClassesAxiom equivalentClassesAxiom3 = dataFactory.getOWLEquivalentClassesAxiom(noClassOWLC, dataFactory.getOWLObjectComplementOf(classOWLC));
         OWLClassAssertionAxiom classAssertionAxiom2 = dataFactory.getOWLClassAssertionAxiom(noClassOWLC, indOWLC);
-        OWLDeclarationAxiom axiomInd1 = dataFactory.getOWLDeclarationAxiom(indOWLA1);
         OWLClassAssertionAxiom classAssertionAxiom = dataFactory.getOWLClassAssertionAxiom(classOWLA1, indOWLA1);
         OWLSubClassOfAxiom axiomsubclass1= dataFactory.getOWLSubClassOfAxiom(classOWLA1, classOWLA);
         OWLSubClassOfAxiom axiomsubclass2 = dataFactory.getOWLSubClassOfAxiom( classOWLA1, dataFactory.getOWLObjectAllValuesFrom(prop,dataFactory.getOWLObjectOneOf(indOWLC)));
@@ -3870,11 +3753,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for  cardinality + OP*/
-    public ArrayList<String> cardinalityOPTest(String purpose, String type, TestCaseImplementation testCase){
+    public void cardinalityOPTest(String purpose, String type, TestCaseImplementation testCase){
         Pattern p1 = Pattern.compile("(.*) subclassof (.*) min (\\d+) (.*) and (.*) subclassof (.*) some (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p1.matcher(purpose);
 
@@ -3889,10 +3771,6 @@ public class Implementation {
         String classC = m.group(7).toString();
         String noClassC =  "No"+classC.replace(">","").replace("<","").replace(">","").replace("<","").split("(#|\\/)")[classC.split("(#|\\/)").length-1];
         Integer num = Integer.parseInt(m.group(3).toString().replace(" ",""));
-
-
-        String indB= "<individual001>";
-        String indNoC = "<individual002>";
         String ind3 = "<individual003>";
 
         /*Preconditions*/
@@ -3943,17 +3821,7 @@ public class Implementation {
         manager.applyChanges(manager.addAxiom(ont, classAssertionAxiom3));
         testCase.setPreparationaxioms(manager.getOntology(IRI.create(base)));
         manager.removeOntology(ont);
-        /*String preparation =  "\n                       \t"+classA+" rdf:type owl:Class.\n "+
-                "                       \t"+classA1+" rdfs:subClassOf "+classA+".\n "+
-                "                       "+noClassC+" rdf:type owl:Class .\n" +
-                "                       "+noClassC+" owl:complementOf " + classC+" .\n"+
-                "                       "+indB+" rdf:type  owl:NamedIndividual, "+ classB1+".\n"+
-                "                       "+indNoC + " rdf:type owl:NamedIndividual, "+noClassC+".\n" ;
 
-        testCase.setPreparation(preparation);*/
-
-        /*A1 R max [num-1] B
-        * */
         OWLOntology ont1 = null;
         try {
             ont1 = manager.createOntology(IRI.create(base));
@@ -3966,13 +3834,6 @@ public class Implementation {
                 dataFactory.getOWLObjectMaxCardinality(num-1,prop, classOWLB));
         manager.applyChanges(manager.addAxiom(ont1, subClassOfAxiom1));
         manager.applyChanges(manager.addAxiom(ont1, subClassOfAxiom2));
-        /*String assertion1 =   "\n                       \t"+classA1+"    rdfs:subClassOf "+classA+" ,\n" +
-                "                                                                     "+"[ rdf:type owl:Restriction ;\n" +
-                "                                                                     "+ "  owl:onProperty "+R1+" ;\n" +
-                "                                                                     "+ "  owl:maxQualifiedCardinality \""+(num-1)+"\"^^xsd:nonNegativeInteger ;\n" +
-                "                                                                     "+ "  owl:onClass "+classB+"\n" +
-                "                                                                     "+ "] .\n"+
-                "                                                                     "+ R1+ " a owl:ObjectProperty.\n";*/
         String expectedoutputassertion1 = "unsatisfiable";
         OWLOntology assertion1 = manager.getOntology(IRI.create(base));
         manager.removeOntology(ont1);
@@ -3989,13 +3850,6 @@ public class Implementation {
                 dataFactory.getOWLObjectMinCardinality(num+1,prop, classOWLB));
         manager.applyChanges(manager.addAxiom(ont2, subClassOfAxiom1));
         manager.applyChanges(manager.addAxiom(ont2, subClassOfAxiom3));
-       /* String assertion2 =  "\n                       \t"+classA1+" rdfs:subClassOf "+classA+" ,\n" +
-                "                                                                     "+ "[ rdf:type owl:Restriction ;\n" +
-                "                                                                     "+ "  owl:onProperty "+R1+" ;\n" +
-                "                                                                     "+ "  owl:minQualifiedCardinality \""+(num+1)+"\"^^xsd:nonNegativeInteger ;\n" +
-                "                                                                     "+"  owl:onClass "+classB+"\n" +
-                "                                                                     "+ "] .\n"+
-                "                                                                     "+ R1+ " a owl:ObjectProperty.\n";*/
         String expectedoutputassertion2  = "consistent";
         OWLOntology assertion2 = manager.getOntology(IRI.create(base));
         manager.removeOntology(ont2);
@@ -4012,23 +3866,9 @@ public class Implementation {
         manager.applyChanges(manager.addAxiom(ont3, subClassOfAxiom1));
         manager.applyChanges(manager.addAxiom(ont3, subClassOfAxiom4));
 
-
-           /* assertion3 = "\n                       \t" + classA1 + " rdfs:subClassOf " + classA + " ,\n" +
-                    "                                                                     " + "[ rdf:type owl:Restriction ;\n" +
-                    "                                                                     " + "  owl:onProperty " + R1 + " ;\n" +
-                    "                                                                     " + "  owl:maxQualifiedCardinality \"" + (num) + "\"^^xsd:nonNegativeInteger ;\n" +
-                    "                                                                     " + "  owl:onClass " + classB + "\n" +
-                    "                                                                     " + "] .\n" +
-                    "                                                                     " + R1 + " a owl:ObjectProperty.\n";*/
-
         String expectedoutputassertion3 = "consistent";
         OWLOntology assertion3 = manager.getOntology(IRI.create(base));
         manager.removeOntology(ont3);
-
-
-
-        // String assertion4 =  "\n                       "+indB +" "+R2+ " "+indNoC+".\n";
-        // String expectedoutputassertion4 = "inconsistent";
 
         OWLOntology ont4 = null;
         try {
@@ -4048,15 +3888,6 @@ public class Implementation {
         manager.applyChanges(manager.addAxiom(ont4, subClassOfAxiom5));
         manager.applyChanges(manager.addAxiom(ont4, subClassOfAxiom6));
         manager.applyChanges(manager.addAxiom(ont4, objectPropertyAssertionAxiom));
-        /*String assertion4 =                "                       "+classB1+" rdfs:subClassOf "+classB+",\n" +
-                "                       "+"                    [ rdf:type owl:Restriction ;\n" +
-                "                       "+"                      owl:onProperty "+R2+" ;\n" +
-                "                       "+"                      owl:allValuesFrom [ rdf:type owl:Class ;\n" +
-                "                       "+"                                          owl:oneOf ( "+indNoC+"\n" +
-                "                       "+"                                                    )\n" +
-                "                       "+"                                        ]\n" +
-                "                       "+"                    ] .\n"+
-                "                       "+indB +" "+R2+ " "+indNoC+".\n";*/
         String expectedoutputassertion4  = "inconsistent";
         OWLOntology assertion4 = manager.getOntology(IRI.create(base));
         manager.removeOntology(ont4);
@@ -4079,18 +3910,6 @@ public class Implementation {
         manager.applyChanges(manager.addAxiom(ont5, subClassOfAxiom8));
         manager.applyChanges(manager.addAxiom(ont5, objectPropertyAssertionAxiom2));
         manager.applyChanges(manager.addAxiom(ont5, objectPropertyAssertionAxiom3));
-        /*String assertion5 =                "                       "+classB1+" rdfs:subClassOf "+classB+",\n" +
-                "                       "+"                    [ rdf:type owl:Restriction ;\n" +
-                "                       "+"                      owl:onProperty "+R2+" ;\n" +
-                "                       "+"                      owl:allValuesFrom [ rdf:type owl:Class ;\n" +
-                "                       "+"                                          owl:oneOf ( "+indNoC+"\n" +
-                "                       "+"                                                      "+ind3+"\n" +
-                "                       "+"                                                    )\n" +
-                "                       "+"                                        ]\n" +
-                "                       "+"                    ] .\n"+
-                "                       "+indB +" "+R2+ " "+indNoC+".\n"+
-                "                       "+indB +" "+R2+ " "+ind3+".\n";*/
-
 
         String expectedoutputassertion5 ="";
         if(purpose.contains("only"))
@@ -4127,12 +3946,11 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
 
     }
 
     /*for class definition*/
-    public ArrayList<String> classDefinitionTest(String purpose, TestCaseImplementation testCase){
+    public void classDefinitionTest(String purpose, TestCaseImplementation testCase){
 
         Pattern p = Pattern.compile("(.*) type class",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
@@ -4160,11 +3978,10 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*for property definition*/
-    public ArrayList<String> propertyDefinitionTest(String purpose, TestCaseImplementation testCase){
+    public void propertyDefinitionTest(String purpose, TestCaseImplementation testCase){
 
         Pattern p = Pattern.compile("(.*) type property",Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
@@ -4191,12 +4008,11 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
     /*--------------------------------------------------*/
     /*for participant ODP, location ODP and ObjectRole ODP*/
-    public ArrayList<String> coParticipantODPTestExistential(String purpose, TestCaseImplementation testCase){
+    public void coParticipantODPTestExistential(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) and (.*) subclassof (hascoparticipant|iscoparticipantin|cooparticipates) some (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -4462,10 +4278,9 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
-    public ArrayList<String> coParticipantODPTestUniversal(String purpose, TestCaseImplementation testCase){
+    public void coParticipantODPTestUniversal(String purpose, TestCaseImplementation testCase){
         Pattern p = Pattern.compile("(.*) and (.*) subclassof (hascoparticipant|iscoparticipantin|cooparticipates) only (.*)", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(purpose);
 
@@ -4733,7 +4548,6 @@ public class Implementation {
             hashinput.put(entry.getKey(), entry.getValue());
         }
         testCase.setAssertionsAxioms(hashinput);
-        return precond;
     }
 
 

@@ -1,2 +1,2 @@
-Provenance;Terms involved;Ontology;Requirement description;Result
-https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","exposesFunction","Function"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A variable has a URI of a resource through which the instantiation of the value of the variable can be manipulated;passed
+Provenance;Terms involved;Ontology;Result
+Open Connectivity Foundation (OCF);'["Resource","hasProperty","Property"]';Open Connectivity Foundation (OCF);passed

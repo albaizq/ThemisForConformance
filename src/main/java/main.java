@@ -1,24 +1,20 @@
 import de.derivo.sparqldlapi.exceptions.QueryEngineException;
 import de.derivo.sparqldlapi.exceptions.QueryParserException;
 import org.apache.commons.io.FileUtils;
-import org.coode.owlapi.obo.parser.OWLOBOParser;
 import org.json.*;
 import org.semanticweb.owlapi.model.*;
 import testingsteps.Execution;
-import testingsteps.Implementation;
-import testingsteps.Mapping;
 import tests.TestCaseDesign;
 import tests.TestCaseImplementation;
 import tests.TestCaseResult;
 import tests.TestingEnvironment;
 import utils.Ontology;
-import utils.ProcessCSV;
-import utils.Report;
+import files.ProcessCSV;
+import files.Report;
 import utils.Utils;
 
 
 import java.io.*;
-import java.net.URISyntaxException;
 import java.util.*;
 
 import static testingsteps.Mapping.processTestExpressionToExtractTerms;
@@ -36,14 +32,15 @@ public class main {
         TestingEnvironment envClass= new TestingEnvironment();
         TestingEnvironment env = envClass.createTestingEnvironment(args[1]);
         JSONArray tableResultsAllOntologies = new JSONArray();
-        JSONArray gottotal = new JSONArray();
         ArrayList<Ontology> ontologies = env.getOntologies();
         ArrayList<TestCaseDesign> testsuiteDesign = env.getTestCaseDesigns();
         ArrayList<TestCaseImplementation> implementations = env.getTestCaseImplementations();
+        HashMap<String, IRI> gotTotal = new HashMap<String, IRI>();
         // execute tests
         int i = 1;
         for(Ontology ontology: ontologies){
              //create got per ontology
+            System.out.println("ONTOLOGY "+ ontology.getProv());
             HashMap<String, IRI> got = createGot(testsuiteDesign,ontology, i);
             //if the got is ok then
             System.out.println("Is the GoT ok? ");
@@ -57,12 +54,14 @@ public class main {
             got = updateGot(i);
             // Execute all tests on each ontology using the got
             JSONArray tableResults = executeTests(testsuiteDesign, ontology, implementations, got);
+            gotTotal.putAll(got);
             /*Store the results*/
             storeIndividualResults(tableResults, tableResultsAllOntologies, i);
             i++;
         }
+
         /*Join results*/
-        storeJointResults(testsuiteDesign, ontologies, tableResultsAllOntologies, gottotal);
+        storeJointResults(testsuiteDesign, ontologies, tableResultsAllOntologies, gotTotal);
         analyseReqs(testsuiteDesign);
     }
 
@@ -103,7 +102,7 @@ public class main {
         }
     }
 
-    public static  void storeJointResults(ArrayList<TestCaseDesign> testsuiteDesign, ArrayList<Ontology> ontologies, JSONArray tableResultsAllOntologies, JSONArray gottotal) throws JSONException, IOException {
+    public static  void storeJointResults(ArrayList<TestCaseDesign> testsuiteDesign, ArrayList<Ontology> ontologies, JSONArray tableResultsAllOntologies, HashMap<String, IRI> gottotal) throws JSONException, IOException {
         System.out.println("create joint results...");
         JSONArray jointResults = jointResults( testsuiteDesign,  ontologies,  tableResultsAllOntologies,  gottotal );
         System.out.println("store joint results...");
@@ -121,7 +120,6 @@ public class main {
         ArrayList<TestCaseResult> testCaseResults = new ArrayList<>();
         System.out.println("create individual results...");
         for (TestCaseDesign testCaseDesign : testsuiteDesign) {
-            System.out.println(testCaseDesign.getUri());
             // this is a report PER ONTOLOGY (individual)
             ArrayList<TestCaseImplementation> implementationsForTestDesign = new ArrayList<>();
             for (TestCaseImplementation tci : implementations) {
@@ -139,11 +137,7 @@ public class main {
 
     public static HashMap<String, IRI> createGot(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology, int i) throws Exception {
         HashMap<String, IRI> got = Utils.createGot(testsuiteDesign, ontology);
-        //String csv = CDL.toString(got).replace(",", ";");
         Utils.storeFile("got-o"+i+".csv", got);
-
-        //FileUtils.writeStringToFile(new File("got-o"+i+".csv"), csv);
-        //got = ProcessCSV.processCSVGoT("got-o"+i+".csv");
         return got;
     }
 
@@ -152,7 +146,7 @@ public class main {
         return  gottotal;
     }
 
-    public static JSONArray jointResults(ArrayList<TestCaseDesign> testsuiteDesign, ArrayList<Ontology> ontologies, JSONArray tableResultsAllOntologies, JSONArray gottotal ) throws JSONException {
+    public static JSONArray jointResults(ArrayList<TestCaseDesign> testsuiteDesign, ArrayList<Ontology> ontologies, JSONArray tableResultsAllOntologies, HashMap<String, IRI> gottotal ) throws JSONException {
 
         JSONArray jointResults = new JSONArray();
         HashMap<Ontology, ArrayList<String>> termsInvolvedInTest = new HashMap<>();
@@ -166,17 +160,15 @@ public class main {
                     JSONObject obj = tableResultsAllOntologies.getJSONObject(j);
                    //get competency question of the requirement, and the ontology that passes the associated test
                     if (obj.has("Requirement description")) {
-                        if (obj.getString("Requirement description").equals(testCaseDesign.getDescription()) && obj.getString("Ontology").equals(ontology.getProv().toString()) && obj.getString("Result").equals("passed")) {
+                        if (obj.getString("Requirement description").equals(testCaseDesign.getDescription()) && obj.getString("Ontology").equals(ontology.getProv().toString()) && obj.getString("Result").equals("passed")&& !ontologiesRelated.contains(ontology.getProv().toString())) {
                             ontologiesRelated.add(ontology.getProv().toString());
                             for (String purpose : testCaseDesign.getPurpose())
                                 termKeys.addAll(processTestExpressionToExtractTerms(purpose));
                             //get terms involved in the test
                             for (String term : termKeys) {
-                                for (int k = 0; k < gottotal.length(); k++) {
-                                    JSONObject gotelement;
-                                    gotelement = gottotal.getJSONObject(k);
-                                    if (gotelement.getString("Term").equals(term) && gotelement.getString("Ontology").equals(ontology.getProv().toString()) && !termValueInOntology.contains(gotelement.getString("Value"))) {
-                                        termValueInOntology.add(gotelement.getString("Value")); //get uri of the term
+                                for (Map.Entry<String, IRI> entry : gottotal.entrySet()) {
+                                    if (entry.getKey().equals(term) && !termValueInOntology.contains(entry.getKey())) {
+                                        termValueInOntology.add(entry.getKey()); //get uri of the term
                                     }
                                 }
 

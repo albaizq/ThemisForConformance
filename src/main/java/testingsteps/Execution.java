@@ -1,32 +1,33 @@
 package testingsteps;
 
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import de.derivo.sparqldlapi.Query;
 import de.derivo.sparqldlapi.QueryEngine;
 import de.derivo.sparqldlapi.QueryResult;
 import de.derivo.sparqldlapi.exceptions.QueryEngineException;
 import de.derivo.sparqldlapi.exceptions.QueryParserException;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.semanticweb.HermiT.Configuration;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.*;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
-import tests.TestCaseDesign;
 import tests.TestCaseImplementation;
 import tests.TestCaseResult;
 import utils.Ontology;
 import utils.Utils;
 import java.util.*;
-import java.util.stream.Collectors;
-import static testingsteps.Mapping.processTestExpressionToExtractTerms;
-
 
 /**
  * Created by albafernandez on 19/06/2017.
  */
 public class Execution {
+
+    static final String PASSED="passed";
+    static final String UNDEFINED="undefined";
+    static final String UNSATISFIABLE="unsatisfiable";
+    static final String NOTPASSED="not passed";
+    static final String CONSISTENT="consistent";
+    static final String INCONSISTENT="inconsistent";
 
     /*Here we check the ontology consistency regarding at model-level*/
     public  String tboxTest(String query, IRI key, OWLOntologyManager manager, OWLOntology ontology) throws QueryParserException, QueryEngineException {
@@ -127,6 +128,7 @@ public class Execution {
         Configuration configuration = new Configuration();
         configuration.throwInconsistentOntologyException = false;
         configuration.ignoreUnsupportedDatatypes = true;
+        configuration.getProgressMonitor();
         reasoner = com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory.getInstance().createReasoner(ontology.getOntology(), configuration);
         reasoner.precomputeInferences();
         Set<OWLClass> classesintest =  new HashSet();
@@ -134,21 +136,22 @@ public class Execution {
             classesintest.addAll(axiom.getClassesInSignature());
         }
         String result = "";
+
         if(!reasoner.isConsistent()) {
-            result = "inconsistent";
+            result = INCONSISTENT;
         }else if(reasoner.getUnsatisfiableClasses().getSize()>1) {
             int flag = 0;
             // check if the unsatisfiable classes are because of the test
             for(OWLClass classintest: classesintest){
                 if(reasoner.getUnsatisfiableClasses().contains(classintest)){
-                    result="unsatisfiable";
+                    result=UNSATISFIABLE;
                     flag++;
                 }
             }
             if(flag==0)
-                result = "consistent";
+                result = CONSISTENT;
         }else {
-            result = "consistent";
+            result = CONSISTENT;
         }
 
         return result;
@@ -156,9 +159,6 @@ public class Execution {
 
     public void removePreparationAxioms(Set<OWLAxiom> textAxioms, Ontology ontology){
 
-       // String textAxioms = Utils.mappingValue(preparation, ontology.getProv().toString(), got);
-
-       // Set<OWLAxiom> axioms = Utils.convertStringToAxioms(textAxioms.replace("\\\"", "\""));
         OWLDataFactory dataFactory = ontology.getManager().getOWLDataFactory();
         Configuration configuration = new Configuration();
         configuration.throwInconsistentOntologyException = false;
@@ -184,14 +184,12 @@ public class Execution {
         }
     }
 
-
-
     /*This method execute the ABox and Tbox tests. The errors are printed in a report*/
     public   ArrayList<TestCaseResult> execute(ArrayList<TestCaseImplementation> testCaseImplementations, Ontology ontology, HashMap<String, IRI> got) throws  OWLOntologyCreationException, QueryParserException, QueryEngineException, OWLOntologyStorageException{
         String realResult;
         ArrayList<TestCaseResult> testsuiteResult = new ArrayList<>();
             for (TestCaseImplementation tc : testCaseImplementations) {
-                ArrayList<String> undefinedterms = new ArrayList<>();
+                ArrayList<String> undefinedterms;
                 TestCaseResult tr = new TestCaseResult();
                 ArrayList<String> resultsforabsence = new ArrayList<>();
                 tr.setRelatedTestImpl(tc.getUri());
@@ -206,15 +204,15 @@ public class Execution {
                         // analyse results
                         tr  = checkAssertion(realResult, ontology, got, tc);
                     } else if(undefinedterms.isEmpty() && tc.getPreparationaxioms() == null){
-                        resultsforabsence.add("passed");
-                        tr.setTestResult("passed");
+                        resultsforabsence.add(PASSED);
+                        tr.setTestResult(PASSED);
                     }else{
-                        resultsforabsence.add("undefined");
-                        tr.setTestResult("undefined");
+                        resultsforabsence.add(UNDEFINED);
+                        tr.setTestResult(UNDEFINED);
                     }
                 } else {
-                    resultsforabsence.add("undefined");
-                    tr.setTestResult("undefined");
+                    resultsforabsence.add(UNDEFINED);
+                    tr.setTestResult(UNDEFINED);
                 }
 
                 testsuiteResult.add(tr);
@@ -227,32 +225,31 @@ public class Execution {
         ArrayList<String> resultsforabsence= new ArrayList<>();
         int absent = 0;
         TestCaseResult tr = new TestCaseResult();
-        tr.setTestResult("passed");
-        if (!realResult.toLowerCase().contains("consistent")) {
-            resultsforabsence.add("inconsistent");
-            tr.setTestResult("not passed");
+        tr.setTestResult(PASSED);
+        if (!realResult.toLowerCase().contains(CONSISTENT)) {
+            resultsforabsence.add(INCONSISTENT);
+            tr.setTestResult(NOTPASSED);
             Set<OWLAxiom> prepWithURI = Utils.mapImplementationTerms(tc.getPreparationaxioms(), got);
             removePreparationAxioms(prepWithURI, ontology);
         } else {
             //add assertions to the ontology, after mapping the test terms with ontology terms. Check if the real result is the same as the expected result
             for (Map.Entry<String, OWLOntology> entry : tc.getAssertionsAxioms().entrySet()) {
                 Set<OWLAxiom> assertionWithURI = Utils.mapImplementationTerms(entry.getValue(), got);
-                System.out.println(assertionWithURI);
                 realResult = aboxTest(assertionWithURI, ontology, "assertion");
-                System.out.println(realResult);
-                System.out.println(tc.getType());
-                if (realResult.equalsIgnoreCase("consistent")) {
-                    resultsforabsence.add("consistent");
+                System.out.println(assertionWithURI);
+                System.out.println("REAL: " +realResult + " EXPECTED "+ tc.getAxiomExpectedResultAxioms().get(entry.getKey()));
+                if (realResult.equalsIgnoreCase(CONSISTENT)) {
+                    resultsforabsence.add(CONSISTENT);
                 } else {
-                    resultsforabsence.add("inconsistent");
+                    resultsforabsence.add(INCONSISTENT);
                 }
-                if(tc.getType().equals("existential") && entry.getKey().equals("Assertion 2") && realResult.equals("inconsistent")) { // excepcion en existential
+                if(tc.getType().equals("existential") && entry.getKey().equals("Assertion 2") && realResult.equals(INCONSISTENT)) { // excepcion en existential
                     absent=1;
-                }else if(tc.getType().equals("existential DP") &&  realResult.equals("consistent")) { // excepcion with literals
-                    tr.setTestResult("passed");
-                }else if (!realResult.equalsIgnoreCase("consistent") && !realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
-                    tr.setTestResult("not passed");
-                }else if(realResult.equalsIgnoreCase("consistent") && !realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))){
+                }else if(tc.getType().equals("existential DP") &&  realResult.equals(CONSISTENT)) { // excepcion with literals
+                    tr.setTestResult(PASSED);
+                }else if (!realResult.equalsIgnoreCase(CONSISTENT) && !realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
+                    tr.setTestResult(NOTPASSED);
+                }else if(realResult.equalsIgnoreCase(CONSISTENT) && !realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))){
                     absent=1;
                 }
             }
@@ -261,11 +258,11 @@ public class Execution {
         // check if the result could be absent relation
         int flag = 0;
         for(String result: resultsforabsence){
-            if(!result.equals("consistent")){
+            if(!result.equals(CONSISTENT)){
                 flag++;
             }
         }
-        if(flag==0 && !resultsforabsence.isEmpty() && !tc.getType().equals("existential DP") || !tr.getTestResult().equals("not passed") && absent == 1 ){
+        if(flag==0 && !resultsforabsence.isEmpty() && !tc.getType().equals("existential DP") || !tr.getTestResult().equals(NOTPASSED) && absent == 1 ){
             tr.setTestResult("absent");
         }
         return tr;

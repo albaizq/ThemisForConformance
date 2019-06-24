@@ -1,8 +1,9 @@
 package tests;
 
+import testingsteps.Design;
 import testingsteps.Implementation;
 import utils.Ontology;
-import utils.ProcessCSV;
+import files.ProcessCSV;
 import utils.Utils;
 
 import java.util.ArrayList;
@@ -47,8 +48,11 @@ public class TestingEnvironment {
         for (Map.Entry<String, String> entry : ontoAndTest.entrySet()) {
             //load tests
             testsuiteDesign.addAll(Utils.loadTest(entry.getValue()));
+            //get provenance
+            String testsuiteProv = Design.retrieveTestSuiteProv(entry.getValue());
+            System.out.println("--"+testsuiteProv);
             //load ontology
-            ontologies.add(Utils.loadOntology(entry.getKey(),testsuiteDesign));
+            ontologies.add(Utils.loadOntology(entry.getKey(),testsuiteDesign, testsuiteProv));
             //create implementation
             for (TestCaseDesign testCaseDesign : testsuiteDesign) {
                 Implementation impl = new Implementation();
