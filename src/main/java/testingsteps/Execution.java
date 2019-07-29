@@ -236,8 +236,6 @@ public class Execution {
             for (Map.Entry<String, OWLOntology> entry : tc.getAssertionsAxioms().entrySet()) {
                 Set<OWLAxiom> assertionWithURI = Utils.mapImplementationTerms(entry.getValue(), got);
                 realResult = aboxTest(assertionWithURI, ontology, "assertion");
-                System.out.println(assertionWithURI);
-                System.out.println("REAL: " +realResult + " EXPECTED "+ tc.getAxiomExpectedResultAxioms().get(entry.getKey()));
                 if (realResult.equalsIgnoreCase(CONSISTENT)) {
                     resultsforabsence.add(CONSISTENT);
                 } else {

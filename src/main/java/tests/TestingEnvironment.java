@@ -1,5 +1,9 @@
 package tests;
 
+import org.json.JSONException;
+import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import testingsteps.Design;
 import testingsteps.Implementation;
 import utils.Ontology;
@@ -45,14 +49,24 @@ public class TestingEnvironment {
         HashMap<String, String> ontoAndTest = ProcessCSV.processCSVVocabs(file);
         ArrayList<TestCaseDesign> testsuiteDesign = new ArrayList<>();
         ArrayList<Ontology> ontologies = new ArrayList<>();
+        HashMap<String, ArrayList<String>> termsResult = new HashMap<>();
         for (Map.Entry<String, String> entry : ontoAndTest.entrySet()) {
             //load tests
             testsuiteDesign.addAll(Utils.loadTest(entry.getValue()));
             //get provenance
             String testsuiteProv = Design.retrieveTestSuiteProv(entry.getValue());
+
             System.out.println("--"+testsuiteProv);
             //load ontology
-            ontologies.add(Utils.loadOntology(entry.getKey(),testsuiteDesign, testsuiteProv));
+            Ontology ontology = Utils.loadOntology(entry.getKey(),testsuiteDesign, testsuiteProv);
+            ontologies.add(ontology);
+            //executetBox
+            ArrayList<TestCaseDesign> testCaseDesignsTerms = generateTermsTests(ontology, testsuiteProv);
+            ArrayList<TestCaseImplementation> testCaseImplementationsTerms=  generateTermsTestsImplementation(testCaseDesignsTerms);
+            for(TestCaseDesign testCaseDesign1  : testCaseDesignsTerms)
+                testsuiteDesign.add(testCaseDesign1);
+            for(TestCaseImplementation testCaseImplementation  : testCaseImplementationsTerms)
+                implementations.add(testCaseImplementation);
             //create implementation
             for (TestCaseDesign testCaseDesign : testsuiteDesign) {
                 Implementation impl = new Implementation();
@@ -70,4 +84,52 @@ public class TestingEnvironment {
         testingEnvironment.setTestCaseImplementations(implementations);
         return testingEnvironment;
     }
+
+    public static ArrayList<TestCaseDesign> generateTermsTests(Ontology ontology, String testsuiteProv){
+        int i = 1;
+        ArrayList<TestCaseDesign> testCaseDesigns = new ArrayList<>();
+
+        for (Map.Entry<String, IRI> entry : ontology.getClasses().entrySet()) {
+            String term = entry.getKey();
+            if(!term.isEmpty()) {
+                TestCaseDesign testCaseDesign = new TestCaseDesign();
+                ArrayList<String> purpose = new ArrayList<>();
+                purpose.add(term + " type Class");
+                testCaseDesign.setSource(testsuiteProv);
+                testCaseDesign.setPurpose(purpose);
+                testCaseDesign.setDescription(term + " exists in the ontology");
+                testCaseDesign.setProvenance(ontology.getProv().toString());
+                testCaseDesign.setUri(IRI.create(":testDesignTerms" + i + ontology.getProv().getFragment()));
+                testCaseDesigns.add(testCaseDesign);
+                testCaseDesign.setSubject("Term test");
+                i++;
+            }
+        }
+        for (Map.Entry<String, IRI> entry : ontology.getProperties().entrySet()) {
+            String term = entry.getKey();
+            if(!term.isEmpty()) {
+                TestCaseDesign testCaseDesign = new TestCaseDesign();
+                ArrayList<String> purpose = new ArrayList<>();
+                purpose.add(term + " type Property");
+                testCaseDesign.setSource(testsuiteProv);
+                testCaseDesign.setPurpose(purpose);
+                testCaseDesign.setProvenance(ontology.getProv().toString());
+                testCaseDesign.setDescription(term + " exists in the ontology");
+                testCaseDesign.setUri(IRI.create(":testDesignTerms" + i + ontology.getProv().getFragment()));
+                testCaseDesigns.add(testCaseDesign);
+                testCaseDesign.setSubject("Term test");
+                i++;
+            }
+        }
+        return  testCaseDesigns;
+    }
+
+    public static ArrayList<TestCaseImplementation> generateTermsTestsImplementation(ArrayList<TestCaseDesign> testCaseDesignsTerms) throws OWLOntologyCreationException, OWLOntologyStorageException {
+        Implementation impl = new Implementation();
+        ArrayList<TestCaseImplementation> testsuiteImpl = impl.createTestImplementation(testCaseDesignsTerms);
+        return testsuiteImpl;
+    }
+
+
+
 }

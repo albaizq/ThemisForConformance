@@ -50,9 +50,9 @@ public class Implementation {
             symmetryTest(purpose, testCase);
         }else if(purposecloned.matches("[^\\s]+ subclassof symmetricproperty\\([^\\s]+\\) (some|only) [^\\s]+") || purposecloned.matches("[^\\s]+ subclassOf <coparticipatesWith> (some|only) [^\\s]+")){
             symmetryWithDomainRangeTest(purpose, testCase);
-        }else if(purposecloned.matches("[^\\s]+ subclassof (hasparticipant|isparticipantin|haslocation|islocationof|hasrole|isroleof) some [^\\s]+")){
+        }else if(purposecloned.matches("[^\\s]+ subclassof (hasparticipant|isparticipantin|haslocation|islocationof) some [^\\s]+")){
             participantODPTestExistential(purpose, testCase);
-        }else if(purposecloned.matches("[^\\s]+ subclassof (hasparticipant|isparticipantin|haslocation|islocationof|hasrole|isroleof) only [^\\s]+")){
+        }else if(purposecloned.matches("[^\\s]+ subclassof (hasparticipant|isparticipantin|haslocation|islocationof) only [^\\s]+")){
             participantODPTestUniversal(purpose, testCase);
         }else if(purposecloned.matches("[^\\s]+ subclassof (hascoparticipant|iscoparticipantin|cooparticipates) some [^\\s]+")){
             coParticipantODPTestExistential(purpose, testCase);

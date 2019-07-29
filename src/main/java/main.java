@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils;
 import org.json.*;
 import org.semanticweb.owlapi.model.*;
 import testingsteps.Execution;
+import testingsteps.Implementation;
 import tests.TestCaseDesign;
 import tests.TestCaseImplementation;
 import tests.TestCaseResult;
@@ -36,6 +37,7 @@ public class main {
         ArrayList<TestCaseDesign> testsuiteDesign = env.getTestCaseDesigns();
         ArrayList<TestCaseImplementation> implementations = env.getTestCaseImplementations();
         HashMap<String, IRI> gotTotal = new HashMap<String, IRI>();
+
         // execute tests
         int i = 1;
         for(Ontology ontology: ontologies){
@@ -52,11 +54,15 @@ public class main {
                 result = scanner.nextLine();
             }
             got = updateGot(i);
+
+
             // Execute all tests on each ontology using the got
             JSONArray tableResults = executeTests(testsuiteDesign, ontology, implementations, got);
+            //execute tests terms
+            JSONArray tableResultsTerms = executeTestsTerms(testsuiteDesign, ontology, implementations, got);
             gotTotal.putAll(got);
             /*Store the results*/
-            storeIndividualResults(tableResults, tableResultsAllOntologies, i);
+            storeIndividualResults(tableResults, tableResultsTerms, tableResultsAllOntologies, i);
             i++;
         }
 
@@ -65,29 +71,38 @@ public class main {
         analyseReqs(testsuiteDesign);
     }
 
-    public static  JSONArray storeIndividualResults(JSONArray tableResults, JSONArray tableResultsAllOntologies, int i) throws JSONException, IOException {
+
+    public static  JSONArray storeIndividualResults(JSONArray tableResults, JSONArray tableResultsTerms, JSONArray tableResultsAllOntologies, int i) throws JSONException, IOException {
          /*Individual results*/
         String csvResults = CDL.toString(tableResults).replace(",", ";").replace("\";\"", "\",\"");
         System.out.println("store individual results...");
         FileUtils.writeStringToFile(new File("results-o"+i+".csv"), csvResults);
+        String csvResultsTerms = CDL.toString(tableResultsTerms).replace(",", ";").replace("\";\"", "\",\"");
+        System.out.println("store individual results...");
+        FileUtils.writeStringToFile(new File("results-o"+i+"Terms.csv"), csvResultsTerms);
         for(int j = 0; j< tableResults.length();j++) {
             tableResultsAllOntologies.put(tableResults.getJSONObject(j));
+        }
+        for(int j = 0; j< tableResultsTerms.length();j++) {
+            tableResultsAllOntologies.put(tableResultsTerms.getJSONObject(j));
         }
         return tableResultsAllOntologies;
     }
 
-    public static void analyseReqs(ArrayList<TestCaseDesign> testsuiteDesign) throws JSONException {
+    public static void analyseReqs(ArrayList<TestCaseDesign> testsuiteDesign) throws JSONException, IOException {
         /*if two requirements has the same formalization --> they are related*/
         JSONArray relatedRequirments = new JSONArray();
         for (TestCaseDesign testCaseDesign : testsuiteDesign) {
+            TestCaseDesign testCaseDesignComparar = new TestCaseDesign();
             ArrayList<String> realtedReqs = new ArrayList<>();
             realtedReqs.add(testCaseDesign.getDescription());
             for (TestCaseDesign testCaseDesign2 : testsuiteDesign) {
-                if (!testCaseDesign.getUri().toString().equals(testCaseDesign2.getUri().toString())) {
+                if (!testCaseDesign.getProvenance().toString().equals(testCaseDesign2.getProvenance().toString())) {
                     for(String purpose1: testCaseDesign.getPurpose()){
                         for(String purpose2: testCaseDesign2.getPurpose()){
                             if(purpose1.trim().equals(purpose2.trim())){
-                                realtedReqs.add(testCaseDesign2.getDescription()); /*TODO el containts no funciona*/
+                                testCaseDesignComparar = testCaseDesign2;
+                                realtedReqs.add(testCaseDesign2.getDescription());
                                 break;
                             }
                         }
@@ -96,10 +111,16 @@ public class main {
             }
             if(realtedReqs.size()>1) {
                 JSONObject objresults = new JSONObject();
-                objresults.put("Relations", testCaseDesign.getDescription());
+                objresults.put("Relations", testCaseDesign.getDescription()+" - "+ testCaseDesignComparar.getDescription());
+                objresults.put("Ontologies", testCaseDesign.getProvenance()+" - "+ testCaseDesignComparar.getProvenance());
                 relatedRequirments.put(objresults);
             }
         }
+        String csvResults = CDL.toString(relatedRequirments);
+        if(csvResults != null){
+            csvResults = csvResults.replace(",", ";").replace("\";\"", "\",\"");
+        }
+        FileUtils.writeStringToFile(new File("relatedRequirements.csv"), csvResults);
     }
 
     public static  void storeJointResults(ArrayList<TestCaseDesign> testsuiteDesign, ArrayList<Ontology> ontologies, JSONArray tableResultsAllOntologies, HashMap<String, IRI> gottotal) throws JSONException, IOException {
@@ -121,16 +142,44 @@ public class main {
         System.out.println("create individual results...");
         for (TestCaseDesign testCaseDesign : testsuiteDesign) {
             // this is a report PER ONTOLOGY (individual)
-            ArrayList<TestCaseImplementation> implementationsForTestDesign = new ArrayList<>();
-            for (TestCaseImplementation tci : implementations) {
-                if (testCaseDesign.getUri().toString().equals(tci.getRelatedTestDesign().toString())) {
-                    implementationsForTestDesign.add(tci);
+            if(!testCaseDesign.getSubject().equals("Term test")) {
+                ArrayList<TestCaseImplementation> implementationsForTestDesign = new ArrayList<>();
+                for (TestCaseImplementation tci : implementations) {
+                    if (testCaseDesign.getUri().toString().equals(tci.getRelatedTestDesign().toString())) {
+                        implementationsForTestDesign.add(tci);
+                    }
                 }
-            }
-            testCaseResults = exec.execute(implementationsForTestDesign, ontology , got);
 
-            array = Report.printReportPerOntology(ontology, testCaseDesign, testCaseResults);
-            tableResults.put(array);
+                testCaseResults = exec.execute(implementationsForTestDesign, ontology, got);
+
+                array = Report.printReportPerOntology(ontology, testCaseDesign, testCaseResults);
+                tableResults.put(array);
+            }
+        }
+        return tableResults;
+    }
+
+    public  static JSONArray executeTestsTerms(ArrayList<TestCaseDesign> testsuiteDesign, Ontology ontology, ArrayList<TestCaseImplementation> implementations, HashMap<String, IRI> got) throws OWLOntologyStorageException, QueryParserException, QueryEngineException, OWLOntologyCreationException, JSONException {
+        Execution exec = new Execution();
+        JSONArray tableResults = new JSONArray();
+        JSONObject array = new JSONObject();
+        ArrayList<TestCaseResult> testCaseResults = new ArrayList<>();
+        System.out.println("create individual results...");
+        for (TestCaseDesign testCaseDesign : testsuiteDesign) {
+            // this is a report PER ONTOLOGY (individual)
+            if(testCaseDesign.getSubject().equals("Term test")) {
+                ArrayList<TestCaseImplementation> implementationsForTestDesign = new ArrayList<>();
+                for (TestCaseImplementation tci : implementations) {
+                    if (testCaseDesign.getUri().toString().equals(tci.getRelatedTestDesign().toString())) {
+                        implementationsForTestDesign.add(tci);
+                    }
+                }
+
+                testCaseResults = exec.execute(implementationsForTestDesign, ontology, got);
+
+                array = Report.printReportPerOntology(ontology, testCaseDesign, testCaseResults);
+                tableResults.put(array);
+            }
         }
         return tableResults;
     }

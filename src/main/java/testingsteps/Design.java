@@ -36,6 +36,7 @@ public class Design {
             else
                 tc = processDataProperty(cls, ontology);
             tc.setSource(source);
+            tc.setSubject("Requirement test");
             tc.setUri(IRI.create(cls.toString().replace("<","").replace(">","")));
             if(tc.getPurpose().size()>0){
                 testsuite.add(tc);

@@ -75,9 +75,6 @@ public class Utils {
             }else{
                 ontology = createSkeletonFromTestCases(testSuiteProv,testCaseDesigns);
             }
-        System.out.println("----------------");
-        System.out.println(ontology.getOntology().getAxioms());
-        System.out.println("---------------");
            return ontology;
     }
 

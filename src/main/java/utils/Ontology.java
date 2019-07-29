@@ -2,6 +2,7 @@ package utils;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
+import tests.TestCaseDesign;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -119,6 +120,17 @@ public class Ontology {
             hashMapdataProp.put(nextProp.getIRI().getFragment().toString(),nextProp.getIRI());
         }
         return  hashMapdataProp;
+    }
+
+    public HashMap<String, IRI> getProperties(){
+        HashMap<String, IRI> properties = new HashMap<>();
+        for (Map.Entry<String, IRI> entry : this.getDatatypeProperties().entrySet()) {
+           properties.put(entry.getKey(), entry.getValue());
+        }
+        for (Map.Entry<String, IRI> entry : this.getObjectProperties().entrySet()) {
+            properties.put(entry.getKey(), entry.getValue());
+        }
+        return properties;
     }
 
 

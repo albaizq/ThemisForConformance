@@ -1,120 +1,107 @@
 
-csquid:S1858³"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ8à¢ôË·-
+]squid:S1858ü"?"group" returns a string, there's no need to call "toString()".(Ìã®{8­ô³˜¹-
+Wsquid:S1858—"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
 Ssquid:UselessImportCheck"*Remove this unused import 'org.json.Test'.(€‚â‹ùÿÿÿÿ
-\
-squid:S106€"9Replace this use of System.out or System.err by a logger.(µÔÂüÿÿÿÿ8à¢ôË·-
-\squid:S1858²"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
-\squid:S1858İ"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Vsquid:S1858Ü"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Vsquid:S1858ä"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Vsquid:S1858½"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Wsquid:S1858Ş"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
-Wsquid:S1858û"?"group" returns a string, there's no need to call "toString()".(éŞæÇ
-bsquid:UselessImportCheck"2Remove this unused import 'javax.print.DocFlavor'.(ÍØƒïúÿÿÿÿ8•ÖÜË·-
-fsquid:S00112„"FDefine and throw a dedicated exception instead of using a generic one.(é¨•”8à¢ôË·-
-”squid:S1319Œ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Òƒâ»ùÿÿÿÿ8à¢ôË·-
-csquid:S1858­"?"group" returns a string, there's no need to call "toString()".(ÊÉŠĞûÿÿÿÿ8à¢ôË·-
-\squid:S1858ª"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-\
-squid:S106€"9Replace this use of System.out or System.err by a logger.(’ëÑ«ıÿÿÿÿ8à¢ôË·-
+Rsquid:S2864ê"4Iterate over the "entrySet" instead of the "keySet".(ÙÄÚ^8›ÇæÏ¸-
+]squid:S1858ƒ"?"group" returns a string, there's no need to call "toString()".(Ìã®{8­ô³˜¹-
+csquid:S1858›"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8­ô³˜¹-
+”squid:S1319ß"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Òƒâ»ùÿÿÿÿ8›ÇæÏ¸-
 msquid:UselessImportCheck"IRemove this unused import 'org.coode.owlapi.turtle.TurtleOntologyFormat'.(Ì®à“
-Gsquid:S1481Â")Remove this unused "flag" local variable.(ŒÖı$8×ëÙÑ·-
-Asquid:S1481¢"*Remove this unused "term1" local variable.(Ìã®{
-qsquid:S3776£"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(öÅä¸8à¢ôË·-
-Isquid:S1168@"+Return an empty collection instead of null.(¥¹ï8à¢ôË·-
-Isquid:S1168C"+Return an empty collection instead of null.(¥¹ï8à¢ôË·-
-]squid:S1854¤"9Remove this useless assignment to local variable "term3".(£»Œ¨ÿÿÿÿÿ8à¢ôË·-
-csquid:S1858î"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8à¢ôË·-
-Wsquid:S1858ø"?"group" returns a string, there's no need to call "toString()".(ö•Á—
-‡squid:S1157¨"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(µ¡Ş´şÿÿÿÿ8¦Æ†Ğ·-
-Fsquid:S1481N")Remove this unused "flag" local variable.(ŒÖı$8à¢ôË·-
-Wsquid:S1858×"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
-Šsquid:S1319“"kThe type of the "got" object should be an interface such as "Map" rather than the implementation "HashMap".(è‡æõ8ª‡õË·-
-Wsquid:S1858"?"group" returns a string, there's no need to call "toString()".(±èÄò
-Vsquid:S1858Ê"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Gsquid:S1481¦")Remove this unused "flag" local variable.(ŒÖı$8¦Æ†Ğ·-
-•squid:S1319 "qThe type of the "allvalues" object should be an interface such as "Map" rather than the implementation "HashMap".(òÇŸ’úÿÿÿÿ8¦Æ†Ğ·-
-Vsquid:S1858Õ"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Wsquid:S1858«"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
-ksquid:S2095r"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(…ÚÒO8à¢ôË·-
-W
-squid:S106°"9Replace this use of System.out or System.err by a logger.(â¼ñ8Ø‡‡Ğ·-
-Psquid:S1854¢"9Remove this useless assignment to local variable "term1".(Ìã®{
-Xsquid:S1854Ù"9Remove this useless assignment to local variable "term5".(ã†«û8à¢ôË·-
-Vsquid:S1854£"9Remove this useless assignment to local variable "term2".(İÑƒŒùÿÿÿÿ
-\squid:S1858Ë"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-^squid:S1858ü"?"group" returns a string, there's no need to call "toString()".(ñğ› 8à¢ôË·-
-Fsquid:S1148B"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8à¢ôË·-
-Tsquid:S1751("6Remove this "return" statement or make it conditional.(ÛÍô8à¢ôË·-
-Vsquid:S1854Ø"9Remove this useless assignment to local variable "term4".(«ŠùÉûÿÿÿÿ
-\squid:S1858Ö"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-csquid:S1858ß"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ8à¢ôË·-
-csquid:S1858å"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8à¢ôË·-
-^squid:S1858Ì"?"group" returns a string, there's no need to call "toString()".(çÃ•ş8à¢ôË·-
-]squid:S1858¾"?"group" returns a string, there's no need to call "toString()".(Ìã®{8à¢ôË·-
-jsquid:S1192%"LDefine a constant instead of duplicating this literal "\\<(.*?)\\>" 4 times.(è–Ùã8¦Æ†Ğ·-
-Wsquid:S1858Ğ"?"group" returns a string, there's no need to call "toString()".(çÃ•ş
-csquid:S1858Ñ"?"group" returns a string, there's no need to call "toString()".(«ŠùÉûÿÿÿÿ8à¢ôË·-
-\squid:S1858Œ"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-\squid:S1858î"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-™squid:S1319—"zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(İ½³8à¢ôË·-
-\squid:S1858¾"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Wsquid:S1858¬"?"group" returns a string, there's no need to call "toString()".(±èÄò
-Isquid:S11681"+Return an empty collection instead of null.(¥¹ï8à¢ôË·-
-csquid:S1858Æ"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8à¢ôË·-
-Gsquid:S1481£"*Remove this unused "term2" local variable.(İÑƒŒùÿÿÿÿ
-ksquid:S00112Œ"FDefine and throw a dedicated exception instead of using a generic one.(Òƒâ»ùÿÿÿÿ8à¢ôË·-
-™squid:S1319£"zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(öÅä¸8à¢ôË·-
-Isquid:S1481Ù"*Remove this unused "term5" local variable.(ã†«û8à¢ôË·-
-squid:S1319·"qThe type of the "allvalues" object should be an interface such as "Map" rather than the implementation "HashMap".(ñÑ¨œ8×ëÙÑ·-
-Vsquid:S1858©"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858ù"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
-\squid:S1858£"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-Œsquid:S1319„"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(é¨•”8à¢ôË·-
-W
-squid:S106Í"9Replace this use of System.out or System.err by a logger.(â¼ñ8·ºÚÑ·-
-Vsquid:S1858Î"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Vsquid:S1858ù"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858Ø"?"group" returns a string, there's no need to call "toString()".(«ŠùÉûÿÿÿÿ
-Rsquid:S1172H"/Remove this unused method parameter "ontology".(ÙÒ¥´şÿÿÿÿ8à¢ôË·-
-Xsquid:S1118 ":Add a private constructor to hide the implicit public one.(¼Øûì8à¢ôË·-
-csquid:S1858À"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ8à¢ôË·-
-^squid:S1858Ù"?"group" returns a string, there's no need to call "toString()".(ã†«û8à¢ôË·-
-nsquid:CommentedOutCodeLinem"<This block of commented-out lines of code should be removed.(ÂÏåøùÿÿÿÿ8à¢ôË·-
-_squid:UselessImportCheck"/Remove this unused import 'org.json.JSONArray'.(¬¸Ê’üÿÿÿÿ8ÏæèË·-
-\squid:S1858"?"group" returns a string, there's no need to call "toString()".(ÊÉŠĞûÿÿÿÿ
-Vsquid:S1858Å"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-\squid:S1858¿"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
-csquid:S1858ú"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8à¢ôË·-
-\
-squid:S106‡"9Replace this use of System.out or System.err by a logger.(…íôúıÿÿÿÿ8à¢ôË·-
-fsquid:S00112—"FDefine and throw a dedicated exception instead of using a generic one.(İ½³8à¢ôË·-
-Vsquid:S1858í"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Rsquid:S2864—"4Iterate over the "entrySet" instead of the "keySet".(ÙÄÚ^8Ä¥õË·-
-Ysquid:S1854d"6Remove this useless assignment to local variable "in".(ÍÕ•Úùÿÿÿÿ8à¢ôË·-
-csquid:S1858"?"group" returns a string, there's no need to call "toString()".(×°°òøÿÿÿÿ8à¢ôË·-
-Vsquid:S1858í"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-¥%squid:RedundantThrowsDeclarationCheck„"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(é¨•”8¦Æ†Ğ·-
-\squid:S1858±"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-\squid:S1858ú"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
-csquid:S1858¤"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ8à¢ôË·-
-\squid:S1858Ï"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-”squid:S1319H"qThe type of the "allvalues" object should be an interface such as "Map" rather than the implementation "HashMap".(ÙÒ¥´şÿÿÿÿ8à¢ôË·-
-†squid:S1157P"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(µ¡Ş´şÿÿÿÿ8à¢ôË·-
-Vsquid:S1858¢"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Gsquid:S1481Ø"*Remove this unused "term4" local variable.(«ŠùÉûÿÿÿÿ
-Vsquid:S1858°"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-Zsquid:UselessImportCheck"1Remove this unused import 'tests.TestCaseResult'.(ÀÎ¶§úÿÿÿÿ
-\squid:S1858÷"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
-U
-squid:S106?"9Replace this use of System.out or System.err by a logger.(²ØŒm8à¢ôË·-
-Wsquid:S1858"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
-Gsquid:S1481¤"*Remove this unused "term3" local variable.(£»Œ¨ÿÿÿÿÿ
-Hsquid:S00108W")Either remove or fill this block of code.(”ı¾8à¢ôË·-
+esquid:S00112D"FDefine and throw a dedicated exception instead of using a generic one.(·æò‚8›ÇæÏ¸-
+\squid:S1858"?"group" returns a string, there's no need to call "toString()".(«ŠùÉûÿÿÿÿ
+asquid:UselessImportCheck"1Remove this unused import 'tests.TestCaseResult'.(ÀÎ¶§úÿÿÿÿ8‡±¿Ì¸-
+¤%squid:RedundantThrowsDeclarationCheck1"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(é¨•”8›ÇæÏ¸-
+{squid:UselessImportCheck"PRemove this unused import 'org.semanticweb.owlapi.io.OWLOntologyDocumentSource'.(·§¿¼8×®ÇÌ¸-
+]squid:S1858À"?"group" returns a string, there's no need to call "toString()".(Ìã®{8­ô³˜¹-
+csquid:S1858‹"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8›ÇæÏ¸-
+csquid:S1858Á"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8­ô³˜¹-
+{squid:UselessImportCheck
+"KRemove this unused import 'org.semanticweb.owlapi.io.StringDocumentSource'.(„³Øÿÿÿÿÿ8×®ÇÌ¸-
+bsquid:S1858r"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ8›ÇæÏ¸-
+Nsquid:S1481â"*Remove this unused "term3" local variable.(£»Œ¨ÿÿÿÿÿ8›ÇæÏ¸-
+hsquid:S1192¢"IDefine a constant instead of duplicating this literal "rational" 3 times.(œşá¾8›ÇæÏ¸-
 `squid:UselessImportCheck"0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ8öĞäË·-
-ksquid:S2095”"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(¾íÍ8à¢ôË·-
-™squid:S1319„"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(é¨•”8à¢ôË·-
-Vsquid:S1858‹"?"group" returns a string, there's no need to call "toString()".(Ìã®{
-^squid:S1858ï"?"group" returns a string, there's no need to call "toString()".(çÃ•ş8à¢ôË·-
-Jsquid:S1481d"'Remove this unused "in" local variable.(ÍÕ•Úùÿÿÿÿ8à¢ôË·-
-Vsquid:S1858ö"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+\squid:S1858è"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+[
+squid:S1064"9Replace this use of System.out or System.err by a logger.(…íôúıÿÿÿÿ8›ÇæÏ¸-
+csquid:S1858â"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ8›ÇæÏ¸-
+bsquid:UselessImportCheck"2Remove this unused import 'javax.print.DocFlavor'.(ÍØƒïúÿÿÿÿ8‡±¿Ì¸-
+[squid:S1858s"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
+\squid:S1858€"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
+˜squid:S1319D"zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(·æò‚8›ÇæÏ¸-
+\squid:S1858Ê"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+˜squid:S1319b"zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(öÅä¸8›ÇæÏ¸-
+]squid:S1858š"?"group" returns a string, there's no need to call "toString()".(Ìã®{8­ô³˜¹-
+csquid:UselessImportCheck"8Remove this unused import 'testingsteps.Implementation'.(È•†8‡±¿Ì¸-
+\squid:S1858"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
+W
+squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(â¼ñ8›ÇæÏ¸-
+Vsquid:S1858Š"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Gsquid:S1481•")Remove this unused "flag" local variable.(ŒÖı$8›ÇæÏ¸-
+Psquid:S1854à"9Remove this useless assignment to local variable "term1".(Ìã®{
+Vsquid:S1858É"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+‹squid:S13191"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(é¨•”8›ÇæÏ¸-
+esquid:S001121"FDefine and throw a dedicated exception instead of using a generic one.(é¨•”8›ÇæÏ¸-
+Tsquid:S1751+"6Remove this "return" statement or make it conditional.(ÛÍô8›ÇæÏ¸-
+^squid:S1858Â"?"group" returns a string, there's no need to call "toString()".(çÃ•ş8›ÇæÏ¸-
+Gsquid:S1481á"*Remove this unused "term2" local variable.(İÑƒŒùÿÿÿÿ
+[squid:S1858"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
+]squid:S1858Ì"?"group" returns a string, there's no need to call "toString()".(Ìã®{8­ô³˜¹-
+‡squid:S1157û"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(µ¡Ş´şÿÿÿÿ8›ÇæÏ¸-
+jsquid:S1192("LDefine a constant instead of duplicating this literal "\\<(.*?)\\>" 3 times.(è–Ùã8›ÇæÏ¸-
+\squid:S1858–"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+\squid:S1858Î"?"group" returns a string, there's no need to call "toString()".(×°°òøÿÿÿÿ
+Vsquid:S1854á"9Remove this useless assignment to local variable "term2".(İÑƒŒùÿÿÿÿ
+\squid:S1858¸"?"group" returns a string, there's no need to call "toString()".(şÒÖıÿÿÿÿ
+Vsquid:S1858«"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+^squid:S1858œ"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ8­ô³˜¹-
+Asquid:S1481à"*Remove this unused "term1" local variable.(Ìã®{
+\squid:S1858µ"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+Vsquid:S1858´"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Usquid:S1858p"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Vsquid:S1858•"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+^squid:S1858Œ"?"group" returns a string, there's no need to call "toString()".(çÃ•ş8›ÇæÏ¸-
+^squid:S1858¶"?"group" returns a string, there's no need to call "toString()".(ö•Á—8­ô³˜¹-
+Wsquid:S1858Ì"?"group" returns a string, there's no need to call "toString()".(±èÄò
+Wsquid:S1858Ë"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
+Šsquid:S1319æ"kThe type of the "got" object should be an interface such as "Map" rather than the implementation "HashMap".(è‡æõ8›ÇæÏ¸-
+\squid:S1858·"?"group" returns a string, there's no need to call "toString()".(£»Œ¨ÿÿÿÿÿ
+psquid:S3776b"RRefactor this method to reduce its Cognitive Complexity from 59 to the 15 allowed.(öÅä¸8›ÇæÏ¸-
+]squid:S1858ç"?"group" returns a string, there's no need to call "toString()".(Ìã®{8­ô³˜¹-
+fsquid:S1192¢"GDefine a constant instead of duplicating this literal "string" 5 times.(œşá¾8›ÇæÏ¸-
+]squid:S1854â"9Remove this useless assignment to local variable "term3".(£»Œ¨ÿÿÿÿÿ8›ÇæÏ¸-
+Vsquid:S1858à"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+\squid:S1858á"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+\squid:S1858£"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+]squid:S1858¢"?"group" returns a string, there's no need to call "toString()".(Ìã®{8›ÇæÏ¸-
+Xsquid:S1118#":Add a private constructor to hide the implicit public one.(¼Øûì8›ÇæÏ¸-
+tsquid:UselessImportCheck	"IRemove this unused import 'org.semanticweb.owlapi.io.OWLParserException'.(Å«üß8×®ÇÌ¸-
+Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ğ¥Å8×®ÇÌ¸-
+csquid:S1858„"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8›ÇæÏ¸-
+Wsquid:S1858ê"?"group" returns a string, there's no need to call "toString()".(±èÄò
+csquid:S1858Í"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8­ô³˜¹-
+•squid:S1319ó"qThe type of the "allvalues" object should be an interface such as "Map" rather than the implementation "HashMap".(òÇŸ’úÿÿÿÿ8›ÇæÏ¸-
+\squid:S1858Í"?"group" returns a string, there's no need to call "toString()".(ÊÉŠĞûÿÿÿÿ
+ksquid:S00112ß"FDefine and throw a dedicated exception instead of using a generic one.(Òƒâ»ùÿÿÿÿ8›ÇæÏ¸-
+Wsquid:S1858º"?"group" returns a string, there's no need to call "toString()".(ñğ› 
+\
+squid:S106Ò"9Replace this use of System.out or System.err by a logger.(’ëÑ«ıÿÿÿÿ8›ÇæÏ¸-
+^squid:S1858"?"group" returns a string, there's no need to call "toString()".(çÃ•ş8›ÇæÏ¸-
+_squid:UselessImportCheck"/Remove this unused import 'org.json.JSONArray'.(¬¸Ê’üÿÿÿÿ8ÏæèË·-
+[squid:S1858~"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+\squid:S1858"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ
+˜squid:S13191"zThe type of the "testsuiteDesign" object should be an interface such as "List" rather than the implementation "ArrayList".(é¨•”8›ÇæÏ¸-
+squid:UselessImportCheck"^Remove this unused import 'uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser'.(Ëï‹şÿÿÿÿ8×®ÇÌ¸-
+csquid:S1858¬"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8›ÇæÏ¸-
+Wsquid:S1858é"?"group" returns a string, there's no need to call "toString()".(‘üÍÚ
+Gsquid:S1481ù")Remove this unused "flag" local variable.(ŒÖı$8›ÇæÏ¸-
+\squid:S1858ë"?"group" returns a string, there's no need to call "toString()".(ÊÉŠĞûÿÿÿÿ
+]squid:S1858Œ"?"group" returns a string, there's no need to call "toString()".(Ìã®{8­ô³˜¹-
+ksquid:S2095ç"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(¾íÍ8›ÇæÏ¸-
+W
+squid:S106 "9Replace this use of System.out or System.err by a logger.(â¼ñ8›ÇæÏ¸-
+gsquid:S1192¢"HDefine a constant instead of duplicating this literal "integer" 4 times.(œşá¾8›ÇæÏ¸-
+Usquid:S1858}"?"group" returns a string, there's no need to call "toString()".(Ìã®{
+Wsquid:S1858¹"?"group" returns a string, there's no need to call "toString()".(éŞæÇ
+bsquid:S1858q"?"group" returns a string, there's no need to call "toString()".(İÑƒŒùÿÿÿÿ8›ÇæÏ¸-
+squid:S1319Š"qThe type of the "allvalues" object should be an interface such as "Map" rather than the implementation "HashMap".(ñÑ¨œ8›ÇæÏ¸-

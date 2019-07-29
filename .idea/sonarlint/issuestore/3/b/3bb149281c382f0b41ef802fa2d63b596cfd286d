@@ -1,38 +1,0 @@
-
-T
-squid:S106b"9Replace this use of System.out or System.err by a logger.(ª´Àñıÿÿÿÿ
-8squid:S1643$"Use a StringBuilder instead.(ŠÒ÷úÿÿÿÿ
-csquid:S2095C"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(®—ô÷
-O
-squid:S106G"9Replace this use of System.out or System.err by a logger.(úğá˜
-2squid:S1643*"Use a StringBuilder instead.(şÿÇv
-…squid:S1319K"nThe type of the "tis" object should be an interface such as "List" rather than the implementation "ArrayList".(ÚŠ´Ô
-Ksquid:S1172"/Remove this unused method parameter "fileName".(†ÀØ‹ıÿÿÿÿ
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(†ÀØ‹ıÿÿÿÿ
-]
-squid:S899B"BDo something with the "boolean" value returned by "createNewFile".(ôü¿Ÿÿÿÿÿÿ
-3squid:S1643"Use a StringBuilder instead.(íäÇ‰
-‡squid:S1319K"pThe type of the "ontos" object should be an interface such as "List" rather than the implementation "ArrayList".(ÚŠ´Ô
-fsquid:S00100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚŠ´Ô
-‘squid:S1319"uThe type of the "ontologies" object should be an interface such as "List" rather than the implementation "ArrayList".(†ÀØ‹ıÿÿÿÿ
-N
-squid:S106`"9Replace this use of System.out or System.err by a logger.(ŞßÑ.
-3squid:S1643"Use a StringBuilder instead.(íÆË
-8squid:S1643 "Use a StringBuilder instead.(¯ªÀîüÿÿÿÿ
-3squid:S1643"Use a StringBuilder instead.(€Ëº
-8squid:S1643"Use a StringBuilder instead.(ÚÈö²üÿÿÿÿ
-8squid:S1643"Use a StringBuilder instead.(ÚÈö²üÿÿÿÿ
-8squid:S1643"Use a StringBuilder instead.(ÄËÎùÿÿÿÿ
-8squid:S1643,"Use a StringBuilder instead.(„Ó¸Úüÿÿÿÿ
-3squid:S1643"Use a StringBuilder instead.(·ßŠé
-3squid:S1643."Use a StringBuilder instead.(¿ú¿
-Šsquid:S1319"nThe type of the "trs" object should be an interface such as "List" rather than the implementation "ArrayList".(†ÀØ‹ıÿÿÿÿ
-…squid:S1319K"nThe type of the "tds" object should be an interface such as "List" rather than the implementation "ArrayList".(ÚŠ´Ô
-Šsquid:S1319"nThe type of the "tis" object should be an interface such as "List" rather than the implementation "ArrayList".(†ÀØ‹ıÿÿÿÿ
-T
-squid:S106a"9Replace this use of System.out or System.err by a logger.(×‘èæÿÿÿÿÿ
-3squid:S1643"Use a StringBuilder instead.(‘¢ÈÒ
-8squid:S16430"Use a StringBuilder instead.(¡¶ï‰üÿÿÿÿ
-Šsquid:S1319"nThe type of the "tds" object should be an interface such as "List" rather than the implementation "ArrayList".(†ÀØ‹ıÿÿÿÿ
-8squid:S16436"Use a StringBuilder instead.(ÄËÎùÿÿÿÿ
-…squid:S1319K"nThe type of the "trs" object should be an interface such as "List" rather than the implementation "ArrayList".(ÚŠ´Ô
