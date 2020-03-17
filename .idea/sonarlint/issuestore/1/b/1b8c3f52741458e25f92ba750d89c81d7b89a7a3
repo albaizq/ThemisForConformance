@@ -1,10 +1,0 @@
-
-ƒsquid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ãî˜Y
-Fsquid:S1148E"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ş¯úË·-
-Fsquid:S1148J"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ş¯úË·-
-|squid:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬âéËùÿÿÿÿ8€ÅûË·-
-squid:S1319-"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(œÄ•äùÿÿÿÿ8…†şË·-
-?squid:S1148""#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1481")Remove this unused "name" local variable.(¹·ş¸
-Vsquid:S1118	":Add a private constructor to hide the implicit public one.(…ëÌşÿÿÿÿ
-?squid:S1148'"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

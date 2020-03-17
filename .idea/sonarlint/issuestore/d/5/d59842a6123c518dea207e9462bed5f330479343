@@ -1,12 +1,0 @@
-
-\squid:S1155)">Use isEmpty() to check whether the collection is empty or not.(âøû’8ÉªøĞ¸-
-ƒsquid:S1192"`Define a constant instead of duplicating this literal "http://purl.org/dc/terms/source" 5 times.(úÒø×ùÿÿÿÿ8äÃ³Ì¸-
-Tsquid:S1854!"6Remove this useless assignment to local variable "tc".(¶ó‚8êù÷Ğ¸-
-squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ˆ­Ü8äÃ³Ì¸-
-psquid:S1192A"MDefine a constant instead of duplicating this literal "^^xsd:string" 6 times.(Í¾ŠÆûÿÿÿÿ8ÉªøĞ¸-
-Rsquid:S1066"/Merge this if statement with the enclosing one.(úÒø×ùÿÿÿÿ8£ÄÂĞ¸-
-¤%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ˆ­Ü8µïİĞ¸-
-dsquid:UselessImportCheck"9Remove this unused import 'tests.TestCaseImplementation'.(†šÔ¦8ã¤´Ì¸-
-Fsquid:S14814"(Remove this unused "cls" local variable.(§¶û×8ÉªøĞ¸-
-psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ˆ­Ü8£ÄÂĞ¸-
-]squid:S1118":Add a private constructor to hide the implicit public one.(°åÆ“ùÿÿÿÿ8ã¤´Ì¸-

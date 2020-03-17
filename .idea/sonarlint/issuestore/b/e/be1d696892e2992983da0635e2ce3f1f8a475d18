@@ -1,19 +1,0 @@
-
-¦squid:S1319*"‚The type of the "testCaseImplementations" object should be an interface such as "List" rather than the implementation "ArrayList".(°Æ ßûÿÿÿÿ8Ëûô°-
-¢squid:S1319"The type of the "testCaseDesignsTerms" object should be an interface such as "List" rather than the implementation "ArrayList".(¨”Âœÿÿÿÿÿ8°ô³˜¹-
-squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(€³“€8Ëûô°-
-squid:S1319X"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ôØÕ>8°ô³˜¹-
-‰squid:S1488"eImmediately return this expression instead of assigning it to the temporary variable "testsuiteImpl".(«â„şÿÿÿÿ8°ô³˜¹-
-squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‹ÒÑ“8Ëûô°-
-gsquid:CallToDeprecatedMethodf"3Remove this use of "getFragment"; it is deprecated.(óÉò±ûÿÿÿÿ8°ô³˜¹-
-Nsquid:S14814"0Remove this unused "termsResult" local variable.(Ùò¤Í8°ô³˜¹-
-]squid:S18544"?Remove this useless assignment to local variable "termsResult".(Ùò¤Í8°ô³˜¹-
-[
-squid:S106;"9Replace this use of System.out or System.err by a logger.(¼¿íâÿÿÿÿÿ8ë£¡Ï¸-
-lsquid:HiddenFieldCheck3">Rename "ontologies" which hides the field declared at line 18.(ƒ¹œúÿÿÿÿ8òåİĞ·-
-gsquid:CallToDeprecatedMethodv"3Remove this use of "getFragment"; it is deprecated.(óÉò±ûÿÿÿÿ8°ô³˜¹-
-squid:S1319&"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(±÷§ö8Ëûô°-
-“squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¨”Âœÿÿÿÿÿ8°ô³˜¹-
-˜squid:S1319""zThe type of the "testCaseDesigns" object should be an interface such as "List" rather than the implementation "ArrayList".(æäŞÓ8Ëûô°-
-csquid:UselessImportCheck"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8°ô³˜¹-
-“squid:S1319"uThe type of the "ontologies" object should be an interface such as "List" rather than the implementation "ArrayList".( é Ù8Ëûô°-
