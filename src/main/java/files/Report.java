@@ -4,7 +4,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import tests.TestCaseDesign;
 import tests.TestCaseResult;
-import utils.Ontology;
+import ontologies.Ontology;
 
 import java.util.ArrayList;
 

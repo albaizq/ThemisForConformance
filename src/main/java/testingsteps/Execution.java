@@ -1,7 +1,6 @@
 package testingsteps;
 
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import de.derivo.sparqldlapi.Query;
 import de.derivo.sparqldlapi.QueryEngine;
 import de.derivo.sparqldlapi.QueryResult;
@@ -13,12 +12,15 @@ import org.semanticweb.owlapi.reasoner.*;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import tests.TestCaseImplementation;
 import tests.TestCaseResult;
-import utils.Ontology;
+import ontologies.Ontology;
 import utils.Utils;
 import java.util.*;
 
+import static testingsteps.Mapping.mapImplementationTerms;
+
 /**
  * Created by albafernandez on 19/06/2017.
+ * Class to execute all the tests in an ontology
  */
 public class Execution {
 
@@ -199,7 +201,7 @@ public class Execution {
                     tr.setUndefinedTerms(undefinedterms);
                     if (undefinedterms.isEmpty() && tc.getPreparationaxioms() != null) {
                         // test preparation
-                        Set<OWLAxiom> prepWithURI = Utils.mapImplementationTerms(tc.getPreparationaxioms(), got);
+                        Set<OWLAxiom> prepWithURI = mapImplementationTerms(tc.getPreparationaxioms(), got);
                         realResult = aboxTest(prepWithURI, ontology, "preparation");
                         // analyse results
                         tr  = checkAssertion(realResult, ontology, got, tc);
@@ -229,12 +231,12 @@ public class Execution {
         if (!realResult.toLowerCase().contains(CONSISTENT)) {
             resultsforabsence.add(INCONSISTENT);
             tr.setTestResult(NOTPASSED);
-            Set<OWLAxiom> prepWithURI = Utils.mapImplementationTerms(tc.getPreparationaxioms(), got);
+            Set<OWLAxiom> prepWithURI = mapImplementationTerms(tc.getPreparationaxioms(), got);
             removePreparationAxioms(prepWithURI, ontology);
         } else {
             //add assertions to the ontology, after mapping the test terms with ontology terms. Check if the real result is the same as the expected result
             for (Map.Entry<String, OWLOntology> entry : tc.getAssertionsAxioms().entrySet()) {
-                Set<OWLAxiom> assertionWithURI = Utils.mapImplementationTerms(entry.getValue(), got);
+                Set<OWLAxiom> assertionWithURI = mapImplementationTerms(entry.getValue(), got);
                 realResult = aboxTest(assertionWithURI, ontology, "assertion");
                 if (realResult.equalsIgnoreCase(CONSISTENT)) {
                     resultsforabsence.add(CONSISTENT);
@@ -271,7 +273,7 @@ public class Execution {
         String realResult;
         for (String prec : tc.getPreconditionQuery()) {
 
-            String precondWithURI = Utils.mapImplementationTerms(prec, got);
+            String precondWithURI = mapImplementationTerms(prec, got);
             //String precondWithURI = Utils.mappingValue(prec, ontology.getProv().toString(), got); // all  mappings received by the webapp
             realResult = tboxTest(precondWithURI, tc.getUri(), ontology.getManager(), ontology.getOntology());
             if (realResult.equals("false")) {

@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Design {
+    /*Taking as input a file, retrieve all the test and process them to generate TestCaseDesigns*/
     public static ArrayList<TestCaseDesign> processTestCaseDesign(String filename) throws IOException, OWLOntologyCreationException {
 
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();

@@ -5,20 +5,22 @@ import org.semanticweb.owlapi.model.OWLOntology;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 public class TestCaseImplementation {
-    private LinkedHashMap<String, String> axiomExpectedResult;
-    private LinkedHashMap<String, String> assertions;
-    private LinkedHashMap<String, OWLOntology> assertionsAxioms;
-    private LinkedHashMap<String, String> axiomExpectedResultAxioms;
-
+    private Map<String, String> axiomExpectedResult;
+    private Map<String, String> assertions;
+    private Map<String, OWLOntology> assertionsAxioms;
+    private Map<String, String> axiomExpectedResultAxioms;
     private String preparation;
     private OWLOntology preparationaxioms;
-    private ArrayList<String> precondition;
-    private ArrayList<String> preconditionQuery;
+    private List<String> precondition;
+    private List<String> preconditionQuery;
     private IRI relatedTestDesign;
     private IRI uri;
     private String type;
+
 
     public TestCaseImplementation() {
         this.type = "";
@@ -30,45 +32,36 @@ public class TestCaseImplementation {
         this.precondition = new ArrayList<>();
     }
 
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public LinkedHashMap<String, String> getAxiomExpectedResultAxioms() {
-        return axiomExpectedResultAxioms;
-    }
-
-    public void setAxiomExpectedResultAxioms(LinkedHashMap<String, String> axiomExpectedResultAxioms) {
-        this.axiomExpectedResultAxioms = axiomExpectedResultAxioms;
-    }
-
-    public OWLOntology getPreparationaxioms() {
-        return preparationaxioms;
-    }
-
-    public void setPreparationaxioms(OWLOntology preparationaxioms) {
-        this.preparationaxioms = preparationaxioms;
-    }
-
-    public LinkedHashMap<String, String> getAxiomExpectedResult() {
+    public Map<String, String> getAxiomExpectedResult() {
         return axiomExpectedResult;
     }
 
-    public void setAxiomExpectedResult(LinkedHashMap<String, String> axiomExpectedResult) {
+    public void setAxiomExpectedResult(Map<String, String> axiomExpectedResult) {
         this.axiomExpectedResult = axiomExpectedResult;
     }
 
-    public LinkedHashMap<String, String> getAssertions() {
+    public Map<String, String> getAssertions() {
         return assertions;
     }
 
-    public void setAssertions(LinkedHashMap<String, String> assertions) {
+    public void setAssertions(Map<String, String> assertions) {
         this.assertions = assertions;
+    }
+
+    public Map<String, OWLOntology> getAssertionsAxioms() {
+        return assertionsAxioms;
+    }
+
+    public void setAssertionsAxioms(Map<String, OWLOntology> assertionsAxioms) {
+        this.assertionsAxioms = assertionsAxioms;
+    }
+
+    public Map<String, String> getAxiomExpectedResultAxioms() {
+        return axiomExpectedResultAxioms;
+    }
+
+    public void setAxiomExpectedResultAxioms(Map<String, String> axiomExpectedResultAxioms) {
+        this.axiomExpectedResultAxioms = axiomExpectedResultAxioms;
     }
 
     public String getPreparation() {
@@ -79,19 +72,27 @@ public class TestCaseImplementation {
         this.preparation = preparation;
     }
 
-    public ArrayList<String> getPrecondition() {
+    public OWLOntology getPreparationaxioms() {
+        return preparationaxioms;
+    }
+
+    public void setPreparationaxioms(OWLOntology preparationaxioms) {
+        this.preparationaxioms = preparationaxioms;
+    }
+
+    public List<String> getPrecondition() {
         return precondition;
     }
 
-    public void setPrecondition(ArrayList<String> precondition) {
+    public void setPrecondition(List<String> precondition) {
         this.precondition = precondition;
     }
 
-    public ArrayList<String> getPreconditionQuery() {
+    public List<String> getPreconditionQuery() {
         return preconditionQuery;
     }
 
-    public void setPreconditionQuery(ArrayList<String> preconditionQuery) {
+    public void setPreconditionQuery(List<String> preconditionQuery) {
         this.preconditionQuery = preconditionQuery;
     }
 
@@ -111,11 +112,11 @@ public class TestCaseImplementation {
         this.uri = uri;
     }
 
-    public LinkedHashMap<String, OWLOntology> getAssertionsAxioms() {
-        return assertionsAxioms;
+    public String getType() {
+        return type;
     }
 
-    public void setAssertionsAxioms(LinkedHashMap<String, OWLOntology> assertionsAxioms) {
-        this.assertionsAxioms = assertionsAxioms;
+    public void setType(String type) {
+        this.type = type;
     }
 }

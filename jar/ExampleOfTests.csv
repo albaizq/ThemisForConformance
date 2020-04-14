@@ -1,4 +1,3 @@
 URL ;Tests
-https://w3id.org/saref;testsuite-saref.ttl
+https://saref.etsi.org/saref/latest/saref.ttl;testsuite-saref.ttl
 https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;testsuite-onem2m.ttl
-https://www.w3.org/ns/ssn/;testsuite-ssn.ttl
