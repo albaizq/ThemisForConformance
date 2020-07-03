@@ -1,3 +1,6 @@
 URL ;Tests
-https://saref.etsi.org/saref/latest/saref.ttl;testsuite-saref.ttl
-https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;testsuite-onem2m.ttl
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;tests/testsuite-onem2m.ttl
+iso;tests/testsuite-iso.ttl
+https://saref.etsi.org/core;tests/testsuite-saref.ttl
+http://www.w3.org/ns/ssn;tests/testsuite-ssn.ttl
+ocf;tests/testsuite-ocf.ttl
