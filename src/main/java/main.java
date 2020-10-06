@@ -1,14 +1,14 @@
+import glossary.GlossaryManager;
 import org.json.*;
 import org.semanticweb.owlapi.model.*;
+import results.ResultGenerator;
 import tests.TestCaseDesign;
 import tests.TestCaseImplementation;
-import result.TestingEnvironment;
+import steps.EnvironmentCreator;
 import ontologies.Ontology;
 
 
 import java.util.*;
-
-import static result.ResultGenerator.*;
 
 /**
  * Created by Alba on 01/02/2017.
@@ -20,21 +20,28 @@ public class main {
             System.exit(1);
         }
         //initialize variables
-        TestingEnvironment envClass= new TestingEnvironment();
-        TestingEnvironment env = envClass.createTestingEnvironment(args[1]);
+        System.out.println("Loading tests....");
+        EnvironmentCreator envClass= new EnvironmentCreator();
+        EnvironmentCreator env = envClass.createTestingEnvironment(args[1]);
         JSONArray tableResultsAllOntologies = new JSONArray();
         ArrayList<Ontology> ontologies = env.getOntologies();
+
         ArrayList<TestCaseDesign> testsuiteDesign = env.getTestCaseDesigns();
         ArrayList<TestCaseImplementation> implementations = env.getTestCaseImplementations();
         HashMap<String, IRI> gotTotal = new HashMap<String, IRI>();
-
         // execute tests
+        ResultGenerator resultGenerator = new ResultGenerator();
+        GlossaryManager glossaryManager = new GlossaryManager();
         int i = 1;
         for(Ontology ontology: ontologies){
              //create got per ontology
-            System.out.println("ONTOLOGY "+ ontology.getProv());
-            HashMap<String, IRI> got = createGot(testsuiteDesign,ontology, i);
-            //if the got is ok then
+            System.out.println("ONTOLOGY: "+ ontology.getProv());
+            resultGenerator.setTestCaseDesigns(testsuiteDesign); // load tests for the ontology
+            HashMap<String, IRI> got = (HashMap<String, IRI>) glossaryManager.createGot(ontology, i);
+            System.out.println("---------Glossary of terms---------");
+            System.out.println(got); // print got
+            System.out.println("---------End glossary of terms---------");
+            //update the got if needed
             System.out.println("Is the GoT ok? (if not, you can change the got and store it)");
             Scanner scanner = new Scanner(System.in);
             String result = scanner.nextLine();
@@ -43,22 +50,21 @@ public class main {
                 scanner = new Scanner(System.in);
                 result = scanner.nextLine();
             }
-            got = updateGot(i);
-
+            glossaryManager.updateGot(i);
 
             // Execute all tests on each ontology using the got
-            JSONArray tableResults = executeTests(testsuiteDesign, ontology, implementations, got);
+            JSONArray tableResults = resultGenerator.executeTests(ontology, implementations, glossaryManager.getGot());
             //execute tests terms
-            JSONArray tableResultsTerms = executeTestsTerms(testsuiteDesign, ontology, implementations, got);
-            gotTotal.putAll(got);
+            JSONArray tableResultsTerms = resultGenerator.executeTestsTerms(ontology, implementations, glossaryManager.getGot());
+            gotTotal.putAll(glossaryManager.getGot());
             /*Store the results*/
-            storeIndividualResults(tableResults, tableResultsTerms, tableResultsAllOntologies, i);
+            resultGenerator.storeIndividualResults(tableResults, tableResultsTerms, tableResultsAllOntologies, i);
             i++;
         }
 
         /*Join results*/
-        storeJointResults(testsuiteDesign, ontologies, tableResultsAllOntologies, gotTotal);
-        analyseReqs(testsuiteDesign);
+        //storeJointResults(testsuiteDesign, ontologies, tableResultsAllOntologies, gotTotal);
+        //analyseReqs(testsuiteDesign);
     }
 
 

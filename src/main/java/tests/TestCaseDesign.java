@@ -5,6 +5,7 @@ import org.semanticweb.owlapi.model.IRI;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
+/*Class for managing test designs*/
 public class TestCaseDesign {
     private IRI uri;
     private ArrayList<String> purpose;

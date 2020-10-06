@@ -126,7 +126,7 @@
 </dependencies>
 
     <build>
-        <finalName>coverageTest</finalName>
+        <finalName>themis4conformance</finalName>
         <plugins>
             <plugin>
                 <!-- NOTE: We don't need a groupId specification because the group is

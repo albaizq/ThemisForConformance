@@ -41,7 +41,7 @@ public class ProcessCSV {
         return ontoAndTest;
     }
 
-
+    /*Process csv where the glossaries of terms are stored*/
     public  static HashMap<String, IRI>  processCSVGoTHash(String path) throws FileNotFoundException {
         BufferedReader in = null;
         in = new java.io.BufferedReader(new java.io.FileReader(path));

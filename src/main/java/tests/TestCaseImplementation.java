@@ -8,13 +8,14 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+/*Class for managing test implementations*/
 public class TestCaseImplementation {
     private Map<String, String> axiomExpectedResult;
     private Map<String, String> assertions;
     private Map<String, OWLOntology> assertionsAxioms;
     private Map<String, String> axiomExpectedResultAxioms;
     private String preparation;
-    private OWLOntology preparationaxioms;
+    private OWLOntology preparationAxioms;
     private List<String> precondition;
     private List<String> preconditionQuery;
     private IRI relatedTestDesign;
@@ -72,12 +73,12 @@ public class TestCaseImplementation {
         this.preparation = preparation;
     }
 
-    public OWLOntology getPreparationaxioms() {
-        return preparationaxioms;
+    public OWLOntology getPreparationAxioms() {
+        return preparationAxioms;
     }
 
-    public void setPreparationaxioms(OWLOntology preparationaxioms) {
-        this.preparationaxioms = preparationaxioms;
+    public void setPreparationAxioms(OWLOntology preparationAxioms) {
+        this.preparationAxioms = preparationAxioms;
     }
 
     public List<String> getPrecondition() {

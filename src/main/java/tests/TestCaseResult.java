@@ -4,6 +4,7 @@ import org.semanticweb.owlapi.model.IRI;
 
 import java.util.ArrayList;
 
+/*Class for managing test results*/
 public class TestCaseResult {
     private IRI relatedTestImpl;
     private String testResult;
