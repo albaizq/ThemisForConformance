@@ -15,7 +15,7 @@ public class TestDesigner {
     final static String SOURCE = "http://purl.org/dc/terms/source";
     final static String DESCRIPTION = "http://purl.org/dc/terms/description";
     final static String IDENTIFIER = "http://purl.org/dc/terms/identifier";
-    final static String BEHAVIOUR = "http://w3id.org/def/vtc#desiredBehaviour";
+    final static String BEHAVIOUR = "https://w3id.org/def/vtc#desiredBehaviour";
 
     /*Taking as input a file, retrieve all the test and process them to generate TestCaseDesigns*/
     public static ArrayList<TestCaseDesign> processTestCaseDesign(String filename) throws  OWLOntologyCreationException {

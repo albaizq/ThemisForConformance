@@ -83,7 +83,11 @@ public class ResultGenerator {
         TestExecuter exec = new TestExecuter();
         ArrayList<TestCaseResult> testCaseResults = new ArrayList<>();
 
-        testCaseResults = exec.execute(implementationsForTestDesign, ontology, (HashMap<String, IRI>) got);
+        for(TestCaseImplementation implementation: implementationsForTestDesign) {
+            TestCaseResult result;
+            result = exec.executeTest(implementation, ontology, (HashMap<String, IRI>) got);
+            testCaseResults.add(result);
+        }
 
 
         JSONObject object = null;

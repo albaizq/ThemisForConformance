@@ -1,0 +1,84 @@
+Ontologies;Relations
+Open Connectivity Foundation (OCF) - https://ontology.tno.nl/saref.ttl;Device exists in the ontology - Device exists in the ontology
+Open Connectivity Foundation (OCF) - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Aspect exists in the ontology - Aspect exists in the ontology
+Open Connectivity Foundation (OCF) - https://ontology.tno.nl/saref.ttl;State exists in the ontology - State exists in the ontology
+Open Connectivity Foundation (OCF) - https://ontology.tno.nl/saref.ttl;Property exists in the ontology - Property exists in the ontology
+Open Connectivity Foundation (OCF) - ISO/IEC 30141:2017;Link exists in the ontology - Link exists in the ontology
+Open Connectivity Foundation (OCF) - https://www.w3.org/ns/ssn/;hosts exists in the ontology - hosts exists in the ontology
+Open Connectivity Foundation (OCF) - https://ontology.tno.nl/saref.ttl;consistsOf exists in the ontology - consistsOf exists in the ontology
+Open Connectivity Foundation (OCF) - https://www.w3.org/ns/ssn/;hasProperty exists in the ontology - hasProperty exists in the ontology
+Open Connectivity Foundation (OCF) - ISO/IEC 30141:2017;isAccessibleThrough exists in the ontology - isAccessibleThrough exists in the ontology
+Open Connectivity Foundation (OCF) - ISO/IEC 30141:2017;exposes exists in the ontology - exposes exists in the ontology
+Open Connectivity Foundation (OCF) - https://ontology.tno.nl/saref.ttl;hasManufacturer exists in the ontology - hasManufacturer exists in the ontology
+ISO/IEC 30141:2017 - https://www.w3.org/ns/ssn/;Agent exists in the ontology - Agent exists in the ontology
+ISO/IEC 30141:2017 - https://ontology.tno.nl/saref.ttl;Device exists in the ontology - Device exists in the ontology
+ISO/IEC 30141:2017 - https://ontology.tno.nl/saref.ttl;Service exists in the ontology - Service exists in the ontology
+ISO/IEC 30141:2017 - https://ontology.tno.nl/saref.ttl;Network exists in the ontology - Network exists in the ontology
+ISO/IEC 30141:2017 - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Thing exists in the ontology - Thing exists in the ontology
+ISO/IEC 30141:2017 - Open Connectivity Foundation (OCF);Link exists in the ontology - Link exists in the ontology
+ISO/IEC 30141:2017 - https://ontology.tno.nl/saref.ttl;Actuator exists in the ontology - Actuator exists in the ontology
+ISO/IEC 30141:2017 - https://ontology.tno.nl/saref.ttl;Sensor exists in the ontology - Sensor exists in the ontology
+ISO/IEC 30141:2017 - https://ontology.tno.nl/saref.ttl;represents exists in the ontology - represents exists in the ontology
+ISO/IEC 30141:2017 - Open Connectivity Foundation (OCF);isAccessibleThrough exists in the ontology - isAccessibleThrough exists in the ontology
+ISO/IEC 30141:2017 - Open Connectivity Foundation (OCF);exposes exists in the ontology - exposes exists in the ontology
+http://www.w3.org/ns/ssn - https://ontology.tno.nl/saref.ttl;What is a sensor? - Sensor exists in the ontology
+http://www.w3.org/ns/ssn - https://ontology.tno.nl/saref.ttl;What is an actuator? - Actuator exists in the ontology
+http://www.w3.org/ns/ssn - https://www.w3.org/ns/ssn/;What is a procedure? - Procedure exists in the ontology
+http://www.w3.org/ns/ssn - https://www.w3.org/ns/ssn/;What is a deployment? - Deployment exists in the ontology
+http://www.w3.org/ns/ssn - https://www.w3.org/ns/ssn/;What is a system? - System exists in the ontology
+http://www.w3.org/ns/ssn - https://www.w3.org/ns/ssn/;What is feature of interest? - FeatureOfInterest exists in the ontology
+http://www.w3.org/ns/ssn - https://ontology.tno.nl/saref.ttl;What is a sensor? - Sensor exists in the ontology
+http://www.w3.org/ns/ssn - https://www.w3.org/ns/ssn/;What is a stimulus? - Stimulus exists in the ontology
+http://www.w3.org/ns/ssn - https://ontology.tno.nl/saref.ttl;What is a property? - Property exists in the ontology
+https://www.w3.org/ns/ssn/ - ISO/IEC 30141:2017;Agent exists in the ontology - Agent exists in the ontology
+https://www.w3.org/ns/ssn/ - http://www.w3.org/ns/ssn;Stimulus exists in the ontology - What is a stimulus?
+https://www.w3.org/ns/ssn/ - http://www.w3.org/ns/ssn;Deployment exists in the ontology - What is a deployment?
+https://www.w3.org/ns/ssn/ - http://www.w3.org/ns/ssn;System exists in the ontology - What is a system?
+https://www.w3.org/ns/ssn/ - http://www.w3.org/ns/ssn;FeatureOfInterest exists in the ontology - What is feature of interest?
+https://www.w3.org/ns/ssn/ - http://www.w3.org/ns/ssn;Procedure exists in the ontology - What is a procedure?
+https://www.w3.org/ns/ssn/ - https://ontology.tno.nl/saref.ttl;Property exists in the ontology - Property exists in the ontology
+https://www.w3.org/ns/ssn/ - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Thing exists in the ontology - Thing exists in the ontology
+https://www.w3.org/ns/ssn/ - https://ontology.tno.nl/saref.ttl;Sensor exists in the ontology - Sensor exists in the ontology
+https://www.w3.org/ns/ssn/ - https://ontology.tno.nl/saref.ttl;Actuator exists in the ontology - Actuator exists in the ontology
+https://www.w3.org/ns/ssn/ - Open Connectivity Foundation (OCF);hosts exists in the ontology - hosts exists in the ontology
+https://www.w3.org/ns/ssn/ - Open Connectivity Foundation (OCF);hasProperty exists in the ontology - hasProperty exists in the ontology
+https://www.w3.org/ns/ssn/ - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasOutput exists in the ontology - hasOutput exists in the ontology
+https://www.w3.org/ns/ssn/ - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasInput exists in the ontology - hasInput exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://w3id.org/saref#;"A measuring functionality represents a functionality that has no impacts on the real world; but only gathers data - A function can belong to a function category"
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://w3id.org/saref#;"A controlling functionality represents a functionality that has impacts on the real world; but does not gather data - A function can belong to a function category"
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://w3id.org/saref#;A device performs one or more functionalities in order to accomplish a particular task - A device performs one or more functions
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://ontology.tno.nl/saref.ttl;An aspect could be a (physical or non-physical) entity or it could be a quality - Property exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://www.w3.org/ns/ssn/;A thing is an entity that can be identified in the oneM2M System. - Thing exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://ontology.tno.nl/saref.ttl;Device exists in the ontology - Device exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://ontology.tno.nl/saref.ttl;Service exists in the ontology - Service exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - Open Connectivity Foundation (OCF);Aspect exists in the ontology - Aspect exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://ontology.tno.nl/saref.ttl;Function exists in the ontology - Function exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://ontology.tno.nl/saref.ttl;Command exists in the ontology - Command exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://www.w3.org/ns/ssn/;Thing exists in the ontology - Thing exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://ontology.tno.nl/saref.ttl;hasCommand exists in the ontology - hasCommand exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://ontology.tno.nl/saref.ttl;consistsOf exists in the ontology - consistsOf exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://ontology.tno.nl/saref.ttl;hasValue exists in the ontology - hasValue exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://ontology.tno.nl/saref.ttl;hasFunction exists in the ontology - hasFunction exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://www.w3.org/ns/ssn/;hasOutput exists in the ontology - hasOutput exists in the ontology
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl - https://www.w3.org/ns/ssn/;hasInput exists in the ontology - hasInput exists in the ontology
+https://w3id.org/saref# - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;A device performs one or more functions - A device performs one or more functionalities in order to accomplish a particular task
+https://w3id.org/saref# - https://ontology.tno.nl/saref.ttl;What is a device? - Device exists in the ontology
+https://w3id.org/saref# - https://ontology.tno.nl/saref.ttl;A function represents the functionality necessary to accomplish the task for which a device is designed - Function exists in the ontology
+https://w3id.org/saref# - https://ontology.tno.nl/saref.ttl;"A service is a representation of a function to a network that makes this function discoverable; registerable and remotely controllable by other devices in the network - Service exists in the ontology"
+https://w3id.org/saref# - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"Examples of functions are the  the actuating; sensing; metering or event functions - A controlling functionality represents a functionality that has impacts on the real world; but does not gather data"
+https://w3id.org/saref# - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;"A function can belong to a function category - A controlling functionality represents a functionality that has impacts on the real world; but does not gather data"
+https://ontology.tno.nl/saref.ttl - ISO/IEC 30141:2017;Network exists in the ontology - Network exists in the ontology
+https://ontology.tno.nl/saref.ttl - https://w3id.org/saref#;Device exists in the ontology - What is a device?
+https://ontology.tno.nl/saref.ttl - Open Connectivity Foundation (OCF);State exists in the ontology - State exists in the ontology
+https://ontology.tno.nl/saref.ttl - https://www.w3.org/ns/ssn/;Sensor exists in the ontology - Sensor exists in the ontology
+https://ontology.tno.nl/saref.ttl - https://w3id.org/saref#;Function exists in the ontology - A function represents the functionality necessary to accomplish the task for which a device is designed
+https://ontology.tno.nl/saref.ttl - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Property exists in the ontology - An aspect could be a (physical or non-physical) entity or it could be a quality
+https://ontology.tno.nl/saref.ttl - https://www.w3.org/ns/ssn/;Actuator exists in the ontology - Actuator exists in the ontology
+https://ontology.tno.nl/saref.ttl - https://w3id.org/saref#;"Service exists in the ontology - A service is a representation of a function to a network that makes this function discoverable; registerable and remotely controllable by other devices in the network"
+https://ontology.tno.nl/saref.ttl - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Command exists in the ontology - Command exists in the ontology
+https://ontology.tno.nl/saref.ttl - ISO/IEC 30141:2017;represents exists in the ontology - represents exists in the ontology
+https://ontology.tno.nl/saref.ttl - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasCommand exists in the ontology - hasCommand exists in the ontology
+https://ontology.tno.nl/saref.ttl - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;consistsOf exists in the ontology - consistsOf exists in the ontology
+https://ontology.tno.nl/saref.ttl - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasValue exists in the ontology - hasValue exists in the ontology
+https://ontology.tno.nl/saref.ttl - https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasFunction exists in the ontology - hasFunction exists in the ontology
+https://ontology.tno.nl/saref.ttl - Open Connectivity Foundation (OCF);hasManufacturer exists in the ontology - hasManufacturer exists in the ontology

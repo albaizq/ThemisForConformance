@@ -158,8 +158,101 @@ public class TestExecuter {
         return result;
     }
 
-    public void removePreparationAxioms(Set<OWLAxiom> textAxioms, Ontology ontology){
 
+    /*This method execute the ABox and Tbox tests. The errors are printed in a report*/
+    public TestCaseResult executeTest(TestCaseImplementation tc, Ontology ontology, HashMap<String, IRI> got) {
+        ArrayList<String> undefinedTerms = new ArrayList<>();
+        ArrayList<String> incorrectTerms = new ArrayList<>();
+        String realResult;
+        int absentCandidate = 0;
+        TestCaseResult tr = new TestCaseResult();
+        ArrayList<String> absentCandidateResults = new ArrayList<>();
+
+        tr.setRelatedTestImpl(tc.getUri());
+        tr.setOntologyURI(ontology.getOwlOntology().getOntologyID().getOntologyIRI());
+
+
+        //map the test terms with ontology terms and add the axioms to the ontology. If the addition results in a consistent ontology the preconditions are passed
+        for (String prec : tc.getPreconditionQuery()) { // execute precondition query
+            String precondWithURI = Mapper.mapTermsInTestImplementation(prec, (HashMap<String, IRI>) got); // all  mappings received by the webapp
+            realResult = tboxTest(precondWithURI, tc.getUri(), ontology.getManager(), ontology.getOwlOntology());
+            if (realResult.equals("false")) { //  if terms do not exist there are two possibilities: 1) the term does not exist (undefined), 2) the term is not defined as expected (incorrect)
+                if (Mapper.termsInOntology(precondWithURI, ontology.getOwlOntology()).equals("false")) {
+                    undefinedTerms.add(Mapper.getPrecTerm(prec).replace(">", "").replace("<", ""));
+                } else {
+                    incorrectTerms.add(Mapper.getPrecTerm(prec).replace(">", "").replace("<", ""));
+                }
+                tr.setUndefinedTerms(undefinedTerms); //store errors for users
+                tr.setIncorrectTerms(incorrectTerms);
+            }
+        }
+
+        if (undefinedTerms.isEmpty() && incorrectTerms.isEmpty()) {
+            // test preparation. creation of the temporal entities to be used in the assertions. The ontology must remain consistent.
+            Set<OWLAxiom> prepWithURI = Mapper.mapTermsInTestImplementation(tc.getPreparationAxioms(), got);
+            realResult = aboxTest(prepWithURI, ontology, "preparation");
+            if (!realResult.equalsIgnoreCase("consistent")) {
+                tr.setTestResult("not passed");
+                return tr; // if the preparation does not lead to a consistent ontology, the test fails.
+            }
+            //add assertions to the ontology, after mapping the test terms with ontology terms. Check if the real result is the same as the expected result
+            for (Map.Entry<String, OWLOntology> entry : tc.getAssertionsAxioms().entrySet()) {
+                Set<OWLAxiom> assertionWithURI = Mapper.mapTermsInTestImplementation(entry.getValue(), got);
+                realResult = aboxTest(assertionWithURI, ontology, "assertion");
+                if(!realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
+                    if (realResult.equalsIgnoreCase("consistent")) {
+                        absentCandidate++;
+                    } else {
+                        //special case
+                        if (tc.getType().equals("existential") && entry.getKey().equals("Assertion 2") && realResult.equals("inconsistent")) {
+                            absentCandidate++;
+                        }else {
+                            tr.setTestResult("not passed");
+                            return tr;
+                        }
+                    }
+                    // other special cases
+                    if ((tc.getType().equals("individuals")) && realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
+                        absentCandidate--;
+                    } else if ((tc.getType().equals("literal")) && realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
+                        absentCandidate--;
+                    } else if (!realResult.equalsIgnoreCase("consistent") && !realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
+                        tr.setTestResult("not passed");
+                        return tr;
+                    } else if (realResult.equalsIgnoreCase("consistent") && !realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
+                        absentCandidate++;
+                    }
+                }
+            }
+
+
+            removePreparationAxioms(prepWithURI, ontology); // remove all the moc axioms that were added to the ontology
+            tr = checkIfAbsent(absentCandidate, tr); //check whether the problem is that there is an absent relation (no conflict)
+
+        } else if (!undefinedTerms.isEmpty()) {
+            absentCandidateResults.add("undefined");
+            tr.setTestResult("undefined");
+        } else {
+            tr.setTestResult("incorrect");
+        }
+
+        return tr;
+    }
+
+    // check if the result is an absence
+    public TestCaseResult checkIfAbsent( int absentCandidate, TestCaseResult tr) {
+
+        if (absentCandidate>0) {
+            tr.setTestResult("absent");
+        }else{
+            tr.setTestResult("passed");
+        }
+
+        return tr;
+    }
+
+    /*Method to remove the preparation axioms after each test case has been executed*/
+    public void removePreparationAxioms(Set<OWLAxiom> textAxioms, Ontology ontology) {
         OWLDataFactory dataFactory = ontology.getManager().getOWLDataFactory();
         Configuration configuration = new Configuration();
         configuration.throwInconsistentOntologyException = false;
@@ -174,126 +267,16 @@ public class TestExecuter {
                 OWLObjectPropertyAssertionAxiom owlObjectPropertyAssertionAxiom = dataFactory.getOWLObjectPropertyAssertionAxiom(
                         prop, ind1, ind2);
                 if (ontology.getOwlOntology().getAxioms().contains(owlObjectPropertyAssertionAxiom)) {
-                    ontology.getManager().removeAxiom(ontology.getOwlOntology(),owlObjectPropertyAssertionAxiom);
+                    ontology.getManager().removeAxiom(ontology.getOwlOntology(), owlObjectPropertyAssertionAxiom);
                 }
 
-            }else{
+            } else {
                 if (ontology.getOwlOntology().getAxioms().contains(axiom)) {
-                    ontology.getManager().removeAxiom(ontology.getOwlOntology(),axiom);
+                    ontology.getManager().removeAxiom(ontology.getOwlOntology(), axiom);
                 }
             }
         }
     }
 
-    /*This method execute the ABox and Tbox tests. The errors are printed in a report*/
-    public ArrayList<TestCaseResult> execute(ArrayList<TestCaseImplementation> testCaseImplementations, Ontology ontology, HashMap<String, IRI> got) {
-        String realResult;
-        ArrayList<TestCaseResult> testsuiteResult = new ArrayList<>();
-            for (TestCaseImplementation tc : testCaseImplementations) {
-                ArrayList<String> undefinedTerms;
-                TestCaseResult tr = new TestCaseResult();
-                tr.setRelatedTestImpl(tc.getUri());
-                tr.setOntologyURI(ontology.getOwlOntology().getOntologyID().getOntologyIRI());
-                if (tc.getPreconditionQuery() != null) { //map the test terms with ontology terms and add the axioms to the ontology. If the addition results in a consistent ontology the preconditions are passed
-                    undefinedTerms = checkPrecondition(tc, ontology, got);
-                    tr.setUndefinedTerms(undefinedTerms);
-                    if (undefinedTerms.isEmpty() && tc.getPreparationAxioms() != null) {
-                        // test preparation
-                        Set<OWLAxiom> prepWithURI = Mapper.mapTermsInTestImplementation(tc.getPreparationAxioms(), got);
-                        realResult = aboxTest(prepWithURI, ontology, "preparation");
-                        // analyse results
-                        tr  = checkAssertion(realResult, ontology, got, tc);
-                    } else if(undefinedTerms.isEmpty() && tc.getPreparationAxioms() == null){
-                        tr.setTestResult(PASSED);
-                    }else{
-                        tr.setTestResult(UNDEFINED);
-                    }
-                } else {
-                    tr.setTestResult(UNDEFINED);
-                }
-
-                testsuiteResult.add(tr);
-            }
-
-        return  testsuiteResult;
-    }
-
-    public ArrayList<String> checkPrecondition(TestCaseImplementation tc, Ontology ontology, HashMap<String, IRI> got ) {
-        ArrayList<String> undefinedTerms = new ArrayList<>();
-        String realResult;
-        for (String precondition : tc.getPreconditionQuery()) {
-            String preconditionWithURI = Mapper.mapTermsInTestImplementation(precondition, got);
-            realResult = tboxTest(preconditionWithURI, tc.getUri(), ontology.getManager(), ontology.getOwlOntology());
-            if (realResult.equals("false")) {
-                undefinedTerms.add(getPreconditionTerm(precondition).replace(">", "").replace("<", ""));
-            }
-        }
-        return undefinedTerms;
-    }
-
-    public String getPreconditionTerm(String query){
-        Pattern p = Pattern.compile("\\<(.*?)\\>");
-        Matcher m = p.matcher(query);
-        while(m.find()){
-            return  m.group();
-        }
-        return  m.group();
-    }
-
-    public TestCaseResult checkAssertion(String realResult, Ontology ontology, HashMap<String, IRI> got, TestCaseImplementation tc) {
-        int absentCandidate = 0;
-        TestCaseResult tr = new TestCaseResult();
-        tr.setTestResult(PASSED);
-        if (!realResult.toLowerCase().contains(CONSISTENT)) {
-            tr.setTestResult(NOTPASSED);
-            Set<OWLAxiom> prepWithURI = Mapper.mapTermsInTestImplementation(tc.getPreparationAxioms(), got);
-            removePreparationAxioms(prepWithURI, ontology);
-            return tr;
-        } else {
-            //add assertions to the ontology, after mapping the test terms with ontology terms. Check if the real results is the same as the expected results
-            for (Map.Entry<String, OWLOntology> entry : tc.getAssertionsAxioms().entrySet()) {
-                Set<OWLAxiom> assertionWithURI = Mapper.mapTermsInTestImplementation(entry.getValue(), got);
-                realResult = aboxTest(assertionWithURI, ontology, "assertion");
-                if (realResult.equalsIgnoreCase(CONSISTENT)) {
-                    absentCandidate++;
-                } else {
-                    //special case
-                    if (tc.getType().equals("existential") && entry.getKey().equals("Assertion 2") && realResult.equals(INCONSISTENT)) {
-                        absentCandidate++;
-                    }else {
-                        tr.setTestResult(NOTPASSED);
-                        return tr;
-                    }
-                }
-                // other special cases
-                if ((tc.getType().equals("individuals")) && realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
-                    absentCandidate--;
-                } else if ((tc.getType().equals("literal")) && realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
-                    absentCandidate--;
-                } else if (!realResult.equalsIgnoreCase(CONSISTENT) && !realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
-                    tr.setTestResult(NOTPASSED);
-                    return tr;
-                } else if (realResult.equalsIgnoreCase(CONSISTENT) && !realResult.equalsIgnoreCase(tc.getAxiomExpectedResultAxioms().get(entry.getKey()))) {
-                    absentCandidate++;
-                }
-            }
-            removePreparationAxioms(tc.getPreparationAxioms().getAxioms(), ontology);
-        }
-        tr = checkIfAbsent(absentCandidate, tr); //check whether the problem is that there is an absent relation (no conflict)
-
-        return tr;
-    }
-
-    // check if the result is an absence
-    public TestCaseResult checkIfAbsent(int absentCandidate, TestCaseResult tr) {
-
-        if (absentCandidate>0) {
-            tr.setTestResult(ABSENT);
-        }else{
-            tr.setTestResult(PASSED);
-        }
-
-        return tr;
-    }
 
 }

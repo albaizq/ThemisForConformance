@@ -138,12 +138,14 @@ public class Ontology {
 
         if(isValid(url)) {
             ontology.loadOntologyURL(url);
+            System.out.println(url);
         }else{
-            try {
+            System.out.println("ENTER HERE");
+            /**try {
                 ontology = createSkeletonFromTestCases(testSuiteProv,(ArrayList<TestCaseDesign>) testCaseDesigns);
             } catch (OWLOntologyCreationException | OWLOntologyStorageException  e) {
                 e.printStackTrace();
-            }
+            }*/
         }
         return ontology;
     }

@@ -1,0 +1,227 @@
+Provenance;Terms involved;Ontology;Result
+Open Connectivity Foundation (OCF);["Entity"];ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasUsers","string"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasDevelopers","string"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","isAccessibleThrough","Link"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Lighting","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Endpoint","isProvidedOverProtocol","CommunicationProtocol"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","isAccessibleThrough","Endpoint"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Endpoint","makesAccessible","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Maintenance","Resource"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","implementsSecurity","Security"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Security","implementsSecurity","Resource"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","communicatesWith"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Resource","serialNumber","string","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","address","string","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","deviceName","string","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","encapsulates","State"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasFunctionality","Functionality"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","hosts","Resource"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Resource","hasProperty","Property"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Property","describesAspect","Aspect"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasManufacturer","string"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Electronics","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Infrastructure","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Transportation","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Fitness","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Medica","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["PersonalHealth","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","hasRole","Role"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["SpaceConditioning","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","consistsOf","Resource"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);["Resource"];ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","exposes","Resource"]';ISO/IEC 30141:2017;absent
+ISO/IEC 30141:2017;'["VirtualThing","isAccessibleThrough","Link"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","uses","DataStore"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","interactsWith"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","interactsWith","Device"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","interactsWith","Gateway"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","interactsWith","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Device","isAccessibleThrough","Link"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Device","interactsWith","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Gateway","uses","DataStore"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Gateway","connects","Device"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Gateway","exposes","Links"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Gateway","interactsThrough","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Gateway","DigitalThing"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","exposes","Link"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Network","connects","Link"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Thing","thingName","string"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Thing","thingName","string"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["DataStore","holds","IoTSystem"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Device","areConnectedWith","Gateway"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Device","interactsThrough","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Sensor","monitors","Tag","PhysicalThing","hasTag"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["VirtualUser","Agent","HumanUser","Person"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Actuator","Device","Sensor"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["VirtualThing","represents","PhysicalThing"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["PhysicalThing","hasTag","Tag"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["PhysicalThing","monitorsFeatureProperty","FeatureProperty"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["PhysicalThing","actsOnFeatureProperty","FeatureProperty>"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["PhysicalThing","Thing"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Application","interactsUsing","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Application","Service"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["HumanUser","interactsUsing","Application"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["DigitalUser","interactsUsing","Service"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Application","Service"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["HumanUser","interactsUsing","Application"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","uses","DataStore","Gateway","Device"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["PhysicalThing","Thing","VirtualThing"]';ISO/IEC 30141:2017;passed
+http://www.w3.org/ns/ssn;'["Procedure","hasOutput","Output"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Result"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Actuation","hasResult","Result"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Sample","FeatureOfInterest","Result"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Deployment","forProperty","Property"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;["Sensor"];ISO/IEC 30141:2017;passed
+http://www.w3.org/ns/ssn;["Actuator"];ISO/IEC 30141:2017;passed
+http://www.w3.org/ns/ssn;["Procedure"];ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;["Deployment"];ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Platform","inDeployment","Deployment"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Platform","deployedSystem","System"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;["System"];ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Sample"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Sensor","observes","ObservableProperty"]';ISO/IEC 30141:2017;absent
+http://www.w3.org/ns/ssn;'["ObservableProperty","Property"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["ObservableProperty","isObservedBy","Sensor"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Observation","hasFeatureOfInterest","FeatureOfInterest"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Observation","hasResult","Result"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Sensor","System"]';ISO/IEC 30141:2017;absent
+http://www.w3.org/ns/ssn;["FeatureOfInterest"];ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["System","implements","Procedure"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["System","hasSubSystem"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Procedure","hasInput","Input"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;["Sensor"];ISO/IEC 30141:2017;passed
+http://www.w3.org/ns/ssn;'["Sensor","detects","Stimulus"]';ISO/IEC 30141:2017;absent
+http://www.w3.org/ns/ssn;["Stimulus"];ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;["Property"];ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Stimulus","isProxyFor","Property","isPropertyOf","FeatureOfInterest"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Actuator","madeActuation","Actuation"]';ISO/IEC 30141:2017;absent
+http://www.w3.org/ns/ssn;'["Procedure","implementedBy","System"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Deployment","deployedOnPlatform","Platform"]';ISO/IEC 30141:2017;undefined
+http://www.w3.org/ns/ssn;'["Sampling","hasFeatureOfInterest","FeatureOfInterest"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","hasValue","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["InputDataPoint","Variable"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","oneM2MAttribute","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","Variable"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SensingFunction","Function"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["ActuatingFunction","Function"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Function","hasCommand","Command"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","hasFunction","Function"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasOutputDataPoint","OutputDataPoint"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasInputDataPoint","InputDataPoint"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasOperation","Operation"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasSubService"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","oneM2MTargetURI","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","oneM2MMethod","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","describes","Property"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["StructuredTypeVariable","hasSubStructure","Variable"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","Variable"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","represents","Function"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","represents","Function"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["AreaNetwork","netTechnologyProfile","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["AreaNetwork","netTechnologyCommunicationProtocol","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["AreaNetwork","netTechnologyPhysicalStandard","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["InterworkedDevice","isPartOf","AreaNetwork"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasSubService"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","offers","Service"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Variable"];ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasOutput","OperationOutput","Command"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Command","hasInput","OperationInput","Operation"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","hasFunction","Function"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","PhysicalEntity","VirtualEntity"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","isPartOf","AreaNetwork"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","hasMetaData","MetaData"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Property","hasMetaData","MetaData"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Property"];ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Thing","hasThingRelation"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Thing","hasThingProperty","ThingProperty"]';ISO/IEC 30141:2017;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Thing"];ISO/IEC 30141:2017;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","hasDataType","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["OutputDataPoint","Variable"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Command","hasOutput","OperationOutput"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Command","hasInput","OperationInput"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasInput","OperationInput"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","oneM2MTargetURI","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","oneM2MMethod","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","hasDataRestriction","string"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasOutput","OperationOutput"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasOutput","OperationOutput"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasInput","OperationInput"]';ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];ISO/IEC 30141:2017;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","hasMetaData","MetaData"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Meter","Device","Applicance","FunctionRelated","Actuator","Lighting","HVAC"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["BuildingRelated","Device","EneryRelated","FunctionRelated"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["BuildingObject","specify","Space","BuildingSpace","SpatialThing"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["BuildingObject","openedby","Actuator","closedby"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Meter","FunctionRelated"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["DimmerLamp","control","Light"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["DimmerLamp","performs","LevelControl"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["DimmerLamp","Actuator","Lighting"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Time","consistsOf","TemporalEntity"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Power","isMeasuredIn","PowerUnit"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Price","isMeasuredIn","Currency"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Device","control","BuildingObject"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["BuildingSpace","contains","Devices","BuildingObjects"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["BuildingSpace","define","PhysicalSpace"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Device","hasDescription","string"]';ISO/IEC 30141:2017;passed
+https://w3id.org/saref#;'["Device","hasModel","string"]';ISO/IEC 30141:2017;passed
+https://w3id.org/saref#;'["Device","hasModel","string"]';ISO/IEC 30141:2017;passed
+https://w3id.org/saref#;'["EnergyMeter","Device","WashingMachine","TemperatureSensor"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Device","hasFunction","Function"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;["Device"];ISO/IEC 30141:2017;passed
+https://w3id.org/saref#;'["EnergyMeter","hasFunction","MeteringFunction"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;["Function"];ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["DoorSwitch","accomplishes","Safety"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["DoorSwitch","hasFunction","OpenCloseFunction"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Switch","consistsOf","Actuator"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Switch","Actuator"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["SmokeSensor","measuresProperty","Smoke"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["SmokeSensor","hasFunction","EventFunction","SensingFunction"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["SmokeSensor","consistsOf","Sensor"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["SmokeSensor","Sensor"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["WashingMachine","hasFunction","StartStopFunction"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Washing","Task","WashingMachine","accomplishes"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Device","hasProfile","Profile"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Device","hasProfile","Profile"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Service","isOfferedBy","Device"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Service","isOfferedBy","Device"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Profile","hasTime","Time"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Energy","isMeasuredIn","EnergyUnit"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Profile","hasPrice","Price"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Service","isOfferedBy","Device"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;["Service"];ISO/IEC 30141:2017;passed
+https://w3id.org/saref#;'["Device","hasState","State"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Command","actsUpon","State"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Device","offers","Service"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["ActuatingFunction","Function","MeteringFunction","SensingFunction","EventFunction"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Service","represent","Function"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Device","Appliance","Load"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["TemperatureSensor","hasFunction","SensingFunction"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["TemperatureSensor","consistsOf","Sensor"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["TemperatureSensor","Sensor"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Sensor","Device"]';ISO/IEC 30141:2017;passed
+https://w3id.org/saref#;'["Device","consistsOf"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Device","control","BuildingObject"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Temperature","Property","Smoke","Energy"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Device","notify","Property"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["OffCommand","Command","OnCommand","CloseCommand","ToggleCommand"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Function","hasCommand","Command"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["MeteringFunction","Function","SensingFunction","EventFunction","ActuatingFunction"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["LevelControlFuntion","ActuatingFunction","OnOffFunction"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Meter","hasFunction","MeteringFunction"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["EnergyMeter","Meter"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["EnergyMeter","consistsOf","Meter"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;[];ISO/IEC 30141:2017;passed
+https://w3id.org/saref#;'["Device","measuresProperty","Property"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Device","hasFunction","SensingFunction"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["Water","Commodity","Gas"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Device","isUsedFor","Commodity"]';ISO/IEC 30141:2017;absent
+https://w3id.org/saref#;'["EneryRelated","Device","FunctionRelated","BuildingRelated"]';ISO/IEC 30141:2017;undefined
+https://w3id.org/saref#;'["Load","EnergyRelated","Generator","Storage"]';ISO/IEC 30141:2017;undefined

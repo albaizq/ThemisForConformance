@@ -1,0 +1,341 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix vtc:    <http://w3id.org/def/vtc#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  :     <> .
+
+
+
+:TestsuiteOneM2M rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
+            dcterms:source <https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl>.
+
+:Test-case1 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m1>;
+	dc:description "A thing is an entity that can be identified in the oneM2M System." ;
+	vtc:desiredBehaviour "Thing type Class".
+
+:Test-case2 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m2>;
+	dc:description "A thing may have properties" ;
+	vtc:desiredBehaviour "Thing subClassOf hasThingProperty only ThingProperty".
+
+:Test-case3 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m3>;
+	dc:description "A thing can have relations to other things" ;
+	vtc:desiredBehaviour "Thing subClassOf hasThingRelation only Thing".
+
+:Test-case4 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m4>;
+	dc:description "An aspect could be a (physical or non-physical) entity or it could be a quality" ;
+	vtc:desiredBehaviour "Property type Class".
+
+:Test-case5 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m5>;
+	dc:description "An aspect can have metadata" ;
+	vtc:desiredBehaviour "Property subClassOf hasMetaData only MetaData".
+
+:Test-case6 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m6>;
+	dc:description "Metadata contain data (like units, precision-ranges) about a variable or about an aspect" ;
+	vtc:desiredBehaviour "Variable subClassOf hasMetaData only MetaData" .
+
+:Test-case7 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m7>;
+	dc:description "A device is a thing that is able to interact electronically with its environment via a network" ;
+	vtc:desiredBehaviour "Device subClassOf isPartOf only AreaNetwork".
+
+:Test-case8 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m8>;
+	dc:description "A device may be a physical or non-physical entity" ;
+	vtc:desiredBehaviour "Device subclassOf PhysicalEntity and VirtualEntity".
+
+:Test-case9 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m9>;
+	dc:description "A device performs one or more functionalities in order to accomplish a particular task" ;
+	vtc:desiredBehaviour "Device subClassOf hasFunction min 1 Function".
+
+
+:Test-case10 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m10>;
+	dc:description "A device has one or more services that expose in the network its functionalities (refined)" ;
+	vtc:desiredBehaviour "Device subClassOf offers min 1 Service".
+
+:Test-case11 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m11>;
+	dc:description "A device can be composed of several (sub-)devices" ;
+	vtc:desiredBehaviour "Service subClassOf hasSubService only Service".
+
+:Test-case12 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m12>;
+	dc:description "An interworked device is a device that does not support oneM2M interfaces and can only be accessed from the oneM2M System by communicating with a proxied (virtual) device that has been created by an interworking proxy entity" ;
+	vtc:desiredBehaviour "InterworkedDevice type Class".
+
+:Test-case13 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m13>;
+	dc:description "An interworked device is part of an area network" ;
+	vtc:desiredBehaviour "InterworkedDevice subClassOf isPartOf only AreaNetwork".
+
+:Test-case14 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m14>;
+	dc:description "An area network is a network that provides data transport services between an interworked device and the oneM2M System" ;
+	vtc:desiredBehaviour "InterworkedDevice type Class".
+
+:Test-case15 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m15>;
+	dc:description "An area network follows an standard that defines its physical properties" ;
+	vtc:desiredBehaviour "AreaNetwork subClassOf netTechnologyPhysicalStandard only string".
+
+:Test-case16 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m16>;
+	dc:description "An area network follows a communication protocol" ;
+	vtc:desiredBehaviour "AreaNetwork subClassOf netTechnologyCommunicationProtocol only string".
+
+:Test-case17 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m17>;
+	dc:description "An area network follows a profile" ;
+	vtc:desiredBehaviour "AreaNetwork subClassOf netTechnologyProfile only string".
+
+:Test-case18 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m18>;
+	dc:description "A service is an electronic representation of a functionality in a network" ;
+	vtc:desiredBehaviour "Service subClassOf represents only Function".
+
+:Test-case19 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m19>;
+	dc:description "A service can expose one or more functionalities" ;
+	vtc:desiredBehaviour "Service subClassOf represents min 1 Function".
+
+:Test-case20 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m20>;
+	dc:description "A service can be composed of independent (sub-)services" ;
+	vtc:desiredBehaviour "Service subClassOf hasSubService only Service".
+
+:Test-case21 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m21>;
+	dc:description "A service has an operation" ;
+	vtc:desiredBehaviour "Service subClassOf hasOperation only Operation".
+
+:Test-case22 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m22>;
+	dc:description "A service has an input data point" ;
+	vtc:desiredBehaviour "Service subClassOf hasInputDataPoint only InputDataPoint".
+
+:Test-case23 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m23>;
+	dc:description "A service has an output data point" ;
+	vtc:desiredBehaviour "Service subClassOf hasOutputDataPoint only OutputDataPoint".
+
+:Test-case24 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m24>;
+	dc:description "A functionality represents the functionality necessary to accomplish the task for which a device is designed" ;
+	vtc:desiredBehaviour "Device subClassOf hasFunction only Function".
+
+:Test-case25 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m25>;
+	dc:description "A functionality has commands that allow human users to influence/observe such functionality" ;
+	vtc:desiredBehaviour "Function subClassOf hasCommand only Command".
+
+:Test-case26 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m26>;
+	dc:description "A controlling functionality represents a functionality that has impacts on the real world, but does not gather data" ;
+	vtc:desiredBehaviour "ActuatingFunction subClassOf Function".
+
+:Test-case27 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m27>;
+	dc:description "A measuring functionality represents a functionality that has no impacts on the real world, but only gathers data" ;
+	vtc:desiredBehaviour "SensingFunction subClassOf Function".
+
+:Test-case28 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m28>;
+	dc:description "An operation is the means of a service to communicate in a procedure-type manner over the network (i.e. transmit data to/from other devices)" ;
+	vtc:desiredBehaviour "Operation type Class".
+
+:Test-case29 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m29>;
+	dc:description "An operation is the -machine interpretable- exposure of a -human understandable- command to a network" ;
+	vtc:desiredBehaviour "Operation type Class".
+
+:Test-case30 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m30>;
+	dc:description "An operation may receive input data from input data points (persistent entities)" ;
+	vtc:desiredBehaviour "Operation subClassOf hasInput only OperationInput".
+
+:Test-case31 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m31>;
+	dc:description "An operation may receive data from operation inputs (transient entities that are deleted when the operation finishes)" ;
+	vtc:desiredBehaviour "Operation subClassOf hasInput only OperationInput".
+
+:Test-case32 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m32>;
+	dc:description "An operation may produce output data into output data points (persistent entities)" ;
+	vtc:desiredBehaviour "Operation subClassOf hasOutput only OperationOutput".
+
+:Test-case33 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m33>;
+	dc:description "An operation may produce data into operation outputs (transient entities that are deleted when the operation finishes)" ;
+	vtc:desiredBehaviour "Operation subClassOf hasOutput only OperationOutput".
+
+:Test-case35 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m35>;
+	dc:description "An operation has a method" ;
+	vtc:desiredBehaviour "Operation subclassOf oneM2MMethod only string".
+
+:Test-case36 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m36>;
+	dc:description "An operation has a target URI" ;
+	vtc:desiredBehaviour "Operation subclassOf oneM2MTargetURI only string".
+
+:Test-case37 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m37>;
+	dc:description "A command represents an action that can be performed to support a functionality" ;
+	vtc:desiredBehaviour "Operation type Class".
+
+:Test-case38 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m38>;
+	dc:description "A command has as input one or more operation inputs (refined)" ;
+	vtc:desiredBehaviour "Command subClassOf hasInput only OperationInput".
+
+:Test-case39 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m39>;
+	dc:description "A command has as output one or more operation outputs (refined)" ;
+	vtc:desiredBehaviour "Command subClassOf hasOutput only OperationOutput".
+
+:Test-case40 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m40>;
+	dc:description "An operation input describes an input of an operation and also describes the input of a command" ;
+	vtc:desiredBehaviour "Command subClassOf hasInput only OperationInput";
+	vtc:desiredBehaviour "Operation subClassOf hasInput only OperationInput".
+
+:Test-case41 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m41>;
+	dc:description "An operation output describes an output of an operation and also describes the output of a command" ;
+	vtc:desiredBehaviour "Command subClassOf hasOutput only OperationOutput";
+	vtc:desiredBehaviour "Operation subClassOf hasOutput only OperationOutput".
+
+
+:Test-case45 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m45>;
+	dc:description "An input data point is a variable of a service that is accessed by a RESTful device in its environment and that the device reads out autonomously (e.g. at periodic times)" ;
+	vtc:desiredBehaviour "InputDataPoint subClassOf Variable".
+
+:Test-case46 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m46>;
+	dc:description "An output data point is a variable of a service that is set by a RESTful device in its environment and that the device updates autonomously (e.g. at periodic times))" ;
+	vtc:desiredBehaviour "OutputDataPoint subClassOf Variable".
+
+:Test-case47 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m47>;
+	dc:description "A variable describes an entity that stores some data (e.g. integers, text, etc., or structured data) that can change over time" ;
+	vtc:desiredBehaviour "Variable type Class".
+
+:Test-case48 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m48>;
+	dc:description "A variable describes a real-world aspect" ;
+	vtc:desiredBehaviour "Variable subClassOf describes only Property".
+
+:Test-case49 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m49>;
+	dc:description "A variable can have metadata" ;
+	vtc:desiredBehaviour "Variable subClassOf hasMetaData only MetaData".
+
+:Test-case50 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m50>;
+	dc:description "A variable can be structured using other variables" ;
+	vtc:desiredBehaviour "StructuredTypeVariable subClassOf hasSubStructure only Variable".
+
+:Test-case51 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m51>;
+	dc:description "A variable may have a value (useful for values that are relatively static)" ;
+	vtc:desiredBehaviour "Variable subClassOf hasValue only string".
+
+:Test-case52 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m52>;
+	dc:description "A variable has a CRUD method through which the instantiation of the variable value can be manipulated" ;
+	vtc:desiredBehaviour "Variable subClassOf oneM2MMethod only string".
+
+:Test-case53 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m53>;
+	dc:description "A variable has a URI of a resource through which the instantiation of the value of the variable can be manipulated" ;
+	vtc:desiredBehaviour "Variable subClassOf oneM2MTargetURI only string".
+
+:Test-case54 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m54>;
+	dc:description "A simple type variable is a variable that only consists of variables of simple XML types like xsd:integer, string, etc., potentially including restrictions" ;
+	vtc:desiredBehaviour "SimpleTypeVariable subClassOf Variable".
+
+
+:Test-case55 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m55>;
+	dc:description "A simple type variable is a variable that only consists of variables of simple XML types like xsd:integer, string, etc., potentially including restrictions" ;
+	vtc:desiredBehaviour "SimpleTypeVariable subClassOf Variable".
+
+:Test-case56 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m56>;
+	dc:description "A simple type variable contains the name of the attribute of the resource that is referenced with the target URI and that stores the value of the simple type variables" ;
+	vtc:desiredBehaviour "SimpleTypeVariable subClassOf oneM2MAttribute only string".
+
+:Test-case57 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m57>;
+	dc:description "A simple type variable has exactly one datatype" ;
+	vtc:desiredBehaviour "SimpleTypeVariable subClassOf hasDataType exactly 1 string".
+
+:Test-case58 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteOneM2M;
+	vtc:isRlatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-onem2m-results.html#onem2m58>;
+	dc:description "A simple type variable has a data restriction" ;
+	vtc:desiredBehaviour "SimpleTypeVariable subClassOf hasDataRestriction only string".

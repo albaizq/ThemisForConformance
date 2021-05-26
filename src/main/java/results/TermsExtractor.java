@@ -177,9 +177,20 @@ public class TermsExtractor {
             String term2 = m.group(2).replaceAll(" ","");
             terms.add(term1);
             terms.add(term2);
+        }else if(purposeCloned.matches("([^\\s]+) ([^\\s]+) ([^\\s]+)")){
+            Pattern p = Pattern.compile("([^\\s]+) ([^\\s]+) ([^\\s]+)",Pattern.CASE_INSENSITIVE);
+            Matcher m = p.matcher(purpose);
+
+            m.find();
+            String term1 = m.group(1).replaceAll(" ","");
+            String term2 = m.group(2).replaceAll(" ","");
+            String term3 = m.group(3).replaceAll(" ","");
+            terms.add(term1);
+            terms.add(term2);
+            terms.add(term3);
         }
         else{
-            System.out.println("not match found "+ purposeCloned);
+            System.out.println("not match found at terms extractor: "+ purposeCloned);
         }
         return terms;
     }

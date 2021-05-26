@@ -37,10 +37,7 @@ public class main {
              //create got per ontology
             System.out.println("ONTOLOGY: "+ ontology.getProv());
             resultGenerator.setTestCaseDesigns(testsuiteDesign); // load tests for the ontology
-            HashMap<String, IRI> got = (HashMap<String, IRI>) glossaryManager.createGot(ontology, i);
-            System.out.println("---------Glossary of terms---------");
-            System.out.println(got); // print got
-            System.out.println("---------End glossary of terms---------");
+            glossaryManager.createGot(ontology, i);
             //update the got if needed
             System.out.println("Is the GoT ok? (if not, you can change the got and store it)");
             Scanner scanner = new Scanner(System.in);
@@ -51,14 +48,30 @@ public class main {
                 result = scanner.nextLine();
             }
             glossaryManager.updateGot(i);
-
-            // Execute all tests on each ontology using the got
-            JSONArray tableResults = resultGenerator.executeTests(ontology, implementations, glossaryManager.getGot());
+            JSONArray tableResults = new JSONArray();
+            try {
+                // Execute all tests on each ontology using the got
+                tableResults = resultGenerator.executeTests(ontology, implementations, glossaryManager.getGot());
+            }catch(Exception e){
+                System.out.println("Error executing the tests. Please check the syntax");
+                System.out.println(e.getMessage());
+            }
             //execute tests terms
-            JSONArray tableResultsTerms = resultGenerator.executeTestsTerms(ontology, implementations, glossaryManager.getGot());
-            gotTotal.putAll(glossaryManager.getGot());
-            /*Store the results*/
-            resultGenerator.storeIndividualResults(tableResults, tableResultsTerms, tableResultsAllOntologies, i);
+            JSONArray tableResultsTerms= new JSONArray();
+            try {
+                tableResultsTerms = resultGenerator.executeTestsTerms(ontology, implementations, glossaryManager.getGot());
+            }catch(Exception e){
+                System.out.println("Error executing the terms tests.");
+                System.out.println(e.getMessage());
+            }
+            try {
+                gotTotal.putAll(glossaryManager.getGot());
+                /*Store the results*/
+                resultGenerator.storeIndividualResults(tableResults, tableResultsTerms, tableResultsAllOntologies, i);
+            }catch(Exception e){
+                System.out.println("Error storing the results");
+                System.out.println(e.getMessage());
+            }
             i++;
         }
 

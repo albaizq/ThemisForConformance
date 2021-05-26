@@ -10,6 +10,7 @@ public class TestCaseResult {
     private String testResult;
     private IRI ontologyURI;
     private ArrayList<String> undefinedTerms;
+    private ArrayList<String> incorrectTerms;
 
 
     public TestCaseResult() {
@@ -46,5 +47,13 @@ public class TestCaseResult {
 
     public void setOntologyURI(IRI ontologyURI) {
         this.ontologyURI = ontologyURI;
+    }
+
+    public ArrayList<String> getIncorrectTerms() {
+        return incorrectTerms;
+    }
+
+    public void setIncorrectTerms(ArrayList<String> incorrectTerms) {
+        this.incorrectTerms = incorrectTerms;
     }
 }

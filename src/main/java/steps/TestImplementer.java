@@ -99,7 +99,7 @@ public class TestImplementer {
             domainRangeTest(purpose, testCase);
         }
         else{
-           System.out.print("NOT MATCH FOUND IN " +purpose+": ");
+           System.out.print("Not match found in test implementer: " +purpose+" \n");
         }
     }
 
@@ -107,7 +107,7 @@ public class TestImplementer {
     public  ArrayList<TestCaseImplementation>  createTestImplementation(ArrayList<TestCaseDesign> tcs) throws OWLOntologyCreationException, OWLOntologyStorageException {
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
         String base = "http://themis.linkeddata.es/tests/implementation#";
-        String verif = "http://w3id.org/def/vtc#";
+        String verif = "https://w3id.org/def/vtc#";
         OWLOntology ont = manager.createOntology(IRI.create(base));
         OWLDataFactory dataFactory = manager.getOWLDataFactory();
 
@@ -135,11 +135,12 @@ public class TestImplementer {
                 /*Add precondition*/
                 processReqsExpressionTemplates(purpose, ti);
                 ArrayList<String> precondarray = new ArrayList<>();
-                String preconditionquery = "";
-
-                for (String query : ti.getPrecondition()) {
-                    preconditionquery += "ASK{"+ query +"}";
-                    precondarray.add(preconditionquery);
+                for(String query: ti.getPrecondition()){
+                    StringBuilder bld = new StringBuilder();
+                    bld.append( "ASK{");
+                    bld.append(query);
+                    bld.append("}");
+                    precondarray.add(bld.toString());
                 }
 
                 ti.setPreconditionQuery(precondarray);

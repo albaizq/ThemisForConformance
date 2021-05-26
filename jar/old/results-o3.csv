@@ -1,0 +1,227 @@
+Provenance;Terms involved;Ontology;Result
+Open Connectivity Foundation (OCF);["Entity"];https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasUsers","string"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasDevelopers","string"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Resource","isAccessibleThrough","Link"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Lighting","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Endpoint","isProvidedOverProtocol","CommunicationProtocol"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Device","isAccessibleThrough","Endpoint"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Endpoint","makesAccessible","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Maintenance","Resource"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Device","implementsSecurity","Security"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Security","implementsSecurity","Resource"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Device","communicatesWith"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Resource","serialNumber","string","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Resource","address","string","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Resource","deviceName","string","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Resource","encapsulates","State"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasFunctionality","Functionality"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Device","hosts","Resource"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasProperty","Property"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Property","describesAspect","Aspect"]';https://www.w3.org/ns/ssn/;absent
+Open Connectivity Foundation (OCF);'["Resource","hasManufacturer","string"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Electronics","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Infrastructure","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Transportation","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Fitness","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Medica","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["PersonalHealth","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Device","hasRole","Role"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["SpaceConditioning","Device"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Device","consistsOf","Resource"]';https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);["Resource"];https://www.w3.org/ns/ssn/;undefined
+Open Connectivity Foundation (OCF);'["Device","exposes","Resource"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["VirtualThing","isAccessibleThrough","Link"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Service","uses","DataStore"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Service","interactsWith"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Service","interactsWith","Device"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Service","interactsWith","Gateway"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Service","interactsWith","Network"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Device","isAccessibleThrough","Link"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Device","interactsWith","Network"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Gateway","uses","DataStore"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Gateway","connects","Device"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Gateway","exposes","Links"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Gateway","interactsThrough","Network"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Gateway","DigitalThing"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Service","exposes","Link"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Network","connects","Link"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Thing","thingName","string"]';https://www.w3.org/ns/ssn/;absent
+ISO/IEC 30141:2017;'["Thing","thingName","string"]';https://www.w3.org/ns/ssn/;absent
+ISO/IEC 30141:2017;'["DataStore","holds","IoTSystem"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Device","areConnectedWith","Gateway"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Device","interactsThrough","Network"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Sensor","monitors","Tag","PhysicalThing","hasTag"]';https://www.w3.org/ns/ssn/;absent
+ISO/IEC 30141:2017;'["VirtualUser","Agent","HumanUser","Person"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Actuator","Device","Sensor"]';https://www.w3.org/ns/ssn/;absent
+ISO/IEC 30141:2017;'["VirtualThing","represents","PhysicalThing"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["PhysicalThing","hasTag","Tag"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["PhysicalThing","monitorsFeatureProperty","FeatureProperty"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["PhysicalThing","actsOnFeatureProperty","FeatureProperty>"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["PhysicalThing","Thing"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Application","interactsUsing","Network"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Application","Service"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["HumanUser","interactsUsing","Application"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["DigitalUser","interactsUsing","Service"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Application","Service"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["HumanUser","interactsUsing","Application"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["Service","uses","DataStore","Gateway","Device"]';https://www.w3.org/ns/ssn/;undefined
+ISO/IEC 30141:2017;'["PhysicalThing","Thing","VirtualThing"]';https://www.w3.org/ns/ssn/;undefined
+http://www.w3.org/ns/ssn;'["Procedure","hasOutput","Output"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Result"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Actuation","hasResult","Result"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Sample","FeatureOfInterest","Result"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Deployment","forProperty","Property"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;["Sensor"];https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;["Actuator"];https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;["Procedure"];https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;["Deployment"];https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Platform","inDeployment","Deployment"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Platform","deployedSystem","System"]';https://www.w3.org/ns/ssn/;absent
+http://www.w3.org/ns/ssn;["System"];https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Sampling","hasResult","Sample"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Sensor","observes","ObservableProperty"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["ObservableProperty","Property"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["ObservableProperty","isObservedBy","Sensor"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Observation","hasFeatureOfInterest","FeatureOfInterest"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Observation","hasResult","Result"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Sensor","System"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;["FeatureOfInterest"];https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["System","implements","Procedure"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["System","hasSubSystem"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Procedure","hasInput","Input"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;["Sensor"];https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Sensor","detects","Stimulus"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;["Stimulus"];https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Observation","wasOriginatedBy","Stimulus"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;["Property"];https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Stimulus","isProxyFor","Property","isPropertyOf","FeatureOfInterest"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Actuator","madeActuation","Actuation"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Procedure","implementedBy","System"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Deployment","deployedOnPlatform","Platform"]';https://www.w3.org/ns/ssn/;passed
+http://www.w3.org/ns/ssn;'["Sampling","hasFeatureOfInterest","FeatureOfInterest"]';https://www.w3.org/ns/ssn/;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","hasValue","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["InputDataPoint","Variable"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","oneM2MAttribute","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","Variable"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SensingFunction","Function"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["ActuatingFunction","Function"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Function","hasCommand","Command"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","hasFunction","Function"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasOutputDataPoint","OutputDataPoint"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasInputDataPoint","InputDataPoint"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasOperation","Operation"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasSubService"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","oneM2MTargetURI","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","oneM2MMethod","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","describes","Property"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["StructuredTypeVariable","hasSubStructure","Variable"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","Variable"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","represents","Function"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","represents","Function"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["AreaNetwork","netTechnologyProfile","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["AreaNetwork","netTechnologyCommunicationProtocol","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["AreaNetwork","netTechnologyPhysicalStandard","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["InterworkedDevice","isPartOf","AreaNetwork"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Service","hasSubService"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","offers","Service"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Variable"];https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasOutput","OperationOutput","Command"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Command","hasInput","OperationInput","Operation"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","hasFunction","Function"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","PhysicalEntity","VirtualEntity"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Device","isPartOf","AreaNetwork"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","hasMetaData","MetaData"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Property","hasMetaData","MetaData"]';https://www.w3.org/ns/ssn/;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Property"];https://www.w3.org/ns/ssn/;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Thing","hasThingRelation"]';https://www.w3.org/ns/ssn/;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Thing","hasThingProperty","ThingProperty"]';https://www.w3.org/ns/ssn/;absent
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Thing"];https://www.w3.org/ns/ssn/;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","hasDataType","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["OutputDataPoint","Variable"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Command","hasOutput","OperationOutput"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Command","hasInput","OperationInput"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasInput","OperationInput"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","oneM2MTargetURI","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","oneM2MMethod","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["SimpleTypeVariable","hasDataRestriction","string"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasOutput","OperationOutput"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasOutput","OperationOutput"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Operation","hasInput","OperationInput"]';https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];https://www.w3.org/ns/ssn/;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["Variable","hasMetaData","MetaData"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Meter","Device","Applicance","FunctionRelated","Actuator","Lighting","HVAC"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["BuildingRelated","Device","EneryRelated","FunctionRelated"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["BuildingObject","specify","Space","BuildingSpace","SpatialThing"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["BuildingObject","openedby","Actuator","closedby"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Meter","FunctionRelated"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["DimmerLamp","control","Light"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["DimmerLamp","performs","LevelControl"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["DimmerLamp","Actuator","Lighting"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Time","consistsOf","TemporalEntity"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Power","isMeasuredIn","PowerUnit"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Price","isMeasuredIn","Currency"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","control","BuildingObject"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["BuildingSpace","contains","Devices","BuildingObjects"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["BuildingSpace","define","PhysicalSpace"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","hasDescription","string"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","hasModel","string"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","hasModel","string"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["EnergyMeter","Device","WashingMachine","TemperatureSensor"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","hasFunction","Function"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;["Device"];https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["EnergyMeter","hasFunction","MeteringFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;["Function"];https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["DoorSwitch","accomplishes","Safety"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["DoorSwitch","hasFunction","OpenCloseFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Switch","consistsOf","Actuator"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Switch","Actuator"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["SmokeSensor","measuresProperty","Smoke"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["SmokeSensor","hasFunction","EventFunction","SensingFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["SmokeSensor","consistsOf","Sensor"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["SmokeSensor","Sensor"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["WashingMachine","hasFunction","StartStopFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Washing","Task","WashingMachine","accomplishes"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","hasProfile","Profile"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","hasProfile","Profile"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Service","isOfferedBy","Device"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Service","isOfferedBy","Device"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Profile","hasTime","Time"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Energy","isMeasuredIn","EnergyUnit"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Profile","hasPrice","Price"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Service","isOfferedBy","Device"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;["Service"];https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","hasState","State"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Command","actsUpon","State"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","offers","Service"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["ActuatingFunction","Function","MeteringFunction","SensingFunction","EventFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Service","represent","Function"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","Appliance","Load"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["TemperatureSensor","hasFunction","SensingFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["TemperatureSensor","consistsOf","Sensor"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["TemperatureSensor","Sensor"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Sensor","hasFunction","SensingFunction"]';https://www.w3.org/ns/ssn/;absent
+https://w3id.org/saref#;'["Sensor","Device"]';https://www.w3.org/ns/ssn/;absent
+https://w3id.org/saref#;'["Device","consistsOf"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","control","BuildingObject"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Temperature","Property","Smoke","Energy"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","notify","Property"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["OffCommand","Command","OnCommand","CloseCommand","ToggleCommand"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Function","hasCommand","Command"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["MeteringFunction","Function","SensingFunction","EventFunction","ActuatingFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["LevelControlFuntion","ActuatingFunction","OnOffFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Meter","hasFunction","MeteringFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["EnergyMeter","Meter"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["EnergyMeter","consistsOf","Meter"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;[];https://www.w3.org/ns/ssn/;passed
+https://w3id.org/saref#;'["Device","measuresProperty","Property"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","hasFunction","SensingFunction"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Water","Commodity","Gas"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Device","isUsedFor","Commodity"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["EneryRelated","Device","FunctionRelated","BuildingRelated"]';https://www.w3.org/ns/ssn/;undefined
+https://w3id.org/saref#;'["Load","EnergyRelated","Generator","Storage"]';https://www.w3.org/ns/ssn/;undefined

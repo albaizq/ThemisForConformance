@@ -16,6 +16,7 @@ import java.util.regex.Pattern;
  * Mapper of each term in the test on each term in the ontology
  * */
 public class Mapper {
+    static final String PATTERN = "\\<(.*?)\\>";
 
     public static String mapTermsInTestImplementation(String  query, HashMap<String, IRI> allvalues) {
         Pattern p = Pattern.compile("\\<(.*?)\\>");
@@ -41,7 +42,6 @@ public class Mapper {
     public static Set<OWLAxiom> mapTermsInTestImplementation(OWLOntology queries, HashMap<String, IRI> allvalues) {
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
         OWLEntityRenamer reNamer = new OWLEntityRenamer(manager, Collections.singleton(queries));
-
         for(OWLAxiom axiom: queries.getAxioms()) {
             Pattern p = Pattern.compile("\\<(.*?)\\>");
             String query = axiom.toString();
@@ -60,5 +60,27 @@ public class Mapper {
             }
         }
         return queries.getAxioms();
+    }
+
+
+    public static String getPrecTerm(String query) {
+
+        Pattern p = Pattern.compile(PATTERN);
+        Matcher m = p.matcher(query);
+        while (m.find()) {
+            return m.group();
+        }
+        return m.group();
+    }
+
+    public static String termsInOntology(String query, OWLOntology ontology) {
+        Pattern p = Pattern.compile(PATTERN); // VERIFICAR ESTO
+        Matcher m = p.matcher(query);
+        while (m.find()) {
+            if (ontology.containsEntityInSignature(IRI.create(m.group().replace(
+                    "<", "").replace(">", ""))))
+                return "true";
+        }
+        return "false";
     }
 }

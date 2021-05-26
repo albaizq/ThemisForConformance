@@ -1,0 +1,329 @@
+Provenance;Terms involved;Ontology;Requirement description;Result
+Open Connectivity Foundation (OCF);["Entity"];https://ontology.tno.nl/saref.ttl;Entity exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Device"];https://ontology.tno.nl/saref.ttl;Device exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Transportation"];https://ontology.tno.nl/saref.ttl;Transportation exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Electronics"];https://ontology.tno.nl/saref.ttl;Electronics exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Resource"];https://ontology.tno.nl/saref.ttl;Resource exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["CommunicationProtocol"];https://ontology.tno.nl/saref.ttl;CommunicationProtocol exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Maintenance"];https://ontology.tno.nl/saref.ttl;Maintenance exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Aspect"];https://ontology.tno.nl/saref.ttl;Aspect exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Security"];https://ontology.tno.nl/saref.ttl;Security exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Role"];https://ontology.tno.nl/saref.ttl;Role exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Endpoint"];https://ontology.tno.nl/saref.ttl;Endpoint exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Functionality"];https://ontology.tno.nl/saref.ttl;Functionality exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["State"];https://ontology.tno.nl/saref.ttl;State exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Lighting"];https://ontology.tno.nl/saref.ttl;Lighting exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["SpaceConditioning"];https://ontology.tno.nl/saref.ttl;SpaceConditioning exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Medica"];https://ontology.tno.nl/saref.ttl;Medica exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Infrastructure"];https://ontology.tno.nl/saref.ttl;Infrastructure exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["PersonalHealth"];https://ontology.tno.nl/saref.ttl;PersonalHealth exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Property"];https://ontology.tno.nl/saref.ttl;Property exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Link"];https://ontology.tno.nl/saref.ttl;Link exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Fitness"];https://ontology.tno.nl/saref.ttl;Fitness exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["serialNumber","Property"]';https://ontology.tno.nl/saref.ttl;serialNumber exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["address","Property"]';https://ontology.tno.nl/saref.ttl;address exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["encapsulates","Property"]';https://ontology.tno.nl/saref.ttl;encapsulates exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["isProvidedOverProtocol","Property"]';https://ontology.tno.nl/saref.ttl;isProvidedOverProtocol exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["describesAspect","Property"]';https://ontology.tno.nl/saref.ttl;describesAspect exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hosts","Property"]';https://ontology.tno.nl/saref.ttl;hosts exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasDevelopers","Property"]';https://ontology.tno.nl/saref.ttl;hasDevelopers exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["consistsOf","Property"]';https://ontology.tno.nl/saref.ttl;consistsOf exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["communicatesWith","Property"]';https://ontology.tno.nl/saref.ttl;communicatesWith exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["deviceName","Property"]';https://ontology.tno.nl/saref.ttl;deviceName exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasProperty","Property"]';https://ontology.tno.nl/saref.ttl;hasProperty exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["makesAccessible","Property"]';https://ontology.tno.nl/saref.ttl;makesAccessible exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["implementsSecurity","Property"]';https://ontology.tno.nl/saref.ttl;implementsSecurity exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["isAccessibleThrough","Property"]';https://ontology.tno.nl/saref.ttl;isAccessibleThrough exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["exposes","Property"]';https://ontology.tno.nl/saref.ttl;exposes exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasFunctionality","Property"]';https://ontology.tno.nl/saref.ttl;hasFunctionality exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasUsers","Property"]';https://ontology.tno.nl/saref.ttl;hasUsers exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasRole","Property"]';https://ontology.tno.nl/saref.ttl;hasRole exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasManufacturer","Property"]';https://ontology.tno.nl/saref.ttl;hasManufacturer exists in the ontology;undefined
+ISO/IEC 30141:2017;["Agent"];https://ontology.tno.nl/saref.ttl;Agent exists in the ontology;undefined
+ISO/IEC 30141:2017;["Device"];https://ontology.tno.nl/saref.ttl;Device exists in the ontology;undefined
+ISO/IEC 30141:2017;["PhysicalThing"];https://ontology.tno.nl/saref.ttl;PhysicalThing exists in the ontology;undefined
+ISO/IEC 30141:2017;["Service"];https://ontology.tno.nl/saref.ttl;Service exists in the ontology;undefined
+ISO/IEC 30141:2017;["DigitalThing"];https://ontology.tno.nl/saref.ttl;DigitalThing exists in the ontology;undefined
+ISO/IEC 30141:2017;["FeatureProperty"];https://ontology.tno.nl/saref.ttl;FeatureProperty exists in the ontology;undefined
+ISO/IEC 30141:2017;["IoTSystem"];https://ontology.tno.nl/saref.ttl;IoTSystem exists in the ontology;undefined
+ISO/IEC 30141:2017;["VirtualThing"];https://ontology.tno.nl/saref.ttl;VirtualThing exists in the ontology;undefined
+ISO/IEC 30141:2017;["HumanUser"];https://ontology.tno.nl/saref.ttl;HumanUser exists in the ontology;undefined
+ISO/IEC 30141:2017;["DigitalUser"];https://ontology.tno.nl/saref.ttl;DigitalUser exists in the ontology;undefined
+ISO/IEC 30141:2017;["Gateway"];https://ontology.tno.nl/saref.ttl;Gateway exists in the ontology;undefined
+ISO/IEC 30141:2017;["Network"];https://ontology.tno.nl/saref.ttl;Network exists in the ontology;undefined
+ISO/IEC 30141:2017;["DataStore"];https://ontology.tno.nl/saref.ttl;DataStore exists in the ontology;undefined
+ISO/IEC 30141:2017;["VirtualUser"];https://ontology.tno.nl/saref.ttl;VirtualUser exists in the ontology;undefined
+ISO/IEC 30141:2017;["Links"];https://ontology.tno.nl/saref.ttl;Links exists in the ontology;undefined
+ISO/IEC 30141:2017;["Tag"];https://ontology.tno.nl/saref.ttl;Tag exists in the ontology;undefined
+ISO/IEC 30141:2017;["Application"];https://ontology.tno.nl/saref.ttl;Application exists in the ontology;undefined
+ISO/IEC 30141:2017;["Person"];https://ontology.tno.nl/saref.ttl;Person exists in the ontology;undefined
+ISO/IEC 30141:2017;["Thing"];https://ontology.tno.nl/saref.ttl;Thing exists in the ontology;undefined
+ISO/IEC 30141:2017;["Link"];https://ontology.tno.nl/saref.ttl;Link exists in the ontology;undefined
+ISO/IEC 30141:2017;["Actuator"];https://ontology.tno.nl/saref.ttl;Actuator exists in the ontology;undefined
+ISO/IEC 30141:2017;["Sensor"];https://ontology.tno.nl/saref.ttl;Sensor exists in the ontology;undefined
+ISO/IEC 30141:2017;'["hasTag","Property"]';https://ontology.tno.nl/saref.ttl;hasTag exists in the ontology;undefined
+ISO/IEC 30141:2017;'["thingName","Property"]';https://ontology.tno.nl/saref.ttl;thingName exists in the ontology;undefined
+ISO/IEC 30141:2017;'["monitorsFeatureProperty","Property"]';https://ontology.tno.nl/saref.ttl;monitorsFeatureProperty exists in the ontology;undefined
+ISO/IEC 30141:2017;'["actsOnFeatureProperty","Property"]';https://ontology.tno.nl/saref.ttl;actsOnFeatureProperty exists in the ontology;undefined
+ISO/IEC 30141:2017;'["interactsUsing","Property"]';https://ontology.tno.nl/saref.ttl;interactsUsing exists in the ontology;undefined
+ISO/IEC 30141:2017;'["represents","Property"]';https://ontology.tno.nl/saref.ttl;represents exists in the ontology;undefined
+ISO/IEC 30141:2017;'["areConnectedWith","Property"]';https://ontology.tno.nl/saref.ttl;areConnectedWith exists in the ontology;undefined
+ISO/IEC 30141:2017;'["interactsWith","Property"]';https://ontology.tno.nl/saref.ttl;interactsWith exists in the ontology;undefined
+ISO/IEC 30141:2017;'["isAccessibleThrough","Property"]';https://ontology.tno.nl/saref.ttl;isAccessibleThrough exists in the ontology;undefined
+ISO/IEC 30141:2017;'["connects","Property"]';https://ontology.tno.nl/saref.ttl;connects exists in the ontology;undefined
+ISO/IEC 30141:2017;'["exposes","Property"]';https://ontology.tno.nl/saref.ttl;exposes exists in the ontology;undefined
+ISO/IEC 30141:2017;'["interactsThrough","Property"]';https://ontology.tno.nl/saref.ttl;interactsThrough exists in the ontology;undefined
+ISO/IEC 30141:2017;'["holds","Property"]';https://ontology.tno.nl/saref.ttl;holds exists in the ontology;undefined
+ISO/IEC 30141:2017;'["uses","Property"]';https://ontology.tno.nl/saref.ttl;uses exists in the ontology;undefined
+ISO/IEC 30141:2017;'["monitors","Property"]';https://ontology.tno.nl/saref.ttl;monitors exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Vocabulary"];https://ontology.tno.nl/saref.ttl;Vocabulary exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Agent"];https://ontology.tno.nl/saref.ttl;Agent exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Stimulus"];https://ontology.tno.nl/saref.ttl;Stimulus exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Platform"];https://ontology.tno.nl/saref.ttl;Platform exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sample"];https://ontology.tno.nl/saref.ttl;Sample exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["ActuatableProperty"];https://ontology.tno.nl/saref.ttl;ActuatableProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Actuation"];https://ontology.tno.nl/saref.ttl;Actuation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Deployment"];https://ontology.tno.nl/saref.ttl;Deployment exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["System"];https://ontology.tno.nl/saref.ttl;System exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Result"];https://ontology.tno.nl/saref.ttl;Result exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Input"];https://ontology.tno.nl/saref.ttl;Input exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["ObservableProperty"];https://ontology.tno.nl/saref.ttl;ObservableProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["FeatureOfInterest"];https://ontology.tno.nl/saref.ttl;FeatureOfInterest exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Output"];https://ontology.tno.nl/saref.ttl;Output exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sampler"];https://ontology.tno.nl/saref.ttl;Sampler exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Observation"];https://ontology.tno.nl/saref.ttl;Observation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Procedure"];https://ontology.tno.nl/saref.ttl;Procedure exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sampling"];https://ontology.tno.nl/saref.ttl;Sampling exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Property"];https://ontology.tno.nl/saref.ttl;Property exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Thing"];https://ontology.tno.nl/saref.ttl;Thing exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sensor"];https://ontology.tno.nl/saref.ttl;Sensor exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Actuator"];https://ontology.tno.nl/saref.ttl;Actuator exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["implements","Property"]';https://ontology.tno.nl/saref.ttl;implements exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["inDeployment","Property"]';https://ontology.tno.nl/saref.ttl;inDeployment exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasFeatureOfInterest","Property"]';https://ontology.tno.nl/saref.ttl;hasFeatureOfInterest exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeBySampler","Property"]';https://ontology.tno.nl/saref.ttl;madeBySampler exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["deployedOnPlatform","Property"]';https://ontology.tno.nl/saref.ttl;deployedOnPlatform exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["phenomenonTime","Property"]';https://ontology.tno.nl/saref.ttl;phenomenonTime exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["observedProperty","Property"]';https://ontology.tno.nl/saref.ttl;observedProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeSampling","Property"]';https://ontology.tno.nl/saref.ttl;madeSampling exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasDeployment","Property"]';https://ontology.tno.nl/saref.ttl;hasDeployment exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isActedOnBy","Property"]';https://ontology.tno.nl/saref.ttl;isActedOnBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["observes","Property"]';https://ontology.tno.nl/saref.ttl;observes exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["usedProcedure","Property"]';https://ontology.tno.nl/saref.ttl;usedProcedure exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isSampleOf","Property"]';https://ontology.tno.nl/saref.ttl;isSampleOf exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeBySensor","Property"]';https://ontology.tno.nl/saref.ttl;madeBySensor exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasSubSystem","Property"]';https://ontology.tno.nl/saref.ttl;hasSubSystem exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasSample","Property"]';https://ontology.tno.nl/saref.ttl;hasSample exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isHostedBy","Property"]';https://ontology.tno.nl/saref.ttl;isHostedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["implementedBy","Property"]';https://ontology.tno.nl/saref.ttl;implementedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["resultTime","Property"]';https://ontology.tno.nl/saref.ttl;resultTime exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isObservedBy","Property"]';https://ontology.tno.nl/saref.ttl;isObservedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeByActuator","Property"]';https://ontology.tno.nl/saref.ttl;madeByActuator exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["forProperty","Property"]';https://ontology.tno.nl/saref.ttl;forProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hosts","Property"]';https://ontology.tno.nl/saref.ttl;hosts exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasResult","Property"]';https://ontology.tno.nl/saref.ttl;hasResult exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["detects","Property"]';https://ontology.tno.nl/saref.ttl;detects exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["deployedSystem","Property"]';https://ontology.tno.nl/saref.ttl;deployedSystem exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isResultOf","Property"]';https://ontology.tno.nl/saref.ttl;isResultOf exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasProperty","Property"]';https://ontology.tno.nl/saref.ttl;hasProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isPropertyOf","Property"]';https://ontology.tno.nl/saref.ttl;isPropertyOf exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["wasOriginatedBy","Property"]';https://ontology.tno.nl/saref.ttl;wasOriginatedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeObservation","Property"]';https://ontology.tno.nl/saref.ttl;madeObservation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeActuation","Property"]';https://ontology.tno.nl/saref.ttl;madeActuation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasOutput","Property"]';https://ontology.tno.nl/saref.ttl;hasOutput exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isProxyFor","Property"]';https://ontology.tno.nl/saref.ttl;isProxyFor exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasInput","Property"]';https://ontology.tno.nl/saref.ttl;hasInput exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["actsOnProperty","Property"]';https://ontology.tno.nl/saref.ttl;actsOnProperty exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Variable"];https://ontology.tno.nl/saref.ttl;Variable exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Device"];https://ontology.tno.nl/saref.ttl;Device exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["MeasuringFunction"];https://ontology.tno.nl/saref.ttl;MeasuringFunction exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];https://ontology.tno.nl/saref.ttl;InterworkedDevice exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OperationInput"];https://ontology.tno.nl/saref.ttl;OperationInput exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["StructuredTypeVariable"];https://ontology.tno.nl/saref.ttl;StructuredTypeVariable exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["GET_InputDataPoint"];https://ontology.tno.nl/saref.ttl;GET_InputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Service"];https://ontology.tno.nl/saref.ttl;Service exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];https://ontology.tno.nl/saref.ttl;Operation exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Aspect"];https://ontology.tno.nl/saref.ttl;Aspect exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OutputDataPoint"];https://ontology.tno.nl/saref.ttl;OutputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["AreaNetwork"];https://ontology.tno.nl/saref.ttl;AreaNetwork exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["SET_OutputDataPoint"];https://ontology.tno.nl/saref.ttl;SET_OutputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["SimpleTypeVariable"];https://ontology.tno.nl/saref.ttl;SimpleTypeVariable exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Function"];https://ontology.tno.nl/saref.ttl;Function exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Command"];https://ontology.tno.nl/saref.ttl;Command exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["ThingProperty"];https://ontology.tno.nl/saref.ttl;ThingProperty exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["MetaData"];https://ontology.tno.nl/saref.ttl;MetaData exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InputDataPoint"];https://ontology.tno.nl/saref.ttl;InputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OperationOutput"];https://ontology.tno.nl/saref.ttl;OperationOutput exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["VariableConversion"];https://ontology.tno.nl/saref.ttl;VariableConversion exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["ControllingFunction"];https://ontology.tno.nl/saref.ttl;ControllingFunction exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Thing"];https://ontology.tno.nl/saref.ttl;Thing exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_pattern","Property"]';https://ontology.tno.nl/saref.ttl;hasDataRestriction_pattern exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minInclusive","Property"]';https://ontology.tno.nl/saref.ttl;hasDataRestriction_minInclusive exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasSubService","Property"]';https://ontology.tno.nl/saref.ttl;hasSubService exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyCommunicationProtocol","Property"]';https://ontology.tno.nl/saref.ttl;netTechnologyCommunicationProtocol exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataType","Property"]';https://ontology.tno.nl/saref.ttl;hasDataType exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasInputDataPoint","Property"]';https://ontology.tno.nl/saref.ttl;hasInputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["exposesCommand","Property"]';https://ontology.tno.nl/saref.ttl;exposesCommand exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction","Property"]';https://ontology.tno.nl/saref.ttl;hasDataRestriction exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minExclusive","Property"]';https://ontology.tno.nl/saref.ttl;hasDataRestriction_minExclusive exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyPhysicalStandard","Property"]';https://ontology.tno.nl/saref.ttl;netTechnologyPhysicalStandard exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_length","Property"]';https://ontology.tno.nl/saref.ttl;hasDataRestriction_length exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingProperty","Property"]';https://ontology.tno.nl/saref.ttl;hasThingProperty exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasCommand","Property"]';https://ontology.tno.nl/saref.ttl;hasCommand exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOutputDataPoint","Property"]';https://ontology.tno.nl/saref.ttl;hasOutputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["exposesFunction","Property"]';https://ontology.tno.nl/saref.ttl;exposesFunction exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasService","Property"]';https://ontology.tno.nl/saref.ttl;hasService exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MTargetURI","Property"]';https://ontology.tno.nl/saref.ttl;oneM2MTargetURI exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasSubStructure","Property"]';https://ontology.tno.nl/saref.ttl;hasSubStructure exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyProfile","Property"]';https://ontology.tno.nl/saref.ttl;netTechnologyProfile exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["refersTo","Property"]';https://ontology.tno.nl/saref.ttl;refersTo exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["isDataList","Property"]';https://ontology.tno.nl/saref.ttl;isDataList exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["consistsOf","Property"]';https://ontology.tno.nl/saref.ttl;consistsOf exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minLength","Property"]';https://ontology.tno.nl/saref.ttl;hasDataRestriction_minLength exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasValue","Property"]';https://ontology.tno.nl/saref.ttl;hasValue exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["isPartOf","Property"]';https://ontology.tno.nl/saref.ttl;isPartOf exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["describes","Property"]';https://ontology.tno.nl/saref.ttl;describes exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOperation","Property"]';https://ontology.tno.nl/saref.ttl;hasOperation exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MAttribute","Property"]';https://ontology.tno.nl/saref.ttl;oneM2MAttribute exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasConversion","Property"]';https://ontology.tno.nl/saref.ttl;hasConversion exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["convertsTo","Property"]';https://ontology.tno.nl/saref.ttl;convertsTo exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxLength","Property"]';https://ontology.tno.nl/saref.ttl;hasDataRestriction_maxLength exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingRelation","Property"]';https://ontology.tno.nl/saref.ttl;hasThingRelation exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxInclusive","Property"]';https://ontology.tno.nl/saref.ttl;hasDataRestriction_maxInclusive exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxExclusive","Property"]';https://ontology.tno.nl/saref.ttl;hasDataRestriction_maxExclusive exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasFunction","Property"]';https://ontology.tno.nl/saref.ttl;hasFunction exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasMetaData","Property"]';https://ontology.tno.nl/saref.ttl;hasMetaData exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOutput","Property"]';https://ontology.tno.nl/saref.ttl;hasOutput exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingAnnotation","Property"]';https://ontology.tno.nl/saref.ttl;hasThingAnnotation exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MMethod","Property"]';https://ontology.tno.nl/saref.ttl;oneM2MMethod exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasInput","Property"]';https://ontology.tno.nl/saref.ttl;hasInput exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Water"];https://ontology.tno.nl/saref.ttl;Water exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OpenCloseFunction"];https://ontology.tno.nl/saref.ttl;OpenCloseFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Task"];https://ontology.tno.nl/saref.ttl;Task exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["GetMeterDataCommand"];https://ontology.tno.nl/saref.ttl;GetMeterDataCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Meter"];https://ontology.tno.nl/saref.ttl;Meter exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["SmokeSensor"];https://ontology.tno.nl/saref.ttl;SmokeSensor exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["MultiLevelState"];https://ontology.tno.nl/saref.ttl;MultiLevelState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Smoke"];https://ontology.tno.nl/saref.ttl;Smoke exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["StartState"];https://ontology.tno.nl/saref.ttl;StartState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OffState"];https://ontology.tno.nl/saref.ttl;OffState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["SensingFunction"];https://ontology.tno.nl/saref.ttl;SensingFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["HVAC"];https://ontology.tno.nl/saref.ttl;HVAC exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["DoorSwitch"];https://ontology.tno.nl/saref.ttl;DoorSwitch exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Light"];https://ontology.tno.nl/saref.ttl;Light exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Occupancy"];https://ontology.tno.nl/saref.ttl;Occupancy exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Network"];https://ontology.tno.nl/saref.ttl;Network exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["CloseCommand"];https://ontology.tno.nl/saref.ttl;CloseCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Currency"];https://ontology.tno.nl/saref.ttl;Currency exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Coal"];https://ontology.tno.nl/saref.ttl;Coal exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["MeteringFunction"];https://ontology.tno.nl/saref.ttl;MeteringFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["GetCurrentMeterValueCommand"];https://ontology.tno.nl/saref.ttl;GetCurrentMeterValueCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["GetMeterHistoryCommand"];https://ontology.tno.nl/saref.ttl;GetMeterHistoryCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["ToggleCommand"];https://ontology.tno.nl/saref.ttl;ToggleCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["EnergyRelated"];https://ontology.tno.nl/saref.ttl;EnergyRelated exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OnOffState"];https://ontology.tno.nl/saref.ttl;OnOffState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["LightingDevice"];https://ontology.tno.nl/saref.ttl;LightingDevice exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["GetSensingDataCommand"];https://ontology.tno.nl/saref.ttl;GetSensingDataCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Load"];https://ontology.tno.nl/saref.ttl;Load exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["UnitOfMeasure"];https://ontology.tno.nl/saref.ttl;UnitOfMeasure exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["StartStopState"];https://ontology.tno.nl/saref.ttl;StartStopState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["SetRelativeLevelCommand"];https://ontology.tno.nl/saref.ttl;SetRelativeLevelCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Device"];https://ontology.tno.nl/saref.ttl;Device exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["TemperatureUnit"];https://ontology.tno.nl/saref.ttl;TemperatureUnit exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Pressure"];https://ontology.tno.nl/saref.ttl;Pressure exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["StepDownCommand"];https://ontology.tno.nl/saref.ttl;StepDownCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["StopCommand"];https://ontology.tno.nl/saref.ttl;StopCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Storage"];https://ontology.tno.nl/saref.ttl;Storage exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OpenState"];https://ontology.tno.nl/saref.ttl;OpenState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Switch"];https://ontology.tno.nl/saref.ttl;Switch exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["TemporalEntity"];https://ontology.tno.nl/saref.ttl;TemporalEntity exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Price"];https://ontology.tno.nl/saref.ttl;Price exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["State"];https://ontology.tno.nl/saref.ttl;State exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["SetLevelCommand"];https://ontology.tno.nl/saref.ttl;SetLevelCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Gas"];https://ontology.tno.nl/saref.ttl;Gas exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["PauseCommand"];https://ontology.tno.nl/saref.ttl;PauseCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["PressureUnit"];https://ontology.tno.nl/saref.ttl;PressureUnit exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["MicroRenewable"];https://ontology.tno.nl/saref.ttl;MicroRenewable exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Sensor"];https://ontology.tno.nl/saref.ttl;Sensor exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Generator"];https://ontology.tno.nl/saref.ttl;Generator exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Measurement"];https://ontology.tno.nl/saref.ttl;Measurement exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["EnergyMeter"];https://ontology.tno.nl/saref.ttl;EnergyMeter exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["WashingMachine"];https://ontology.tno.nl/saref.ttl;WashingMachine exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["StartStopFunction"];https://ontology.tno.nl/saref.ttl;StartStopFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Temperature"];https://ontology.tno.nl/saref.ttl;Temperature exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["StartCommand"];https://ontology.tno.nl/saref.ttl;StartCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Time"];https://ontology.tno.nl/saref.ttl;Time exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Profile"];https://ontology.tno.nl/saref.ttl;Profile exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Function"];https://ontology.tno.nl/saref.ttl;Function exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["FunctionRelated"];https://ontology.tno.nl/saref.ttl;FunctionRelated exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Appliance"];https://ontology.tno.nl/saref.ttl;Appliance exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Commodity"];https://ontology.tno.nl/saref.ttl;Commodity exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Energy"];https://ontology.tno.nl/saref.ttl;Energy exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Electricity"];https://ontology.tno.nl/saref.ttl;Electricity exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["StepUpCommand"];https://ontology.tno.nl/saref.ttl;StepUpCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OpenCommand"];https://ontology.tno.nl/saref.ttl;OpenCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Humidity"];https://ontology.tno.nl/saref.ttl;Humidity exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["EventFunction"];https://ontology.tno.nl/saref.ttl;EventFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OnState"];https://ontology.tno.nl/saref.ttl;OnState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["PowerUnit"];https://ontology.tno.nl/saref.ttl;PowerUnit exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Property"];https://ontology.tno.nl/saref.ttl;Property exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["IlluminanceUnit"];https://ontology.tno.nl/saref.ttl;IlluminanceUnit exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["CloseState"];https://ontology.tno.nl/saref.ttl;CloseState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Actuator"];https://ontology.tno.nl/saref.ttl;Actuator exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OnOffFunction"];https://ontology.tno.nl/saref.ttl;OnOffFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Multimedia"];https://ontology.tno.nl/saref.ttl;Multimedia exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["NotifyCommand"];https://ontology.tno.nl/saref.ttl;NotifyCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Motion"];https://ontology.tno.nl/saref.ttl;Motion exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["ActuatingFunction"];https://ontology.tno.nl/saref.ttl;ActuatingFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["TemporalUnit"];https://ontology.tno.nl/saref.ttl;TemporalUnit exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OpenCloseState"];https://ontology.tno.nl/saref.ttl;OpenCloseState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["EnergyUnit"];https://ontology.tno.nl/saref.ttl;EnergyUnit exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Service"];https://ontology.tno.nl/saref.ttl;Service exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["TemperatureSensor"];https://ontology.tno.nl/saref.ttl;TemperatureSensor exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["LightSwitch"];https://ontology.tno.nl/saref.ttl;LightSwitch exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["GetCommand"];https://ontology.tno.nl/saref.ttl;GetCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OnCommand"];https://ontology.tno.nl/saref.ttl;OnCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Command"];https://ontology.tno.nl/saref.ttl;Command exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OffCommand"];https://ontology.tno.nl/saref.ttl;OffCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["SetAbsoluteLevelCommand"];https://ontology.tno.nl/saref.ttl;SetAbsoluteLevelCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["SwitchOnService"];https://ontology.tno.nl/saref.ttl;SwitchOnService exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["LevelControlFunction"];https://ontology.tno.nl/saref.ttl;LevelControlFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["BuildingRelated"];https://ontology.tno.nl/saref.ttl;BuildingRelated exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["StopState"];https://ontology.tno.nl/saref.ttl;StopState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Power"];https://ontology.tno.nl/saref.ttl;Power exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasName","Property"]';https://ontology.tno.nl/saref.ttl;hasName exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isOfferedBy","Property"]';https://ontology.tno.nl/saref.ttl;isOfferedBy exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["accomplishes","Property"]';https://ontology.tno.nl/saref.ttl;accomplishes exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasMeterReadingType","Property"]';https://ontology.tno.nl/saref.ttl;hasMeterReadingType exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasModel","Property"]';https://ontology.tno.nl/saref.ttl;hasModel exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasTypicalConsumption","Property"]';https://ontology.tno.nl/saref.ttl;hasTypicalConsumption exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasTime","Property"]';https://ontology.tno.nl/saref.ttl;hasTime exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasTimestamp","Property"]';https://ontology.tno.nl/saref.ttl;hasTimestamp exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["represents","Property"]';https://ontology.tno.nl/saref.ttl;represents exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isCommandOf","Property"]';https://ontology.tno.nl/saref.ttl;isCommandOf exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasSensorType","Property"]';https://ontology.tno.nl/saref.ttl;hasSensorType exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasCommand","Property"]';https://ontology.tno.nl/saref.ttl;hasCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isMeasuredByDevice","Property"]';https://ontology.tno.nl/saref.ttl;isMeasuredByDevice exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasProfile","Property"]';https://ontology.tno.nl/saref.ttl;hasProfile exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isMeasuredIn","Property"]';https://ontology.tno.nl/saref.ttl;isMeasuredIn exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasPrice","Property"]';https://ontology.tno.nl/saref.ttl;hasPrice exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["relatesToProperty","Property"]';https://ontology.tno.nl/saref.ttl;relatesToProperty exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["offers","Property"]';https://ontology.tno.nl/saref.ttl;offers exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasMeterReading","Property"]';https://ontology.tno.nl/saref.ttl;hasMeterReading exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isAccomplishedBy","Property"]';https://ontology.tno.nl/saref.ttl;isAccomplishedBy exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isUsedFor","Property"]';https://ontology.tno.nl/saref.ttl;isUsedFor exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasDescription","Property"]';https://ontology.tno.nl/saref.ttl;hasDescription exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["consistsOf","Property"]';https://ontology.tno.nl/saref.ttl;consistsOf exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasSensingRange","Property"]';https://ontology.tno.nl/saref.ttl;hasSensingRange exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasValue","Property"]';https://ontology.tno.nl/saref.ttl;hasValue exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasState","Property"]';https://ontology.tno.nl/saref.ttl;hasState exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isAbout","Property"]';https://ontology.tno.nl/saref.ttl;isAbout exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["actsUpon","Property"]';https://ontology.tno.nl/saref.ttl;actsUpon exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["measuresProperty","Property"]';https://ontology.tno.nl/saref.ttl;measuresProperty exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["controlsProperty","Property"]';https://ontology.tno.nl/saref.ttl;controlsProperty exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasFunction","Property"]';https://ontology.tno.nl/saref.ttl;hasFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["relatesToMeasurement","Property"]';https://ontology.tno.nl/saref.ttl;relatesToMeasurement exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasManufacturer","Property"]';https://ontology.tno.nl/saref.ttl;hasManufacturer exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isControlledByDevice","Property"]';https://ontology.tno.nl/saref.ttl;isControlledByDevice exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["makesMeasurement","Property"]';https://ontology.tno.nl/saref.ttl;makesMeasurement exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasThresholdMeasurement","Property"]';https://ontology.tno.nl/saref.ttl;hasThresholdMeasurement exists in the ontology;passed

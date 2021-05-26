@@ -1,0 +1,438 @@
+@prefix : <http://vicinity.iot.linkeddata.es/vicinity/testing/testsuite-core.ttl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vtc: <http://w3id.org/def/vtc#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://themis.linkeddata.es/tests/onem2m#> .
+
+###  http://themis.linkeddata.es/tests/onem2m#Test1
+<http://themis.linkeddata.es/tests/onem2m#Test1> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              dcterms:description "An interworked device is part of an area network" ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "InterworkedDevice isPartOf AreaNetwork" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test10
+<http://themis.linkeddata.es/tests/onem2m#Test10> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "GET_InputDataPoint is a sub-class of operation" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "GET_InputDataPoint subclassOf Operation" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test11
+<http://themis.linkeddata.es/tests/onem2m#Test11> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "An operation can have an operationInput" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Operation hasInput OperationInput" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test12
+<http://themis.linkeddata.es/tests/onem2m#Test12> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "An Operation produces an output ." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Operation hasOutput OperationOutput" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test13
+<http://themis.linkeddata.es/tests/onem2m#Test13> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A service uses the operations" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Service hasOperation Service" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test14
+<http://themis.linkeddata.es/tests/onem2m#Test14> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A service may be composed of smaller, independent (sub)services" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Service subClassOf hasOperation only Operation" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test15
+<http://themis.linkeddata.es/tests/onem2m#Test15> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A service  can have subservices" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Service hasSubService Service" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test16
+<http://themis.linkeddata.es/tests/onem2m#Test16> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A service can represent one or more functions" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Service subClassOf represents min 1 Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test17
+<http://themis.linkeddata.es/tests/onem2m#Test17> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A service exposes a function" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Service represents Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test18
+<http://themis.linkeddata.es/tests/onem2m#Test18> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "OperationInput and OperationOutput of the related Operation can parameterize the command." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Command hasOutput OperationOutput" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test19
+<http://themis.linkeddata.es/tests/onem2m#Test19> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "OperationInput and OperationOutput of the related Operation can parameterize the command." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Command hasInput OperationInput" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test2
+<http://themis.linkeddata.es/tests/onem2m#Test2> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              dcterms:description "An Area Network is characterized by physical properties, its communication protocol and a profile" ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "AreaNetwork subclassOf netTechnologyCommunicationProtocol only string" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test20
+<http://themis.linkeddata.es/tests/onem2m#Test20> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "An Operation exposes a Command to the network." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Operation exposesCommand Command" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test21
+<http://themis.linkeddata.es/tests/onem2m#Test21> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A Command (Class: Command) represents an action that can be performed to support the Function." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Function hasCommand Command" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test22
+<http://themis.linkeddata.es/tests/onem2m#Test22> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "Aspect is also used to describe a quality or kind of OperationInput- or OperationOutput variables." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Variable describes Aspect" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test23
+<http://themis.linkeddata.es/tests/onem2m#Test23> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "An aspect describes the real-world aspect that a function" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Function refersTo Aspect" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test24
+<http://themis.linkeddata.es/tests/onem2m#Test24> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "An aspect is an entity" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Aspect type Class" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test25
+<http://themis.linkeddata.es/tests/onem2m#Test25> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "MeasuringFunction (Class: MeasuringFunction) is a sub-class of Function that only measures/senses real world Aspects that the Function relates to." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "SensingFunction subClassOf Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test26
+<http://themis.linkeddata.es/tests/onem2m#Test26> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "ControllingFunction  is a sub-class of Function that only controls/influences real world Aspects that the Function relates to" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "ActuatingFunction subClassOf Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test27
+<http://themis.linkeddata.es/tests/onem2m#Test27> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A function refers to a certain Aspect." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Function refersTo Aspect" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test28
+<http://themis.linkeddata.es/tests/onem2m#Test28> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A device can be designed to perform more than one function." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Device subclassOf hasFunction min 1 Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test29
+<http://themis.linkeddata.es/tests/onem2m#Test29> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A measuring functionality is a type of function" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "SensingFunction subClassOf Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test3
+<http://themis.linkeddata.es/tests/onem2m#Test3> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              dcterms:description "An Area Network is characterized by physical properties, its communication protocol and a profile" ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "AreaNetwork subclassOf netTechnologyProfile only string" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test30
+<http://themis.linkeddata.es/tests/onem2m#Test30> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A controlling functionality is a type of function" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "ActuatingFunction subClassOf Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test31
+<http://themis.linkeddata.es/tests/onem2m#Test31> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "Each device needs to be individually addressable in the network." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Device type Class" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test32
+<http://themis.linkeddata.es/tests/onem2m#Test32> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A device can be composed of several (sub-)devices" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Device consistsOf Device" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test33
+<http://themis.linkeddata.es/tests/onem2m#Test33> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A functions are exposed in the network as services of the device" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Device offers Service" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test34
+<http://themis.linkeddata.es/tests/onem2m#Test34> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A functions are exposed in the network as services of the device" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Service represents Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test35
+<http://themis.linkeddata.es/tests/onem2m#Test35> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A device performs one or more functions" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Device hasFunction Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test36
+<http://themis.linkeddata.es/tests/onem2m#Test36> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A device can have services" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Device offers Service" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test37
+<http://themis.linkeddata.es/tests/onem2m#Test37> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A device is an entity" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Device subclassOf Thing" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test38
+<http://themis.linkeddata.es/tests/onem2m#Test38> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A device interacts through the DataPoints and/or Operations of its Services." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Device offers Service" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test39
+<http://themis.linkeddata.es/tests/onem2m#Test39> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A device can interact electronically with its environment via a network" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "InterworkedDevice subclassOf Device" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test4
+<http://themis.linkeddata.es/tests/onem2m#Test4> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              dcterms:description "An Area Network is characterized by physical properties, its communication protocol and a profile" ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "AreaNetwork subclassOf netTechnologyPhysicalStandard only string" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test40
+<http://themis.linkeddata.es/tests/onem2m#Test40> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A device can interact electronically with its environment via a network" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "InterworkedDevice isPartOf AreaNetwork" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test41
+<http://themis.linkeddata.es/tests/onem2m#Test41> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A device can accomplish a particular task via the functions" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Device hasFunction Function" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test42
+<http://themis.linkeddata.es/tests/onem2m#Test42> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "Metadata contain data about  an aspect" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Aspect hasMetaData MetaData" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test43
+<http://themis.linkeddata.es/tests/onem2m#Test43> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               rdfs:comment "Metadata contain data about a variable" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Variable hasMetaData MetaData" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test44
+<http://themis.linkeddata.es/tests/onem2m#Test44> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A variable conversion represents a conversion rule from the value range of one Variable into the value range of another Variable." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Variable hasConversion VariableConversion" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test45
+<http://themis.linkeddata.es/tests/onem2m#Test45> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A variable can can consist of (sub-) variables." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "StructuredTypeVariable hasSubStructure Variable" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test46
+<http://themis.linkeddata.es/tests/onem2m#Test46> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "These data of the variable can have metadata" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Variable hasMetaData MetaData" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test47
+<http://themis.linkeddata.es/tests/onem2m#Test47> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "The  data of the variable can  describe some real-world aspects" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Variable describes Aspect" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test48
+<http://themis.linkeddata.es/tests/onem2m#Test48> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A variable is an entity that has some data (e.g. integers, text, etc., or structured data)" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Variable subclassOf hasValue some string" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test49
+<http://themis.linkeddata.es/tests/onem2m#Test49> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A Variable constitutes a super class to the following classes: ThingProperty, OperationInput, OperationOutput, InputDataPoint, OutputDataPoint, SimpleTypeVariable, StructuredTypeVariable" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "StructuredTypeVariable subclassOf Variable" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test5
+<http://themis.linkeddata.es/tests/onem2m#Test5> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              dcterms:description "OperationOutput  describes the type of output of an Operation from a service of the device" ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Operation hasOutput OperationOutput" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test50
+<http://themis.linkeddata.es/tests/onem2m#Test50> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A Variable constitutes a super class to the following classes: ThingProperty, OperationInput, OperationOutput, InputDataPoint, OutputDataPoint, SimpleTypeVariable, StructuredTypeVariable" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "SimpleTypeVariable subclassOf Variable" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test51
+<http://themis.linkeddata.es/tests/onem2m#Test51> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A Variable constitutes a super class to the following classes: ThingProperty, OperationInput, OperationOutput, InputDataPoint, OutputDataPoint, SimpleTypeVariable, StructuredTypeVariable" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "OutputDataPoint subclassOf Variable" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test52
+<http://themis.linkeddata.es/tests/onem2m#Test52> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A Variable constitutes a super class to the following classes: ThingProperty, OperationInput, OperationOutput, InputDataPoint, OutputDataPoint, SimpleTypeVariable, StructuredTypeVariable" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "InputDataPoint subclassOf Variable" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test53
+<http://themis.linkeddata.es/tests/onem2m#Test53> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A Variable constitutes a super class to the following classes: ThingProperty, OperationInput, OperationOutput, InputDataPoint, OutputDataPoint, SimpleTypeVariable, StructuredTypeVariable" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "OperationOutput subclassOf Variable" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test54
+<http://themis.linkeddata.es/tests/onem2m#Test54> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A Variable constitutes a super class to the following classes: ThingProperty, OperationInput, OperationOutput, InputDataPoint, OutputDataPoint, SimpleTypeVariable, StructuredTypeVariable" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "OperationInput subclassOf Variable" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test55
+<http://themis.linkeddata.es/tests/onem2m#Test55> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A Variable constitutes a super class to the following classes: ThingProperty, OperationInput, OperationOutput, InputDataPoint, OutputDataPoint, SimpleTypeVariable, StructuredTypeVariable" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "ThingProperty subclassOf Variable" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test56
+<http://themis.linkeddata.es/tests/onem2m#Test56> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A Thing can be described with (the values of) ThingProperties" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Thing hasThingProperty ThingProperty" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test57
+<http://themis.linkeddata.es/tests/onem2m#Test57> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A thing property denotes a property of a thing" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Thing hasThingProperty ThingProperty" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test58
+<http://themis.linkeddata.es/tests/onem2m#Test58> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A thing can have relations to other things" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Thing hasThingRelation Thing" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test59
+<http://themis.linkeddata.es/tests/onem2m#Test59> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A thing may have properties" ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Thing hasThingProperty ThingProperty" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test6
+<http://themis.linkeddata.es/tests/onem2m#Test6> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              dcterms:description "An operation can have multiple operationInputs" ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Operation subClassOf hasInput only OperationInput" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test60
+<http://themis.linkeddata.es/tests/onem2m#Test60> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               dcterms:description "A thing is an entity that can be identified in the oneM2M System." ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Thing type Class" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test7
+<http://themis.linkeddata.es/tests/onem2m#Test7> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              dcterms:description "An operation can have multiple operationOutputs." ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Operation subClassOf hasOutput only OperationOutput" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test8
+<http://themis.linkeddata.es/tests/onem2m#Test8> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              dcterms:description "OperationInput describes the type of input of an operation to a service of the device." ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Operation hasInput OperationInput" .
+
+
+###  http://themis.linkeddata.es/tests/onem2m#Test9
+<http://themis.linkeddata.es/tests/onem2m#Test9> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              dcterms:description "SET_OutputDataPoint  is a sub-class of operation" ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "SET_InputDataPoint subclassOf Operation" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TestsuiteOneM2M
+<http://themis.linkeddata.es/tests/onem2m#TestsuiteOneM2M> rdf:type owl:NamedIndividual ,
+                                                                    vtc:TestSuite ;
+                                                           dcterms:source "https://git.onem2m.org/MAS/BaseOntology/blob/master/base_ontology.owl"^^xsd:anyURI .
+
+
+###  Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi

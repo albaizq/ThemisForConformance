@@ -1,0 +1,329 @@
+Provenance;Terms involved;Ontology;Requirement description;Result
+Open Connectivity Foundation (OCF);["Entity"];ISO/IEC 30141:2017;Entity exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Device"];ISO/IEC 30141:2017;Device exists in the ontology;passed
+Open Connectivity Foundation (OCF);["Transportation"];ISO/IEC 30141:2017;Transportation exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Electronics"];ISO/IEC 30141:2017;Electronics exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Resource"];ISO/IEC 30141:2017;Resource exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["CommunicationProtocol"];ISO/IEC 30141:2017;CommunicationProtocol exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Maintenance"];ISO/IEC 30141:2017;Maintenance exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Aspect"];ISO/IEC 30141:2017;Aspect exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Security"];ISO/IEC 30141:2017;Security exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Role"];ISO/IEC 30141:2017;Role exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Endpoint"];ISO/IEC 30141:2017;Endpoint exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Functionality"];ISO/IEC 30141:2017;Functionality exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["State"];ISO/IEC 30141:2017;State exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Lighting"];ISO/IEC 30141:2017;Lighting exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["SpaceConditioning"];ISO/IEC 30141:2017;SpaceConditioning exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Medica"];ISO/IEC 30141:2017;Medica exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Infrastructure"];ISO/IEC 30141:2017;Infrastructure exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["PersonalHealth"];ISO/IEC 30141:2017;PersonalHealth exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Property"];ISO/IEC 30141:2017;Property exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Link"];ISO/IEC 30141:2017;Link exists in the ontology;passed
+Open Connectivity Foundation (OCF);["Fitness"];ISO/IEC 30141:2017;Fitness exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["serialNumber","Property"]';ISO/IEC 30141:2017;serialNumber exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["address","Property"]';ISO/IEC 30141:2017;address exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["encapsulates","Property"]';ISO/IEC 30141:2017;encapsulates exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["isProvidedOverProtocol","Property"]';ISO/IEC 30141:2017;isProvidedOverProtocol exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["describesAspect","Property"]';ISO/IEC 30141:2017;describesAspect exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hosts","Property"]';ISO/IEC 30141:2017;hosts exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasDevelopers","Property"]';ISO/IEC 30141:2017;hasDevelopers exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["consistsOf","Property"]';ISO/IEC 30141:2017;consistsOf exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["communicatesWith","Property"]';ISO/IEC 30141:2017;communicatesWith exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["deviceName","Property"]';ISO/IEC 30141:2017;deviceName exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasProperty","Property"]';ISO/IEC 30141:2017;hasProperty exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["makesAccessible","Property"]';ISO/IEC 30141:2017;makesAccessible exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["implementsSecurity","Property"]';ISO/IEC 30141:2017;implementsSecurity exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["isAccessibleThrough","Property"]';ISO/IEC 30141:2017;isAccessibleThrough exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["exposes","Property"]';ISO/IEC 30141:2017;exposes exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasFunctionality","Property"]';ISO/IEC 30141:2017;hasFunctionality exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasUsers","Property"]';ISO/IEC 30141:2017;hasUsers exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasRole","Property"]';ISO/IEC 30141:2017;hasRole exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasManufacturer","Property"]';ISO/IEC 30141:2017;hasManufacturer exists in the ontology;undefined
+ISO/IEC 30141:2017;["Agent"];ISO/IEC 30141:2017;Agent exists in the ontology;undefined
+ISO/IEC 30141:2017;["Device"];ISO/IEC 30141:2017;Device exists in the ontology;passed
+ISO/IEC 30141:2017;["PhysicalThing"];ISO/IEC 30141:2017;PhysicalThing exists in the ontology;undefined
+ISO/IEC 30141:2017;["Service"];ISO/IEC 30141:2017;Service exists in the ontology;undefined
+ISO/IEC 30141:2017;["DigitalThing"];ISO/IEC 30141:2017;DigitalThing exists in the ontology;undefined
+ISO/IEC 30141:2017;["FeatureProperty"];ISO/IEC 30141:2017;FeatureProperty exists in the ontology;undefined
+ISO/IEC 30141:2017;["IoTSystem"];ISO/IEC 30141:2017;IoTSystem exists in the ontology;undefined
+ISO/IEC 30141:2017;["VirtualThing"];ISO/IEC 30141:2017;VirtualThing exists in the ontology;undefined
+ISO/IEC 30141:2017;["HumanUser"];ISO/IEC 30141:2017;HumanUser exists in the ontology;undefined
+ISO/IEC 30141:2017;["DigitalUser"];ISO/IEC 30141:2017;DigitalUser exists in the ontology;undefined
+ISO/IEC 30141:2017;["Gateway"];ISO/IEC 30141:2017;Gateway exists in the ontology;undefined
+ISO/IEC 30141:2017;["Network"];ISO/IEC 30141:2017;Network exists in the ontology;undefined
+ISO/IEC 30141:2017;["DataStore"];ISO/IEC 30141:2017;DataStore exists in the ontology;undefined
+ISO/IEC 30141:2017;["VirtualUser"];ISO/IEC 30141:2017;VirtualUser exists in the ontology;undefined
+ISO/IEC 30141:2017;["Links"];ISO/IEC 30141:2017;Links exists in the ontology;undefined
+ISO/IEC 30141:2017;["Tag"];ISO/IEC 30141:2017;Tag exists in the ontology;undefined
+ISO/IEC 30141:2017;["Application"];ISO/IEC 30141:2017;Application exists in the ontology;undefined
+ISO/IEC 30141:2017;["Person"];ISO/IEC 30141:2017;Person exists in the ontology;undefined
+ISO/IEC 30141:2017;["Thing"];ISO/IEC 30141:2017;Thing exists in the ontology;undefined
+ISO/IEC 30141:2017;["Link"];ISO/IEC 30141:2017;Link exists in the ontology;passed
+ISO/IEC 30141:2017;["Actuator"];ISO/IEC 30141:2017;Actuator exists in the ontology;undefined
+ISO/IEC 30141:2017;["Sensor"];ISO/IEC 30141:2017;Sensor exists in the ontology;undefined
+ISO/IEC 30141:2017;'["hasTag","Property"]';ISO/IEC 30141:2017;hasTag exists in the ontology;undefined
+ISO/IEC 30141:2017;'["thingName","Property"]';ISO/IEC 30141:2017;thingName exists in the ontology;undefined
+ISO/IEC 30141:2017;'["monitorsFeatureProperty","Property"]';ISO/IEC 30141:2017;monitorsFeatureProperty exists in the ontology;undefined
+ISO/IEC 30141:2017;'["actsOnFeatureProperty","Property"]';ISO/IEC 30141:2017;actsOnFeatureProperty exists in the ontology;undefined
+ISO/IEC 30141:2017;'["interactsUsing","Property"]';ISO/IEC 30141:2017;interactsUsing exists in the ontology;undefined
+ISO/IEC 30141:2017;'["represents","Property"]';ISO/IEC 30141:2017;represents exists in the ontology;undefined
+ISO/IEC 30141:2017;'["areConnectedWith","Property"]';ISO/IEC 30141:2017;areConnectedWith exists in the ontology;undefined
+ISO/IEC 30141:2017;'["interactsWith","Property"]';ISO/IEC 30141:2017;interactsWith exists in the ontology;undefined
+ISO/IEC 30141:2017;'["isAccessibleThrough","Property"]';ISO/IEC 30141:2017;isAccessibleThrough exists in the ontology;undefined
+ISO/IEC 30141:2017;'["connects","Property"]';ISO/IEC 30141:2017;connects exists in the ontology;undefined
+ISO/IEC 30141:2017;'["exposes","Property"]';ISO/IEC 30141:2017;exposes exists in the ontology;undefined
+ISO/IEC 30141:2017;'["interactsThrough","Property"]';ISO/IEC 30141:2017;interactsThrough exists in the ontology;undefined
+ISO/IEC 30141:2017;'["holds","Property"]';ISO/IEC 30141:2017;holds exists in the ontology;undefined
+ISO/IEC 30141:2017;'["uses","Property"]';ISO/IEC 30141:2017;uses exists in the ontology;undefined
+ISO/IEC 30141:2017;'["monitors","Property"]';ISO/IEC 30141:2017;monitors exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Vocabulary"];ISO/IEC 30141:2017;Vocabulary exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Agent"];ISO/IEC 30141:2017;Agent exists in the ontology;passed
+https://www.w3.org/ns/ssn/;["Stimulus"];ISO/IEC 30141:2017;Stimulus exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Platform"];ISO/IEC 30141:2017;Platform exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sample"];ISO/IEC 30141:2017;Sample exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["ActuatableProperty"];ISO/IEC 30141:2017;ActuatableProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Actuation"];ISO/IEC 30141:2017;Actuation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Deployment"];ISO/IEC 30141:2017;Deployment exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["System"];ISO/IEC 30141:2017;System exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Result"];ISO/IEC 30141:2017;Result exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Input"];ISO/IEC 30141:2017;Input exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["ObservableProperty"];ISO/IEC 30141:2017;ObservableProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["FeatureOfInterest"];ISO/IEC 30141:2017;FeatureOfInterest exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Output"];ISO/IEC 30141:2017;Output exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sampler"];ISO/IEC 30141:2017;Sampler exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Observation"];ISO/IEC 30141:2017;Observation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Procedure"];ISO/IEC 30141:2017;Procedure exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sampling"];ISO/IEC 30141:2017;Sampling exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Property"];ISO/IEC 30141:2017;Property exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Thing"];ISO/IEC 30141:2017;Thing exists in the ontology;passed
+https://www.w3.org/ns/ssn/;["Sensor"];ISO/IEC 30141:2017;Sensor exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Actuator"];ISO/IEC 30141:2017;Actuator exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["implements","Property"]';ISO/IEC 30141:2017;implements exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["inDeployment","Property"]';ISO/IEC 30141:2017;inDeployment exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasFeatureOfInterest","Property"]';ISO/IEC 30141:2017;hasFeatureOfInterest exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeBySampler","Property"]';ISO/IEC 30141:2017;madeBySampler exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["deployedOnPlatform","Property"]';ISO/IEC 30141:2017;deployedOnPlatform exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["phenomenonTime","Property"]';ISO/IEC 30141:2017;phenomenonTime exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["observedProperty","Property"]';ISO/IEC 30141:2017;observedProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeSampling","Property"]';ISO/IEC 30141:2017;madeSampling exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasDeployment","Property"]';ISO/IEC 30141:2017;hasDeployment exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isActedOnBy","Property"]';ISO/IEC 30141:2017;isActedOnBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["observes","Property"]';ISO/IEC 30141:2017;observes exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["usedProcedure","Property"]';ISO/IEC 30141:2017;usedProcedure exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isSampleOf","Property"]';ISO/IEC 30141:2017;isSampleOf exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeBySensor","Property"]';ISO/IEC 30141:2017;madeBySensor exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasSubSystem","Property"]';ISO/IEC 30141:2017;hasSubSystem exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasSample","Property"]';ISO/IEC 30141:2017;hasSample exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isHostedBy","Property"]';ISO/IEC 30141:2017;isHostedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["implementedBy","Property"]';ISO/IEC 30141:2017;implementedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["resultTime","Property"]';ISO/IEC 30141:2017;resultTime exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isObservedBy","Property"]';ISO/IEC 30141:2017;isObservedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeByActuator","Property"]';ISO/IEC 30141:2017;madeByActuator exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["forProperty","Property"]';ISO/IEC 30141:2017;forProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hosts","Property"]';ISO/IEC 30141:2017;hosts exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasResult","Property"]';ISO/IEC 30141:2017;hasResult exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["detects","Property"]';ISO/IEC 30141:2017;detects exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["deployedSystem","Property"]';ISO/IEC 30141:2017;deployedSystem exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isResultOf","Property"]';ISO/IEC 30141:2017;isResultOf exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasProperty","Property"]';ISO/IEC 30141:2017;hasProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isPropertyOf","Property"]';ISO/IEC 30141:2017;isPropertyOf exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["wasOriginatedBy","Property"]';ISO/IEC 30141:2017;wasOriginatedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeObservation","Property"]';ISO/IEC 30141:2017;madeObservation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeActuation","Property"]';ISO/IEC 30141:2017;madeActuation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasOutput","Property"]';ISO/IEC 30141:2017;hasOutput exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isProxyFor","Property"]';ISO/IEC 30141:2017;isProxyFor exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasInput","Property"]';ISO/IEC 30141:2017;hasInput exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["actsOnProperty","Property"]';ISO/IEC 30141:2017;actsOnProperty exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Variable"];ISO/IEC 30141:2017;Variable exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Device"];ISO/IEC 30141:2017;Device exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["MeasuringFunction"];ISO/IEC 30141:2017;MeasuringFunction exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];ISO/IEC 30141:2017;InterworkedDevice exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OperationInput"];ISO/IEC 30141:2017;OperationInput exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["StructuredTypeVariable"];ISO/IEC 30141:2017;StructuredTypeVariable exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["GET_InputDataPoint"];ISO/IEC 30141:2017;GET_InputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Service"];ISO/IEC 30141:2017;Service exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];ISO/IEC 30141:2017;Operation exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Aspect"];ISO/IEC 30141:2017;Aspect exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OutputDataPoint"];ISO/IEC 30141:2017;OutputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["AreaNetwork"];ISO/IEC 30141:2017;AreaNetwork exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["SET_OutputDataPoint"];ISO/IEC 30141:2017;SET_OutputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["SimpleTypeVariable"];ISO/IEC 30141:2017;SimpleTypeVariable exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Function"];ISO/IEC 30141:2017;Function exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Command"];ISO/IEC 30141:2017;Command exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["ThingProperty"];ISO/IEC 30141:2017;ThingProperty exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["MetaData"];ISO/IEC 30141:2017;MetaData exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InputDataPoint"];ISO/IEC 30141:2017;InputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OperationOutput"];ISO/IEC 30141:2017;OperationOutput exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["VariableConversion"];ISO/IEC 30141:2017;VariableConversion exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["ControllingFunction"];ISO/IEC 30141:2017;ControllingFunction exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Thing"];ISO/IEC 30141:2017;Thing exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_pattern","Property"]';ISO/IEC 30141:2017;hasDataRestriction_pattern exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minInclusive","Property"]';ISO/IEC 30141:2017;hasDataRestriction_minInclusive exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasSubService","Property"]';ISO/IEC 30141:2017;hasSubService exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyCommunicationProtocol","Property"]';ISO/IEC 30141:2017;netTechnologyCommunicationProtocol exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataType","Property"]';ISO/IEC 30141:2017;hasDataType exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasInputDataPoint","Property"]';ISO/IEC 30141:2017;hasInputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["exposesCommand","Property"]';ISO/IEC 30141:2017;exposesCommand exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction","Property"]';ISO/IEC 30141:2017;hasDataRestriction exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minExclusive","Property"]';ISO/IEC 30141:2017;hasDataRestriction_minExclusive exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyPhysicalStandard","Property"]';ISO/IEC 30141:2017;netTechnologyPhysicalStandard exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_length","Property"]';ISO/IEC 30141:2017;hasDataRestriction_length exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingProperty","Property"]';ISO/IEC 30141:2017;hasThingProperty exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasCommand","Property"]';ISO/IEC 30141:2017;hasCommand exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOutputDataPoint","Property"]';ISO/IEC 30141:2017;hasOutputDataPoint exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["exposesFunction","Property"]';ISO/IEC 30141:2017;exposesFunction exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasService","Property"]';ISO/IEC 30141:2017;hasService exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MTargetURI","Property"]';ISO/IEC 30141:2017;oneM2MTargetURI exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasSubStructure","Property"]';ISO/IEC 30141:2017;hasSubStructure exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyProfile","Property"]';ISO/IEC 30141:2017;netTechnologyProfile exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["refersTo","Property"]';ISO/IEC 30141:2017;refersTo exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["isDataList","Property"]';ISO/IEC 30141:2017;isDataList exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["consistsOf","Property"]';ISO/IEC 30141:2017;consistsOf exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minLength","Property"]';ISO/IEC 30141:2017;hasDataRestriction_minLength exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasValue","Property"]';ISO/IEC 30141:2017;hasValue exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["isPartOf","Property"]';ISO/IEC 30141:2017;isPartOf exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["describes","Property"]';ISO/IEC 30141:2017;describes exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOperation","Property"]';ISO/IEC 30141:2017;hasOperation exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MAttribute","Property"]';ISO/IEC 30141:2017;oneM2MAttribute exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasConversion","Property"]';ISO/IEC 30141:2017;hasConversion exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["convertsTo","Property"]';ISO/IEC 30141:2017;convertsTo exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxLength","Property"]';ISO/IEC 30141:2017;hasDataRestriction_maxLength exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingRelation","Property"]';ISO/IEC 30141:2017;hasThingRelation exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxInclusive","Property"]';ISO/IEC 30141:2017;hasDataRestriction_maxInclusive exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxExclusive","Property"]';ISO/IEC 30141:2017;hasDataRestriction_maxExclusive exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasFunction","Property"]';ISO/IEC 30141:2017;hasFunction exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasMetaData","Property"]';ISO/IEC 30141:2017;hasMetaData exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOutput","Property"]';ISO/IEC 30141:2017;hasOutput exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingAnnotation","Property"]';ISO/IEC 30141:2017;hasThingAnnotation exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MMethod","Property"]';ISO/IEC 30141:2017;oneM2MMethod exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasInput","Property"]';ISO/IEC 30141:2017;hasInput exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Water"];ISO/IEC 30141:2017;Water exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OpenCloseFunction"];ISO/IEC 30141:2017;OpenCloseFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Task"];ISO/IEC 30141:2017;Task exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetMeterDataCommand"];ISO/IEC 30141:2017;GetMeterDataCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Meter"];ISO/IEC 30141:2017;Meter exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SmokeSensor"];ISO/IEC 30141:2017;SmokeSensor exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["MultiLevelState"];ISO/IEC 30141:2017;MultiLevelState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Smoke"];ISO/IEC 30141:2017;Smoke exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StartState"];ISO/IEC 30141:2017;StartState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OffState"];ISO/IEC 30141:2017;OffState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SensingFunction"];ISO/IEC 30141:2017;SensingFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["HVAC"];ISO/IEC 30141:2017;HVAC exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["DoorSwitch"];ISO/IEC 30141:2017;DoorSwitch exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Light"];ISO/IEC 30141:2017;Light exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Occupancy"];ISO/IEC 30141:2017;Occupancy exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Network"];ISO/IEC 30141:2017;Network exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["CloseCommand"];ISO/IEC 30141:2017;CloseCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Currency"];ISO/IEC 30141:2017;Currency exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Coal"];ISO/IEC 30141:2017;Coal exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["MeteringFunction"];ISO/IEC 30141:2017;MeteringFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetCurrentMeterValueCommand"];ISO/IEC 30141:2017;GetCurrentMeterValueCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetMeterHistoryCommand"];ISO/IEC 30141:2017;GetMeterHistoryCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["ToggleCommand"];ISO/IEC 30141:2017;ToggleCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["EnergyRelated"];ISO/IEC 30141:2017;EnergyRelated exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OnOffState"];ISO/IEC 30141:2017;OnOffState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["LightingDevice"];ISO/IEC 30141:2017;LightingDevice exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetSensingDataCommand"];ISO/IEC 30141:2017;GetSensingDataCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Load"];ISO/IEC 30141:2017;Load exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["UnitOfMeasure"];ISO/IEC 30141:2017;UnitOfMeasure exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StartStopState"];ISO/IEC 30141:2017;StartStopState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SetRelativeLevelCommand"];ISO/IEC 30141:2017;SetRelativeLevelCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Device"];ISO/IEC 30141:2017;Device exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["TemperatureUnit"];ISO/IEC 30141:2017;TemperatureUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Pressure"];ISO/IEC 30141:2017;Pressure exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StepDownCommand"];ISO/IEC 30141:2017;StepDownCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StopCommand"];ISO/IEC 30141:2017;StopCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Storage"];ISO/IEC 30141:2017;Storage exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OpenState"];ISO/IEC 30141:2017;OpenState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Switch"];ISO/IEC 30141:2017;Switch exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["TemporalEntity"];ISO/IEC 30141:2017;TemporalEntity exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Price"];ISO/IEC 30141:2017;Price exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["State"];ISO/IEC 30141:2017;State exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SetLevelCommand"];ISO/IEC 30141:2017;SetLevelCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Gas"];ISO/IEC 30141:2017;Gas exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["PauseCommand"];ISO/IEC 30141:2017;PauseCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["PressureUnit"];ISO/IEC 30141:2017;PressureUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["MicroRenewable"];ISO/IEC 30141:2017;MicroRenewable exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Sensor"];ISO/IEC 30141:2017;Sensor exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Generator"];ISO/IEC 30141:2017;Generator exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Measurement"];ISO/IEC 30141:2017;Measurement exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["EnergyMeter"];ISO/IEC 30141:2017;EnergyMeter exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["WashingMachine"];ISO/IEC 30141:2017;WashingMachine exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StartStopFunction"];ISO/IEC 30141:2017;StartStopFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Temperature"];ISO/IEC 30141:2017;Temperature exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StartCommand"];ISO/IEC 30141:2017;StartCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Time"];ISO/IEC 30141:2017;Time exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Profile"];ISO/IEC 30141:2017;Profile exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Function"];ISO/IEC 30141:2017;Function exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["FunctionRelated"];ISO/IEC 30141:2017;FunctionRelated exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Appliance"];ISO/IEC 30141:2017;Appliance exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Commodity"];ISO/IEC 30141:2017;Commodity exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Energy"];ISO/IEC 30141:2017;Energy exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Electricity"];ISO/IEC 30141:2017;Electricity exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StepUpCommand"];ISO/IEC 30141:2017;StepUpCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OpenCommand"];ISO/IEC 30141:2017;OpenCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Humidity"];ISO/IEC 30141:2017;Humidity exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["EventFunction"];ISO/IEC 30141:2017;EventFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OnState"];ISO/IEC 30141:2017;OnState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["PowerUnit"];ISO/IEC 30141:2017;PowerUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Property"];ISO/IEC 30141:2017;Property exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["IlluminanceUnit"];ISO/IEC 30141:2017;IlluminanceUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["CloseState"];ISO/IEC 30141:2017;CloseState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Actuator"];ISO/IEC 30141:2017;Actuator exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OnOffFunction"];ISO/IEC 30141:2017;OnOffFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Multimedia"];ISO/IEC 30141:2017;Multimedia exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["NotifyCommand"];ISO/IEC 30141:2017;NotifyCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Motion"];ISO/IEC 30141:2017;Motion exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["ActuatingFunction"];ISO/IEC 30141:2017;ActuatingFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["TemporalUnit"];ISO/IEC 30141:2017;TemporalUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OpenCloseState"];ISO/IEC 30141:2017;OpenCloseState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["EnergyUnit"];ISO/IEC 30141:2017;EnergyUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Service"];ISO/IEC 30141:2017;Service exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["TemperatureSensor"];ISO/IEC 30141:2017;TemperatureSensor exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["LightSwitch"];ISO/IEC 30141:2017;LightSwitch exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetCommand"];ISO/IEC 30141:2017;GetCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OnCommand"];ISO/IEC 30141:2017;OnCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Command"];ISO/IEC 30141:2017;Command exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OffCommand"];ISO/IEC 30141:2017;OffCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SetAbsoluteLevelCommand"];ISO/IEC 30141:2017;SetAbsoluteLevelCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SwitchOnService"];ISO/IEC 30141:2017;SwitchOnService exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["LevelControlFunction"];ISO/IEC 30141:2017;LevelControlFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["BuildingRelated"];ISO/IEC 30141:2017;BuildingRelated exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StopState"];ISO/IEC 30141:2017;StopState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Power"];ISO/IEC 30141:2017;Power exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasName","Property"]';ISO/IEC 30141:2017;hasName exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isOfferedBy","Property"]';ISO/IEC 30141:2017;isOfferedBy exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["accomplishes","Property"]';ISO/IEC 30141:2017;accomplishes exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasMeterReadingType","Property"]';ISO/IEC 30141:2017;hasMeterReadingType exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasModel","Property"]';ISO/IEC 30141:2017;hasModel exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasTypicalConsumption","Property"]';ISO/IEC 30141:2017;hasTypicalConsumption exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasTime","Property"]';ISO/IEC 30141:2017;hasTime exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasTimestamp","Property"]';ISO/IEC 30141:2017;hasTimestamp exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["represents","Property"]';ISO/IEC 30141:2017;represents exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isCommandOf","Property"]';ISO/IEC 30141:2017;isCommandOf exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasSensorType","Property"]';ISO/IEC 30141:2017;hasSensorType exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasCommand","Property"]';ISO/IEC 30141:2017;hasCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isMeasuredByDevice","Property"]';ISO/IEC 30141:2017;isMeasuredByDevice exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasProfile","Property"]';ISO/IEC 30141:2017;hasProfile exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isMeasuredIn","Property"]';ISO/IEC 30141:2017;isMeasuredIn exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasPrice","Property"]';ISO/IEC 30141:2017;hasPrice exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["relatesToProperty","Property"]';ISO/IEC 30141:2017;relatesToProperty exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["offers","Property"]';ISO/IEC 30141:2017;offers exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasMeterReading","Property"]';ISO/IEC 30141:2017;hasMeterReading exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isAccomplishedBy","Property"]';ISO/IEC 30141:2017;isAccomplishedBy exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isUsedFor","Property"]';ISO/IEC 30141:2017;isUsedFor exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasDescription","Property"]';ISO/IEC 30141:2017;hasDescription exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["consistsOf","Property"]';ISO/IEC 30141:2017;consistsOf exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasSensingRange","Property"]';ISO/IEC 30141:2017;hasSensingRange exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasValue","Property"]';ISO/IEC 30141:2017;hasValue exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasState","Property"]';ISO/IEC 30141:2017;hasState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isAbout","Property"]';ISO/IEC 30141:2017;isAbout exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["actsUpon","Property"]';ISO/IEC 30141:2017;actsUpon exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["measuresProperty","Property"]';ISO/IEC 30141:2017;measuresProperty exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["controlsProperty","Property"]';ISO/IEC 30141:2017;controlsProperty exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasFunction","Property"]';ISO/IEC 30141:2017;hasFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["relatesToMeasurement","Property"]';ISO/IEC 30141:2017;relatesToMeasurement exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasManufacturer","Property"]';ISO/IEC 30141:2017;hasManufacturer exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isControlledByDevice","Property"]';ISO/IEC 30141:2017;isControlledByDevice exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["makesMeasurement","Property"]';ISO/IEC 30141:2017;makesMeasurement exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasThresholdMeasurement","Property"]';ISO/IEC 30141:2017;hasThresholdMeasurement exists in the ontology;undefined

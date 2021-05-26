@@ -1,0 +1,329 @@
+Provenance;Terms involved;Ontology;Requirement description;Result
+Open Connectivity Foundation (OCF);["Entity"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Entity exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Device"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Device exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Transportation"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Transportation exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Electronics"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Electronics exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Resource"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Resource exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["CommunicationProtocol"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;CommunicationProtocol exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Maintenance"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Maintenance exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Aspect"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Aspect exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Security"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Security exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Role"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Role exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Endpoint"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Endpoint exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Functionality"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Functionality exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["State"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;State exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Lighting"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Lighting exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["SpaceConditioning"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;SpaceConditioning exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Medica"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Medica exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Infrastructure"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Infrastructure exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["PersonalHealth"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;PersonalHealth exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Property"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Property exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Link"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Link exists in the ontology;undefined
+Open Connectivity Foundation (OCF);["Fitness"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Fitness exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["serialNumber","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;serialNumber exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["address","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;address exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["encapsulates","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;encapsulates exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["isProvidedOverProtocol","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isProvidedOverProtocol exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["describesAspect","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;describesAspect exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hosts","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hosts exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasDevelopers","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDevelopers exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["consistsOf","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;consistsOf exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["communicatesWith","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;communicatesWith exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["deviceName","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;deviceName exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasProperty exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["makesAccessible","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;makesAccessible exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["implementsSecurity","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;implementsSecurity exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["isAccessibleThrough","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isAccessibleThrough exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["exposes","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;exposes exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasFunctionality","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasFunctionality exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasUsers","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasUsers exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasRole","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasRole exists in the ontology;undefined
+Open Connectivity Foundation (OCF);'["hasManufacturer","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasManufacturer exists in the ontology;undefined
+ISO/IEC 30141:2017;["Agent"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Agent exists in the ontology;undefined
+ISO/IEC 30141:2017;["Device"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Device exists in the ontology;undefined
+ISO/IEC 30141:2017;["PhysicalThing"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;PhysicalThing exists in the ontology;undefined
+ISO/IEC 30141:2017;["Service"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Service exists in the ontology;undefined
+ISO/IEC 30141:2017;["DigitalThing"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;DigitalThing exists in the ontology;undefined
+ISO/IEC 30141:2017;["FeatureProperty"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;FeatureProperty exists in the ontology;undefined
+ISO/IEC 30141:2017;["IoTSystem"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;IoTSystem exists in the ontology;undefined
+ISO/IEC 30141:2017;["VirtualThing"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;VirtualThing exists in the ontology;undefined
+ISO/IEC 30141:2017;["HumanUser"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;HumanUser exists in the ontology;undefined
+ISO/IEC 30141:2017;["DigitalUser"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;DigitalUser exists in the ontology;undefined
+ISO/IEC 30141:2017;["Gateway"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Gateway exists in the ontology;undefined
+ISO/IEC 30141:2017;["Network"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Network exists in the ontology;undefined
+ISO/IEC 30141:2017;["DataStore"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;DataStore exists in the ontology;undefined
+ISO/IEC 30141:2017;["VirtualUser"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;VirtualUser exists in the ontology;undefined
+ISO/IEC 30141:2017;["Links"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Links exists in the ontology;undefined
+ISO/IEC 30141:2017;["Tag"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Tag exists in the ontology;undefined
+ISO/IEC 30141:2017;["Application"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Application exists in the ontology;undefined
+ISO/IEC 30141:2017;["Person"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Person exists in the ontology;undefined
+ISO/IEC 30141:2017;["Thing"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Thing exists in the ontology;undefined
+ISO/IEC 30141:2017;["Link"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Link exists in the ontology;undefined
+ISO/IEC 30141:2017;["Actuator"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Actuator exists in the ontology;undefined
+ISO/IEC 30141:2017;["Sensor"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Sensor exists in the ontology;undefined
+ISO/IEC 30141:2017;'["hasTag","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasTag exists in the ontology;undefined
+ISO/IEC 30141:2017;'["thingName","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;thingName exists in the ontology;undefined
+ISO/IEC 30141:2017;'["monitorsFeatureProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;monitorsFeatureProperty exists in the ontology;undefined
+ISO/IEC 30141:2017;'["actsOnFeatureProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;actsOnFeatureProperty exists in the ontology;undefined
+ISO/IEC 30141:2017;'["interactsUsing","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;interactsUsing exists in the ontology;undefined
+ISO/IEC 30141:2017;'["represents","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;represents exists in the ontology;undefined
+ISO/IEC 30141:2017;'["areConnectedWith","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;areConnectedWith exists in the ontology;undefined
+ISO/IEC 30141:2017;'["interactsWith","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;interactsWith exists in the ontology;undefined
+ISO/IEC 30141:2017;'["isAccessibleThrough","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isAccessibleThrough exists in the ontology;undefined
+ISO/IEC 30141:2017;'["connects","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;connects exists in the ontology;undefined
+ISO/IEC 30141:2017;'["exposes","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;exposes exists in the ontology;undefined
+ISO/IEC 30141:2017;'["interactsThrough","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;interactsThrough exists in the ontology;undefined
+ISO/IEC 30141:2017;'["holds","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;holds exists in the ontology;undefined
+ISO/IEC 30141:2017;'["uses","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;uses exists in the ontology;undefined
+ISO/IEC 30141:2017;'["monitors","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;monitors exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Vocabulary"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Vocabulary exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Agent"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Agent exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Stimulus"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Stimulus exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Platform"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Platform exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sample"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Sample exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["ActuatableProperty"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;ActuatableProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Actuation"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Actuation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Deployment"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Deployment exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["System"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;System exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Result"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Result exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Input"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Input exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["ObservableProperty"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;ObservableProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["FeatureOfInterest"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;FeatureOfInterest exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Output"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Output exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sampler"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Sampler exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Observation"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Observation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Procedure"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Procedure exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sampling"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Sampling exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Property"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Property exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Thing"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Thing exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Sensor"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Sensor exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;["Actuator"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Actuator exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["implements","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;implements exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["inDeployment","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;inDeployment exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasFeatureOfInterest","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasFeatureOfInterest exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeBySampler","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;madeBySampler exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["deployedOnPlatform","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;deployedOnPlatform exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["phenomenonTime","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;phenomenonTime exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["observedProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;observedProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeSampling","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;madeSampling exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasDeployment","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDeployment exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isActedOnBy","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isActedOnBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["observes","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;observes exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["usedProcedure","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;usedProcedure exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isSampleOf","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isSampleOf exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeBySensor","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;madeBySensor exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasSubSystem","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasSubSystem exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasSample","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasSample exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isHostedBy","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isHostedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["implementedBy","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;implementedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["resultTime","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;resultTime exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isObservedBy","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isObservedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeByActuator","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;madeByActuator exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["forProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;forProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hosts","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hosts exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasResult","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasResult exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["detects","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;detects exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["deployedSystem","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;deployedSystem exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isResultOf","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isResultOf exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasProperty exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["isPropertyOf","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isPropertyOf exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["wasOriginatedBy","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;wasOriginatedBy exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeObservation","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;madeObservation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["madeActuation","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;madeActuation exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasOutput","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasOutput exists in the ontology;passed
+https://www.w3.org/ns/ssn/;'["isProxyFor","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isProxyFor exists in the ontology;undefined
+https://www.w3.org/ns/ssn/;'["hasInput","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasInput exists in the ontology;passed
+https://www.w3.org/ns/ssn/;'["actsOnProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;actsOnProperty exists in the ontology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Variable"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Variable exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Device"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Device exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["MeasuringFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;MeasuringFunction exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;InterworkedDevice exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OperationInput"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OperationInput exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["StructuredTypeVariable"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;StructuredTypeVariable exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["GET_InputDataPoint"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;GET_InputDataPoint exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Service"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Service exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Operation exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Aspect"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Aspect exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OutputDataPoint"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OutputDataPoint exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["AreaNetwork"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;AreaNetwork exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["SET_OutputDataPoint"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;SET_OutputDataPoint exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["SimpleTypeVariable"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;SimpleTypeVariable exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Function"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Function exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Command"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Command exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["ThingProperty"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;ThingProperty exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["MetaData"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;MetaData exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InputDataPoint"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;InputDataPoint exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OperationOutput"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OperationOutput exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["VariableConversion"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;VariableConversion exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["ControllingFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;ControllingFunction exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Thing"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Thing exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_pattern","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataRestriction_pattern exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minInclusive","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataRestriction_minInclusive exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasSubService","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasSubService exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyCommunicationProtocol","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;netTechnologyCommunicationProtocol exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataType","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataType exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasInputDataPoint","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasInputDataPoint exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["exposesCommand","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;exposesCommand exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataRestriction exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minExclusive","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataRestriction_minExclusive exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyPhysicalStandard","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;netTechnologyPhysicalStandard exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_length","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataRestriction_length exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasThingProperty exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasCommand","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasCommand exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOutputDataPoint","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasOutputDataPoint exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["exposesFunction","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;exposesFunction exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasService","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasService exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MTargetURI","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;oneM2MTargetURI exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasSubStructure","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasSubStructure exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyProfile","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;netTechnologyProfile exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["refersTo","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;refersTo exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["isDataList","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isDataList exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["consistsOf","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;consistsOf exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minLength","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataRestriction_minLength exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasValue","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasValue exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["isPartOf","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isPartOf exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["describes","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;describes exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOperation","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasOperation exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MAttribute","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;oneM2MAttribute exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasConversion","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasConversion exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["convertsTo","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;convertsTo exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxLength","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataRestriction_maxLength exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingRelation","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasThingRelation exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxInclusive","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataRestriction_maxInclusive exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxExclusive","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDataRestriction_maxExclusive exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasFunction","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasFunction exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasMetaData","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasMetaData exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOutput","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasOutput exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingAnnotation","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasThingAnnotation exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MMethod","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;oneM2MMethod exists in the ontology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasInput","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasInput exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["Water"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Water exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OpenCloseFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OpenCloseFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Task"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Task exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetMeterDataCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;GetMeterDataCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Meter"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Meter exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SmokeSensor"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;SmokeSensor exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["MultiLevelState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;MultiLevelState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Smoke"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Smoke exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StartState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;StartState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OffState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OffState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SensingFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;SensingFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["HVAC"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;HVAC exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["DoorSwitch"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;DoorSwitch exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Light"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Light exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Occupancy"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Occupancy exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Network"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Network exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["CloseCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;CloseCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Currency"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Currency exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Coal"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Coal exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["MeteringFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;MeteringFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetCurrentMeterValueCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;GetCurrentMeterValueCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetMeterHistoryCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;GetMeterHistoryCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["ToggleCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;ToggleCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["EnergyRelated"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;EnergyRelated exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OnOffState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OnOffState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["LightingDevice"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;LightingDevice exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetSensingDataCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;GetSensingDataCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Load"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Load exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["UnitOfMeasure"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;UnitOfMeasure exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StartStopState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;StartStopState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SetRelativeLevelCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;SetRelativeLevelCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Device"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Device exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["TemperatureUnit"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;TemperatureUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Pressure"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Pressure exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StepDownCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;StepDownCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StopCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;StopCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Storage"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Storage exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OpenState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OpenState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Switch"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Switch exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["TemporalEntity"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;TemporalEntity exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Price"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Price exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["State"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;State exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SetLevelCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;SetLevelCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Gas"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Gas exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["PauseCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;PauseCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["PressureUnit"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;PressureUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["MicroRenewable"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;MicroRenewable exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Sensor"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Sensor exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Generator"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Generator exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Measurement"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Measurement exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["EnergyMeter"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;EnergyMeter exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["WashingMachine"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;WashingMachine exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StartStopFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;StartStopFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Temperature"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Temperature exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StartCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;StartCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Time"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Time exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Profile"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Profile exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Function"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Function exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["FunctionRelated"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;FunctionRelated exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Appliance"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Appliance exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Commodity"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Commodity exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Energy"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Energy exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Electricity"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Electricity exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StepUpCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;StepUpCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OpenCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OpenCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Humidity"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Humidity exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["EventFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;EventFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OnState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OnState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["PowerUnit"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;PowerUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Property"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Property exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["IlluminanceUnit"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;IlluminanceUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["CloseState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;CloseState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Actuator"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Actuator exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OnOffFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OnOffFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Multimedia"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Multimedia exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["NotifyCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;NotifyCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Motion"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Motion exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["ActuatingFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;ActuatingFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["TemporalUnit"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;TemporalUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OpenCloseState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OpenCloseState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["EnergyUnit"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;EnergyUnit exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Service"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Service exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["TemperatureSensor"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;TemperatureSensor exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["LightSwitch"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;LightSwitch exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["GetCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;GetCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["OnCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OnCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Command"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Command exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;["OffCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;OffCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SetAbsoluteLevelCommand"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;SetAbsoluteLevelCommand exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["SwitchOnService"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;SwitchOnService exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["LevelControlFunction"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;LevelControlFunction exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["BuildingRelated"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;BuildingRelated exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["StopState"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;StopState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;["Power"];https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;Power exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasName","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasName exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isOfferedBy","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isOfferedBy exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["accomplishes","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;accomplishes exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasMeterReadingType","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasMeterReadingType exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasModel","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasModel exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasTypicalConsumption","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasTypicalConsumption exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasTime","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasTime exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasTimestamp","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasTimestamp exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["represents","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;represents exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isCommandOf","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isCommandOf exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasSensorType","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasSensorType exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasCommand","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasCommand exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["isMeasuredByDevice","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isMeasuredByDevice exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasProfile","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasProfile exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isMeasuredIn","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isMeasuredIn exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasPrice","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasPrice exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["relatesToProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;relatesToProperty exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["offers","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;offers exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasMeterReading","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasMeterReading exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isAccomplishedBy","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isAccomplishedBy exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isUsedFor","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isUsedFor exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasDescription","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasDescription exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["consistsOf","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;consistsOf exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasSensingRange","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasSensingRange exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasValue","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasValue exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["hasState","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasState exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isAbout","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isAbout exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["actsUpon","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;actsUpon exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["measuresProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;measuresProperty exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["controlsProperty","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;controlsProperty exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasFunction","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasFunction exists in the ontology;passed
+https://ontology.tno.nl/saref.ttl;'["relatesToMeasurement","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;relatesToMeasurement exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasManufacturer","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasManufacturer exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["isControlledByDevice","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;isControlledByDevice exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["makesMeasurement","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;makesMeasurement exists in the ontology;undefined
+https://ontology.tno.nl/saref.ttl;'["hasThresholdMeasurement","Property"]';https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;hasThresholdMeasurement exists in the ontology;undefined

@@ -1,0 +1,531 @@
+@prefix : <http://themis.linkeddata.es/tests/saref#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://themis.linkeddata.es/tests/saref#> .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test1
+:Test1 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <http://purl.org/dc/terms/description> "A property is related to a measurement." ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "core:Property relatesToMeasurement Measurement" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test10
+:Test10 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A measurement describes a measure of a quantity." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Measurement subclassOf hasValue some float" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test11
+:Test11 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A profile can be associated to some costs." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Profile subclassOf hasPrice only Price" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test12
+:Test12 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A profile can be calculated over a time span." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Profile subclassOf hasTime only Time" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test13
+:Test13 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A profile is linked to a certain property or commodity." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Profile isAbout Commodity" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test14
+:Test14 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A profile is linked to a certain property or commodity." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Profile isAbout core:Property" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test15
+:Test15 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can have a profile." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device hasProfile Profile" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test16
+:Test16 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A service is offered by at least one device." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Service subclassOf isOfferedBy min 1 Device" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test17
+:Test17 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A service shall represent at least one function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Service subclassOf represents min 1 Function" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test18
+:Test18 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device offers a service." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device offers Service" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test19
+:Test19 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can be found in a state." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device hasState State" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test2
+:Test2 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <http://purl.org/dc/terms/description> "The energy unit is a unit of measurment." ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "EnergyUnit subclassOf UnitOfMeasure" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test20
+:Test20 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A command can act upong a state." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Command actsUpon State" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test21
+:Test21 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The notify command is associated to the event function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "NotifyCommand isCommandOf EventFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test22
+:Test22 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The get current meter value, get meter data and get meter history commands are associated to the metering function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "GetMeterHistoryCommand isCommandOf MeteringFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test23
+:Test23 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The get current meter value, get meter data and get meter history commands are associated to the metering function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "GetMeterDataCommand isCommandOf MeteringFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test24
+:Test24 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The get current meter value, get meter data and get meter history commands are associated to the metering function" ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "GetCurrentMeterValueCommand isCommandOf MeteringFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test25
+:Test25 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The get command is associated to the sensing function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "GetCommand isCommandOf SensingFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test26
+:Test26 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The set level, step up and step down commands are associated to the level control function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "StepDownCommand isCommandOf LevelControlFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test27
+:Test27 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The set level, step up and step down commands are associated to the level control function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "StepUpCommand isCommandOf LevelControlFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test28
+:Test28 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The set level, step up and step down commands are associated to the level control function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "SetLevelCommand isCommandOf LevelControlFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test29
+:Test29 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The on, off and toggle commands are associated to the on-off function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "ToggleCommand isCommandOf OnOffFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test3
+:Test3 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <http://purl.org/dc/terms/description> "The power unit is a unit of measurement." ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "PowerUnit subclassOf UnitOfMeasure" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test30
+:Test30 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The on, off and toggle commands are associated to the on-off function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "OnCommand isCommandOf OnOffFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test31
+:Test31 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The on, off and toggle commands are associated to the on-off function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "OffCommand isCommandOf OnOffFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test32
+:Test32 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A function shall have at least one command." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Function subclassOf hasCommand min 1 Command" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test33
+:Test33 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "Meter hasFunction MeteringFunction." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Meter hasFunction MeteringFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test34
+:Test34 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A door switch performs the open-close function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "DoorSwitch hasFunction OpenCloseFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test35
+:Test35 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A door switch is an actuator." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "DoorSwitch subclassOf Actuator" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test36
+:Test36 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A door switch consists of a switch." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "DoorSwitch consistsOf Switch" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test37
+:Test37 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A switch performs an actuating function of type on-off and open-close." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Switch hasFunction OpenCloseFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test38
+:Test38 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A switch performs an actuating function of type on-off and open-close." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Switch hasFunction OnOffFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test39
+:Test39 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A switch is an actuator." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Switch subclassOf Actuator" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test4
+:Test4 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <http://purl.org/dc/terms/description> "Examples of properties are: Power and energy." ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Energy subclassOf core:Property" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test40
+:Test40 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A smoke sensor performs the sensing and event functions." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "SmokeSensor hasFunction EventFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test41
+:Test41 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A smoke sensor performs the sensing and event functions." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "SmokeSensor hasFunction SensingFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test42
+:Test42 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A smoke sensor consists of a sensor." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "SmokeSensor consistsOf Sensor" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test43
+:Test43 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A temperature sensor measures the temperature." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "TemperatureSensor measuresProperty Temperature" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test44
+:Test44 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A temperature sensor performs the sensing function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "TemperatureSensor hasFunction SensingFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test45
+:Test45 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A temperature sensor consists of a sensor." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "TemperatureSensor consistsOf Sensor" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test46
+:Test46 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A sensor performs a sensing function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Sensor hasFunction SensingFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test47
+:Test47 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The event function allows the command notify." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "EventFunction hasCommand NotifyCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test48
+:Test48 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The metering funcion allows the commands related to get the current meter value, get the meter data and get the meter history." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "MeteringFunction hasCommand GetMeterHistoryCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test49
+:Test49 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The metering funcion allows the commands related to get the current meter value, get the meter data and get the meter history." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "MeteringFunction hasCommand GetMeterDataCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test5
+:Test5 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <http://purl.org/dc/terms/description> "Examples of properties are: Power and energy." ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Power subclassOf core:Property" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test50
+:Test50 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The metering funcion allows the commands related to get the current meter value, get the meter data and get the meter history." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "MeteringFunction hasCommand GetCurrentMeterValueCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test51
+:Test51 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The sensing funcion allows the get command." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "SensingFunction hasCommand GetCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test52
+:Test52 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The level control function allows the commands set level,  step up and step down." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "OnOffFunction hasCommand StepDownCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test53
+:Test53 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The level control function allows the commands set level,  step up and step down." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "OnOffFunction hasCommand StepUpCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test54
+:Test54 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The level control function allows the commands set level,  step up and step down." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "LevelControlFunction hasCommand SetLevelCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test55
+:Test55 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The on off function allows the commands on, off and toggle." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "OnOffFunction hasCommand ToggleCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test56
+:Test56 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The on off function allows the commands on, off and toggle." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "OnOffFunction hasCommand OffCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test57
+:Test57 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "The on off function allows the commands on, off and toggle." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "OnOffFunction hasCommand OnCommand" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test58
+:Test58 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "Examples of actuating functions are the on off function and the level control function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "LevelControlFunction subclassOf ActuatingFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test59
+:Test59 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "Examples of actuating functions are the on off function and the level control function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "OnOffFunction subclassOf ActuatingFunction" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test6
+:Test6 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <http://purl.org/dc/terms/description> "A feature of interest can be associated to a measurement." ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "FeatureOfInterest hasMeasurement Measurement" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test60
+:Test60 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> """Examples of functions are actuating function,
+sensing function, metering function and event function.""" ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "EventFunction subclassOf Function" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test61
+:Test61 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> """Examples of functions are actuating function,
+sensing function, metering function and event function.""" ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "MeteringFunction subclassOf Function" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test62
+:Test62 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> """Examples of functions are actuating function,
+sensing function, metering function and event function.""" ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "SensingFunction subclassOf Function" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test63
+:Test63 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> """Examples of functions are actuating function,
+sensing function, metering function and event function.""" ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "ActuatingFunction subclassOf Function" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test64
+:Test64 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can be divided as actuator, sensor, meters and appliance." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Appliance subclassOf Device" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test65
+:Test65 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can be divided as actuator, sensor, meters and appliance." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Meter subclassOf Device" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test66
+:Test66 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can be divided as actuator, sensor, meters and appliance." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Sensor subclassOf Device" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test67
+:Test67 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can be divided as actuator, sensor, meters and appliance." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Actuator subclassOf Device" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test68
+:Test68 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device may consist of other devices." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device consistsOf Device" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test69
+:Test69 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can measure a property." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device measuresProperty core:Property" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test7
+:Test7 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <http://purl.org/dc/terms/description> "A measurement can have a timestamp." ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Measurement subclassOf hasTimestamp only datetime" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test70
+:Test70 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can be used for the purpose of offering a commodity." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device isUsedFor Commodity" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test71
+:Test71 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device has at least one function." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device subclassOf hasFunction min 1 Function" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test72
+:Test72 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can have a manufacturer." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device subClassOf hasManufacturer only string" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test73
+:Test73 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <http://purl.org/dc/terms/description> "A device can have a model." ;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device subClassOf hasModel only string" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test8
+:Test8 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <http://purl.org/dc/terms/description> "A measurement is described according to a given unit of measure." ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Measurement isMeasuredIn UnitOfMeasure" .
+
+
+###  http://themis.linkeddata.es/tests/saref#Test9
+:Test9 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <http://purl.org/dc/terms/description> "A measurement is related to a property." ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Measurement relatesToProperty core:Property" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#TestsuiteSAREF
+<http://themis.linkeddata.es/tests/saref#TestsuiteSAREF> rdf:type owl:NamedIndividual ,
+                                                                   <https://w3id.org/def/vtc#TestSuite> ;
+                                                          <http://purl.org/dc/terms/source> "https://saref.etsi.org/core/v3.1.1/" .
+
+
+###  Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi
