@@ -1,0 +1,65 @@
+Provenance;Terms involved;Ontology;Result
+Open Connectivity Foundation (OCF);["Entity"];ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasUsers","string"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","isAccessibleThrough","Link"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Lighting","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Endpoint","isProvidedOverProtocol","CommunicationProtocol"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","isAccessibleThrough","Endpoint"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Endpoint","makesAccessible","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Maintenance","Resource"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["SpaceConditioning","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Security","Resource"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","communicatesWith"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Device","serialNumber","string","Resource"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Resource","address","string","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","deviceName","string","Resource"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Resource","encapsulates","State"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasFunctionality","Functionality"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","hosts","Resource"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Property","describesAspect","Aspect"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Resource","hasManufacturer","string"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Electronics","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Infrastructure","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Transportation","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Fitness","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Medica","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["PersonalHealth","Device"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","hasRole","Role"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Device","consistsOf","Resource"]';ISO/IEC 30141:2017;absent
+Open Connectivity Foundation (OCF);'["Resource","consistsOf"]';ISO/IEC 30141:2017;undefined
+Open Connectivity Foundation (OCF);'["Device","exposes","Resource"]';ISO/IEC 30141:2017;absent
+ISO/IEC 30141:2017;'["Gateway","exposes","Link"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Gateway","interactsThrough","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Gateway","DigitalThing"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","exposes","Link"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Network","connects","Link"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Thing","thingName","string"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Thing","thingName","string"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["DataStore","holds","IoTSystem"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Device","areConnectedWith","Gateway"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Device","interactsThrough","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["HumanUser","Person","VirtualUser","Agent"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Actuator","Device","Sensor"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["VirtualThing","represents","PhysicalThing"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["PhysicalThing","hasTag","Tag"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["PhysicalThing","actsOnFeatureProperty","FeatureProperty"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["PhysicalThing","Thing"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Application","interactsUsing","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Application","Service"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["HumanUser","interactsUsing","Application"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["DigitalUser","interactsUsing","Service"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Application","Service"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["HumanUser","interactsUsing","Application"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Device","uses","DataStore","Gateway","Service"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["PhysicalThing","Thing","VirtualThing"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Sensor","monitors","Tag","PhysicalThing","hasTag"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["VirtualThing","isAccessibleThrough","Link"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","uses","DataStore"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","interactsWith"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","interactsWith","Device"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","interactsWith","Gateway"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Service","interactsWith","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Device","isAccessibleThrough","Link"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Device","interactsWith","Network"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Gateway","uses","DataStore"]';ISO/IEC 30141:2017;passed
+ISO/IEC 30141:2017;'["Gateway","connects","Device"]';ISO/IEC 30141:2017;passed

@@ -1,0 +1,5 @@
+Ontologies;Relations
+https://w3id.org/saref# - https://saref.etsi.org/saref/latest/saref.ttl;What is a device? - Device exists in the owlOntology
+https://w3id.org/saref# - https://saref.etsi.org/saref/latest/saref.ttl;A function represents the functionality necessary to accomplish the task for which a device is designed - Function exists in the owlOntology
+https://saref.etsi.org/saref/latest/saref.ttl - https://w3id.org/saref#;Device exists in the owlOntology - What is a device?
+https://saref.etsi.org/saref/latest/saref.ttl - https://w3id.org/saref#;Function exists in the owlOntology - A function represents the functionality necessary to accomplish the task for which a device is designed

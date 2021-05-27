@@ -1,0 +1,232 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix vtc: <http://w3id.org/def/vtc#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  :     <http://vicinity.iot.linkeddata.es/vicinity/testing/testsuite-isoiec30141.ttl#> .
+
+
+:TestsuiteISOIEC30141 rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
+            dcterms:source "ISO/IEC 30141:2017".
+
+:Test-case-platfmor119 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform119>;
+	dc:description "The IoT-User can be human (human user) or non-human (digital user)";
+	vtc:desiredBehaviour "HumanUser subClassOf Person";
+	vtc:desiredBehaviour "VirtualUser subClassOf Agent".
+
+:Test-case-platform120 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform120>;
+	dc:description "Digital user consumes services";
+	vtc:desiredBehaviour "DigitalUser subclassOf interactsUsing some Service".
+
+:Test-case-platform121 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform121>;
+	dc:description "A human user interacts using applications";
+	vtc:desiredBehaviour "HumanUser subclassOf interactsUsing some Application".
+
+:Test-case-platform122 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform122>;
+	dc:description "An application is a specialized form of service";
+	vtc:desiredBehaviour "Application subClassOf Service". 
+
+:Test-case-platform123 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform123>;
+	dc:description "An applications can interact with other services via the network";
+	vtc:desiredBehaviour "Application subclassOf interactsUsing some Network". 
+		
+:Test-case-platform124 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform124>;
+	dc:description "An Entity can be physical or virtual";
+	vtc:desiredBehaviour "PhysicalThing subClassOf Thing". 
+
+:Test-case-platform125 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform125>;
+	dc:description "A physical entity is controlled by an actuator";
+	vtc:desiredBehaviour "PhysicalThing subclassOf  actsOnFeatureProperty some FeatureProperty".
+
+:Test-case-platform127 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform127>;
+	dc:description "A physical entity may have one or more  attached tag";
+	vtc:desiredBehaviour "PhysicalThing subclassOf hasTag some  Tag".
+
+
+:Test-case-platform128 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform128>;
+	dc:description "A virtual entity represents a physical entity";
+	vtc:desiredBehaviour "VirtualThing subclassOf represents some PhysicalThing".
+	
+:Test-case-platform129 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform129>;
+	dc:description "Actuators and sensors are kinds of IoT device";
+	vtc:desiredBehaviour "Actuator subclassof Device";
+	vtc:desiredBehaviour  "Sensor subclassof Device".
+
+:Test-case-platform130 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform130>;
+	dc:description "IoT devices interact through a network";
+	vtc:desiredBehaviour "Device subclassOf interactsThrough some Network".
+
+:Test-case-platform131 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform131>;
+	dc:description "IoT devices are connected with an IoT gateway ";
+	vtc:desiredBehaviour "Device subclassOf areConnectedWith some Gateway".
+
+:Test-case-platform132 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform132>;
+	dc:description "Data Stores hold data relating to IoT systems ";
+	vtc:desiredBehaviour "DataStore subclassOf holds some IoTSystem".
+
+:Test-case-platform133 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform133>;
+	dc:description "An entity  has an identifier";
+	vtc:desiredBehaviour "Thing subclassOf thingName only string".
+
+:Test-case-platform134 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform134>;
+	dc:description "An entity can have more than one identifier";
+	vtc:desiredBehaviour "Thing subclassOf thingName only string".
+
+:Test-case-platform135 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform135>;
+	dc:description "A network connects endpoints";
+	vtc:desiredBehaviour "Network subclassOf connects some Link".
+
+:Test-case-platform136 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform136>;
+	dc:description "A service exposes one or more endpoints by which it can be invoked";
+	vtc:desiredBehaviour "Service subClassOf exposes min 1 Link".
+
+:Test-case-platform137 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform137>;
+	dc:description "An IoT gateway is a digital entity ";
+	vtc:desiredBehaviour "Gateway subClassOf DigitalThing".
+
+:Test-case-platform138 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform138>;
+	dc:description "IoT gateways interact through networks";
+	vtc:desiredBehaviour "Gateway subclassOf interactsThrough some Network".
+
+:Test-case-platform139 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform139>;
+	dc:description "IoT gateways expose endpoints";
+	vtc:desiredBehaviour "Gateway subclassOf exposes some Link".
+
+:Test-case-platform140 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform140>;
+	dc:description "IoT gateways connect IoT devices";
+	vtc:desiredBehaviour "Gateway subclassOf connects some Device".
+
+:Test-case-platform141 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform141>;
+	dc:description "IoT gateways use data stores";
+	vtc:desiredBehaviour "Gateway subclassOf uses some DataStore".
+
+:Test-case-platform142 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform142>;
+	dc:description "IoT device interacts with one or more networks ";
+	vtc:desiredBehaviour "Device subclassOf interactsWith some Network".
+
+:Test-case-platform143 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform143>;
+	dc:description "IoT device exposes one or more endpoints";
+	vtc:desiredBehaviour "Device subclassOf isAccessibleThrough some Link".
+
+:Test-case-platform144 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform144>;
+	dc:description "A service interacts with other entities via one or more networks";
+	vtc:desiredBehaviour "Service subclassOf interactsWith some Network".
+
+:Test-case-platform145 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform145>;
+	dc:description "A service interacts with zero or more IoT gateways";
+	vtc:desiredBehaviour "Service subclassOf interactsWith some Gateway".
+
+:Test-case-platform146 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform146>;
+	dc:description "A service interacts with zero or more IoT devices";
+	vtc:desiredBehaviour "Service subclassOf interactsWith some Device".
+
+
+:Test-case-platform147 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform147>;
+	dc:description "A service can interact with other services";
+	vtc:desiredBehaviour "Service subclassOf interactsWith some Service".
+
+
+:Test-case-platform148 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform148>;
+	dc:description "A service can use data stores";
+	vtc:desiredBehaviour "Service subclassOf uses some DataStore".
+
+
+:Test-case-platform149 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform149>;
+	dc:description "A virtual entity interacts through an endpoint";
+	vtc:desiredBehaviour "VirtualThing subclassOf isAccessibleThrough some Link".
+
+:Test-case-platform150 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform150>;
+	dc:description "Everything in an IoT system is a kind of entity";
+	vtc:desiredBehaviour "VirtualThing subClassOf Thing";
+	vtc:desiredBehaviour "PhysicalThing subClassOf Thing".
+
+
+:Test-case-platform151 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform151>;
+	dc:description "Data associated with services, devices and gateways can be held in data stores";
+	vtc:desiredBehaviour "Service subclassOf uses some DataStore";
+	vtc:desiredBehaviour "Device subclassOf uses some DataStore";
+	vtc:desiredBehaviour "Gateway subclassOf uses some DataStore".
+
+:Test-case-platform152 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform152>;
+	dc:description "Human users uses applications";
+	vtc:desiredBehaviour "HumanUser subclassOf interactsUsing some Application".
+
+:Test-case-platform153 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform153>;
+	dc:description "An application typically uses Services";
+	vtc:desiredBehaviour "Application subClassOf Service".
+
+:Test-case-platform154 a vtc:TestCaseDesign, owl:NamedIndividual;
+	vtc:belongsTo :TestsuiteISOIEC30141;
+	vtc:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform154>;
+	dc:description "Sensors can monitor the tag attached to a physical entity rather than the physical entity itself";
+	vtc:desiredBehaviour "Sensor subclassOf monitors some Tag";
+	vtc:desiredBehaviour "PhysicalThing subclassOf hasTag some Tag".

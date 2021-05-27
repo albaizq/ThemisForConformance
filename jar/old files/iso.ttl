@@ -1,0 +1,374 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  actsOnFeatureProperty
+
+<actsOnFeatureProperty> rdf:type owl:ObjectProperty .
+
+
+
+###  areConnectedWith
+
+<areConnectedWith> rdf:type owl:ObjectProperty .
+
+
+
+###  connects
+
+<connects> rdf:type owl:ObjectProperty .
+
+
+
+###  exposes
+
+<exposes> rdf:type owl:ObjectProperty .
+
+
+
+###  hasTag
+
+<hasTag> rdf:type owl:ObjectProperty .
+
+
+
+###  holds
+
+<holds> rdf:type owl:ObjectProperty .
+
+
+
+###  interactsThrough
+
+<interactsThrough> rdf:type owl:ObjectProperty .
+
+
+
+###  interactsUsing
+
+<interactsUsing> rdf:type owl:ObjectProperty .
+
+
+
+###  interactsWith
+
+<interactsWith> rdf:type owl:ObjectProperty .
+
+
+
+###  isAccessibleThrough
+
+<isAccessibleThrough> rdf:type owl:ObjectProperty .
+
+
+
+###  monitors
+
+<monitors> rdf:type owl:ObjectProperty .
+
+
+
+###  represents
+
+<represents> rdf:type owl:ObjectProperty .
+
+
+
+###  uses
+
+<uses> rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  thingName
+
+<thingName> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  Actuator
+
+<Actuator> rdf:type owl:Class ;
+           
+           rdfs:subClassOf <Device> .
+
+
+
+###  Agent
+
+<Agent> rdf:type owl:Class .
+
+
+
+###  Application
+
+<Application> rdf:type owl:Class ;
+              
+              rdfs:subClassOf <Service> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <interactsUsing> ;
+                                owl:someValuesFrom <Network>
+                              ] .
+
+
+
+###  DataStore
+
+<DataStore> rdf:type owl:Class ;
+            
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty <holds> ;
+                              owl:someValuesFrom <IoTSystem>
+                            ] .
+
+
+
+###  Device
+
+<Device> rdf:type owl:Class ;
+         
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty <areConnectedWith> ;
+                           owl:someValuesFrom <Gateway>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <isAccessibleThrough> ;
+                           owl:someValuesFrom <Link>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <uses> ;
+                           owl:someValuesFrom <DataStore>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <interactsWith> ;
+                           owl:someValuesFrom <Network>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <interactsThrough> ;
+                           owl:someValuesFrom <Network>
+                         ] .
+
+
+
+###  DigitalThing
+
+<DigitalThing> rdf:type owl:Class .
+
+
+
+###  DigitalUser
+
+<DigitalUser> rdf:type owl:Class ;
+              
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty <interactsUsing> ;
+                                owl:someValuesFrom <Service>
+                              ] .
+
+
+
+###  FeatureProperty
+
+<FeatureProperty> rdf:type owl:Class .
+
+
+
+###  Gateway
+
+<Gateway> rdf:type owl:Class ;
+          
+          rdfs:subClassOf <DigitalThing> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <uses> ;
+                            owl:someValuesFrom <DataStore>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <exposes> ;
+                            owl:someValuesFrom <Link>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <interactsThrough> ;
+                            owl:someValuesFrom <Network>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <connects> ;
+                            owl:someValuesFrom <Device>
+                          ] .
+
+
+
+###  HumanUser
+
+<HumanUser> rdf:type owl:Class ;
+            
+            rdfs:subClassOf <Person> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <interactsUsing> ;
+                              owl:someValuesFrom <Application>
+                            ] .
+
+
+
+###  IoTSystem
+
+<IoTSystem> rdf:type owl:Class .
+
+
+
+###  Link
+
+<Link> rdf:type owl:Class .
+
+
+
+###  Network
+
+<Network> rdf:type owl:Class ;
+          
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty <connects> ;
+                            owl:someValuesFrom <Link>
+                          ] .
+
+
+
+###  Person
+
+<Person> rdf:type owl:Class .
+
+
+
+###  PhysicalThing
+
+<PhysicalThing> rdf:type owl:Class ;
+                
+                rdfs:subClassOf <Thing> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <hasTag> ;
+                                  owl:someValuesFrom <Tag>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <actsOnFeatureProperty> ;
+                                  owl:someValuesFrom <FeatureProperty>
+                                ] .
+
+
+
+###  Sensor
+
+<Sensor> rdf:type owl:Class ;
+         
+         rdfs:subClassOf <Device> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <monitors> ;
+                           owl:someValuesFrom <Tag>
+                         ] .
+
+
+
+###  Service
+
+<Service> rdf:type owl:Class ;
+          
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty <interactsWith> ;
+                            owl:someValuesFrom <Gateway>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <interactsWith> ;
+                            owl:someValuesFrom <Service>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <interactsWith> ;
+                            owl:someValuesFrom <Network>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <interactsWith> ;
+                            owl:someValuesFrom <Device>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <exposes> ;
+                            owl:onClass <Link> ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <uses> ;
+                            owl:someValuesFrom <DataStore>
+                          ] .
+
+
+
+###  Tag
+
+<Tag> rdf:type owl:Class .
+
+
+
+###  Thing
+
+<Thing> rdf:type owl:Class ;
+        
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty <thingName> ;
+                          owl:allValuesFrom xsd:string
+                        ] .
+
+
+
+###  VirtualThing
+
+<VirtualThing> rdf:type owl:Class ;
+               
+               rdfs:subClassOf <Thing> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <isAccessibleThrough> ;
+                                 owl:someValuesFrom <Link>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <represents> ;
+                                 owl:someValuesFrom <PhysicalThing>
+                               ] .
+
+
+
+###  VirtualUser
+
+<VirtualUser> rdf:type owl:Class ;
+              
+              rdfs:subClassOf <Agent> .
+
+
+
+
+###  Generated by the OWL API (version 3.5.3-SNAPSHOT) http://owlapi.sourceforge.net
+

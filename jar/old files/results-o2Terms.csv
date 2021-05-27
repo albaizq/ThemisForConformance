@@ -1,0 +1,73 @@
+Provenance;Terms involved;Ontology;Requirement description;Result
+Open Connectivity Foundation (OCF);["Entity"];ISO/IEC 30141:2017;Entity exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Device"];ISO/IEC 30141:2017;Device exists in the owlOntology;passed
+Open Connectivity Foundation (OCF);["Transportation"];ISO/IEC 30141:2017;Transportation exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Electronics"];ISO/IEC 30141:2017;Electronics exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Resource"];ISO/IEC 30141:2017;Resource exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["CommunicationProtocol"];ISO/IEC 30141:2017;CommunicationProtocol exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Maintenance"];ISO/IEC 30141:2017;Maintenance exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Aspect"];ISO/IEC 30141:2017;Aspect exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Security"];ISO/IEC 30141:2017;Security exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Role"];ISO/IEC 30141:2017;Role exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Endpoint"];ISO/IEC 30141:2017;Endpoint exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Functionality"];ISO/IEC 30141:2017;Functionality exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["State"];ISO/IEC 30141:2017;State exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Lighting"];ISO/IEC 30141:2017;Lighting exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["SpaceConditioning"];ISO/IEC 30141:2017;SpaceConditioning exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Infrastructure"];ISO/IEC 30141:2017;Infrastructure exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Medica"];ISO/IEC 30141:2017;Medica exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["PersonalHealth"];ISO/IEC 30141:2017;PersonalHealth exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Property"];ISO/IEC 30141:2017;Property exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Link"];ISO/IEC 30141:2017;Link exists in the owlOntology;passed
+Open Connectivity Foundation (OCF);["Fitness"];ISO/IEC 30141:2017;Fitness exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["serialNumber","Property"]';ISO/IEC 30141:2017;serialNumber exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["address","Property"]';ISO/IEC 30141:2017;address exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["encapsulates","Property"]';ISO/IEC 30141:2017;encapsulates exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["describesAspect","Property"]';ISO/IEC 30141:2017;describesAspect exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["isProvidedOverProtocol","Property"]';ISO/IEC 30141:2017;isProvidedOverProtocol exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["hosts","Property"]';ISO/IEC 30141:2017;hosts exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["consistsOf","Property"]';ISO/IEC 30141:2017;consistsOf exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["communicatesWith","Property"]';ISO/IEC 30141:2017;communicatesWith exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["deviceName","Property"]';ISO/IEC 30141:2017;deviceName exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["makesAccessible","Property"]';ISO/IEC 30141:2017;makesAccessible exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["isAccessibleThrough","Property"]';ISO/IEC 30141:2017;isAccessibleThrough exists in the owlOntology;passed
+Open Connectivity Foundation (OCF);'["exposes","Property"]';ISO/IEC 30141:2017;exposes exists in the owlOntology;passed
+Open Connectivity Foundation (OCF);'["hasFunctionality","Property"]';ISO/IEC 30141:2017;hasFunctionality exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["hasUsers","Property"]';ISO/IEC 30141:2017;hasUsers exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["hasRole","Property"]';ISO/IEC 30141:2017;hasRole exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["hasManufacturer","Property"]';ISO/IEC 30141:2017;hasManufacturer exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Agent"];ISO/IEC 30141:2017;Agent exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Device"];ISO/IEC 30141:2017;Device exists in the owlOntology;passed
+ISO/IEC 30141:2017;["PhysicalThing"];ISO/IEC 30141:2017;PhysicalThing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Service"];ISO/IEC 30141:2017;Service exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["DigitalThing"];ISO/IEC 30141:2017;DigitalThing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["FeatureProperty"];ISO/IEC 30141:2017;FeatureProperty exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["IoTSystem"];ISO/IEC 30141:2017;IoTSystem exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["VirtualThing"];ISO/IEC 30141:2017;VirtualThing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["HumanUser"];ISO/IEC 30141:2017;HumanUser exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["DigitalUser"];ISO/IEC 30141:2017;DigitalUser exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Gateway"];ISO/IEC 30141:2017;Gateway exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Network"];ISO/IEC 30141:2017;Network exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["DataStore"];ISO/IEC 30141:2017;DataStore exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["VirtualUser"];ISO/IEC 30141:2017;VirtualUser exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Tag"];ISO/IEC 30141:2017;Tag exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Application"];ISO/IEC 30141:2017;Application exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Person"];ISO/IEC 30141:2017;Person exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Thing"];ISO/IEC 30141:2017;Thing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Link"];ISO/IEC 30141:2017;Link exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Actuator"];ISO/IEC 30141:2017;Actuator exists in the owlOntology;passed
+ISO/IEC 30141:2017;["Sensor"];ISO/IEC 30141:2017;Sensor exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["hasTag","Property"]';ISO/IEC 30141:2017;hasTag exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["thingName","Property"]';ISO/IEC 30141:2017;thingName exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["actsOnFeatureProperty","Property"]';ISO/IEC 30141:2017;actsOnFeatureProperty exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["interactsUsing","Property"]';ISO/IEC 30141:2017;interactsUsing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["represents","Property"]';ISO/IEC 30141:2017;represents exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["areConnectedWith","Property"]';ISO/IEC 30141:2017;areConnectedWith exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["interactsWith","Property"]';ISO/IEC 30141:2017;interactsWith exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["isAccessibleThrough","Property"]';ISO/IEC 30141:2017;isAccessibleThrough exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["connects","Property"]';ISO/IEC 30141:2017;connects exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["exposes","Property"]';ISO/IEC 30141:2017;exposes exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["interactsThrough","Property"]';ISO/IEC 30141:2017;interactsThrough exists in the owlOntology;passed
+ISO/IEC 30141:2017;'["holds","Property"]';ISO/IEC 30141:2017;holds exists in the owlOntology;passed
+ISO/IEC 30141:2017;'["uses","Property"]';ISO/IEC 30141:2017;uses exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["monitors","Property"]';ISO/IEC 30141:2017;monitors exists in the owlOntology;undefined

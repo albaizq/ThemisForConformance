@@ -1,0 +1,26 @@
+Provenance;Terms involved;Ontology;Result
+Open Connectivity Foundation (OCF);["Entity"];Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Resource","hasUsers","string"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Resource","isAccessibleThrough","Link"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Endpoint","isProvidedOverProtocol","CommunicationProtocol"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Device","isAccessibleThrough","Endpoint"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Endpoint","makesAccessible","Device"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Maintenance","Resource"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Security","Resource"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Device","communicatesWith"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Device","serialNumber","string","Resource"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Resource","address","string","Device"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Device","deviceName","string","Resource"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Resource","encapsulates","State"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Resource","hasFunctionality","Functionality"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Device","hosts","Resource"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Property","describesAspect","Aspect"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Resource","hasManufacturer","string"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["SpaceConditioning","Device","Electronics","Transportation","Lighting","Infrastructure"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Fitness","Device"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Medica","Device"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["PersonalHealth","Device"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Device","hasRole","Role"]';Open Connectivity Foundation (OCF);absent
+Open Connectivity Foundation (OCF);'["Device","haSubsystem"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Resource","consistsOf"]';Open Connectivity Foundation (OCF);passed
+Open Connectivity Foundation (OCF);'["Device","exposes","Resource"]';Open Connectivity Foundation (OCF);passed

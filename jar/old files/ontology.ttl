@@ -1,0 +1,374 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  communicatesWith
+
+<communicatesWith> rdf:type owl:ObjectProperty .
+
+
+
+###  consistsOf
+
+<consistsOf> rdf:type owl:ObjectProperty .
+
+
+
+###  describesAspect
+
+<describesAspect> rdf:type owl:ObjectProperty .
+
+
+
+###  encapsulates
+
+<encapsulates> rdf:type owl:ObjectProperty .
+
+
+
+###  exposes
+
+<exposes> rdf:type owl:ObjectProperty .
+
+
+
+###  haSubsystem
+
+<haSubsystem> rdf:type owl:ObjectProperty .
+
+
+
+###  hasFunctionality
+
+<hasFunctionality> rdf:type owl:ObjectProperty .
+
+
+
+###  hasRole
+
+<hasRole> rdf:type owl:ObjectProperty .
+
+
+
+###  hosts
+
+<hosts> rdf:type owl:ObjectProperty .
+
+
+
+###  isAccessibleThrough
+
+<isAccessibleThrough> rdf:type owl:ObjectProperty .
+
+
+
+###  isProvidedOverProtocol
+
+<isProvidedOverProtocol> rdf:type owl:ObjectProperty .
+
+
+
+###  makesAccessible
+
+<makesAccessible> rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  address
+
+<address> rdf:type owl:DatatypeProperty .
+
+
+
+###  deviceName
+
+<deviceName> rdf:type owl:DatatypeProperty .
+
+
+
+###  hasManufacturer
+
+<hasManufacturer> rdf:type owl:DatatypeProperty .
+
+
+
+###  hasUsers
+
+<hasUsers> rdf:type owl:DatatypeProperty .
+
+
+
+###  serialNumber
+
+<serialNumber> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  Aspect
+
+<Aspect> rdf:type owl:Class .
+
+
+
+###  CommunicationProtocol
+
+<CommunicationProtocol> rdf:type owl:Class .
+
+
+
+###  Device
+
+<Device> rdf:type owl:Class ;
+         
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty <exposes> ;
+                           owl:someValuesFrom <Resource>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <deviceName> ;
+                           owl:allValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <haSubsystem> ;
+                           owl:someValuesFrom <Device>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <communicatesWith> ;
+                           owl:someValuesFrom <Device>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <serialNumber> ;
+                           owl:allValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <isAccessibleThrough> ;
+                           owl:onClass <Endpoint> ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <hosts> ;
+                           owl:someValuesFrom <Resource>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <hasRole> ;
+                           owl:allValuesFrom <Role>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <address> ;
+                           owl:allValuesFrom xsd:string
+                         ] .
+
+
+
+###  Electronics
+
+<Electronics> rdf:type owl:Class ;
+              
+              rdfs:subClassOf <Device> .
+
+
+
+###  Endpoint
+
+<Endpoint> rdf:type owl:Class ;
+           
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty <makesAccessible> ;
+                             owl:someValuesFrom <Device>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <isProvidedOverProtocol> ;
+                             owl:someValuesFrom <CommunicationProtocol>
+                           ] .
+
+
+
+###  Entity
+
+<Entity> rdf:type owl:Class .
+
+
+
+###  Fitness
+
+<Fitness> rdf:type owl:Class ;
+          
+          rdfs:subClassOf <Device> .
+
+
+
+###  Functionality
+
+<Functionality> rdf:type owl:Class .
+
+
+
+###  Infrastructure
+
+<Infrastructure> rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf <Device> .
+
+
+
+###  Lighting
+
+<Lighting> rdf:type owl:Class ;
+           
+           rdfs:subClassOf <Device> .
+
+
+
+###  Link
+
+<Link> rdf:type owl:Class .
+
+
+
+###  Maintenance
+
+<Maintenance> rdf:type owl:Class ;
+              
+              rdfs:subClassOf <Resource> .
+
+
+
+###  Medica
+
+<Medica> rdf:type owl:Class ;
+         
+         rdfs:subClassOf <Device> .
+
+
+
+###  PersonalHealth
+
+<PersonalHealth> rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf <Device> .
+
+
+
+###  Property
+
+<Property> rdf:type owl:Class ;
+           
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty <describesAspect> ;
+                             owl:allValuesFrom <Aspect>
+                           ] .
+
+
+
+###  Resource
+
+<Resource> rdf:type owl:Class ;
+           
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty <address> ;
+                             owl:allValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <isAccessibleThrough> ;
+                             owl:someValuesFrom <Link>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <hasFunctionality> ;
+                             owl:someValuesFrom <Functionality>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <serialNumber> ;
+                             owl:allValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <consistsOf> ;
+                             owl:someValuesFrom <Resource>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <deviceName> ;
+                             owl:allValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <encapsulates> ;
+                             owl:someValuesFrom <State>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <hasUsers> ;
+                             owl:allValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <hasManufacturer> ;
+                             owl:allValuesFrom xsd:string
+                           ] .
+
+
+
+###  Role
+
+<Role> rdf:type owl:Class .
+
+
+
+###  Security
+
+<Security> rdf:type owl:Class ;
+           
+           rdfs:subClassOf <Resource> .
+
+
+
+###  SpaceConditioning
+
+<SpaceConditioning> rdf:type owl:Class ;
+                    
+                    rdfs:subClassOf <Device> .
+
+
+
+###  State
+
+<State> rdf:type owl:Class .
+
+
+
+###  Transportation
+
+<Transportation> rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf <Device> .
+
+
+
+
+###  Generated by the OWL API (version 3.5.3-SNAPSHOT) http://owlapi.sourceforge.net
+

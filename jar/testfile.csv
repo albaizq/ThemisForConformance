@@ -1,0 +1,3 @@
+URL ;Tests
+https://saref.etsi.org/core/v3.1.1/;testsuite-saref.ttl
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;testsuite-onem2m.ttl

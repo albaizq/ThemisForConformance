@@ -1,0 +1,315 @@
+Provenance;Terms involved;Ontology;Requirement description;Result
+https://saref.etsi.org/core;["Water"];Open Connectivity Foundation (OCF);Water exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OpenCloseFunction"];Open Connectivity Foundation (OCF);OpenCloseFunction exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Task"];Open Connectivity Foundation (OCF);Task exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Meter"];Open Connectivity Foundation (OCF);Meter exists in the owlOntology;undefined
+https://saref.etsi.org/core;["GetMeterDataCommand"];Open Connectivity Foundation (OCF);GetMeterDataCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["SmokeSensor"];Open Connectivity Foundation (OCF);SmokeSensor exists in the owlOntology;undefined
+https://saref.etsi.org/core;["MultiLevelState"];Open Connectivity Foundation (OCF);MultiLevelState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Smoke"];Open Connectivity Foundation (OCF);Smoke exists in the owlOntology;undefined
+https://saref.etsi.org/core;["StartState"];Open Connectivity Foundation (OCF);StartState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OffState"];Open Connectivity Foundation (OCF);OffState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["SensingFunction"];Open Connectivity Foundation (OCF);SensingFunction exists in the owlOntology;undefined
+https://saref.etsi.org/core;["HVAC"];Open Connectivity Foundation (OCF);HVAC exists in the owlOntology;undefined
+https://saref.etsi.org/core;["DoorSwitch"];Open Connectivity Foundation (OCF);DoorSwitch exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Light"];Open Connectivity Foundation (OCF);Light exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Coal"];Open Connectivity Foundation (OCF);Coal exists in the owlOntology;undefined
+https://saref.etsi.org/core;["CloseCommand"];Open Connectivity Foundation (OCF);CloseCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Currency"];Open Connectivity Foundation (OCF);Currency exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Occupancy"];Open Connectivity Foundation (OCF);Occupancy exists in the owlOntology;undefined
+https://saref.etsi.org/core;["MeteringFunction"];Open Connectivity Foundation (OCF);MeteringFunction exists in the owlOntology;undefined
+https://saref.etsi.org/core;["GetCurrentMeterValueCommand"];Open Connectivity Foundation (OCF);GetCurrentMeterValueCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["GetMeterHistoryCommand"];Open Connectivity Foundation (OCF);GetMeterHistoryCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["ToggleCommand"];Open Connectivity Foundation (OCF);ToggleCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["GetSensingDataCommand"];Open Connectivity Foundation (OCF);GetSensingDataCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OnOffState"];Open Connectivity Foundation (OCF);OnOffState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["UnitOfMeasure"];Open Connectivity Foundation (OCF);UnitOfMeasure exists in the owlOntology;undefined
+https://saref.etsi.org/core;["SetRelativeLevelCommand"];Open Connectivity Foundation (OCF);SetRelativeLevelCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["StartStopState"];Open Connectivity Foundation (OCF);StartStopState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Device"];Open Connectivity Foundation (OCF);Device exists in the owlOntology;passed
+https://saref.etsi.org/core;["TemperatureUnit"];Open Connectivity Foundation (OCF);TemperatureUnit exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Pressure"];Open Connectivity Foundation (OCF);Pressure exists in the owlOntology;undefined
+https://saref.etsi.org/core;["StepDownCommand"];Open Connectivity Foundation (OCF);StepDownCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["StopCommand"];Open Connectivity Foundation (OCF);StopCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OpenState"];Open Connectivity Foundation (OCF);OpenState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Switch"];Open Connectivity Foundation (OCF);Switch exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Price"];Open Connectivity Foundation (OCF);Price exists in the owlOntology;undefined
+https://saref.etsi.org/core;["FeatureOfInterest"];Open Connectivity Foundation (OCF);FeatureOfInterest exists in the owlOntology;undefined
+https://saref.etsi.org/core;["State"];Open Connectivity Foundation (OCF);State exists in the owlOntology;passed
+https://saref.etsi.org/core;["SetLevelCommand"];Open Connectivity Foundation (OCF);SetLevelCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Gas"];Open Connectivity Foundation (OCF);Gas exists in the owlOntology;undefined
+https://saref.etsi.org/core;["PressureUnit"];Open Connectivity Foundation (OCF);PressureUnit exists in the owlOntology;undefined
+https://saref.etsi.org/core;["PauseCommand"];Open Connectivity Foundation (OCF);PauseCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Sensor"];Open Connectivity Foundation (OCF);Sensor exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Measurement"];Open Connectivity Foundation (OCF);Measurement exists in the owlOntology;undefined
+https://saref.etsi.org/core;["StartStopFunction"];Open Connectivity Foundation (OCF);StartStopFunction exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Temperature"];Open Connectivity Foundation (OCF);Temperature exists in the owlOntology;undefined
+https://saref.etsi.org/core;["StartCommand"];Open Connectivity Foundation (OCF);StartCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Time"];Open Connectivity Foundation (OCF);Time exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Profile"];Open Connectivity Foundation (OCF);Profile exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Function"];Open Connectivity Foundation (OCF);Function exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Commodity"];Open Connectivity Foundation (OCF);Commodity exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Appliance"];Open Connectivity Foundation (OCF);Appliance exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Electricity"];Open Connectivity Foundation (OCF);Electricity exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Energy"];Open Connectivity Foundation (OCF);Energy exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OpenCommand"];Open Connectivity Foundation (OCF);OpenCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["StepUpCommand"];Open Connectivity Foundation (OCF);StepUpCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Humidity"];Open Connectivity Foundation (OCF);Humidity exists in the owlOntology;undefined
+https://saref.etsi.org/core;["EventFunction"];Open Connectivity Foundation (OCF);EventFunction exists in the owlOntology;undefined
+https://saref.etsi.org/core;["PowerUnit"];Open Connectivity Foundation (OCF);PowerUnit exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OnState"];Open Connectivity Foundation (OCF);OnState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Property"];Open Connectivity Foundation (OCF);Property exists in the owlOntology;passed
+https://saref.etsi.org/core;["CloseState"];Open Connectivity Foundation (OCF);CloseState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["IlluminanceUnit"];Open Connectivity Foundation (OCF);IlluminanceUnit exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Actuator"];Open Connectivity Foundation (OCF);Actuator exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OnOffFunction"];Open Connectivity Foundation (OCF);OnOffFunction exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Motion"];Open Connectivity Foundation (OCF);Motion exists in the owlOntology;undefined
+https://saref.etsi.org/core;["NotifyCommand"];Open Connectivity Foundation (OCF);NotifyCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["ActuatingFunction"];Open Connectivity Foundation (OCF);ActuatingFunction exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OpenCloseState"];Open Connectivity Foundation (OCF);OpenCloseState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["EnergyUnit"];Open Connectivity Foundation (OCF);EnergyUnit exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Service"];Open Connectivity Foundation (OCF);Service exists in the owlOntology;undefined
+https://saref.etsi.org/core;["TemperatureSensor"];Open Connectivity Foundation (OCF);TemperatureSensor exists in the owlOntology;undefined
+https://saref.etsi.org/core;["LightSwitch"];Open Connectivity Foundation (OCF);LightSwitch exists in the owlOntology;undefined
+https://saref.etsi.org/core;["GetCommand"];Open Connectivity Foundation (OCF);GetCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OnCommand"];Open Connectivity Foundation (OCF);OnCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Command"];Open Connectivity Foundation (OCF);Command exists in the owlOntology;undefined
+https://saref.etsi.org/core;["OffCommand"];Open Connectivity Foundation (OCF);OffCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["SetAbsoluteLevelCommand"];Open Connectivity Foundation (OCF);SetAbsoluteLevelCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;["SwitchOnService"];Open Connectivity Foundation (OCF);SwitchOnService exists in the owlOntology;undefined
+https://saref.etsi.org/core;["LevelControlFunction"];Open Connectivity Foundation (OCF);LevelControlFunction exists in the owlOntology;undefined
+https://saref.etsi.org/core;["StopState"];Open Connectivity Foundation (OCF);StopState exists in the owlOntology;undefined
+https://saref.etsi.org/core;["Power"];Open Connectivity Foundation (OCF);Power exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isMeasurementOf","Property"]';Open Connectivity Foundation (OCF);isMeasurementOf exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isOfferedBy","Property"]';Open Connectivity Foundation (OCF);isOfferedBy exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["accomplishes","Property"]';Open Connectivity Foundation (OCF);accomplishes exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasMeterReadingType","Property"]';Open Connectivity Foundation (OCF);hasMeterReadingType exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["measurementMadeBy","Property"]';Open Connectivity Foundation (OCF);measurementMadeBy exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasModel","Property"]';Open Connectivity Foundation (OCF);hasModel exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasTypicalConsumption","Property"]';Open Connectivity Foundation (OCF);hasTypicalConsumption exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasTime","Property"]';Open Connectivity Foundation (OCF);hasTime exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasTimestamp","Property"]';Open Connectivity Foundation (OCF);hasTimestamp exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["represents","Property"]';Open Connectivity Foundation (OCF);represents exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isCommandOf","Property"]';Open Connectivity Foundation (OCF);isCommandOf exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasSensorType","Property"]';Open Connectivity Foundation (OCF);hasSensorType exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasCommand","Property"]';Open Connectivity Foundation (OCF);hasCommand exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isMeasuredByDevice","Property"]';Open Connectivity Foundation (OCF);isMeasuredByDevice exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasProfile","Property"]';Open Connectivity Foundation (OCF);hasProfile exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isMeasuredIn","Property"]';Open Connectivity Foundation (OCF);isMeasuredIn exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasPrice","Property"]';Open Connectivity Foundation (OCF);hasPrice exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["offers","Property"]';Open Connectivity Foundation (OCF);offers exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasMeterReading","Property"]';Open Connectivity Foundation (OCF);hasMeterReading exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["relatesToProperty","Property"]';Open Connectivity Foundation (OCF);relatesToProperty exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isAccomplishedBy","Property"]';Open Connectivity Foundation (OCF);isAccomplishedBy exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isUsedFor","Property"]';Open Connectivity Foundation (OCF);isUsedFor exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasDescription","Property"]';Open Connectivity Foundation (OCF);hasDescription exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasSensingRange","Property"]';Open Connectivity Foundation (OCF);hasSensingRange exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["consistsOf","Property"]';Open Connectivity Foundation (OCF);consistsOf exists in the owlOntology;passed
+https://saref.etsi.org/core;'["hasValue","Property"]';Open Connectivity Foundation (OCF);hasValue exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasMeasurement","Property"]';Open Connectivity Foundation (OCF);hasMeasurement exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasState","Property"]';Open Connectivity Foundation (OCF);hasState exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasProperty","Property"]';Open Connectivity Foundation (OCF);hasProperty exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isPropertyOf","Property"]';Open Connectivity Foundation (OCF);isPropertyOf exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isAbout","Property"]';Open Connectivity Foundation (OCF);isAbout exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["actsUpon","Property"]';Open Connectivity Foundation (OCF);actsUpon exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["measuresProperty","Property"]';Open Connectivity Foundation (OCF);measuresProperty exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["controlsProperty","Property"]';Open Connectivity Foundation (OCF);controlsProperty exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasFunction","Property"]';Open Connectivity Foundation (OCF);hasFunction exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["relatesToMeasurement","Property"]';Open Connectivity Foundation (OCF);relatesToMeasurement exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasManufacturer","Property"]';Open Connectivity Foundation (OCF);hasManufacturer exists in the owlOntology;passed
+https://saref.etsi.org/core;'["makesMeasurement","Property"]';Open Connectivity Foundation (OCF);makesMeasurement exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["isControlledByDevice","Property"]';Open Connectivity Foundation (OCF);isControlledByDevice exists in the owlOntology;undefined
+https://saref.etsi.org/core;'["hasThresholdMeasurement","Property"]';Open Connectivity Foundation (OCF);hasThresholdMeasurement exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Vocabulary"];Open Connectivity Foundation (OCF);Vocabulary exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Agent"];Open Connectivity Foundation (OCF);Agent exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Stimulus"];Open Connectivity Foundation (OCF);Stimulus exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Platform"];Open Connectivity Foundation (OCF);Platform exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Sample"];Open Connectivity Foundation (OCF);Sample exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["ActuatableProperty"];Open Connectivity Foundation (OCF);ActuatableProperty exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Actuation"];Open Connectivity Foundation (OCF);Actuation exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Deployment"];Open Connectivity Foundation (OCF);Deployment exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["System"];Open Connectivity Foundation (OCF);System exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Result"];Open Connectivity Foundation (OCF);Result exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Input"];Open Connectivity Foundation (OCF);Input exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["ObservableProperty"];Open Connectivity Foundation (OCF);ObservableProperty exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["FeatureOfInterest"];Open Connectivity Foundation (OCF);FeatureOfInterest exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Output"];Open Connectivity Foundation (OCF);Output exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Sampler"];Open Connectivity Foundation (OCF);Sampler exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Observation"];Open Connectivity Foundation (OCF);Observation exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Procedure"];Open Connectivity Foundation (OCF);Procedure exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Sampling"];Open Connectivity Foundation (OCF);Sampling exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Property"];Open Connectivity Foundation (OCF);Property exists in the owlOntology;passed
+http://www.w3.org/ns/ssn;["Thing"];Open Connectivity Foundation (OCF);Thing exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Sensor"];Open Connectivity Foundation (OCF);Sensor exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;["Actuator"];Open Connectivity Foundation (OCF);Actuator exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["implements","Property"]';Open Connectivity Foundation (OCF);implements exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["inDeployment","Property"]';Open Connectivity Foundation (OCF);inDeployment exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["hasFeatureOfInterest","Property"]';Open Connectivity Foundation (OCF);hasFeatureOfInterest exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["madeBySampler","Property"]';Open Connectivity Foundation (OCF);madeBySampler exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["deployedOnPlatform","Property"]';Open Connectivity Foundation (OCF);deployedOnPlatform exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["phenomenonTime","Property"]';Open Connectivity Foundation (OCF);phenomenonTime exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["observedProperty","Property"]';Open Connectivity Foundation (OCF);observedProperty exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["madeSampling","Property"]';Open Connectivity Foundation (OCF);madeSampling exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["hasDeployment","Property"]';Open Connectivity Foundation (OCF);hasDeployment exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["isActedOnBy","Property"]';Open Connectivity Foundation (OCF);isActedOnBy exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["observes","Property"]';Open Connectivity Foundation (OCF);observes exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["usedProcedure","Property"]';Open Connectivity Foundation (OCF);usedProcedure exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["isSampleOf","Property"]';Open Connectivity Foundation (OCF);isSampleOf exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["madeBySensor","Property"]';Open Connectivity Foundation (OCF);madeBySensor exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["hasSubSystem","Property"]';Open Connectivity Foundation (OCF);hasSubSystem exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["hasSample","Property"]';Open Connectivity Foundation (OCF);hasSample exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["isHostedBy","Property"]';Open Connectivity Foundation (OCF);isHostedBy exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["implementedBy","Property"]';Open Connectivity Foundation (OCF);implementedBy exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["resultTime","Property"]';Open Connectivity Foundation (OCF);resultTime exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["isObservedBy","Property"]';Open Connectivity Foundation (OCF);isObservedBy exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["madeByActuator","Property"]';Open Connectivity Foundation (OCF);madeByActuator exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["forProperty","Property"]';Open Connectivity Foundation (OCF);forProperty exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["hosts","Property"]';Open Connectivity Foundation (OCF);hosts exists in the owlOntology;passed
+http://www.w3.org/ns/ssn;'["hasResult","Property"]';Open Connectivity Foundation (OCF);hasResult exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["detects","Property"]';Open Connectivity Foundation (OCF);detects exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["deployedSystem","Property"]';Open Connectivity Foundation (OCF);deployedSystem exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["isResultOf","Property"]';Open Connectivity Foundation (OCF);isResultOf exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["hasProperty","Property"]';Open Connectivity Foundation (OCF);hasProperty exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["isPropertyOf","Property"]';Open Connectivity Foundation (OCF);isPropertyOf exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["wasOriginatedBy","Property"]';Open Connectivity Foundation (OCF);wasOriginatedBy exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["madeObservation","Property"]';Open Connectivity Foundation (OCF);madeObservation exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["madeActuation","Property"]';Open Connectivity Foundation (OCF);madeActuation exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["hasOutput","Property"]';Open Connectivity Foundation (OCF);hasOutput exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["isProxyFor","Property"]';Open Connectivity Foundation (OCF);isProxyFor exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["hasInput","Property"]';Open Connectivity Foundation (OCF);hasInput exists in the owlOntology;undefined
+http://www.w3.org/ns/ssn;'["actsOnProperty","Property"]';Open Connectivity Foundation (OCF);actsOnProperty exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Entity"];Open Connectivity Foundation (OCF);Entity exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Device"];Open Connectivity Foundation (OCF);Device exists in the owlOntology;passed
+Open Connectivity Foundation (OCF);["Transportation"];Open Connectivity Foundation (OCF);Transportation exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Electronics"];Open Connectivity Foundation (OCF);Electronics exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Resource"];Open Connectivity Foundation (OCF);Resource exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["CommunicationProtocol"];Open Connectivity Foundation (OCF);CommunicationProtocol exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Maintenance"];Open Connectivity Foundation (OCF);Maintenance exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Aspect"];Open Connectivity Foundation (OCF);Aspect exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Security"];Open Connectivity Foundation (OCF);Security exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Role"];Open Connectivity Foundation (OCF);Role exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Endpoint"];Open Connectivity Foundation (OCF);Endpoint exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Functionality"];Open Connectivity Foundation (OCF);Functionality exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["State"];Open Connectivity Foundation (OCF);State exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Lighting"];Open Connectivity Foundation (OCF);Lighting exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["SpaceConditioning"];Open Connectivity Foundation (OCF);SpaceConditioning exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Infrastructure"];Open Connectivity Foundation (OCF);Infrastructure exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Medica"];Open Connectivity Foundation (OCF);Medica exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["PersonalHealth"];Open Connectivity Foundation (OCF);PersonalHealth exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Property"];Open Connectivity Foundation (OCF);Property exists in the owlOntology;passed
+Open Connectivity Foundation (OCF);["Link"];Open Connectivity Foundation (OCF);Link exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);["Fitness"];Open Connectivity Foundation (OCF);Fitness exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["serialNumber","Property"]';Open Connectivity Foundation (OCF);serialNumber exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["address","Property"]';Open Connectivity Foundation (OCF);address exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["encapsulates","Property"]';Open Connectivity Foundation (OCF);encapsulates exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["describesAspect","Property"]';Open Connectivity Foundation (OCF);describesAspect exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["isProvidedOverProtocol","Property"]';Open Connectivity Foundation (OCF);isProvidedOverProtocol exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["hosts","Property"]';Open Connectivity Foundation (OCF);hosts exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["consistsOf","Property"]';Open Connectivity Foundation (OCF);consistsOf exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["communicatesWith","Property"]';Open Connectivity Foundation (OCF);communicatesWith exists in the owlOntology;passed
+Open Connectivity Foundation (OCF);'["deviceName","Property"]';Open Connectivity Foundation (OCF);deviceName exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["makesAccessible","Property"]';Open Connectivity Foundation (OCF);makesAccessible exists in the owlOntology;passed
+Open Connectivity Foundation (OCF);'["isAccessibleThrough","Property"]';Open Connectivity Foundation (OCF);isAccessibleThrough exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["exposes","Property"]';Open Connectivity Foundation (OCF);exposes exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["hasFunctionality","Property"]';Open Connectivity Foundation (OCF);hasFunctionality exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["hasUsers","Property"]';Open Connectivity Foundation (OCF);hasUsers exists in the owlOntology;undefined
+Open Connectivity Foundation (OCF);'["hasRole","Property"]';Open Connectivity Foundation (OCF);hasRole exists in the owlOntology;passed
+Open Connectivity Foundation (OCF);'["hasManufacturer","Property"]';Open Connectivity Foundation (OCF);hasManufacturer exists in the owlOntology;passed
+ISO/IEC 30141:2017;["Agent"];Open Connectivity Foundation (OCF);Agent exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Device"];Open Connectivity Foundation (OCF);Device exists in the owlOntology;passed
+ISO/IEC 30141:2017;["PhysicalThing"];Open Connectivity Foundation (OCF);PhysicalThing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Service"];Open Connectivity Foundation (OCF);Service exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["DigitalThing"];Open Connectivity Foundation (OCF);DigitalThing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["FeatureProperty"];Open Connectivity Foundation (OCF);FeatureProperty exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["IoTSystem"];Open Connectivity Foundation (OCF);IoTSystem exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["VirtualThing"];Open Connectivity Foundation (OCF);VirtualThing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["HumanUser"];Open Connectivity Foundation (OCF);HumanUser exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["DigitalUser"];Open Connectivity Foundation (OCF);DigitalUser exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Gateway"];Open Connectivity Foundation (OCF);Gateway exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Network"];Open Connectivity Foundation (OCF);Network exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["DataStore"];Open Connectivity Foundation (OCF);DataStore exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["VirtualUser"];Open Connectivity Foundation (OCF);VirtualUser exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Tag"];Open Connectivity Foundation (OCF);Tag exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Application"];Open Connectivity Foundation (OCF);Application exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Person"];Open Connectivity Foundation (OCF);Person exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Thing"];Open Connectivity Foundation (OCF);Thing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Link"];Open Connectivity Foundation (OCF);Link exists in the owlOntology;passed
+ISO/IEC 30141:2017;["Actuator"];Open Connectivity Foundation (OCF);Actuator exists in the owlOntology;undefined
+ISO/IEC 30141:2017;["Sensor"];Open Connectivity Foundation (OCF);Sensor exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["hasTag","Property"]';Open Connectivity Foundation (OCF);hasTag exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["thingName","Property"]';Open Connectivity Foundation (OCF);thingName exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["actsOnFeatureProperty","Property"]';Open Connectivity Foundation (OCF);actsOnFeatureProperty exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["interactsUsing","Property"]';Open Connectivity Foundation (OCF);interactsUsing exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["represents","Property"]';Open Connectivity Foundation (OCF);represents exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["areConnectedWith","Property"]';Open Connectivity Foundation (OCF);areConnectedWith exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["interactsWith","Property"]';Open Connectivity Foundation (OCF);interactsWith exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["isAccessibleThrough","Property"]';Open Connectivity Foundation (OCF);isAccessibleThrough exists in the owlOntology;passed
+ISO/IEC 30141:2017;'["connects","Property"]';Open Connectivity Foundation (OCF);connects exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["exposes","Property"]';Open Connectivity Foundation (OCF);exposes exists in the owlOntology;passed
+ISO/IEC 30141:2017;'["interactsThrough","Property"]';Open Connectivity Foundation (OCF);interactsThrough exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["holds","Property"]';Open Connectivity Foundation (OCF);holds exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["uses","Property"]';Open Connectivity Foundation (OCF);uses exists in the owlOntology;undefined
+ISO/IEC 30141:2017;'["monitors","Property"]';Open Connectivity Foundation (OCF);monitors exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Variable"];Open Connectivity Foundation (OCF);Variable exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Device"];Open Connectivity Foundation (OCF);Device exists in the owlOntology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["MeasuringFunction"];Open Connectivity Foundation (OCF);MeasuringFunction exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InterworkedDevice"];Open Connectivity Foundation (OCF);InterworkedDevice exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OperationInput"];Open Connectivity Foundation (OCF);OperationInput exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["StructuredTypeVariable"];Open Connectivity Foundation (OCF);StructuredTypeVariable exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["GET_InputDataPoint"];Open Connectivity Foundation (OCF);GET_InputDataPoint exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Service"];Open Connectivity Foundation (OCF);Service exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Operation"];Open Connectivity Foundation (OCF);Operation exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Aspect"];Open Connectivity Foundation (OCF);Aspect exists in the owlOntology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OutputDataPoint"];Open Connectivity Foundation (OCF);OutputDataPoint exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["AreaNetwork"];Open Connectivity Foundation (OCF);AreaNetwork exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["SET_OutputDataPoint"];Open Connectivity Foundation (OCF);SET_OutputDataPoint exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["SimpleTypeVariable"];Open Connectivity Foundation (OCF);SimpleTypeVariable exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Function"];Open Connectivity Foundation (OCF);Function exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Command"];Open Connectivity Foundation (OCF);Command exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["ThingProperty"];Open Connectivity Foundation (OCF);ThingProperty exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["MetaData"];Open Connectivity Foundation (OCF);MetaData exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["InputDataPoint"];Open Connectivity Foundation (OCF);InputDataPoint exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["OperationOutput"];Open Connectivity Foundation (OCF);OperationOutput exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["VariableConversion"];Open Connectivity Foundation (OCF);VariableConversion exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["ControllingFunction"];Open Connectivity Foundation (OCF);ControllingFunction exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;["Thing"];Open Connectivity Foundation (OCF);Thing exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_pattern","Property"]';Open Connectivity Foundation (OCF);hasDataRestriction_pattern exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minInclusive","Property"]';Open Connectivity Foundation (OCF);hasDataRestriction_minInclusive exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasSubService","Property"]';Open Connectivity Foundation (OCF);hasSubService exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyCommunicationProtocol","Property"]';Open Connectivity Foundation (OCF);netTechnologyCommunicationProtocol exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataType","Property"]';Open Connectivity Foundation (OCF);hasDataType exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasInputDataPoint","Property"]';Open Connectivity Foundation (OCF);hasInputDataPoint exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["exposesCommand","Property"]';Open Connectivity Foundation (OCF);exposesCommand exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction","Property"]';Open Connectivity Foundation (OCF);hasDataRestriction exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minExclusive","Property"]';Open Connectivity Foundation (OCF);hasDataRestriction_minExclusive exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyPhysicalStandard","Property"]';Open Connectivity Foundation (OCF);netTechnologyPhysicalStandard exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_length","Property"]';Open Connectivity Foundation (OCF);hasDataRestriction_length exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingProperty","Property"]';Open Connectivity Foundation (OCF);hasThingProperty exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasCommand","Property"]';Open Connectivity Foundation (OCF);hasCommand exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOutputDataPoint","Property"]';Open Connectivity Foundation (OCF);hasOutputDataPoint exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["exposesFunction","Property"]';Open Connectivity Foundation (OCF);exposesFunction exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasService","Property"]';Open Connectivity Foundation (OCF);hasService exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MTargetURI","Property"]';Open Connectivity Foundation (OCF);oneM2MTargetURI exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasSubStructure","Property"]';Open Connectivity Foundation (OCF);hasSubStructure exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["netTechnologyProfile","Property"]';Open Connectivity Foundation (OCF);netTechnologyProfile exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["refersTo","Property"]';Open Connectivity Foundation (OCF);refersTo exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["isDataList","Property"]';Open Connectivity Foundation (OCF);isDataList exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["consistsOf","Property"]';Open Connectivity Foundation (OCF);consistsOf exists in the owlOntology;passed
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_minLength","Property"]';Open Connectivity Foundation (OCF);hasDataRestriction_minLength exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasValue","Property"]';Open Connectivity Foundation (OCF);hasValue exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["isPartOf","Property"]';Open Connectivity Foundation (OCF);isPartOf exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["describes","Property"]';Open Connectivity Foundation (OCF);describes exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOperation","Property"]';Open Connectivity Foundation (OCF);hasOperation exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MAttribute","Property"]';Open Connectivity Foundation (OCF);oneM2MAttribute exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasConversion","Property"]';Open Connectivity Foundation (OCF);hasConversion exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["convertsTo","Property"]';Open Connectivity Foundation (OCF);convertsTo exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxLength","Property"]';Open Connectivity Foundation (OCF);hasDataRestriction_maxLength exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingRelation","Property"]';Open Connectivity Foundation (OCF);hasThingRelation exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxInclusive","Property"]';Open Connectivity Foundation (OCF);hasDataRestriction_maxInclusive exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasDataRestriction_maxExclusive","Property"]';Open Connectivity Foundation (OCF);hasDataRestriction_maxExclusive exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasFunction","Property"]';Open Connectivity Foundation (OCF);hasFunction exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasMetaData","Property"]';Open Connectivity Foundation (OCF);hasMetaData exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasOutput","Property"]';Open Connectivity Foundation (OCF);hasOutput exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasThingAnnotation","Property"]';Open Connectivity Foundation (OCF);hasThingAnnotation exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["oneM2MMethod","Property"]';Open Connectivity Foundation (OCF);oneM2MMethod exists in the owlOntology;undefined
+https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl;'["hasInput","Property"]';Open Connectivity Foundation (OCF);hasInput exists in the owlOntology;undefined
